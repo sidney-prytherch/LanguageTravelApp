@@ -3,4 +3,10 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorKeyboardBackground">#DDD</color>
+    <color name="colorKeyboardKey">#FFF</color>
+    <color name="colorKeyboardText">#000</color>
+    <color name="colorKeyboardKeyPressed">#BBB</color>
+    <color name="crosswordUnselectedWhiteSquare">#FFF</color>
+    <color name="crosswordSelectedWhiteSquare">#BAF</color>
 </resources>

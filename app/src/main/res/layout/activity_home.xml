@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/blah"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,4 +14,76 @@
         android:text="Button"
         tools:layout_editor_absoluteX="113dp"
         tools:layout_editor_absoluteY="108dp" />
+
+     <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:orientation="horizontal">
+             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:background="#000"
+                 android:layout_weight="1"/>
+             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:background="#444"
+                 android:layout_weight="1"/>
+             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:background="#666"
+                 android:layout_weight="1"/>
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:orientation="horizontal">
+             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:background="#133"
+                 android:layout_weight="1"/>
+             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:background="#166"
+                 android:layout_weight="1"/>
+             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:background="#199"
+                 android:layout_weight="1"/>
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_weight="1"
+             android:orientation="horizontal">
+             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:background="#331"
+                 android:layout_weight="1"/>
+             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:background="#441"
+                 android:layout_weight="1"/>
+             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:background="#771"
+                 android:layout_weight="1"/>
+         </LinearLayout>
+
+     </LinearLayout>
+
+
 </android.support.constraint.ConstraintLayout>

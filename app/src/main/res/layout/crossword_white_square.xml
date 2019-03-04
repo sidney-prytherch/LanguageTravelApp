@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edu.wit.mobileapp.languagetravelapp.CrosswordWhiteSquare xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:layout_weight="1"
+    android:background="@color/crosswordUnselectedWhiteSquare"
+    android:onClick="onWhiteSquareClick"
+    android:text="0"
+    android:textAlignment="center"
+    android:gravity="center"
+    android:textColor="@android:color/black" />
