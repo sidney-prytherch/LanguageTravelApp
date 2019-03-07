@@ -9,16 +9,23 @@ import android.widget.Button;
 
 public class HomeActivity extends AppCompatActivity {
 
-  @Override
-  protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_home);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
 
-    Button crosswordButton = findViewById(R.id.crossword_button);
-    crosswordButton.setOnClickListener((View v) -> {
-      Log.v("MyApp", "Crossword button is clicked");
-      Intent intent = new Intent(HomeActivity.this, CrosswordActivity.class);
-      startActivity(intent);
-    });
-  }
+        Button crosswordButton = findViewById(R.id.crossword_button);
+        crosswordButton.setOnClickListener((View v) -> {
+            Log.v("MyApp", "Crossword button is clicked");
+            Intent intent = new Intent(HomeActivity.this, CrosswordActivity.class);
+            startActivity(intent);
+        });
+
+        Button wordsearchButton = findViewById(R.id.wordsearch_button);
+        wordsearchButton.setOnClickListener((View v) -> {
+            Log.v("MyApp", "Wordsearch button is clicked");
+            Intent intent = new Intent(HomeActivity.this, WordsearchActivity.class);
+            startActivity(intent);
+        });
+    }
 }

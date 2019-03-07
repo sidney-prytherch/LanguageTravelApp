@@ -8,12 +8,25 @@
     tools:context=".HomeActivity">
 
     <Button
+        android:id="@+id/wordsearch_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="Wordsearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/crossword_button" />
+
+    <Button
         android:id="@+id/crossword_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="108dp" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Crossword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
      <LinearLayout
          android:orientation="vertical"
@@ -24,17 +37,18 @@
              android:layout_height="0dp"
              android:layout_weight="1"
              android:orientation="horizontal">
-             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
                  android:layout_width="0dp"
                  android:layout_height="match_parent"
                  android:background="#000"
                  android:layout_weight="1"/>
-             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+
+             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
                  android:layout_width="0dp"
                  android:layout_height="match_parent"
                  android:background="#444"
                  android:layout_weight="1"/>
-             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
                  android:layout_width="0dp"
                  android:layout_height="match_parent"
                  android:background="#666"
@@ -45,17 +59,17 @@
              android:layout_height="0dp"
              android:layout_weight="1"
              android:orientation="horizontal">
-             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
                  android:layout_width="0dp"
                  android:layout_height="match_parent"
                  android:background="#133"
                  android:layout_weight="1"/>
-             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
                  android:layout_width="0dp"
                  android:layout_height="match_parent"
                  android:background="#166"
                  android:layout_weight="1"/>
-             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
                  android:layout_width="0dp"
                  android:layout_height="match_parent"
                  android:background="#199"
@@ -66,17 +80,17 @@
              android:layout_height="0dp"
              android:layout_weight="1"
              android:orientation="horizontal">
-             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
                  android:layout_width="0dp"
                  android:layout_height="match_parent"
                  android:background="#331"
                  android:layout_weight="1"/>
-             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
                  android:layout_width="0dp"
                  android:layout_height="match_parent"
                  android:background="#441"
                  android:layout_weight="1"/>
-             <edu.wit.mobileapp.languagetravelapp.CrosswordBlackSquare
+             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
                  android:layout_width="0dp"
                  android:layout_height="match_parent"
                  android:background="#771"

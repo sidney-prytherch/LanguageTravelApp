@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -9,12 +8,12 @@
     <LinearLayout
         android:id="@+id/crossword_grid"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDefaultBlack"
         android:orientation="vertical"
-        android:layout_marginBottom="3dp"
-        app:layout_constraintHeight_percent="0.56"
-        app:layout_constraintDimensionRatio="1:1.05"
+        android:padding="2dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +28,7 @@
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:keyBackground="@drawable/keyboard_key"
-        android:keyTextColor="@color/colorKeyboardText"
+        android:keyTextColor="@color/colorDefaultBlack"
         android:shadowColor="@android:color/transparent"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"

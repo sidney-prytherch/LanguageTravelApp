@@ -5,8 +5,8 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorKeyboardBackground">#DDD</color>
     <color name="colorKeyboardKey">#FFF</color>
-    <color name="colorKeyboardText">#000</color>
+    <color name="colorDefaultBlack">#000</color>
     <color name="colorKeyboardKeyPressed">#BBB</color>
-    <color name="crosswordUnselectedWhiteSquare">#FFF</color>
-    <color name="crosswordSelectedWhiteSquare">#BAF</color>
+    <color name="colorPuzzleWhiteSquareDefault">#FFF</color>
+    <color name="colorPuzzleWhiteSquareSelected">#BAF</color>
 </resources>
