@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 
 public class PuzzleWhiteSquare extends AppCompatTextView {
+
+    public CellNode cellNode = null;
+
     public PuzzleWhiteSquare(Context context) {
         super(context);
     }

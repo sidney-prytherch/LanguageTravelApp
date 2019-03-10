@@ -8,5 +8,10 @@
     <color name="colorDefaultBlack">#000</color>
     <color name="colorKeyboardKeyPressed">#BBB</color>
     <color name="colorPuzzleWhiteSquareDefault">#FFF</color>
-    <color name="colorPuzzleWhiteSquareSelected">#BAF</color>
+    <color name="colorPuzzleWhiteSquareSelectedBoth">#A9E</color>
+    <color name="colorPuzzleWhiteSquareSelectedAcross">#F88</color>
+    <color name="colorPuzzleWhiteSquareSelectedDown">#6BF</color>
+    <color name="colorCrosswordAcrossWordSelected">#FBC</color>
+    <color name="colorCrosswordDownWordSelected">#BEF</color>
+
 </resources>
