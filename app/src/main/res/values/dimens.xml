@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="crosswordNumber3">18sp</dimen>
+    <dimen name="crosswordNumber5">17sp</dimen>
+    <dimen name="crosswordNumber7">15sp</dimen>
+    <dimen name="crosswordNumber9">10sp</dimen>
+    <dimen name="crosswordNumber11">9sp</dimen>
+</resources>

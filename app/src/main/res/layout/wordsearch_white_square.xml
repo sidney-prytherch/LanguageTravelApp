@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edu.wit.mobileapp.languagetravelapp.PuzzleWhiteSquare xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/colorPuzzleWhiteSquareDefault"
+    android:gravity="center"
+    android:onClick="onWhiteSquareClick"
+    android:textAlignment="center"
+    android:textColor="@android:color/black" />
