@@ -3,20 +3,28 @@ package edu.wit.mobileapp.languagetravelapp;
 public class RootNode extends CellNode {
     private String solutionAcrossWord = null;
     private String solutionDownWord = null;
+    private String hintAcrossWord = null;
+    private String hintDownWord = null;
     private int solutionAcrossWordLength = 0;
     private int solutionDownWordLength = 0;
     private int acrossIndex;
     private int downIndex;
+    private int number;
 
-
-    public RootNode(CellNode left, CellNode up, PuzzleWhiteSquare square, WordOrientation wordOrientation, int index) {
-        super(left, up, square);
-        this.setIndex(wordOrientation, index);
+    public int getNumber() {
+        return number;
     }
 
-    public RootNode(CellNode cellNode, WordOrientation wordOrientation, int index) {
+    public RootNode(CellNode left, CellNode up, PuzzleWhiteSquare square, WordOrientation wordOrientation, int index, int number) {
+        super(left, up, square);
+        this.setIndex(wordOrientation, index);
+        this.number = number;
+    }
+
+    public RootNode(CellNode cellNode, WordOrientation wordOrientation, int index, int number) {
         super(cellNode);
         this.setIndex(wordOrientation, index);
+        this.number = number;
     }
 
     public void setIndex(WordOrientation wordOrientation, int index) {
@@ -38,13 +46,15 @@ public class RootNode extends CellNode {
         }
     }
 
-    public void setWordSolution(WordOrientation wordOrientation, String solution) {
+    public void setWordSolution(WordOrientation wordOrientation, String solution, String hint) {
         switch (wordOrientation) {
             case ACROSS:
                 this.solutionAcrossWord = solution.toUpperCase();
+                this.hintAcrossWord = hint;
                 break;
             case DOWN:
                 this.solutionDownWord = solution.toUpperCase();
+                this.hintDownWord = hint;
         }
     }
 
@@ -54,6 +64,17 @@ public class RootNode extends CellNode {
                 return this.solutionAcrossWord;
             case DOWN:
                 return this.solutionDownWord;
+            default:
+                return null;
+        }
+    }
+
+    public String getHint(WordOrientation wordOrientation) {
+        switch (wordOrientation) {
+            case ACROSS:
+                return this.hintAcrossWord;
+            case DOWN:
+                return this.hintDownWord;
             default:
                 return null;
         }

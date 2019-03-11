@@ -1,6 +1,8 @@
 package edu.wit.mobileapp.languagetravelapp;
 
 import android.content.res.Resources;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 
 public class CellNode {
 
@@ -11,8 +13,10 @@ public class CellNode {
     private RootNode acrossRoot = null;
     private RootNode downRoot = null;
     private char solutionLetter;
-    private char currentLetter;
+    private char currentLetter = ' ';
     private PuzzleWhiteSquare square;
+    private Background background = Background.NONE;
+    private SelectionStatus selectionStatus = SelectionStatus.UNSELECTED;
 
     public CellNode(CellNode left, CellNode up, PuzzleWhiteSquare square) {
         if (left != null) {
@@ -125,64 +129,89 @@ public class CellNode {
         return currentLetter;
     }
 
+    public void setCurrentLetter(char currentLetter) {
+        this.currentLetter = currentLetter;
+    }
+
     public PuzzleWhiteSquare getSquare() {
         return square;
     }
 
-    public void uncolorWord(Resources resources) {
-        this.setColor(resources.getColor(R.color.colorPuzzleWhiteSquareDefault));
-        CellNode left = this.left;
-        while (left != null) {
-            left.setColor(resources.getColor(R.color.colorPuzzleWhiteSquareDefault));
-            left = left.left;
-        }
-        CellNode right = this.right;
-        while (right != null) {
-            right.setColor(resources.getColor(R.color.colorPuzzleWhiteSquareDefault));
-            right = right.right;
-        }
-        CellNode up = this.up;
-        while (up != null) {
-            up.setColor(resources.getColor(R.color.colorPuzzleWhiteSquareDefault));
-            up = up.up;
-        }
-        CellNode down = this.down;
-        while (down != null) {
-            down.setColor(resources.getColor(R.color.colorPuzzleWhiteSquareDefault));
-            down = down.down;
+    public void uncolorWord(WordOrientation wordOrientation, Resources resources) {
+        CellNode currentCellNode = this.getRoot(wordOrientation);
+        while (currentCellNode != null) {
+            currentCellNode.selectionStatus = SelectionStatus.UNSELECTED;
+            currentCellNode.setColor(resources);
+            currentCellNode = currentCellNode.getNext(wordOrientation);
         }
     }
 
     public void colorWord(WordOrientation wordOrientation, Resources resources) {
-        if (wordOrientation == WordOrientation.ACROSS) {
-            this.setColor(resources.getColor(R.color.colorPuzzleWhiteSquareSelectedAcross));
-            CellNode left = this.left;
-            while (left != null) {
-                left.setColor(resources.getColor(R.color.colorCrosswordAcrossWordSelected));
-                left = left.left;
-            }
-            CellNode right = this.right;
-            while (right != null) {
-                right.setColor(resources.getColor(R.color.colorCrosswordAcrossWordSelected));
-                right = right.right;
-            }
-        } else {
-            this.setColor(resources.getColor(R.color.colorPuzzleWhiteSquareSelectedDown));
-            CellNode up = this.up;
-            while (up != null) {
-                up.setColor(resources.getColor(R.color.colorCrosswordDownWordSelected));
-                up = up.up;
-            }
-            CellNode down = this.down;
-            while (down != null) {
-                down.setColor(resources.getColor(R.color.colorCrosswordDownWordSelected));
-                down = down.down;
-            }
+        CellNode currentCellNode = this.getRoot(wordOrientation);
+        while (currentCellNode != null) {
+            currentCellNode.selectionStatus = SelectionStatus.WORD_SELECTED;
+            currentCellNode.setColor(resources);
+            currentCellNode = currentCellNode.getNext(wordOrientation);
         }
+        this.selectionStatus = SelectionStatus.LETTER_SELECTED;
+        this.setColor(resources);
     }
 
     private void setColor(int color) {
         this.square.setBackgroundColor(color);
     }
 
+    public void setBackground(Background background, Resources resources) {
+        this.background = background;
+        this.setColor(resources);
+    }
+
+    public void unsetBackground(Resources resources) {
+        this.background = Background.NONE;
+        this.setColor(resources);
+    }
+
+    private void setBackground(Drawable drawable) {
+        this.square.setBackground(drawable);
+    }
+
+    public void setColor(Resources resources) {
+        switch (this.background) {
+            case NONE:
+                switch (this.selectionStatus) {
+                    case UNSELECTED:
+                        this.setColor(resources.getColor(R.color.colorPuzzleWhiteSquareDefault));
+                        break;
+                    case WORD_SELECTED:
+                        this.setColor(resources.getColor(R.color.colorCrosswordWordSelected));
+                        break;
+                    default:
+                        this.setColor(resources.getColor(R.color.colorPuzzleWhiteSquareSelected));
+                }
+                break;
+            case CORRECT:
+                switch (this.selectionStatus) {
+                    case UNSELECTED:
+                        this.setBackground(resources.getDrawable(R.drawable.correct_letter_default));
+                        break;
+                    case WORD_SELECTED:
+                        this.setBackground(resources.getDrawable(R.drawable.correct_letter_word_selected));
+                        break;
+                    default:
+                        this.setBackground(resources.getDrawable(R.drawable.correct_letter_selected));
+                }
+                break;
+            default:
+                switch (this.selectionStatus) {
+                    case UNSELECTED:
+                        this.setBackground(resources.getDrawable(R.drawable.incorrect_letter_default));
+                        break;
+                    case WORD_SELECTED:
+                        this.setBackground(resources.getDrawable(R.drawable.incorrect_letter_word_selected));
+                        break;
+                    default:
+                        this.setBackground(resources.getDrawable(R.drawable.incorrect_letter_selected));
+                }
+        }
+    }
 }

@@ -2,11 +2,15 @@ package edu.wit.mobileapp.languagetravelapp;
 
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
-import android.provider.DocumentsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.TypedValue;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import java.util.ArrayList;
@@ -16,6 +20,7 @@ import java.util.Stack;
 public class CrosswordActivity extends AppCompatActivity {
 
     LinearLayout crosswordGrid;
+    LinearLayout crosswordNumberGrid;
     RootNode[] acrossRoots;
     RootNode[] downRoots;
     Keyboard crosswordKeyboard;
@@ -23,16 +28,100 @@ public class CrosswordActivity extends AppCompatActivity {
     CellNode selected;
     WordOrientation wordOrientation;
     String[][] prioritizedWords;
+    MenuItem checkWordAlwaysItemView;
+    Button hintButton;
+    int wordCount;
+    int nextNumber;
+    float crosswordNumberTextSize;
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        Log.v("myapp1", "menu made right now");
+        getMenuInflater().inflate(R.menu.crossword_menu, menu);
+        Log.v("myapp1", "" + menu);
+        checkWordAlwaysItemView = menu.findItem(R.id.check_word_always_option);
+        Log.v("myapp1", "" + checkWordAlwaysItemView);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+        switch (itemId) {
+            case R.id.reveal_letter_option:
+                showLetter();
+                break;
+            case R.id.reveal_word_option:
+                showLettersForWord();
+                break;
+            case R.id.reveal_puzzle_option:
+                showLettersForPuzzle();
+                break;
+            case R.id.check_letter_option:
+                checkLetter();
+                break;
+            case R.id.check_word_option:
+                checkWord();
+                break;
+            case R.id.check_word_always_option:
+                if (checkWordAlwaysItemView.isChecked()) {
+                    checkWordAlwaysItemView.setChecked(false);
+                } else {
+                    checkWordAlwaysItemView.setChecked(true);
+                    for (RootNode root : acrossRoots) {
+                        if (isWordComplete(root, WordOrientation.ACROSS)) {
+                            checkWord(root, WordOrientation.ACROSS);
+                        }
+                    }
+                    for (RootNode root : downRoots) {
+                        if (isWordComplete(root, WordOrientation.DOWN)) {
+                            checkWord(root, WordOrientation.DOWN);
+                        }
+                    }
+                }
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crossword);
 
-        int[] crosswordFromDB = new int[]{
-            1, 0, 0, 0, 0};
+        int[] crosswordFromDB = new int[] {
+            0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
+            0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,
+            0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
+            0,0,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,
+            1,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0,
+            0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,
+            0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,
+            0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,
+            0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,
+            0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,
+            0,0,0,1,0,0,0,0,0,0,0
+        };
+
 
         int crosswordDim = (int) Math.sqrt(crosswordFromDB.length * 2 - 1);
+
+        switch (crosswordDim) {
+            case 3:
+                crosswordNumberTextSize = getResources().getDimension(R.dimen.crosswordNumber3);
+                break;
+            case 5:
+                crosswordNumberTextSize = getResources().getDimension(R.dimen.crosswordNumber5);
+                break;
+            case 7:
+                crosswordNumberTextSize = getResources().getDimension(R.dimen.crosswordNumber7);
+                break;
+            case 9:
+                crosswordNumberTextSize = getResources().getDimension(R.dimen.crosswordNumber9);
+                break;
+            case 11:
+                crosswordNumberTextSize = getResources().getDimension(R.dimen.crosswordNumber11);
+                break;
+        }
 
         int[][] crossword = new int[crosswordDim][crosswordDim];
 
@@ -40,13 +129,13 @@ public class CrosswordActivity extends AppCompatActivity {
         ArrayList<RootNode> downRootsList = new ArrayList<>();
         boolean[] wordLengthUsed = new boolean[crosswordDim];
 
+        nextNumber = 1;
 
         for (int i = 0; i < crosswordFromDB.length; i++) {
             int x = i / crosswordDim;
             int y = i % crosswordDim;
             crossword[x][y] = crossword[crosswordDim - 1 - x][crosswordDim - 1 - y] = crosswordFromDB[i];
         }
-
 
         crosswordGrid = (LinearLayout) findViewById(R.id.crossword_grid);
         for (int[] crosswordColumn : crossword) {
@@ -61,6 +150,19 @@ public class CrosswordActivity extends AppCompatActivity {
                 }
             }
             crosswordGrid.addView(row);
+        }
+
+        if (crosswordDim <= 11) {
+            crosswordNumberGrid = (LinearLayout) findViewById(R.id.crossword_grid2);
+            for (int[] crosswordColumn : crossword) {
+                LinearLayout row = (LinearLayout) getLayoutInflater().inflate(R.layout.puzzle_table_row, null);
+                row.setBackgroundColor(getResources().getColor(R.color.colorCrosswordNumberBackground));
+
+                for (int squareValue : crosswordColumn) {
+                    getLayoutInflater().inflate(R.layout.crossword_number_square, row);
+                }
+                crosswordNumberGrid.addView(row);
+            }
         }
 
         for (int i = 0; i < crossword.length; i++) {
@@ -115,6 +217,7 @@ public class CrosswordActivity extends AppCompatActivity {
         for (RootNode rootNode : downRoots) {
             rootNode.setIndex(WordOrientation.DOWN, rootNode.getIndex(WordOrientation.DOWN) + acrossRoots.length);
         }
+        wordCount = acrossRoots.length + downRoots.length;
         prioritizedWords = getPrioritizedWordsByLength(wordLengthUsed);
 
         // Create the Keyboard
@@ -124,7 +227,8 @@ public class CrosswordActivity extends AppCompatActivity {
         crosswordKeyboardView = (KeyboardView) findViewById(R.id.crossword_keyboard_view);
 
         // Attach the keyboard to the view
-        crosswordKeyboardView.setPreviewEnabled(false);
+//        ((KeyboardView)findViewById(R.id.crossword_keyboard_popup_view)).setPreviewEnabled(false);
+        crosswordKeyboardView.isPreviewEnabled();
         crosswordKeyboardView.setKeyboard(crosswordKeyboard);
 
         // Install the key handler
@@ -133,17 +237,88 @@ public class CrosswordActivity extends AppCompatActivity {
         crosswordKeyboardView.setVisibility(View.VISIBLE);
         crosswordKeyboardView.setEnabled(true);
 
-        fillCrossword();
+        //fillCrossword();
+
+        ImageButton previousWordButton = findViewById(R.id.previous_word_button);
+        previousWordButton.setOnClickListener((View v) -> {
+            if (selected != null) {
+                unselectCellNode();
+                int rootNodeIndex = (selected.getRoot(wordOrientation).getIndex(wordOrientation) - 1 + wordCount) % wordCount;
+                Tuple newlySelected = getRootNode(rootNodeIndex);
+                setSelected(newlySelected.rootNode, newlySelected.wordOrientation);
+            }
+        });
+
+        ImageButton nextWordButton = findViewById(R.id.next_word_button);
+        nextWordButton.setOnClickListener((View v) -> {
+            if (selected != null) {
+                unselectCellNode();
+                int rootNodeIndex = (selected.getRoot(wordOrientation).getIndex(wordOrientation) + 1) % wordCount;
+                Tuple newlySelected = getRootNode(rootNodeIndex);
+                setSelected(newlySelected.rootNode, newlySelected.wordOrientation);
+            }
+        });
+
+        hintButton = findViewById(R.id.hint_button);
+        hintButton.setOnClickListener((View v) -> {
+            if (selected != null) {
+                switchWordOrientation();
+            }
+        });
+    }
+
+    private void setSelected(CellNode newlySelected, WordOrientation newWordOrientation) {
+        unselectCellNode();
+        selectCellNode(newlySelected, newWordOrientation);
+    }
+
+    private boolean isWordComplete(CellNode cellNode, WordOrientation wordOrientation) {
+        CellNode currentCellNode = cellNode.getRoot(wordOrientation);
+        while (currentCellNode != null) {
+            String text = currentCellNode.getSquare().getText().toString();
+            if (text == null || text == "" || isCharacterAccent(text.charAt(0))) {
+                return false;
+            }
+            currentCellNode = currentCellNode.getNext(wordOrientation);
+        }
+        return true;
+    }
+
+    private boolean isCharacterVowel(char character) {
+        if (character == 'A' || character == 'E' || character == 'I' || character == 'O' || character == 'U') {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean isCharacterAccent(char character) {
+        if (character == '´' || character == '`' || character == '^' || character == '~' || character == '¨') {
+            return true;
+        }
+        return false;
     }
 
     // when WhiteSquare is clicked, uncolor the previous words and set color for new word
     public void onWhiteSquareClick(View v) {
         if (selected != null) {
-            selected.uncolorWord(getResources());
+            unselectCellNode();
         }
-        calculateOrientation(((PuzzleWhiteSquare) v).cellNode);
-        selected = ((PuzzleWhiteSquare) v).cellNode;
+        CellNode newlySelected = ((PuzzleWhiteSquare) v).cellNode;
+        calculateOrientation(newlySelected);
+        selectCellNode(newlySelected, wordOrientation);
+    }
+
+    private void unselectCellNode() {
+        selected.uncolorWord(wordOrientation, getResources());
+    }
+
+    private void selectCellNode(CellNode newlySelected, WordOrientation newWordOrientation) {
+        selected = newlySelected;
+        wordOrientation = newWordOrientation;
         selected.colorWord(wordOrientation, getResources());
+        RootNode wordRootNode = selected.getRoot(wordOrientation);
+        hintButton.setText(wordRootNode.getNumber() + (wordOrientation == WordOrientation.ACROSS ? "A" : "D")
+            + ". " + wordRootNode.getHint(wordOrientation));
     }
 
     // sets the field wordOrientation based on certain state. Used when a user
@@ -151,16 +326,13 @@ public class CrosswordActivity extends AppCompatActivity {
     private void calculateOrientation(CellNode newlySelected) {
         // if it's the same as the already selected square, reverse the wordOrientation if possible
         if (newlySelected == selected) {
-            WordOrientation oppositeWordOrientation = oppositeWordOrientation();
-            if (selected.getRoot(oppositeWordOrientation) != null) {
-                wordOrientation = oppositeWordOrientation;
-            }
+            switchWordOrientation();
             // assume across if wordOrientation is null, unless across isn't available
         } else if (wordOrientation == null) {
             wordOrientation = newlySelected.getRoot(WordOrientation.ACROSS) != null ? WordOrientation.ACROSS : WordOrientation.DOWN;
             // assume same orientation as previously selected if the same orientation is available
         } else if (newlySelected.getRoot(wordOrientation) != selected.getRoot(wordOrientation)) {
-            wordOrientation = newlySelected.getRoot(wordOrientation) != null ? wordOrientation : oppositeWordOrientation();
+            wordOrientation = newlySelected.getRoot(wordOrientation) != null ? wordOrientation : getOppositeWordOrientation();
         }
     }
 
@@ -181,11 +353,21 @@ public class CrosswordActivity extends AppCompatActivity {
     private CellNode getOrCreateRootNode(int i, int j, CellNode left, CellNode up, WordOrientation wordOrientation, int index) {
         PuzzleWhiteSquare square = (PuzzleWhiteSquare) ((LinearLayout) crosswordGrid.getChildAt(i)).getChildAt(j);
         if (square.cellNode == null) {
-            square.cellNode = new RootNode(left, up, square, wordOrientation, index);
-
+            if (crosswordNumberGrid != null) {
+                PuzzleWhiteSquare numberSquare = (PuzzleWhiteSquare) ((LinearLayout) crosswordNumberGrid.getChildAt(i)).getChildAt(j);
+                numberSquare.setText(Integer.toString(nextNumber));
+                numberSquare.setTextSize(TypedValue.COMPLEX_UNIT_PX, crosswordNumberTextSize);
+                numberSquare.setHeight(square.getHeight());
+            }
+            square.cellNode = new RootNode(left, up, square, wordOrientation, index, nextNumber++);
         } else {
             if (!(square.cellNode instanceof RootNode)) {
-                square.cellNode = new RootNode(square.cellNode, wordOrientation, index);
+                if (crosswordNumberGrid != null) {
+                    PuzzleWhiteSquare numberSquare = (PuzzleWhiteSquare) ((LinearLayout) crosswordNumberGrid.getChildAt(i)).getChildAt(j);
+                    numberSquare.setText(Integer.toString(nextNumber));
+                    numberSquare.setTextSize(TypedValue.COMPLEX_UNIT_PX, crosswordNumberTextSize);
+                }
+                square.cellNode = new RootNode(square.cellNode, wordOrientation, index, nextNumber++);
             } else {
                 ((RootNode) square.cellNode).setIndex(wordOrientation, index);
             }
@@ -195,7 +377,7 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
     // gets the opposite WordOrientation as the current (across -> down or down -> across)
-    private WordOrientation oppositeWordOrientation() {
+    private WordOrientation getOppositeWordOrientation() {
         switch (wordOrientation) {
             case ACROSS:
                 return WordOrientation.DOWN;
@@ -206,27 +388,118 @@ public class CrosswordActivity extends AppCompatActivity {
         }
     }
 
+    private void switchWordOrientation() {
+        WordOrientation oppositeWordOrientation = getOppositeWordOrientation();
+        if (selected.getRoot(oppositeWordOrientation) != null) {
+            setSelected(selected, oppositeWordOrientation);
+        }
+
+    }
+
     private KeyboardView.OnKeyboardActionListener cwOnKeyboardActionListener = new KeyboardView.OnKeyboardActionListener() {
         @Override
         public void onKey(int primaryCode, int[] keyCodes) {
             //Here check the primaryCode to see which key is pressed
             //based on the android:codes property
             if (selected != null) {
+                if (primaryCode == 0 && keyCodes.length > 0 && keyCodes[0] > 0) {
+                    primaryCode = keyCodes[0];
+                }
+                selected.unsetBackground(getResources());
                 if (primaryCode == -2) {
-                    selected.getSquare().setText("");
-                    CellNode prev = selected.getPrev(wordOrientation);
-                    if (prev != null) {
-                        selected.uncolorWord(getResources());
-                        selected = prev;
-                        prev.colorWord(wordOrientation, getResources());
+                    boolean squareHasContent = selected.getSquare().getText().toString().length() > 0;
+                    if (!squareHasContent) {
+                        CellNode prev = selected.getPrev(wordOrientation);
+                        if (prev != null) {
+                            setSelected(prev, wordOrientation);
+                        }
                     }
-                } else {
-                    selected.getSquare().setText(Character.toString((char) primaryCode));
-                    CellNode next = selected.getNext(wordOrientation);
-                    if (next != null) {
-                        selected.uncolorWord(getResources());
-                        selected = next;
-                        next.colorWord(wordOrientation, getResources());
+                    selected.unsetBackground(getResources());
+                    selected.getSquare().setText("");
+                    selected.setCurrentLetter(' ');
+                } else if (primaryCode > 0) {
+                    String currentText = selected.getSquare().getText().toString();
+                    int currChar = currentText.length() == 0 ? -1 : currentText.charAt(0);
+                    switch (currChar) {
+                        case 'Ã':
+                        case 'Á':
+                        case 'À':
+                        case 'Â':
+                            currChar = 'A';
+                            break;
+                        case 'É':
+                        case 'Ê':
+                            currChar = 'E';
+                            break;
+                        case 'Í':
+                            currChar = 'I';
+                            break;
+                        case 'Õ':
+                        case 'Ó':
+                        case 'Ô':
+                            currChar = 'O';
+                            break;
+                        case 'Ú':
+                        case 'Ü':
+                            currChar = 'U';
+                            break;
+                    }
+                    int newChar = primaryCode;
+                    if (currChar != primaryCode && currChar != -1 &&
+                        (isCharacterVowel((char) currChar) && isCharacterAccent((char) primaryCode) ||
+                            (isCharacterVowel((char) primaryCode) && isCharacterAccent((char) currChar)))) {
+                        switch (currChar * primaryCode) {
+                            case 'A' * '~':
+                                newChar = 'Ã';
+                                break;
+                            case 'A' * '´':
+                                newChar = 'Á';
+                                break;
+                            case 'A' * '`':
+                                newChar = 'À';
+                                break;
+                            case 'A' * '^':
+                                newChar = 'Â';
+                                break;
+                            case 'E' * '´':
+                                newChar = 'É';
+                                break;
+                            case 'E' * '^':
+                                newChar = 'Ê';
+                                break;
+                            case 'I' * '´':
+                                newChar = 'Í';
+                                break;
+                            case 'O' * '~':
+                                newChar = 'Õ';
+                                break;
+                            case 'O' * '´':
+                                newChar = 'Ó';
+                                break;
+                            case 'O' * '^':
+                                newChar = 'Ô';
+                                break;
+                            case 'U' * '´':
+                                newChar = 'Ú';
+                                break;
+                            case 'U' * '¨':
+                                newChar = 'Ü';
+                        }
+                    }
+                    selected.getSquare().setText(Character.toString((char) newChar));
+                    selected.setCurrentLetter((char) newChar);
+                    if (!isCharacterAccent((char) newChar)) {
+                        if (checkWordAlwaysItemView.isChecked() && isWordComplete(selected, WordOrientation.ACROSS)) {
+                            checkWord(selected, WordOrientation.ACROSS);
+                        }
+                        if (checkWordAlwaysItemView.isChecked() && isWordComplete(selected, WordOrientation.DOWN)) {
+                            checkWord(selected, WordOrientation.DOWN);
+                        }
+                        CellNode next = selected.getNext(wordOrientation);
+                        if (next != null) {
+                            setSelected(next, wordOrientation);
+
+                        }
                     }
                 }
             }
@@ -277,10 +550,10 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
     private void fillCrossword() {
-        boolean[] nodeHasWord = new boolean[acrossRoots.length + downRoots.length];
-        RootNode[] partiallyCompleteWords = new RootNode[acrossRoots.length + downRoots.length];
-        String[] selectedWords = new String[acrossRoots.length + downRoots.length];
-        int[] filledInCounts = new int[acrossRoots.length + downRoots.length];
+        boolean[] nodeHasWord = new boolean[wordCount];
+        RootNode[] partiallyCompleteWords = new RootNode[wordCount];
+        String[] selectedWords = new String[wordCount];
+        int[] filledInCounts = new int[wordCount];
         Stack<RootNode> selectedNodes = new Stack<>();
 
         Tuple nextToBeSelected = getNextToBeSelected(nodeHasWord, partiallyCompleteWords);
@@ -292,7 +565,7 @@ public class CrosswordActivity extends AppCompatActivity {
             nodeToBeSelectedIndex = nodeToBeSelected.getIndex(wordOrientation);
             if (filledInCounts[nodeToBeSelected.getIndex(wordOrientation)] == 0) {
                 String word = getNextWordFromPriorityList(nodeToBeSelected.getWordLength(wordOrientation), selectedWords);
-                nodeToBeSelected.setWordSolution(wordOrientation, word);
+                nodeToBeSelected.setWordSolution(wordOrientation, word, word);
                 selectedWords[nodeToBeSelectedIndex] = word;
                 nodeHasWord[nodeToBeSelectedIndex] = true;
                 selectedNodes.push(nodeToBeSelected);
@@ -315,40 +588,51 @@ public class CrosswordActivity extends AppCompatActivity {
 
     private void showLetter(CellNode cellNode) {
         cellNode.getSquare().setText(Character.toString(cellNode.getSolutionLetter()));
-    }
-
-    private void showLetter(PuzzleWhiteSquare whiteSquare) {
-        whiteSquare.setText(Character.toString(whiteSquare.cellNode.getSolutionLetter()));
-    }
-
-    private void showLettersOfAdjacentCellNodes(CellNode cellNode, WordOrientation wordOrientation) {
-        CellNode prev = cellNode.getPrev(wordOrientation);
-        while (prev != null) {
-            Log.v("myapp", "" + prev.getSolutionLetter());
-            prev.getSquare().setText(Character.toString(prev.getSolutionLetter()));
-            prev = prev.getPrev(wordOrientation);
+        cellNode.setCurrentLetter(cellNode.getSolutionLetter());
+        if (checkWordAlwaysItemView.isChecked() && isWordComplete(cellNode, WordOrientation.ACROSS)) {
+            checkWord(cellNode, WordOrientation.ACROSS);
         }
-        CellNode next = cellNode.getNext(wordOrientation);
-        while (next != null) {
-            Log.v("myapp", "" + next.getSolutionLetter());
-            next.getSquare().setText(Character.toString(next.getSolutionLetter()));
-            next = next.getNext(wordOrientation);
+        if (checkWordAlwaysItemView.isChecked() && isWordComplete(cellNode, WordOrientation.DOWN)) {
+            checkWord(cellNode, WordOrientation.DOWN);
+        }
+    }
+
+    private void checkLetter() {
+        checkLetter(selected);
+    }
+
+    private void checkLetter(CellNode cellNode) {
+        if (cellNode.getCurrentLetter() == cellNode.getSolutionLetter()) {
+            cellNode.unsetBackground(getResources());
+            cellNode.setBackground(Background.CORRECT, getResources());
+        } else {
+            cellNode.unsetBackground(getResources());
+            cellNode.setBackground(Background.INCORRECT, getResources());
         }
     }
 
     private void showLettersForWord() {
-        showLetter();
-        showLettersOfAdjacentCellNodes(selected, wordOrientation);
+        showLettersForWord(selected, wordOrientation);
     }
 
     private void showLettersForWord(CellNode cellNode, WordOrientation wordOrientation) {
-        showLetter(cellNode);
-        showLettersOfAdjacentCellNodes(cellNode, wordOrientation);
+        CellNode currentCellNode = cellNode.getRoot(wordOrientation);
+        while (currentCellNode != null) {
+            showLetter(currentCellNode);
+            currentCellNode = currentCellNode.getNext(wordOrientation);
+        }
     }
 
-    private void showLettersForWord(PuzzleWhiteSquare whiteSquare, WordOrientation wordOrientation) {
-        showLetter(whiteSquare);
-        showLettersOfAdjacentCellNodes(whiteSquare.cellNode, wordOrientation);
+    private void checkWord() {
+        checkWord(selected, wordOrientation);
+    }
+
+    private void checkWord(CellNode cellNode, WordOrientation wordOrientation) {
+        CellNode currentCellNode = cellNode.getRoot(wordOrientation);
+        while (currentCellNode != null) {
+            checkLetter(currentCellNode);
+            currentCellNode = currentCellNode.getNext(wordOrientation);
+        }
     }
 
     private void showLettersForPuzzle() {
@@ -368,7 +652,7 @@ public class CrosswordActivity extends AppCompatActivity {
 
     private Tuple getRootNode(int index) {
         // if all are selected
-        if (index >= acrossRoots.length + downRoots.length) {
+        if (index >= wordCount) {
             return new Tuple(null, null);
         }
         // if all across are selected, return next down

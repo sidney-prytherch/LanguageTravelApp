@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/blah"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/blah"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
@@ -28,76 +28,87 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-     <LinearLayout
-         android:orientation="vertical"
-         android:layout_width="match_parent"
-         android:layout_height="match_parent">
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="0dp"
-             android:layout_weight="1"
-             android:orientation="horizontal">
-             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:background="#000"
-                 android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:background="#444"
-                 android:layout_weight="1"/>
-             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:background="#666"
-                 android:layout_weight="1"/>
-         </LinearLayout>
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="0dp"
-             android:layout_weight="1"
-             android:orientation="horizontal">
-             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:background="#133"
-                 android:layout_weight="1"/>
-             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:background="#166"
-                 android:layout_weight="1"/>
-             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:background="#199"
-                 android:layout_weight="1"/>
-         </LinearLayout>
-         <LinearLayout
-             android:layout_width="match_parent"
-             android:layout_height="0dp"
-             android:layout_weight="1"
-             android:orientation="horizontal">
-             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:background="#331"
-                 android:layout_weight="1"/>
-             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:background="#441"
-                 android:layout_weight="1"/>
-             <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                 android:layout_width="0dp"
-                 android:layout_height="match_parent"
-                 android:background="#771"
-                 android:layout_weight="1"/>
-         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
-     </LinearLayout>
+            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#000" />
+
+            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#444" />
+
+            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#666" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#133" />
+
+            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#166" />
+
+            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#199" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#331" />
+
+            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#441" />
+
+            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#771" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>

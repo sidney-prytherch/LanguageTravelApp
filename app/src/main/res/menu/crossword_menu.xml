@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.wit.mobileapp.languagetravelapp.CrosswordActivity">
+    <item
+        android:id="@+id/reveal_letter_option"
+        android:orderInCategory="100"
+        android:title="@string/reveal_letter_menu_option"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/reveal_word_option"
+        android:orderInCategory="200"
+        android:title="@string/reveal_word_menu_option"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/reveal_puzzle_option"
+        android:orderInCategory="300"
+        android:title="@string/reveal_puzzle_menu_option"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/check_letter_option"
+        android:orderInCategory="400"
+        android:title="@string/check_letter_menu_option"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/check_word_option"
+        android:orderInCategory="500"
+        android:title="@string/check_word_menu_option"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/check_word_always_option"
+        android:checkable="true"
+        android:orderInCategory="600"
+        android:title="@string/check_word_always_menu_option"
+        app:showAsAction="never" />
+
+</menu>

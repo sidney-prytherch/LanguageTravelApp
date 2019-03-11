@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">LanguageTravelApp</string>
+    <string name="reveal_letter_menu_option">Reveal letter</string>
+    <string name="reveal_word_menu_option">Reveal word</string>
+    <string name="reveal_puzzle_menu_option">Reveal puzzle</string>
+    <string name="check_letter_menu_option">Check Letter</string>
+    <string name="check_word_menu_option">Check Word</string>
+    <string name="check_word_always_menu_option">Check Word Automatically</string>
 </resources>
