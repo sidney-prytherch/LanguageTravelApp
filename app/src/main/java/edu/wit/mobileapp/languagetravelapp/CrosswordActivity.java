@@ -88,18 +88,12 @@ public class CrosswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crossword);
 
-        int[] crosswordFromDB = new int[] {
-            0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,
-            0,1,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,
-            0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,
-            0,0,0,1,0,1,0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,
-            1,0,1,0,0,0,0,1,0,0,0,0,1,1,0,0,0,1,0,0,0,
-            0,0,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,
-            0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,1,
-            0,1,0,1,1,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,
-            0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,
-            0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,0,1,1,1,0,
-            0,0,0,1,0,0,0,0,0,0,0
+        int[] crosswordFromDB = new int[]{
+            0, 0, 0, 1, 0, 0, 0, 0, 0,
+            0, 1, 0, 1, 0, 1, 0, 1, 0,
+            0, 0, 0, 0, 0, 0, 0, 0, 0,
+            0, 1, 0, 1, 0, 1, 1, 1, 0,
+            0, 1, 0, 0, 0
         };
 
 
@@ -246,6 +240,9 @@ public class CrosswordActivity extends AppCompatActivity {
                 int rootNodeIndex = (selected.getRoot(wordOrientation).getIndex(wordOrientation) - 1 + wordCount) % wordCount;
                 Tuple newlySelected = getRootNode(rootNodeIndex);
                 setSelected(newlySelected.rootNode, newlySelected.wordOrientation);
+            } else {
+                Tuple newlySelected = getRootNode(wordCount - 1);
+                setSelected(newlySelected.rootNode, newlySelected.wordOrientation);
             }
         });
 
@@ -256,6 +253,9 @@ public class CrosswordActivity extends AppCompatActivity {
                 int rootNodeIndex = (selected.getRoot(wordOrientation).getIndex(wordOrientation) + 1) % wordCount;
                 Tuple newlySelected = getRootNode(rootNodeIndex);
                 setSelected(newlySelected.rootNode, newlySelected.wordOrientation);
+            } else {
+                Tuple newlySelected = getRootNode(0);
+                setSelected(newlySelected.rootNode, newlySelected.wordOrientation);
             }
         });
 
@@ -263,6 +263,9 @@ public class CrosswordActivity extends AppCompatActivity {
         hintButton.setOnClickListener((View v) -> {
             if (selected != null) {
                 switchWordOrientation();
+            } else {
+                Tuple newlySelected = getRootNode(0);
+                setSelected(newlySelected.rootNode, newlySelected.wordOrientation);
             }
         });
     }
@@ -309,7 +312,9 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
     private void unselectCellNode() {
-        selected.uncolorWord(wordOrientation, getResources());
+        if (selected != null) {
+            selected.uncolorWord(wordOrientation, getResources());
+        }
     }
 
     private void selectCellNode(CellNode newlySelected, WordOrientation newWordOrientation) {
