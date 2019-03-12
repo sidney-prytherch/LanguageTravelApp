@@ -27,5 +27,12 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(HomeActivity.this, WordsearchActivity.class);
             startActivity(intent);
         });
+
+        Button travelButton = findViewById(R.id.travel_button);
+        travelButton.setOnClickListener((View v) -> {
+            Log.v("MyApp", "Travel button is clicked");
+            Intent intent = new Intent(HomeActivity.this, TravelActivity.class);
+            startActivity(intent);
+        });
     }
 }
