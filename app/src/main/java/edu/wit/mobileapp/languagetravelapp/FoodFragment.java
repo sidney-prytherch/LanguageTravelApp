@@ -13,7 +13,7 @@ public class FoodFragment extends Fragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_food, container, false);
+        View view = inflater.inflate(R.layout.travel_fragment_food, container, false);
         // Inflate the layout for this fragment
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(view.getContext(),
                 android.R.layout.simple_list_item_1);
