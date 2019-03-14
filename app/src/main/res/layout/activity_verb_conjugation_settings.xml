@@ -12,10 +12,11 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent=".1"
-        android:text="Button"
+        android:drawableStart="@drawable/dropdown_arrow_down"
         android:onClick="buttonOnClick"
+        android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,8 +24,8 @@
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent=".7"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button">
 
@@ -38,8 +39,9 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="Button"
+        android:drawableStart="@drawable/dropdown_arrow_right"
         android:onClick="buttonOnClick"
+        android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".1"
         app:layout_constraintHorizontal_bias="0.0"
@@ -50,8 +52,8 @@
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2"
         tools:layout_editor_absoluteY="346dp">
@@ -66,8 +68,9 @@
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="Button"
+        android:drawableStart="@drawable/dropdown_arrow_right"
         android:onClick="buttonOnClick"
+        android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".1"
         app:layout_constraintHorizontal_bias="0.0"
@@ -76,16 +79,13 @@
         tools:layout_editor_absoluteY="486dp" />
 
 
-
-
-
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3">
 
