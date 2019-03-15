@@ -26,6 +26,7 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
     private CheckBox[] verbFormsCheckBoxes;
     private CheckBox[] verbTypesCheckBoxes;
     private RadioGroup verbSetRadioGroup;
+    private RadioGroup fullOrIndividualRadioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -97,10 +98,15 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
             findViewById(R.id.irregular_checkbox),
             findViewById(R.id.reflexive_checkbox),
         };
+
+
         setChecked(verbTypesCheckBoxes, new int[]{0, 1, 2, 3});
 
         verbSetRadioGroup = findViewById(R.id.verbSetRadioGroup);
         verbSetRadioGroup.check(R.id.strugglesRadioButton);
+
+        fullOrIndividualRadioGroup = findViewById(R.id.fullOrIndividual);
+        fullOrIndividualRadioGroup.check(R.id.individualConjugation);
 
         SeekBar seekBar = findViewById(R.id.verbFormsSlider);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
