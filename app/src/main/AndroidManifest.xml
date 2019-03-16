@@ -3,15 +3,15 @@
     package="edu.wit.mobileapp.languagetravelapp">
 
     <application
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".WordsearchActivity"></activity>
-        <activity android:name=".TravelActivity"></activity>
+        <activity android:name=".VerbConjugationSettingsActivity"></activity>
+        <activity android:name=".WordsearchActivity" />
+        <activity android:name=".TravelActivity" />
         <activity
             android:name=".CrosswordActivity"
             android:screenOrientation="portrait" />

@@ -34,5 +34,11 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(HomeActivity.this, TravelActivity.class);
             startActivity(intent);
         });
+
+        Button verbConjugationButton = findViewById(R.id.verb_conjugation_button);
+        verbConjugationButton.setOnClickListener((View v) -> {
+            Intent intent = new Intent(HomeActivity.this, VerbConjugationSettingsActivity.class);
+            startActivity(intent);
+        });
     }
 }

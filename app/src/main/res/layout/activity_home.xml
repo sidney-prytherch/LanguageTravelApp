@@ -38,87 +38,17 @@
         android:text="Travel Information"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wordsearch_button" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#000" />
-
-            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#444" />
-
-            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#666" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#133" />
-
-            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#166" />
-
-            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#199" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
-
-            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#331" />
-
-            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#441" />
-
-            <edu.wit.mobileapp.languagetravelapp.PuzzleBlackSquare
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="#771" />
-        </LinearLayout>
-
-    </LinearLayout>
+    <Button
+        android:id="@+id/verb_conjugation_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="Verb Conjugation Practice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/travel_button" />
 
 
 </android.support.constraint.ConstraintLayout>
