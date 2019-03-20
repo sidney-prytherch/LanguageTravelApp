@@ -1,54 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/blah"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    android:orientation="vertical">
 
     <Button
-        android:id="@+id/wordsearch_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_weight="1"
-        android:text="Wordsearch"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/crossword_button" />
-
-    <Button
-        android:id="@+id/crossword_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="Crossword"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
+        android:textSize="22sp"
         android:id="@+id/travel_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="Travel Information"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wordsearch_button" />
+        android:height="0dp"
+        android:onClick="goToTravel"
+        android:text="@string/travel_button" />
 
     <Button
-        android:id="@+id/verb_conjugation_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:textSize="22sp"
+        android:id="@+id/language_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
         android:layout_weight="1"
-        android:text="Verb Conjugation Practice"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/travel_button" />
+        android:height="0dp"
+        android:onClick="goToLanguageHome"
+        android:text="@string/language_button" />
 
+    <Button
+        android:textSize="22sp"
+        android:id="@+id/quick_button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_weight=".5"
+        android:height="0dp"
+        android:onClick="goToUserSelectedScreen"
+        android:text="@string/quick_button" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

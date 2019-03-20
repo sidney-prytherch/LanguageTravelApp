@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerbConjugationActivity">
+
+
+    <ImageButton
+        android:id="@+id/next_verb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/box_simple"
+        android:contentDescription="@string/go_to_next_verb"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/user_verb_response"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/user_verb_response"
+        app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/prev_verb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/box_simple"
+        android:contentDescription="@string/go_to_prev_verb"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/user_verb_response"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/user_verb_response"
+        app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+
+    <EditText
+        android:id="@+id/user_verb_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/box_simple"
+        android:ems="10"
+        android:inputType="textNoSuggestions|textVisiblePassword"
+        android:padding="8dp"
+        android:singleLine="true"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next_verb"
+        app:layout_constraintStart_toEndOf="@+id/prev_verb"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/verb_and_form_to_conjugate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="I am"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        app:layout_constraintBottom_toTopOf="@id/user_verb_response"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TableLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:shrinkColumns="*"
+        app:layout_constraintBottom_toTopOf="@+id/verb_and_form_to_conjugate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_percent=".8">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/verb_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/verb_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+            <TextView
+                android:id="@+id/verb_to_conjugate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Estar"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/verb_form_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/verb_form_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                app:layout_constraintStart_toStartOf="@+id/verb_label"
+                tools:layout_editor_absoluteY="131dp" />
+
+            <TextView
+                android:id="@+id/verb_form_to_conjugate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Present"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/verb_form_label"
+                app:layout_constraintStart_toStartOf="@+id/verb_to_conjugate"
+                app:layout_constraintTop_toTopOf="@+id/verb_form_label" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/person_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/person_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                app:layout_constraintStart_toStartOf="@+id/verb_form_label"
+                tools:layout_editor_absoluteY="200dp" />
+
+            <TextView
+                android:id="@+id/person_to_conjugate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1st"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/person_label"
+                app:layout_constraintStart_toStartOf="@+id/verb_form_to_conjugate"
+                app:layout_constraintTop_toTopOf="@+id/person_label" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/sing_or_plur_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/sing_or_plur_label"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                app:layout_constraintStart_toStartOf="@+id/verb_form_label"
+                tools:layout_editor_absoluteY="200dp" />
+
+            <TextView
+                android:id="@+id/sing_or_plur_to_conjugate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Singular"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="@+id/person_label"
+                app:layout_constraintStart_toStartOf="@+id/verb_form_to_conjugate"
+                app:layout_constraintTop_toTopOf="@+id/person_label" />
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>

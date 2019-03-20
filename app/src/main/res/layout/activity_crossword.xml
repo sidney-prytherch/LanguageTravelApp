@@ -16,7 +16,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintWidth_percent=".84"
+        />
 
     <LinearLayout
         android:id="@+id/crossword_grid2"
@@ -40,7 +41,7 @@
         android:background="@color/colorKeyboardBackground"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        android:keyBackground="@drawable/keyboard_key"
+        android:keyBackground="@drawable/box_clickable"
         android:keyPreviewHeight="0dp"
         android:keyTextColor="@color/colorDefaultBlack"
         android:popupLayout="@layout/popup_characters_keyboard"
@@ -74,7 +75,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="Button"
-        android:textSize="22sp"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="20sp"
         app:layout_constraintStart_toEndOf="@id/previous_word_button"
         app:layout_constraintEnd_toEndOf="@id/next_word_button"
         app:layout_constraintTop_toBottomOf="@id/crossword_grid"

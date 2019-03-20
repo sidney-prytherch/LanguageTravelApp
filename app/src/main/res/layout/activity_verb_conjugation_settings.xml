@@ -38,30 +38,45 @@
                 android:id="@+id/regular_ar_checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+
                 android:text="@string/regular_ar" />
 
             <CheckBox
                 android:id="@+id/regular_er_checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+
                 android:text="@string/regular_er" />
 
             <CheckBox
                 android:id="@+id/regular_ir_checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+
                 android:text="@string/regular_ir" />
 
             <CheckBox
                 android:id="@+id/irregular_checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+
                 android:text="@string/irregular" />
 
             <CheckBox
                 android:id="@+id/reflexive_checkbox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+
                 android:text="@string/reflexive" />
         </LinearLayout>
 
@@ -73,7 +88,7 @@
         android:layout_height="0dp"
         android:drawableStart="@drawable/dropdown_arrow_right"
         android:onClick="buttonOnClick"
-        android:text="@string/select_verb_types"
+        android:text="@string/select_verb_forms"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".1"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,9 +106,10 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:stretchColumns="*">
+            android:stretchColumns="*"
+            android:shrinkColumns="*">
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_margin="5dp"
@@ -104,17 +120,18 @@
 
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <SeekBar
                     android:id="@+id/verbFormsSlider"
                     style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
                     android:layout_span="2"
                     android:max="5"
                     android:progress="0" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_margin="5dp"
@@ -124,40 +141,64 @@
                     android:textSize="18sp" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/presIndCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/present" />
 
                 <CheckBox
                     android:id="@+id/impeIndCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/imperfect" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/pretIndCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/preterite" />
 
                 <CheckBox
                     android:id="@+id/plupIndCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/simple_pluperfect" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/futuIndCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/future" />
 
                 <CheckBox
                     android:id="@+id/condIndCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/conditional" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_margin="5dp"
@@ -167,29 +208,45 @@
                     android:textSize="18sp" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/presPerfCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/present_perfect" />
 
                 <CheckBox
                     android:id="@+id/plupPerfCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/pluperfect" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/futuPerfCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/future_perfect" />
 
                 <CheckBox
                     android:id="@+id/condPerfCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/conditional_perfect" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_margin="5dp"
@@ -199,62 +256,102 @@
                     android:textSize="18sp" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/presProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/present_progressive" />
 
                 <CheckBox
                     android:id="@+id/impeProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/imperfect_progressive" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/pretProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/preterite_progressive" />
 
                 <CheckBox
                     android:id="@+id/simpPlupProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/simple_pluperfect_progressive" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/futuProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/future_progressive" />
 
                 <CheckBox
                     android:id="@+id/condProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/conditional_progressive" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/presPerfProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/present_perfect_progressive" />
 
                 <CheckBox
                     android:id="@+id/plupProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/pluperfect_progressive" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/futuPerfProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/future_perfect_progressive" />
 
                 <CheckBox
                     android:id="@+id/condPerfProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/conditional_perfect_progressive" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_margin="5dp"
@@ -264,40 +361,64 @@
                     android:textSize="18sp" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/presSubjCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/present_subjunctive" />
 
                 <CheckBox
                     android:id="@+id/impeSubjCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/imperfect_subjunctive" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/futuSubjCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/future_subjunctive" />
 
                 <CheckBox
                     android:id="@+id/presPerfSubjCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/present_perfect_subjunctive" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/plupSubjCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/pluperfect_subjunctive" />
 
                 <CheckBox
                     android:id="@+id/futuPerfSubjCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/future_perfect_subjunctive" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_margin="5dp"
@@ -307,25 +428,41 @@
                     android:textSize="18sp" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/pastPartCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/past_participle" />
 
                 <CheckBox
                     android:id="@+id/commandsCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/commands" />
             </TableRow>
 
-            <TableRow>
+            <TableRow android:layout_height="wrap_content">
 
                 <CheckBox
                     android:id="@+id/personalInfinitiveCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/personal_infinitive" />
 
                 <CheckBox
                     android:id="@+id/gerundCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
                     android:text="@string/gerunds" />
             </TableRow>
 

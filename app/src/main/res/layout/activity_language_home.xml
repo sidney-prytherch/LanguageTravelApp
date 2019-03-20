@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/learn_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:minLines="3"
+            android:onClick="goToLearnNew"
+            android:text="@string/learn_button"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/review_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:minLines="3"
+            android:onClick="goToReview"
+            android:text="@string/review_button"
+            android:textSize="18sp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/test_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:minLines="3"
+            android:onClick="goToTest"
+            android:text="@string/test_button"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/verb_conjugation_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:minLines="3"
+            android:onClick="goToVerbConjugation"
+            android:text="@string/verb_conjugations_button"
+            android:textSize="18sp" />
+    </TableRow>
+
+
+    <TableRow
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/crossword_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:minLines="3"
+            android:onClick="goToCrossword"
+            android:text="@string/crossword_button"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/wordsearch_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:minLines="3"
+            android:onClick="goToWordSearch"
+            android:text="@string/wordsearch_button"
+            android:textSize="18sp" />
+    </TableRow>
+
+
+</TableLayout>

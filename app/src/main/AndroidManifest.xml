@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VerbConjugationSettingsActivity"></activity>
+        <activity android:name=".LearnNewVocabSettings"></activity>
+        <activity android:name=".ReviewSettingsActivity" />
+        <activity android:name=".FlashcardActivity" />
+        <activity android:name=".VocabTestSettingsActivity" />
+        <activity android:name=".VocabTestActivity" />
+        <activity android:name=".LanguageHomeActivity" />
+        <activity android:name=".VerbConjugationActivity" />
+        <activity android:name=".VerbConjugationSettingsActivity" />
         <activity android:name=".WordsearchActivity" />
         <activity android:name=".TravelActivity" />
         <activity
