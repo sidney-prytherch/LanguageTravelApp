@@ -13,13 +13,13 @@
     <string name="select_verb_set">Select Verb Set</string>
     <string name="full_or_individual_conjugations">Select Full or Individual Conjugation</string>
     <string name="travel_button">Travel</string>
-    <string name="language_button">Language thing thing thing thing thing</string>
+    <string name="language_button">Language</string>
     <string name="crossword_button">Crossword</string>
     <string name="wordsearch_button">Wordsearch</string>
     <string name="learn_button">Learn Vocab</string>
     <string name="review_button">Review Vocab</string>
     <string name="test_button">Test</string>
-    <string name="verb_conjugations_button">Verb Conjugations and more and even more again</string>
+    <string name="verb_conjugations_button">Verb Conjugations</string>
     <string name="quick_button">Set-up Quick-Access Button</string>
     <string name="empty"></string>
 

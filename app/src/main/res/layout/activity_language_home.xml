@@ -1,92 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
 
-    <TableRow
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
         <Button
+            android:layout_margin="15dp"
             android:id="@+id/learn_button"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:minLines="3"
             android:onClick="goToLearnNew"
             android:text="@string/learn_button"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/review_button"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <Button
+            android:layout_margin="15dp"
             android:id="@+id/review_button"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:minLines="3"
             android:onClick="goToReview"
             android:text="@string/review_button"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/learn_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
-    </TableRow>
+    </android.support.constraint.ConstraintLayout>
 
-    <TableRow
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
         <Button
+            android:layout_margin="15dp"
             android:id="@+id/test_button"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:minLines="3"
             android:onClick="goToTest"
             android:text="@string/test_button"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/verb_conjugation_button"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <Button
+            android:layout_margin="15dp"
             android:id="@+id/verb_conjugation_button"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:minLines="3"
             android:onClick="goToVerbConjugation"
             android:text="@string/verb_conjugations_button"
-            android:textSize="18sp" />
-    </TableRow>
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/test_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
+    </android.support.constraint.ConstraintLayout>
 
-    <TableRow
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
 
         <Button
+            android:layout_margin="15dp"
             android:id="@+id/crossword_button"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:minLines="3"
             android:onClick="goToCrossword"
             android:text="@string/crossword_button"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/wordsearch_button"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
 
         <Button
+            android:layout_margin="15dp"
             android:id="@+id/wordsearch_button"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_weight="1"
-            android:minLines="3"
             android:onClick="goToWordSearch"
             android:text="@string/wordsearch_button"
-            android:textSize="18sp" />
-    </TableRow>
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/crossword_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
+    </android.support.constraint.ConstraintLayout>
 
-</TableLayout>
+</LinearLayout>
