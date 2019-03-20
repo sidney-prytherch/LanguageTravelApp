@@ -5,4 +5,4 @@
     android:keyHeight="9%p"
     android:verticalGap="0px"
     android:keyTextColor="@color/colorDefaultBlack"
-    android:keyBackground="@drawable/keyboard_key"></Keyboard>
+    android:keyBackground="@drawable/box_clickable"></Keyboard>
