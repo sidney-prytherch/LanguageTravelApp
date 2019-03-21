@@ -1,14 +1,19 @@
 package edu.wit.mobileapp.languagetravelapp;
 
+import android.content.Context;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.util.TypedValue;
+import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -88,6 +93,24 @@ public class CrosswordActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crossword);
 
+        Context context = CrosswordActivity.this;
+        crosswordGrid = (LinearLayout) findViewById(R.id.crossword_grid);
+
+
+        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        Display display = wm.getDefaultDisplay();
+        DisplayMetrics metrics = new DisplayMetrics();
+        display.getMetrics(metrics);
+        int width = metrics.widthPixels;
+        int height = metrics.heightPixels;
+
+        double widthToHeightRatio = 1.0 * width / height;
+        ConstraintLayout.LayoutParams params = (ConstraintLayout.LayoutParams) crosswordGrid.getLayoutParams();
+        if (widthToHeightRatio >= 2.9 / 4) {
+            params.matchConstraintPercentWidth = (float) 0.55;
+            crosswordGrid.setLayoutParams(params);
+        }
+
         int[] crosswordFromDB = new int[]{
             0, 0, 0, 1, 0, 0, 0, 0, 0,
             0, 1, 0, 1, 0, 1, 0, 1, 0,
@@ -131,7 +154,6 @@ public class CrosswordActivity extends AppCompatActivity {
             crossword[x][y] = crossword[crosswordDim - 1 - x][crosswordDim - 1 - y] = crosswordFromDB[i];
         }
 
-        crosswordGrid = (LinearLayout) findViewById(R.id.crossword_grid);
         for (int[] crosswordColumn : crossword) {
             LinearLayout row = (LinearLayout) getLayoutInflater().inflate(R.layout.puzzle_table_row, null);
             row.setBackgroundColor(getResources().getColor(R.color.colorDefaultBlack));

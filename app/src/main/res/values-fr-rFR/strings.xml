@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name" translatable="false">Voxiter</string>
     <string name="reveal_letter_menu_option">Reveal letter</string>
@@ -12,28 +13,18 @@
     <string name="continue_to_next_screen">Continue</string>
     <string name="select_verb_set">Select Verb Set</string>
     <string name="full_or_individual_conjugations">Select Full or Individual Conjugation</string>
-    <string name="travel_button">Travel</string>
-    <string name="language_button">Language</string>
-    <string name="crossword_button">Crossword</string>
-    <string name="wordsearch_button">Wordsearch</string>
-    <string name="learn_button">Learn Vocab</string>
-    <string name="review_button">Review Vocab</string>
-    <string name="test_button">Test</string>
-    <string name="verb_conjugations_button">Verb Conjugations</string>
-    <string name="quick_button">Set-up Quick-Access Button</string>
-    <string name="empty"></string>
 
     <!-- Verb Types -->
     <string name="recommended_verb_forms">Recommended Verb Forms</string>
-    <string name="indicative_tenses">Indicative Tenses</string>
+    <string name="indicative_tenses">L\'Indicatif</string>
     <string name="present">Present</string>
-    <string name="imperfect">Imperfect</string>
-    <string name="preterite">Preterite</string>
-    <string name="simple_pluperfect">Simple Pluperfect</string>
-    <string name="future">Future</string>
-    <string name="conditional">Conditional</string>
+    <string name="imperfect">Imparfait</string>
+    <string name="preterite">Passé Simple</string>
+    <string name="simple_pluperfect">Plus-que-parfait</string>
+    <string name="future">Futur</string>
+    <string name="conditional">Le Conditionnel</string>
     <string name="perfect_compound_tenses">Perfect (Compound) Tenses</string>
-    <string name="present_perfect">Present Perfect</string>
+    <string name="present_perfect">Passé Composé</string>
     <string name="pluperfect">Pluperfect</string>
     <string name="future_perfect">Future Perfect</string>
     <string name="conditional_perfect">Conditional Perfect</string>
@@ -48,7 +39,7 @@
     <string name="pluperfect_progressive">Pluperfect Progressive</string>
     <string name="future_perfect_progressive">Future Perfect Progressive</string>
     <string name="conditional_perfect_progressive">Conditional Perfect Progressive</string>
-    <string name="subjuctive">Subjunctive</string>
+    <string name="subjuctive">Le Subjunctif</string>
     <string name="present_subjunctive">Present Subjunctive</string>
     <string name="imperfect_subjunctive">Imperfect Subjunctive</string>
     <string name="future_subjunctive">Future Subjunctive</string>
@@ -56,8 +47,8 @@
     <string name="pluperfect_subjunctive">Pluperfect Subjunctive</string>
     <string name="future_perfect_subjunctive">Future Perfect Subjunctive</string>
     <string name="other_options">Other Options</string>
-    <string name="commands">Commands (Imperatives)</string>
-    <string name="personal_infinitive">Personal Infinitives</string>
+    <string name="commands">L\'Impératif</string>
+    <string name="personal_infinitive">L\'Infinitif</string>
     <string name="gerunds">Gerunds</string>
     <string name="past_participle">Past Participle</string>
     <string name="regular_ar" translatable="false">Regular -ar</string>
@@ -74,12 +65,6 @@
     <string name="all_verbs">All verbs</string>
     <string name="full_conjugation">Full conjugation</string>
     <string name="individual_conjugations">Individual conjugation</string>
-    <string name="verb_label">Verb:</string>
-    <string name="verb_form_label">Verb Form:</string>
-    <string name="person_label">Person:</string>
-    <string name="go_to_next_verb">Go to next verb</string>
-    <string name="go_to_prev_verb">Go to previous verb</string>
-    <string name="sing_or_plur_label">Singular or Plural:</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

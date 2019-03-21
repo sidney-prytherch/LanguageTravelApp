@@ -1,7 +1,6 @@
 package edu.wit.mobileapp.languagetravelapp;
 
 import android.content.res.Resources;
-import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 
 public class CellNode {
@@ -192,25 +191,25 @@ public class CellNode {
             case CORRECT:
                 switch (this.selectionStatus) {
                     case UNSELECTED:
-                        this.setBackground(resources.getDrawable(R.drawable.correct_letter_default));
+                        this.setBackground(resources.getDrawable(R.drawable.cw_correct_letter_default));
                         break;
                     case WORD_SELECTED:
-                        this.setBackground(resources.getDrawable(R.drawable.correct_letter_word_selected));
+                        this.setBackground(resources.getDrawable(R.drawable.cw_correct_letter_word_selected));
                         break;
                     default:
-                        this.setBackground(resources.getDrawable(R.drawable.correct_letter_selected));
+                        this.setBackground(resources.getDrawable(R.drawable.cw_correct_letter_selected));
                 }
                 break;
             default:
                 switch (this.selectionStatus) {
                     case UNSELECTED:
-                        this.setBackground(resources.getDrawable(R.drawable.incorrect_letter_default));
+                        this.setBackground(resources.getDrawable(R.drawable.cw_incorrect_letter_default));
                         break;
                     case WORD_SELECTED:
-                        this.setBackground(resources.getDrawable(R.drawable.incorrect_letter_word_selected));
+                        this.setBackground(resources.getDrawable(R.drawable.cw_incorrect_letter_word_selected));
                         break;
                     default:
-                        this.setBackground(resources.getDrawable(R.drawable.incorrect_letter_selected));
+                        this.setBackground(resources.getDrawable(R.drawable.cw_incorrect_letter_selected));
                 }
         }
     }
