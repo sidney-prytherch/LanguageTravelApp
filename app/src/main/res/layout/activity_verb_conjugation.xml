@@ -15,6 +15,7 @@
         android:background="@drawable/box_simple"
         android:contentDescription="@string/go_to_next_verb"
         android:scaleType="fitXY"
+        android:onClick="nextVerb"
         app:layout_constraintBottom_toBottomOf="@+id/user_verb_response"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,6 +43,7 @@
         android:layout_margin="8dp"
         android:background="@drawable/box_simple"
         android:ems="10"
+        android:fontFamily="@font/berkshire_swash"
         android:inputType="textNoSuggestions|textVisiblePassword"
         android:padding="8dp"
         android:singleLine="true"
@@ -100,7 +102,6 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Estar"
-                android:textColor="@android:color/black"
                 android:textSize="20sp" />
 
         </TableRow>
@@ -128,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Present"
-                android:textColor="@android:color/black"
+                 
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="@+id/verb_form_label"
                 app:layout_constraintStart_toStartOf="@+id/verb_to_conjugate"
@@ -157,8 +158,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/henny_penny"
                 android:text="1st"
-                android:textColor="@android:color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="@+id/person_label"
                 app:layout_constraintStart_toStartOf="@+id/verb_form_to_conjugate"
@@ -187,8 +188,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+
                 android:text="Singular"
-                android:textColor="@android:color/black"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="@+id/person_label"
                 app:layout_constraintStart_toStartOf="@+id/verb_form_to_conjugate"

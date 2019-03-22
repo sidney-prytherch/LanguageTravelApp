@@ -6,7 +6,10 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="actionBarSize"></item>
+        <item name="android:textColor">@color/colorPuzzleWhiteSquareDefault</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:fontFamily">@font/henny_penny</item>
+        <item name="buttonStyle">@style/Widget.AppCompat.Button.Colored</item>
     </style>
 
 </resources>
