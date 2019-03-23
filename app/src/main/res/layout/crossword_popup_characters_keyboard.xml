@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorKeyboardBackground"
         android:keyBackground="@drawable/box_clickable"
+        android:shadowColor="@android:color/transparent"
         android:keyPreviewHeight="0dp"
         android:keyTextColor="@color/colorDefaultBlack"
         tools:ignore="ResourceCycle" />

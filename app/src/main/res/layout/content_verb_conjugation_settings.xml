@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".VerbConjugationSettingsActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/drawer_app_bar_verb_conjugation_settings">
+
+    <Button
+        android:id="@+id/verbTypesTabButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawableStart="@drawable/dropdown_arrow_down"
+        android:onClick="buttonOnClick"
+        android:text="@string/select_verb_types"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/verbTypesScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verbTypesTabButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/regular_ar_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+
+                android:text="@string/regular_ar" />
+
+            <CheckBox
+                android:id="@+id/regular_er_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+
+                android:text="@string/regular_er" />
+
+            <CheckBox
+                android:id="@+id/regular_ir_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+
+                android:text="@string/regular_ir" />
+
+            <CheckBox
+                android:id="@+id/irregular_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+
+                android:text="@string/irregular" />
+
+            <CheckBox
+                android:id="@+id/reflexive_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+
+                android:text="@string/reflexive" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/verbFormsTabButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawableStart="@drawable/dropdown_arrow_right"
+        android:onClick="buttonOnClick"
+        android:text="@string/select_verb_forms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verbTypesScrollView" />
+
+    <ScrollView
+        android:id="@+id/verbFormsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verbFormsTabButton">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:shrinkColumns="*">
+
+            <TableRow android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:text="@string/recommended_verb_forms"
+                    android:textColor="@color/colorDefaultBlack"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <SeekBar
+                    android:id="@+id/verbFormsSlider"
+                    style="@style/Widget.AppCompat.SeekBar.Discrete"
+                    android:layout_width="match_parent"
+                    android:layout_span="2"
+                    android:max="5"
+                    android:progress="0" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:text="@string/indicative_tenses"
+                    android:textColor="@color/colorDefaultBlack"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/presIndCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/present" />
+
+                <CheckBox
+                    android:id="@+id/impeIndCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/imperfect" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/pretIndCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/preterite" />
+
+                <CheckBox
+                    android:id="@+id/plupIndCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/simple_pluperfect" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/futuIndCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/future" />
+
+                <CheckBox
+                    android:id="@+id/condIndCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/conditional" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:text="@string/perfect_compound_tenses"
+                    android:textColor="@color/colorDefaultBlack"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/presPerfCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/present_perfect" />
+
+                <CheckBox
+                    android:id="@+id/plupPerfCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/pluperfect" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/futuPerfCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/future_perfect" />
+
+                <CheckBox
+                    android:id="@+id/condPerfCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/conditional_perfect" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:text="@string/progressive_tenses"
+                    android:textColor="@color/colorDefaultBlack"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/presProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/present_progressive" />
+
+                <CheckBox
+                    android:id="@+id/impeProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/imperfect_progressive" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/pretProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/preterite_progressive" />
+
+                <CheckBox
+                    android:id="@+id/simpPlupProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/simple_pluperfect_progressive" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/futuProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/future_progressive" />
+
+                <CheckBox
+                    android:id="@+id/condProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/conditional_progressive" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/presPerfProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/present_perfect_progressive" />
+
+                <CheckBox
+                    android:id="@+id/plupProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/pluperfect_progressive" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/futuPerfProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/future_perfect_progressive" />
+
+                <CheckBox
+                    android:id="@+id/condPerfProgCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/conditional_perfect_progressive" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:text="@string/subjuctive"
+                    android:textColor="@color/colorDefaultBlack"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/presSubjCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/present_subjunctive" />
+
+                <CheckBox
+                    android:id="@+id/impeSubjCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/imperfect_subjunctive" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/futuSubjCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/future_subjunctive" />
+
+                <CheckBox
+                    android:id="@+id/presPerfSubjCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/present_perfect_subjunctive" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/plupSubjCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/pluperfect_subjunctive" />
+
+                <CheckBox
+                    android:id="@+id/futuPerfSubjCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/future_perfect_subjunctive" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:text="@string/other_options"
+                    android:textColor="@color/colorDefaultBlack"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/pastPartCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/past_participle" />
+
+                <CheckBox
+                    android:id="@+id/commandsCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/commands" />
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/personalInfinitiveCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/personal_infinitive" />
+
+                <CheckBox
+                    android:id="@+id/gerundCheckbox"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+
+
+                    android:text="@string/gerunds" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/verbSetTabButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:drawableStart="@drawable/dropdown_arrow_right"
+        android:onClick="buttonOnClick"
+        android:text="@string/other_settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verbFormsScrollView" />
+
+    <ScrollView
+        android:id="@+id/verbSetScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verbSetTabButton">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/select_verb_set"
+                android:textColor="@color/colorDefaultBlack"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/verbSetRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/strugglesRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/biggest_struggles" />
+
+                <RadioButton
+                    android:id="@+id/common10RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ten_most_common" />
+
+                <RadioButton
+                    android:id="@+id/common20RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/twenty_most_common" />
+
+                <RadioButton
+                    android:id="@+id/common50RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fifty_most_common" />
+
+                <RadioButton
+                    android:id="@+id/common100RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hundred_most_common" />
+
+                <RadioButton
+                    android:id="@+id/allStudiedRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_seen" />
+
+                <RadioButton
+                    android:id="@+id/allVerbsRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_verbs" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/full_or_individual_conjugations"
+                android:textColor="@color/colorDefaultBlack"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/fullOrIndividual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/individualConjugation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/individual_conjugations" />
+
+                <RadioButton
+                    android:id="@+id/fullConjugation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/full_conjugation" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        android:onClick="continueToVerbPractice"
+        android:text="@string/continue_to_next_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verbSetScrollView" />
+</android.support.constraint.ConstraintLayout>

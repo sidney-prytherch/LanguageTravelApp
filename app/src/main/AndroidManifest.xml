@@ -3,27 +3,29 @@
     package="edu.wit.mobileapp.languagetravelapp">
 
     <application
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".LearnNewVocabSettings" ></activity>
-        <activity android:name=".ReviewSettingsActivity" />
-        <activity android:name=".FlashcardActivity" />
-        <activity android:name=".VocabTestSettingsActivity" />
-        <activity android:name=".VocabTestActivity" />
-        <activity android:name=".LanguageHomeActivity" />
-        <activity android:name=".VerbConjugationActivity" />
-        <activity android:name=".VerbConjugationSettingsActivity" />
-        <activity android:name=".WordsearchActivity" />
-        <activity android:name=".TravelActivity" />
+        android:theme="@style/AppTheme.NoActionBar"
+          >
+        <activity android:name=".LearnNewVocabSettingsActivity"   />
+        <activity android:name=".ReviewSettingsActivity"   />
         <activity
-            android:name=".CrosswordActivity"
+            android:name=".FlashcardActivity"
+              />
+        <activity android:name=".VocabTestSettingsActivity"   />
+        <activity android:name=".VocabTestActivity"   />
+        <activity android:name=".LanguageHomeActivity"   />
+        <activity android:name=".VerbConjugationActivity"   />
+        <activity android:name=".VerbConjugationSettingsActivity"   />
+        <activity android:name=".WordsearchActivity"   />
+        <activity android:name=".TravelActivity"   />
+        <activity
+            android:name=".CrosswordActivity"   
             android:screenOrientation="portrait" />
-        <activity android:name=".HomeActivity">
+        <activity android:name=".HomeActivity"   >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

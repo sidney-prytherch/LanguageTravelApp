@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CrosswordActivity"
+    tools:showIn="@layout/drawer_app_bar_crossword">
+
+    <LinearLayout
+        android:id="@+id/crossword_grid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDefaultBlack"
+        android:orientation="vertical"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".84"
+        />
+
+    <LinearLayout
+        android:id="@+id/crossword_grid2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorCrosswordNumberBackground"
+        android:orientation="vertical"
+        android:padding="2dp"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="@id/crossword_grid"
+        app:layout_constraintStart_toStartOf="@id/crossword_grid"
+        app:layout_constraintTop_toTopOf="@id/crossword_grid"
+        app:layout_constraintBottom_toBottomOf="@id/crossword_grid" />
+
+    <android.inputmethodservice.KeyboardView
+        android:id="@+id/crossword_keyboard_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorKeyboardBackground"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@drawable/box_clickable"
+        android:keyPreviewHeight="0dp"
+        android:keyTextColor="@color/colorDefaultBlack"
+        android:popupLayout="@layout/crossword_popup_characters_keyboard"
+        android:shadowColor="@android:color/transparent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/previous_word_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_chevron_left_black_24dp"
+        app:layout_constraintEnd_toStartOf="@id/hint_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/crossword_grid"
+        app:layout_constraintBottom_toTopOf="@id/crossword_keyboard_view"/>
+
+    <ImageButton
+        android:id="@+id/next_word_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_chevron_right_black_24dp"
+        app:layout_constraintStart_toEndOf="@id/hint_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/crossword_grid"
+        app:layout_constraintBottom_toTopOf="@id/crossword_keyboard_view"/>
+
+    <Button
+        android:id="@+id/hint_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Button"
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/previous_word_button"
+        app:layout_constraintEnd_toEndOf="@id/next_word_button"
+        app:layout_constraintTop_toBottomOf="@id/crossword_grid"
+        app:layout_constraintBottom_toTopOf="@id/crossword_keyboard_view"
+        app:layout_constraintWidth_percent="0.8"/>
+
+
+</android.support.constraint.ConstraintLayout>
