@@ -1,47 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
-    <Button
-        android:textSize="22sp"
-        android:id="@+id/travel_button"
+    <include
+        layout="@layout/drawer_app_bar_home"
         android:layout_width="match_parent"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:height="0dp"
-        android:onClick="goToTravel"
-        android:text="@string/travel_button" />
+        android:layout_height="match_parent" />
 
-    <Button
-        android:textSize="22sp"
-        android:id="@+id/language_button"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_weight="1"
-        android:height="0dp"
-        android:onClick="goToLanguageHome"
-        android:text="@string/language_button" />
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu" />
 
-    <Button
-        android:textSize="22sp"
-        android:id="@+id/quick_button"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_weight=".5"
-        android:height="0dp"
-        android:onClick="goToUserSelectedScreen"
-        android:text="@string/quick_button" />
-
-</LinearLayout>
+</android.support.v4.widget.DrawerLayout>
