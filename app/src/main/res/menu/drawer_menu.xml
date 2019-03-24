@@ -34,11 +34,11 @@
                 android:title="@string/verb_conjugations_button" />
             <item
                 android:id="@+id/nav_crossword"
-                android:icon="@drawable/ic_crossword_tilt"
+                android:icon="@drawable/ic_crossword"
                 android:title="@string/crossword_button" />
             <item
                 android:id="@+id/nav_wordsearch"
-                android:icon="@drawable/ic_wordsearch_tilt"
+                android:icon="@drawable/ic_wordsearch"
                 android:title="@string/wordsearch_button" />
         </menu>
     </item>
