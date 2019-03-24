@@ -5,33 +5,41 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home_button" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_travel"
+            android:icon="@drawable/ic_travel"
+            android:title="@string/travel_button" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_language"
+            android:icon="@drawable/ic_language"
+            android:title="@string/language_button" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings_button" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/language_button">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+                android:id="@+id/nav_learn_and_review"
+                android:icon="@drawable/ic_learn_and_review"
+                android:title="@string/learn_and_review_button" />
             <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_conjugation_practice"
+                android:icon="@drawable/ic_conjugation_practice"
+                android:title="@string/verb_conjugations_button" />
+            <item
+                android:id="@+id/nav_crossword"
+                android:icon="@drawable/ic_crossword_tilt"
+                android:title="@string/crossword_button" />
+            <item
+                android:id="@+id/nav_wordsearch"
+                android:icon="@drawable/ic_wordsearch_tilt"
+                android:title="@string/wordsearch_button" />
         </menu>
     </item>
 

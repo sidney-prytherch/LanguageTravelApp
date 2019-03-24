@@ -3,50 +3,108 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="15dp"
     android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".HomeActivity"
     tools:showIn="@layout/drawer_app_bar_home">
 
-    <Button
-        android:textSize="22sp"
+    <android.support.constraint.ConstraintLayout
+        android:layout_margin="15dp"
+        android:orientation="vertical"
         android:id="@+id/travel_button"
-        android:layout_width="match_parent"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:height="0dp"
+        android:clickable="true"
+        android:focusable="true"
         android:onClick="goToTravel"
-        android:text="@string/travel_button" />
-
-    <Button
-        android:textSize="22sp"
-        android:id="@+id/language_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="50dp"
         android:layout_weight="1"
         android:height="0dp"
-        android:onClick="goToLanguageHome"
-        android:text="@string/language_button" />
+        android:background="@drawable/button_background">
 
-    <Button
+        <TextView
+            android:textColor="@color/colorDefaultBlack"
+            android:id="@+id/travel_tag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/travel_button"
+            android:textSize="22sp"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/travel_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/travel_icon"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_travel"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:id="@+id/language_button"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="goToLanguageHome"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:height="0dp"
+        android:background="@drawable/button_background">
+
+        <TextView
+            android:textColor="@color/colorDefaultBlack"
+            android:id="@+id/language_tag"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/language_button"
+            android:textSize="22sp"
+            android:clickable="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/language_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/language_icon"
+            android:layout_width="0dp"
+            android:layout_margin="10dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_language"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:textColor="@color/colorDefaultBlack"
+        android:layout_margin="15dp"
         android:textSize="22sp"
         android:id="@+id/quick_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginBottom="50dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginStart="30dp"
+        android:padding="0dp"
+        android:gravity="center"
         android:layout_weight=".5"
         android:height="0dp"
+        android:clickable="true"
+        android:focusable="true"
         android:onClick="goToUserSelectedScreen"
-        android:text="@string/quick_button" />
+        android:text="@string/quick_button"
+        android:background="@drawable/button_background"/>
 
 </LinearLayout>

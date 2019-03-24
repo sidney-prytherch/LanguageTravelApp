@@ -6,6 +6,7 @@
     <color name="colorPrimary">#4DB6AC</color>
     <color name="colorPrimaryDark">#009688</color>
     <color name="colorAccent">#3F51B5</color>
+    <color name="colorAccentDark">#273788</color>
     <color name="background">#DDD</color>
     <color name="colorKeyboardBackground">#DDD</color>
     <color name="colorKeyboardKey">#FFF</color>
