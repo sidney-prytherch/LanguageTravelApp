@@ -31,6 +31,7 @@ public class WordsearchActivity extends AppCompatActivity {
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
+        navigationView.getMenu().getItem(6).setChecked(true);
 
         char[][] wordsearch = new char[][]{
             {'I', 'I', 'W', 'I', 'W', 'W', 'W', 'W', 'W'},
