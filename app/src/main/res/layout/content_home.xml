@@ -24,29 +24,31 @@
         android:background="@drawable/button_background">
 
         <TextView
-            android:textColor="@color/colorDefaultBlack"
             android:id="@+id/travel_tag"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:clickable="false"
             android:gravity="center"
             android:text="@string/travel_button"
+            android:textColor="@color/background"
             android:textSize="22sp"
-            android:clickable="false"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/travel_icon"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toStartOf="@id/travel_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/travel_icon"
             android:layout_width="0dp"
             android:layout_margin="10dp"
+            android:padding="15dp"
             android:layout_height="match_parent"
             android:src="@drawable/ic_travel_big"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
+            android:tint="@color/background"
             />
     </android.support.constraint.ConstraintLayout>
 
@@ -64,22 +66,23 @@
         android:background="@drawable/button_background">
 
         <TextView
-            android:textColor="@color/colorDefaultBlack"
             android:id="@+id/language_tag"
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:clickable="false"
             android:gravity="center"
             android:text="@string/language_button"
+            android:textColor="@color/background"
             android:textSize="22sp"
-            android:clickable="false"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/language_icon"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            />
+            app:layout_constraintEnd_toStartOf="@id/language_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/language_icon"
             android:layout_width="0dp"
+            android:padding="15dp"
             android:layout_margin="10dp"
             android:layout_height="match_parent"
             android:src="@drawable/ic_language_big"
@@ -87,24 +90,26 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
+            android:tint="@color/background"
             />
     </android.support.constraint.ConstraintLayout>
 
     <TextView
-        android:textColor="@color/colorDefaultBlack"
-        android:layout_margin="15dp"
-        android:textSize="22sp"
         android:id="@+id/quick_button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:padding="0dp"
-        android:gravity="center"
+        android:layout_margin="15dp"
         android:layout_weight=".5"
         android:height="0dp"
+        android:background="@drawable/button_background"
         android:clickable="true"
         android:focusable="true"
+        android:gravity="center"
         android:onClick="goToUserSelectedScreen"
+        android:padding="0dp"
         android:text="@string/quick_button"
-        android:background="@drawable/button_background"/>
+        android:textColor="@color/background"
+        android:textSize="22sp"
+        android:textStyle="bold" />
 
 </LinearLayout>

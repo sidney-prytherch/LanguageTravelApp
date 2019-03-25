@@ -14,13 +14,18 @@
         android:id="@+id/verbTypesTabButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:onClick="onButtonClick"
+        android:drawablePadding="8dp"
+        android:drawableTint="@color/colorPuzzleWhiteSquareDefault"
         android:drawableStart="@drawable/dropdown_arrow_down"
         android:text="@string/select_verb_types"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/button_background_solid"/>
 
     <ScrollView
         android:id="@+id/verbTypesScrollView"
@@ -89,12 +94,16 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:onClick="onButtonClick"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:drawableTint="@color/colorPuzzleWhiteSquareDefault"
         android:drawableStart="@drawable/dropdown_arrow_right"
         android:text="@string/select_verb_forms"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/verbTypesScrollView" />
+        app:layout_constraintTop_toBottomOf="@id/verbTypesScrollView"
+        android:background="@drawable/button_background_solid"/>
 
     <ViewStub
         android:id="@+id/verbFormsScrollView"
@@ -113,13 +122,17 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:onClick="onButtonClick"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:drawableTint="@color/colorPuzzleWhiteSquareDefault"
         android:drawableStart="@drawable/dropdown_arrow_right"
         android:text="@string/other_settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".1"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/verbFormsScrollView" />
+        app:layout_constraintTop_toBottomOf="@+id/verbFormsScrollView"
+        android:background="@drawable/button_background_solid"/>
 
 
     <ViewStub
@@ -137,7 +150,8 @@
         android:id="@+id/continueButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/colorPrimary"
+
+        android:background="@drawable/button_background_dark"
         android:onClick="onButtonClickSpecial"
         android:text="@string/continue_to_next_screen"
         app:layout_constraintEnd_toEndOf="parent"
