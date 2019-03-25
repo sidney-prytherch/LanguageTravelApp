@@ -8,18 +8,18 @@
             android:strokeColor="#00000000" android:strokeLineCap="square"/>
         <path android:fillAlpha="0.0" android:fillColor="#000000"
             android:fillType="evenOdd"
-            android:pathData="m40.70341 40.199474l345.16537 0l0 346.17325l-345.16537 0z"
+            android:pathData="m75.2231 74.81365l276.12598 0l0 276.9449l-276.12598 0z"
             android:strokeColor="#00000000" android:strokeLineCap="square"/>
         <path android:fillColor="#00000000" android:fillType="evenOdd"
-            android:pathData="m40.70341 40.199474l345.16537 0l0 346.17325l-345.16537 0z"
+            android:pathData="m75.2231 74.81365l276.12598 0l0 276.9449l-276.12598 0z"
             android:strokeColor="#000000" android:strokeLineCap="butt"
             android:strokeLineJoin="round" android:strokeWidth="24.0"/>
         <path android:fillAlpha="0.0" android:fillColor="#000000"
             android:fillType="evenOdd"
-            android:pathData="m98.979004 94.71654l117.96886 237.1378l110.646255 -237.1378"
+            android:pathData="m121.84357 118.4273l94.36893 189.71024l88.51126 -189.71024"
             android:strokeColor="#00000000" android:strokeLineCap="square"/>
         <path android:fillColor="#00000000" android:fillType="evenOdd"
-            android:pathData="m98.979004 94.71654l117.96886 237.1378l110.646255 -237.1378"
+            android:pathData="m121.84357 118.4273l94.36893 189.71024l88.51126 -189.71024"
             android:strokeColor="#000000" android:strokeLineCap="butt"
             android:strokeLineJoin="round" android:strokeWidth="24.0"/>
     </group>

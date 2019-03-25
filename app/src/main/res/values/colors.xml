@@ -3,10 +3,10 @@
     <!--<color name="colorPrimary">#008577</color>-->
     <!--<color name="colorPrimaryDark">#00574B</color>-->
     <!--<color name="colorAccent">#D81B60</color>-->
-    <color name="colorPrimary">#4DB6AC</color>
-    <color name="colorPrimaryDark">#009688</color>
-    <color name="colorAccent">#3F51B5</color>
-    <color name="colorAccentDark">#273788</color>
+    <color name="colorPrimary">#779ECB</color>
+    <color name="colorPrimaryDark">#6B8FBB</color>
+    <color name="colorAccent">#779ECB</color>
+    <color name="colorAccentDark">#6B8FBB</color>
     <color name="background">#DDD</color>
     <color name="colorKeyboardBackground">#DDD</color>
     <color name="colorKeyboardKey">#FFF</color>

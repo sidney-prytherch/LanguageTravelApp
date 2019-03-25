@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent"
     android:id="@+id/verbFormsScrollView"
-
-    >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="*"
-        android:shrinkColumns="*">
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
 
         <TableRow android:layout_height="wrap_content">
 
@@ -25,6 +24,8 @@
         <TableRow android:layout_height="wrap_content">
 
             <SeekBar
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
                 android:id="@+id/verbFormsSlider"
                 style="@style/Widget.AppCompat.SeekBar.Discrete"
                 android:layout_width="match_parent"
