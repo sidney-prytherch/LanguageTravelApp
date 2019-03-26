@@ -3,7 +3,7 @@
     <item>
         <shape android:shape="rectangle" >
             <solid android:color="@color/colorPuzzleWhiteSquareSelected" />
-            <stroke android:width="5dp" android:color="@color/colorCrosswordCorrectLetter"></stroke>
+            <stroke android:width="5dp" android:color="@color/colorCrosswordCorrectLetter"/>
         </shape>
     </item>
 </selector>

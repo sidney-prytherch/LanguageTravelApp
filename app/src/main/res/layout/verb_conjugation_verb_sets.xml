@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/verbSetScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/select_verb_set"
+            android:textColor="@color/colorDefaultBlack"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/verbSetRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/strugglesRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/biggest_struggles" />
+
+            <RadioButton
+                android:id="@+id/common10RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ten_most_common" />
+
+            <RadioButton
+                android:id="@+id/common20RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/twenty_most_common" />
+
+            <RadioButton
+                android:id="@+id/common50RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fifty_most_common" />
+
+            <RadioButton
+                android:id="@+id/common100RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hundred_most_common" />
+
+            <RadioButton
+                android:id="@+id/allStudiedRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/all_seen" />
+
+            <RadioButton
+                android:id="@+id/allVerbsRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/all_verbs" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/full_or_individual_conjugations"
+            android:textColor="@color/colorDefaultBlack"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/fullOrIndividual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/individualConjugation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/individual_conjugations" />
+
+            <RadioButton
+                android:id="@+id/fullConjugation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/full_conjugation" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+</ScrollView>

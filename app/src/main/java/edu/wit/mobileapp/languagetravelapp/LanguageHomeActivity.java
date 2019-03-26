@@ -1,6 +1,7 @@
 package edu.wit.mobileapp.languagetravelapp;
 
 import android.content.Intent;
+import android.graphics.PorterDuff;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -9,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
 
 public class LanguageHomeActivity extends AppCompatActivity {
 
@@ -16,6 +18,8 @@ public class LanguageHomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_language_home);
+
+        //((ImageView) findViewById(R.id.crossword_icon)).setColorFilter(getResources().getColor(R.color.background), PorterDuff.Mode.SRC_ATOP);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -27,7 +31,8 @@ public class LanguageHomeActivity extends AppCompatActivity {
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer));
+        navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
+        navigationView.getMenu().getItem(2).setChecked(true);
     }
 
     @Override
@@ -45,15 +50,15 @@ public class LanguageHomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goToReview(View view) {
-        Intent intent = new Intent(LanguageHomeActivity.this, ReviewSettingsActivity.class);
-        startActivity(intent);
-    }
-
-    public void goToTest(View view) {
-        Intent intent = new Intent(LanguageHomeActivity.this, VocabTestSettingsActivity.class);
-        startActivity(intent);
-    }
+//    public void goToReview(View view) {
+//        Intent intent = new Intent(LanguageHomeActivity.this, ReviewSettingsActivity.class);
+//        startActivity(intent);
+//    }
+//
+//    public void goToTest(View view) {
+//        Intent intent = new Intent(LanguageHomeActivity.this, VocabTestSettingsActivity.class);
+//        startActivity(intent);
+//    }
 
     public void goToVerbConjugation(View view) {
         Intent intent = new Intent(LanguageHomeActivity.this, VerbConjugationSettingsActivity.class);

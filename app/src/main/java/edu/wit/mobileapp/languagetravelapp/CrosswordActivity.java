@@ -108,7 +108,8 @@ public class CrosswordActivity extends AppCompatActivity {
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer));
+        navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
+        navigationView.getMenu().getItem(5).setChecked(true);
 
         Context context = CrosswordActivity.this;
         crosswordGrid = (LinearLayout) findViewById(R.id.crossword_grid);

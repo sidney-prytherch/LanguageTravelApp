@@ -49,22 +49,13 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer));
+        navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
+        navigationView.getMenu().getItem(4).setChecked(true);
 
         ((ViewGroup) findViewById(R.id.constraintLayout)).getLayoutTransition()
             .enableTransitionType(LayoutTransition.CHANGING);
 
-        scrollViews = new ScrollView[]{
-            findViewById(R.id.verbTypesScrollView),
-            findViewById(R.id.verbFormsScrollView),
-            findViewById(R.id.verbSetScrollView),
-        };
 
-        scrollViewLayoutParams = new ConstraintLayout.LayoutParams[]{
-            (ConstraintLayout.LayoutParams) scrollViews[0].getLayoutParams(),
-            (ConstraintLayout.LayoutParams) scrollViews[1].getLayoutParams(),
-            (ConstraintLayout.LayoutParams) scrollViews[2].getLayoutParams()
-        };
 
         buttons = new Button[]{
             findViewById(R.id.verbTypesTabButton),
@@ -74,42 +65,6 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
 
         selectedButtonId = buttons[0].getId();
 
-        verbFormsCheckBoxes = new CheckBox[]{
-            findViewById(R.id.presIndCheckbox),
-            findViewById(R.id.impeIndCheckbox),
-            findViewById(R.id.pretIndCheckbox),
-            findViewById(R.id.plupIndCheckbox),
-            findViewById(R.id.futuIndCheckbox),
-            findViewById(R.id.condIndCheckbox),
-
-            findViewById(R.id.presPerfCheckbox),
-            findViewById(R.id.plupPerfCheckbox),
-            findViewById(R.id.futuPerfCheckbox),
-            findViewById(R.id.condPerfCheckbox),
-
-            findViewById(R.id.presProgCheckbox),
-            findViewById(R.id.impeProgCheckbox),
-            findViewById(R.id.pretProgCheckbox),
-            findViewById(R.id.simpPlupProgCheckbox),
-            findViewById(R.id.futuProgCheckbox),
-            findViewById(R.id.condProgCheckbox),
-            findViewById(R.id.presPerfProgCheckbox),
-            findViewById(R.id.plupProgCheckbox),
-            findViewById(R.id.futuPerfProgCheckbox),
-
-            findViewById(R.id.presSubjCheckbox),
-            findViewById(R.id.impeSubjCheckbox),
-            findViewById(R.id.futuSubjCheckbox),
-            findViewById(R.id.presPerfSubjCheckbox),
-            findViewById(R.id.plupSubjCheckbox),
-            findViewById(R.id.futuPerfSubjCheckbox),
-
-            findViewById(R.id.pastPartCheckbox),
-            findViewById(R.id.commandsCheckbox),
-            findViewById(R.id.personalInfinitiveCheckbox),
-            findViewById(R.id.gerundCheckbox),
-        };
-
         verbTypesCheckBoxes = new CheckBox[] {
             findViewById(R.id.regular_ar_checkbox),
             findViewById(R.id.regular_er_checkbox),
@@ -118,15 +73,66 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
             findViewById(R.id.reflexive_checkbox),
         };
 
-
         setChecked(verbTypesCheckBoxes, new int[]{0, 1, 2, 3});
 
-        verbSetRadioGroup = findViewById(R.id.verbSetRadioGroup);
-        verbSetRadioGroup.check(R.id.strugglesRadioButton);
+    }
 
-        fullOrIndividualRadioGroup = findViewById(R.id.fullOrIndividual);
-        fullOrIndividualRadioGroup.check(R.id.individualConjugation);
+    public void onButtonClickSpecial(View view) {
+        onButtonClick(buttons[0]);
+        continueToVerbPractice(view);
+    }
 
+    public void onButtonClick(View view) {
+        findViewById(R.id.verbFormsScrollView).setVisibility(View.VISIBLE);
+        findViewById(R.id.verbSetScrollView).setVisibility(View.VISIBLE);
+
+        scrollViews = new ScrollView[] {
+                findViewById(R.id.verbTypesScrollView),
+                findViewById(R.id.verbFormsScrollView),
+                findViewById(R.id.verbSetScrollView),
+        };
+
+        scrollViewLayoutParams = new ConstraintLayout.LayoutParams[]{
+                (ConstraintLayout.LayoutParams) scrollViews[0].getLayoutParams(),
+                (ConstraintLayout.LayoutParams) scrollViews[1].getLayoutParams(),
+                (ConstraintLayout.LayoutParams) scrollViews[2].getLayoutParams()
+        };
+
+        verbFormsCheckBoxes = new CheckBox[]{
+                findViewById(R.id.presIndCheckbox),
+                findViewById(R.id.impeIndCheckbox),
+                findViewById(R.id.pretIndCheckbox),
+                findViewById(R.id.plupIndCheckbox),
+                findViewById(R.id.futuIndCheckbox),
+                findViewById(R.id.condIndCheckbox),
+
+                findViewById(R.id.presPerfCheckbox),
+                findViewById(R.id.plupPerfCheckbox),
+                findViewById(R.id.futuPerfCheckbox),
+                findViewById(R.id.condPerfCheckbox),
+
+                findViewById(R.id.presProgCheckbox),
+                findViewById(R.id.impeProgCheckbox),
+                findViewById(R.id.pretProgCheckbox),
+                findViewById(R.id.simpPlupProgCheckbox),
+                findViewById(R.id.futuProgCheckbox),
+                findViewById(R.id.condProgCheckbox),
+                findViewById(R.id.presPerfProgCheckbox),
+                findViewById(R.id.plupProgCheckbox),
+                findViewById(R.id.futuPerfProgCheckbox),
+
+                findViewById(R.id.presSubjCheckbox),
+                findViewById(R.id.impeSubjCheckbox),
+                findViewById(R.id.futuSubjCheckbox),
+                findViewById(R.id.presPerfSubjCheckbox),
+                findViewById(R.id.plupSubjCheckbox),
+                findViewById(R.id.futuPerfSubjCheckbox),
+
+                findViewById(R.id.pastPartCheckbox),
+                findViewById(R.id.commandsCheckbox),
+                findViewById(R.id.personalInfinitiveCheckbox),
+                findViewById(R.id.gerundCheckbox),
+        };
         SeekBar seekBar = findViewById(R.id.verbFormsSlider);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
@@ -148,6 +154,27 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
 
         updateCheckBoxes(seekBar);
 
+        verbSetRadioGroup = findViewById(R.id.verbSetRadioGroup);
+        verbSetRadioGroup.check(R.id.strugglesRadioButton);
+
+        fullOrIndividualRadioGroup = findViewById(R.id.fullOrIndividual);
+        fullOrIndividualRadioGroup.check(R.id.individualConjugation);
+
+        for (Button button : buttons) {
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    focusOnScrollView(v.getId());
+                }
+            });
+        }
+        ((Button) findViewById(R.id.continueButton)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                continueToVerbPractice(v);
+            }
+        });
+        focusOnScrollView(view.getId());
     }
 
     @Override
@@ -158,10 +185,6 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
         } else {
             super.onBackPressed();
         }
-    }
-
-    public void buttonOnClick(View view) {
-        focusOnScrollView(view.getId());
     }
 
     private void updateCheckBoxes(SeekBar seekBar) {

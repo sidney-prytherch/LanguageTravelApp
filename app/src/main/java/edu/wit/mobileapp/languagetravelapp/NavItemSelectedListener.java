@@ -1,5 +1,8 @@
 package edu.wit.mobileapp.languagetravelapp;
 
+import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -8,30 +11,45 @@ import android.view.MenuItem;
 
 public class NavItemSelectedListener implements NavigationView.OnNavigationItemSelectedListener {
 
-    DrawerLayout drawerLayout;
+    private DrawerLayout drawerLayout;
+    private Context context;
+    private Activity activityContext;
 
-    public NavItemSelectedListener(DrawerLayout drawerLayout) {
+    public NavItemSelectedListener(DrawerLayout drawerLayout, Context context, Activity activityContext) {
         super();
         this.drawerLayout = drawerLayout;
+        this.context = context;
+        this.activityContext = activityContext;
     }
 
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            Log.v("myapp", "hooray");
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
+        if (id == R.id.nav_home && !(activityContext instanceof HomeActivity)) {
+            Intent newAct = new Intent(context, HomeActivity.class);
+            activityContext.startActivity(newAct);
+        } else if (id == R.id.nav_travel && !(activityContext instanceof TravelActivity)) {
+            Intent newAct = new Intent(context, TravelActivity.class);
+            activityContext.startActivity(newAct);
+        } else if (id == R.id.nav_language && !(activityContext instanceof LanguageHomeActivity)) {
+            Intent newAct = new Intent(context, LanguageHomeActivity.class);
+            activityContext.startActivity(newAct);
+        } else if (id == R.id.nav_settings && !(activityContext instanceof HomeActivity)) {
+            Intent newAct = new Intent(context, HomeActivity.class);
+            activityContext.startActivity(newAct);
+        } else if (id == R.id.nav_learn_and_review && !(activityContext instanceof LearnNewVocabSettingsActivity)) {
+            Intent newAct = new Intent(context, LearnNewVocabSettingsActivity.class);
+            activityContext.startActivity(newAct);
+        }  else if (id == R.id.nav_crossword && !(activityContext instanceof CrosswordActivity)) {
+            Intent newAct = new Intent(context, CrosswordActivity.class);
+            activityContext.startActivity(newAct);
+        } else if (id == R.id.nav_wordsearch && !(activityContext instanceof WordsearchActivity)) {
+            Intent newAct = new Intent(context, WordsearchActivity.class);
+            activityContext.startActivity(newAct);
+        } else if (id == R.id.nav_conjugation_practice && !(activityContext instanceof VerbConjugationSettingsActivity)) {
+            Intent newAct = new Intent(context, VerbConjugationSettingsActivity.class);
+            activityContext.startActivity(newAct);
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);
