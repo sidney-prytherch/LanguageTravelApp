@@ -1,13 +1,10 @@
 package edu.wit.mobileapp.languagetravelapp;
 
-import android.app.ProgressDialog;
-import android.content.Context;
+import android.app.Activity;
 import android.content.Intent;
-import android.graphics.PorterDuff;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.Drawable;
-import android.media.Image;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Looper;
@@ -22,18 +19,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TableLayout;
+import android.widget.RadioGroup;
 
-public class LanguageHomeActivity extends AppCompatActivity {
+public class CrosswordSettingsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_language_home);
-
-        //((ImageView) findViewById(R.id.crossword_icon)).setColorFilter(getResources().getColor(R.color.background), PorterDuff.Mode.SRC_ATOP);
+        setContentView(R.layout.activity_crossword_settings);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -46,7 +41,10 @@ public class LanguageHomeActivity extends AppCompatActivity {
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
-        navigationView.getMenu().getItem(2).setChecked(true);
+        navigationView.getMenu().getItem(5).setChecked(true);
+
+        RadioGroup sizeRadioGroup = findViewById(R.id.crossword_size);
+        sizeRadioGroup.check(R.id.size9x9);
     }
 
     @Override
@@ -59,35 +57,47 @@ public class LanguageHomeActivity extends AppCompatActivity {
         }
     }
 
-    public void goToLearnNew(View view) {
-        Intent intent = new Intent(LanguageHomeActivity.this, FlashcardActivity.class);
-        startActivity(intent);
-    }
-
-//    public void goToReview(View view) {
-//        Intent intent = new Intent(LanguageHomeActivity.this, ReviewSettingsActivity.class);
-//        startActivity(intent);
-//    }
-//
-//    public void goToTest(View view) {
-//        Intent intent = new Intent(LanguageHomeActivity.this, VocabTestSettingsActivity.class);
-//        startActivity(intent);
-//    }
-
-    public void goToVerbConjugation(View view) {
-        Intent intent = new Intent(LanguageHomeActivity.this, VerbConjugationSettingsActivity.class);
-        startActivity(intent);
-    }
-
     public void goToCrossword(View view) {
-        Intent intent = new Intent(LanguageHomeActivity.this, CrosswordSettingsActivity.class);
+        ConstraintLayout mainLayout = (ConstraintLayout) findViewById(R.id.constraint_layout);
+        mainLayout.removeAllViews();
+
+        ConstraintLayout loadingLayout = (ConstraintLayout) getLayoutInflater().inflate(R.layout.loading_icon_image, mainLayout, false);
+        mainLayout.addView(loadingLayout);
+
+        final AnimatedVectorDrawableCompat av = AnimatedVectorDrawableCompat.create(getApplicationContext(), R.drawable.animated_logo);
+
+        ImageView icon = (ImageView) loadingLayout.getChildAt(0);
+        icon.setImageDrawable(av);
+        if (av != null) {
+            av.registerAnimationCallback(new Animatable2Compat.AnimationCallback() {
+                private final Handler fHandler = new Handler(Looper.getMainLooper());
+
+                @Override
+                public void onAnimationEnd(Drawable drawable) {
+                    AnimatedVectorDrawable avd = (AnimatedVectorDrawable) drawable;
+                    fHandler.post(avd::start);
+                }
+            });
+            final Animatable animatable = (Animatable) icon.getDrawable();
+            animatable.start();
+        }
+        loadCrossword();
+    }
+
+    public void loadCrossword() {
+        Intent intent = new Intent(CrosswordSettingsActivity.this, CrosswordActivity.class);
         startActivity(intent);
     }
 
-    public void goToWordSearch(View view) {
-        Intent intent = new Intent(LanguageHomeActivity.this, WordsearchActivity.class);
-        startActivity(intent);
+    private static class AsyncCrossword extends AsyncTask<Integer, Integer, Integer> {
+        @Override
+        protected Integer doInBackground(Integer... integers) {
+            return null;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
     }
-
-
 }
