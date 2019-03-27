@@ -13,7 +13,6 @@
             android:codes="87"
             android:keyLabel="W" />
         <Key
-            android:codes="69, 201, 202"
             android:keyLabel="E"
             android:popupCharacters="EÉÊ"
             android:popupKeyboard="@xml/popup_accents" />
@@ -27,17 +26,14 @@
             android:codes="89"
             android:keyLabel="Y" />
         <Key
-            android:codes="85, 218, 220"
             android:keyLabel="U"
             android:popupCharacters="UÚÜ"
             android:popupKeyboard="@xml/popup_accents" />
         <Key
-            android:codes="73, 205"
             android:keyLabel="I"
             android:popupCharacters="IÍ"
             android:popupKeyboard="@xml/popup_accents" />
         <Key
-            android:codes="79, 213, 211, 212"
             android:keyLabel="O"
             android:popupCharacters="OÕÓÔ"
             android:popupKeyboard="@xml/popup_accents" />
@@ -49,7 +45,6 @@
 
     <Row>
         <Key
-            android:codes="65, 195, 193, 192, 194"
             android:horizontalGap="5%p"
             android:keyEdgeFlags="left"
             android:keyLabel="A"
@@ -84,7 +79,6 @@
 
     <Row>
         <Key
-            android:codes="-1, 180, 96, 94, 126, 199, 168"
             android:keyWidth="15%p"
             android:keyEdgeFlags="left"
             android:keyLabel="´ ^ ~"
@@ -97,7 +91,6 @@
             android:codes="88"
             android:keyLabel="X" />
         <Key
-            android:codes="67, 199"
             android:keyLabel="C"
             android:popupCharacters="CÇ"
             android:popupKeyboard="@xml/popup_accents" />
