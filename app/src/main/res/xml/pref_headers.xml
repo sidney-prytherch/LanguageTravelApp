@@ -17,4 +17,30 @@
         android:icon="@drawable/ic_sync_black_24dp"
         android:title="@string/pref_header_data_sync" />
 
+    <header
+        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$TravelPreferenceFragment"
+        android:icon="@drawable/ic_travel"
+        android:title="@string/pref_header_travel" />
+
+    <header
+        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$VerbConjugationsPreferenceFragment"
+        android:icon="@drawable/ic_conjugation_practice"
+        android:title="@string/pref_header_verb_conjugations" />
+
+    <header
+        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$LearnAndReviewPreferenceFragment"
+        android:icon="@drawable/ic_learn_and_review"
+        android:title="@string/pref_header_learn_and_review" />
+
+    <header
+        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$CrosswordPreferenceFragment"
+        android:icon="@drawable/ic_crossword"
+        android:title="@string/pref_header_crossword" />
+
+    <header
+        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$WordsearchPreferenceFragment"
+        android:icon="@drawable/ic_wordsearch"
+        android:title="@string/pref_header_wordsearch" />
+
+
 </preference-headers>

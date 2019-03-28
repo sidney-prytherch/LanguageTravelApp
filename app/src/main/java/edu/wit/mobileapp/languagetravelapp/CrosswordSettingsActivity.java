@@ -2,12 +2,14 @@ package edu.wit.mobileapp.languagetravelapp;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Animatable;
 import android.graphics.drawable.AnimatedVectorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Handler;
 import android.os.Looper;
+import android.preference.PreferenceManager;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.NavigationView;
 import android.support.graphics.drawable.Animatable2Compat;
@@ -22,6 +24,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
+import android.widget.TextView;
+
+import java.util.Objects;
 
 public class CrosswordSettingsActivity extends AppCompatActivity {
 
@@ -44,7 +49,29 @@ public class CrosswordSettingsActivity extends AppCompatActivity {
         navigationView.getMenu().getItem(5).setChecked(true);
 
         RadioGroup sizeRadioGroup = findViewById(R.id.crossword_size);
-        sizeRadioGroup.check(R.id.size9x9);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (prefs != null) {
+            switch (Objects.requireNonNull(prefs.getString("crossword_size", "9x9"))) {
+                case "5":
+                    sizeRadioGroup.check(R.id.size5x5);
+                    break;
+                case "7":
+                    sizeRadioGroup.check(R.id.size7x7);
+                    break;
+                case "11":
+                    sizeRadioGroup.check(R.id.size11x11);
+                    break;
+                case "13":
+                    sizeRadioGroup.check(R.id.size13x13);
+                    break;
+                case "15":
+                    sizeRadioGroup.check(R.id.size15x15);
+                    break;
+                default:
+                    sizeRadioGroup.check(R.id.size9x9);
+                    break;
+            }
+        }
     }
 
     @Override
