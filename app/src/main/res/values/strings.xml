@@ -127,6 +127,20 @@
         <item>-1</item>
     </string-array>
 
+    <string name="pref_quick_access_button">Quick-Access Button</string>
+    <string-array name="pref_quick_access_button_list_titles">
+        <item>Learn and Review</item>
+        <item>Verb Conjugation</item>
+        <item>Crossword</item>
+        <item>Wordsearch</item>
+    </string-array>
+    <string-array name="pref_quick_access_button_list_values">
+        <item>learn</item>
+        <item>verb</item>
+        <item>crossword</item>
+        <item>wordsearch</item>
+    </string-array>
+
     <!-- Example settings for Data & Sync -->
     <string name="pref_header_data_sync">Data &amp; sync</string>
 
@@ -166,6 +180,31 @@
 
     <!-- Example settings for Notifications -->
     <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_header_travel">Travel</string>
+
+    <string name="pref_header_crossword">Crossword</string>
+    <string name="pref_title_crossword_size">Default crossword grid size</string>
+    <string-array name="pref_title_crossword_size_titles">
+        <item>5x5</item>
+        <item>7x7</item>
+        <item>9x9</item>
+        <item>11x11</item>
+        <item>13x13</item>
+        <item>15x15</item>
+    </string-array>
+    <string-array name="pref_title_crossword_size_values">
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>11</item>
+        <item>13</item>
+        <item>15</item>
+    </string-array>
+
+
+    <string name="pref_header_wordsearch">Wordsearch</string>
+    <string name="pref_header_learn_and_review">Learn and Review</string>
+    <string name="pref_header_verb_conjugations">Verb Conjugations</string>
 
     <string name="pref_title_new_message_notifications">New message notifications</string>
 
