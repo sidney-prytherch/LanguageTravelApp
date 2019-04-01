@@ -17,6 +17,8 @@ import java.util.Objects;
 
 public class HomeActivity extends AppCompatActivity {
 
+    private NavigationView navigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,10 +33,13 @@ public class HomeActivity extends AppCompatActivity {
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
         navigationView.getMenu().getItem(0).setChecked(true);
+        this.setSharedPreferencesButton();
+    }
 
+    private void setSharedPreferencesButton() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         TextView quickAccessButton = findViewById(R.id.quick_button);
         if (prefs == null) {
@@ -58,6 +63,13 @@ public class HomeActivity extends AppCompatActivity {
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        this.setSharedPreferencesButton();
+        navigationView.getMenu().getItem(0).setChecked(true);
     }
 
     @Override

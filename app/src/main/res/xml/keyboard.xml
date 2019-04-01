@@ -110,6 +110,6 @@
             android:codes="-2"
             android:keyWidth="15%p"
             android:keyEdgeFlags="right"
-            android:keyIcon="@drawable/ic_outline_backspace_24px" />
+            android:keyIcon="@drawable/ic_backspace" />
     </Row>
 </Keyboard>

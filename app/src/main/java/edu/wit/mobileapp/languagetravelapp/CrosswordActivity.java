@@ -29,20 +29,21 @@ import java.util.Stack;
 
 public class CrosswordActivity extends AppCompatActivity {
 
-    LinearLayout crosswordGrid;
-    LinearLayout crosswordNumberGrid;
-    RootNode[] acrossRoots;
-    RootNode[] downRoots;
-    Keyboard crosswordKeyboard;
-    KeyboardView crosswordKeyboardView;
-    CellNode selected;
-    WordOrientation wordOrientation;
-    String[][] prioritizedWords;
-    MenuItem checkWordAlwaysItemView;
-    Button hintButton;
-    int wordCount;
-    int nextNumber;
-    float crosswordNumberTextSize;
+    private LinearLayout crosswordGrid;
+    private LinearLayout crosswordNumberGrid;
+    private RootNode[] acrossRoots;
+    private RootNode[] downRoots;
+    private Keyboard crosswordKeyboard;
+    private KeyboardView crosswordKeyboardView;
+    private CellNode selected;
+    private WordOrientation wordOrientation;
+    private String[][] prioritizedWords;
+    private MenuItem checkWordAlwaysItemView;
+    private Button hintButton;
+    private int wordCount;
+    private int nextNumber;
+    private float crosswordNumberTextSize;
+    private NavigationView navigationView;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -107,7 +108,7 @@ public class CrosswordActivity extends AppCompatActivity {
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
         navigationView.getMenu().getItem(5).setChecked(true);
 
@@ -308,6 +309,12 @@ public class CrosswordActivity extends AppCompatActivity {
                 setSelected(newlySelected.rootNode, newlySelected.wordOrientation);
             }
         });
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        navigationView.getMenu().getItem(5).setChecked(true);
     }
 
     @Override
