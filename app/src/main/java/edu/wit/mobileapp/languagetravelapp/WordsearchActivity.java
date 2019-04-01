@@ -15,6 +15,8 @@ import android.widget.TextView;
 
 public class WordsearchActivity extends AppCompatActivity {
 
+    private NavigationView navigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +31,7 @@ public class WordsearchActivity extends AppCompatActivity {
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
         navigationView.getMenu().getItem(6).setChecked(true);
 
@@ -57,6 +59,12 @@ public class WordsearchActivity extends AppCompatActivity {
             }
             wordsearchGrid.addView(row);
         }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        navigationView.getMenu().getItem(6).setChecked(true);
     }
 
     @Override

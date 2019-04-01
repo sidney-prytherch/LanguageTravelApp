@@ -30,6 +30,8 @@ import java.util.Objects;
 
 public class CrosswordSettingsActivity extends AppCompatActivity {
 
+    private NavigationView navigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +46,7 @@ public class CrosswordSettingsActivity extends AppCompatActivity {
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
         navigationView.getMenu().getItem(5).setChecked(true);
 
@@ -72,6 +74,12 @@ public class CrosswordSettingsActivity extends AppCompatActivity {
                     break;
             }
         }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        navigationView.getMenu().getItem(5).setChecked(true);
     }
 
     @Override

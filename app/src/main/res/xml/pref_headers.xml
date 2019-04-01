@@ -4,18 +4,8 @@
 
     <header
         android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$GeneralPreferenceFragment"
-        android:icon="@drawable/ic_info_black_24dp"
+        android:icon="@drawable/ic_build"
         android:title="@string/pref_header_general" />
-
-    <header
-        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$NotificationPreferenceFragment"
-        android:icon="@drawable/ic_notifications_black_24dp"
-        android:title="@string/pref_header_notifications" />
-
-    <header
-        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$DataSyncPreferenceFragment"
-        android:icon="@drawable/ic_sync_black_24dp"
-        android:title="@string/pref_header_data_sync" />
 
     <header
         android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$TravelPreferenceFragment"
@@ -33,14 +23,9 @@
         android:title="@string/pref_header_learn_and_review" />
 
     <header
-        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$CrosswordPreferenceFragment"
+        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$PuzzlePreferenceFragment"
         android:icon="@drawable/ic_crossword"
-        android:title="@string/pref_header_crossword" />
-
-    <header
-        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$WordsearchPreferenceFragment"
-        android:icon="@drawable/ic_wordsearch"
-        android:title="@string/pref_header_wordsearch" />
+        android:title="@string/pref_header_puzzle" />
 
 
 </preference-headers>

@@ -25,5 +25,5 @@
         android:background="@color/colorKeyboardKeyPressed"
         android:clickable="true"
         android:focusable="true"
-        android:src="@drawable/ic_close_black_24dp" />
+        android:src="@drawable/ic_close" />
 </LinearLayout>
