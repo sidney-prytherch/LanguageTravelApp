@@ -8,7 +8,7 @@
     <string name="check_word_always_menu_option">Check word automatically</string>
     <string name="select_verb_types">Select types of verbs</string>
     <string name="select_verb_forms">Select verb forms to study</string>
-    <string name="other_settings">Other Settings</string>
+    <string name="other_settings">Verb Set and Conjugations</string>
     <string name="continue_to_next_screen">Continue</string>
     <string name="select_verb_set">Select Verb Set</string>
     <string name="full_or_individual_conjugations">Select Full or Individual Conjugation</string>
@@ -17,13 +17,13 @@
     <string name="travel_button">Travel</string>
     <string name="language_button">Language</string>
     <string name="crossword_button">Crossword</string>
-    <string name="wordsearch_button">Wordsearch</string>
+    <string name="wordsearch_button">Word Search</string>
     <string name="learn_and_review_button">Learn Vocab</string>
     <string name="review_button">Review Vocab</string>
     <string name="test_button">Test</string>
     <string name="verb_conjugations_button">Verb Conjugations</string>
-    <string name="quick_button">Set-up Quick-Access Button</string>
-    <string name="empty"></string>
+    <string name="quick_button">Setup Quick-Access Button</string>
+    <string name="empty" translatable="false"></string>
     <string name="select_crossword_size">Select Crossword Grid Size</string>
 
     <!-- Verb Types -->
@@ -142,7 +142,6 @@
     </string-array>
 
     <!-- Example settings for Data & Sync -->
-    <string name="pref_header_data_sync">Data &amp; sync</string>
 
     <string name="pref_title_sync_frequency">Sync frequency</string>
     <string-array name="pref_sync_frequency_titles">
