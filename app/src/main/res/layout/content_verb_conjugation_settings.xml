@@ -90,34 +90,6 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/verbFormsTabButton"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:onClick="onButtonClick"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:drawableTint="@color/colorPuzzleWhiteSquareDefault"
-        android:drawableStart="@drawable/ic_dropdown_arrow_right"
-        android:text="@string/select_verb_forms"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent=".1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/verbTypesScrollView"
-        android:background="@drawable/button_background_solid"/>
-
-    <ViewStub
-        android:id="@+id/verbFormsScrollView"
-        android:inflatedId="@+id/verbFormsScrollView"
-        android:layout="@layout/verb_conjugation_verb_forms"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/verbFormsTabButton" />
-
-
-    <Button
         android:id="@+id/verbSetTabButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -131,7 +103,7 @@
         app:layout_constraintHeight_percent=".1"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/verbFormsScrollView"
+        app:layout_constraintTop_toBottomOf="@+id/verbTypesScrollView"
         android:background="@drawable/button_background_solid"/>
 
 
@@ -147,15 +119,41 @@
         app:layout_constraintTop_toBottomOf="@+id/verbSetTabButton"/>
 
     <Button
+        android:id="@+id/verbFormsTabButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:onClick="onButtonClick"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:drawableTint="@color/colorPuzzleWhiteSquareDefault"
+        android:drawableStart="@drawable/ic_dropdown_arrow_right"
+        android:text="@string/select_verb_forms"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verbSetScrollView"
+        android:background="@drawable/button_background_solid"/>
+
+    <ViewStub
+        android:id="@+id/verbFormsScrollView"
+        android:inflatedId="@+id/verbFormsScrollView"
+        android:layout="@layout/verb_conjugation_verb_forms"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verbFormsTabButton" />
+
+    <Button
         android:id="@+id/continueButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-
         android:background="@drawable/button_background_dark"
         android:onClick="onButtonClickSpecial"
         android:text="@string/continue_to_next_screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/verbSetScrollView" />
+        app:layout_constraintTop_toBottomOf="@+id/verbFormsScrollView" />
 </android.support.constraint.ConstraintLayout>

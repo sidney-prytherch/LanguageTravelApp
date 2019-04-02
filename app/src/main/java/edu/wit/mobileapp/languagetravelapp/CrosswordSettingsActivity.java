@@ -93,29 +93,6 @@ public class CrosswordSettingsActivity extends AppCompatActivity {
     }
 
     public void goToCrossword(View view) {
-        ConstraintLayout mainLayout = (ConstraintLayout) findViewById(R.id.constraint_layout);
-        mainLayout.removeAllViews();
-
-        ConstraintLayout loadingLayout = (ConstraintLayout) getLayoutInflater().inflate(R.layout.loading_icon_image, mainLayout, false);
-        mainLayout.addView(loadingLayout);
-
-        final AnimatedVectorDrawableCompat av = AnimatedVectorDrawableCompat.create(getApplicationContext(), R.drawable.animated_logo);
-
-        ImageView icon = (ImageView) loadingLayout.getChildAt(0);
-        icon.setImageDrawable(av);
-        if (av != null) {
-            av.registerAnimationCallback(new Animatable2Compat.AnimationCallback() {
-                private final Handler fHandler = new Handler(Looper.getMainLooper());
-
-                @Override
-                public void onAnimationEnd(Drawable drawable) {
-                    AnimatedVectorDrawable avd = (AnimatedVectorDrawable) drawable;
-                    fHandler.post(avd::start);
-                }
-            });
-            final Animatable animatable = (Animatable) icon.getDrawable();
-            animatable.start();
-        }
         loadCrossword();
     }
 

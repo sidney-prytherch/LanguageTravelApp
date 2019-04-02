@@ -60,4 +60,18 @@
     <string name="pluperfect_progressive">Pretérito Mais-que-perfeito Progresivo</string>
     <string name="future_perfect_progressive">Futuro Perfeito Progresivo</string>
     <string name="conditional_perfect_progressive">Condicional Progresivo</string>
+    <string name="home_button">Início</string>
+    <string name="settings_button">Configurações</string>
+    <string name="travel_button">Viajem</string>
+    <string name="language_button">Idioma</string>
+    <string name="crossword_button">Palavras Cruzadas</string>
+    <string name="wordsearch_button">Caça Palavras</string>
+    <string name="learn_and_review_button">Aprender Vocabúlario</string>
+    <string name="review_button">Revisar Vocabúlario</string>
+    <string name="test_button">Exame</string>
+    <string name="verb_conjugations_button">Conjugações de Verbos</string>
+    <string name="quick_button">Configurar o butão acesso-rápido</string>
+    <string name="select_crossword_size">Selectionar dimenção de Palavras Cruzadas</string>
+    <string name="pref_header_puzzle">Jogo</string>
+    <string name="puzzle_menu_title">Jogo</string>
 </resources>
