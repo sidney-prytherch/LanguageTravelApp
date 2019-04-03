@@ -35,7 +35,7 @@ public class LoadingFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_loading, container, false);
 
-        final AnimatedVectorDrawableCompat av = AnimatedVectorDrawableCompat.create(getActivity().getApplicationContext(), R.drawable.animated_logo);
+        final AnimatedVectorDrawableCompat av = AnimatedVectorDrawableCompat.create(view.getContext(), R.drawable.animated_logo);
 
         ImageView icon = view.findViewById(R.id.loading_icon);
         icon.setImageDrawable(av);
@@ -45,7 +45,7 @@ public class LoadingFragment extends Fragment {
 
                 @Override
                 public void onAnimationEnd(Drawable drawable) {
-                    AnimatedVectorDrawable avd = (AnimatedVectorDrawable) drawable;
+                    AnimatedVectorDrawableCompat avd = (AnimatedVectorDrawableCompat) drawable;
                     fHandler.post(avd::start);
                 }
             });
