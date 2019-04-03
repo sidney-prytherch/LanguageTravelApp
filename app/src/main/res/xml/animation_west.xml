@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
     <objectAnimator
+        android:name="top_container"
+        android:duration="0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:propertyName="translateX"
+        android:valueFrom="0"
+        android:valueTo="0"
+        android:valueType="floatType"/>
+    <objectAnimator
         android:name="top_container" android:startOffset="@integer/west"
         android:duration="@integer/loading_animation_duration"
         android:interpolator="@android:anim/accelerate_decelerate_interpolator"
@@ -26,17 +34,7 @@
         android:interpolator="@android:anim/accelerate_decelerate_interpolator"
         android:propertyName="translateX"
         android:valueFrom="0"
-        android:valueTo="-80"
-        android:valueType="floatType"
-        android:repeatCount="1"
-        android:repeatMode="reverse"/>
-    <objectAnimator
-        android:name="top_container" android:startOffset="@integer/west"
-        android:duration="@integer/loading_animation_duration"
-        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
-        android:propertyName="translateY"
-        android:valueFrom="0"
-        android:valueTo="-60"
+        android:valueTo="-30"
         android:valueType="floatType"
         android:repeatCount="1"
         android:repeatMode="reverse"/>
