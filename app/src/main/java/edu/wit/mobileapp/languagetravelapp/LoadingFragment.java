@@ -45,8 +45,13 @@ public class LoadingFragment extends Fragment {
 
                 @Override
                 public void onAnimationEnd(Drawable drawable) {
-                    AnimatedVectorDrawableCompat avd = (AnimatedVectorDrawableCompat) drawable;
-                    fHandler.post(avd::start);
+                    if (drawable instanceof AnimatedVectorDrawable) {
+                        AnimatedVectorDrawable avd = (AnimatedVectorDrawable) drawable;
+                        fHandler.post(avd::start);
+                    } else if (drawable instanceof AnimatedVectorDrawableCompat) {
+                        AnimatedVectorDrawableCompat avd = (AnimatedVectorDrawableCompat) drawable;
+                        fHandler.post(avd::start);
+                    }
                 }
             });
             final Animatable animatable = (Animatable) icon.getDrawable();
