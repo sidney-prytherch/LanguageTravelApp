@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">Voxiter</string>
-    <string name="reveal_letter_menu_option">Reveal letter</string>
-    <string name="reveal_word_menu_option">Reveal word</string>
-    <string name="reveal_puzzle_menu_option">Reveal puzzle</string>
-    <string name="check_letter_menu_option">Check letter</string>
-    <string name="check_word_menu_option">Check word</string>
-    <string name="check_word_always_menu_option">Check word automatically</string>
-    <string name="select_verb_types">Select types of verbs</string>
-    <string name="select_verb_forms">Select verb forms to study</string>
-    <string name="other_settings">Other Settings</string>
-    <string name="continue_to_next_screen">Continue</string>
-    <string name="select_verb_set">Select Verb Set</string>
-    <string name="full_or_individual_conjugations">Select Full or Individual Conjugation</string>
 
     <!-- Verb Types -->
     <string name="recommended_verb_forms">Recommended Verb Forms</string>
@@ -25,47 +12,10 @@
     <string name="conditional">Le Conditionnel</string>
     <string name="perfect_compound_tenses">Perfect (Compound) Tenses</string>
     <string name="present_perfect">Passé Composé</string>
-    <string name="pluperfect">Pluperfect</string>
-    <string name="future_perfect">Future Perfect</string>
-    <string name="conditional_perfect">Conditional Perfect</string>
-    <string name="progressive_tenses">Progressive Tenses</string>
-    <string name="present_progressive">Present Progressive</string>
-    <string name="imperfect_progressive">Imperfect Progressive</string>
-    <string name="preterite_progressive">Preterite Progressive</string>
-    <string name="simple_pluperfect_progressive">Simple Pluperfect Progressive</string>
-    <string name="future_progressive">Future Progressive</string>
-    <string name="conditional_progressive">Conditional Progressive</string>
-    <string name="present_perfect_progressive">Present Perfect Progressive</string>
-    <string name="pluperfect_progressive">Pluperfect Progressive</string>
-    <string name="future_perfect_progressive">Future Perfect Progressive</string>
     <string name="conditional_perfect_progressive">Conditional Perfect Progressive</string>
     <string name="subjuctive">Le Subjunctif</string>
-    <string name="present_subjunctive">Present Subjunctive</string>
-    <string name="imperfect_subjunctive">Imperfect Subjunctive</string>
-    <string name="future_subjunctive">Future Subjunctive</string>
-    <string name="present_perfect_subjunctive">Present Perfect Subjunctive</string>
-    <string name="pluperfect_subjunctive">Pluperfect Subjunctive</string>
-    <string name="future_perfect_subjunctive">Future Perfect Subjunctive</string>
-    <string name="other_options">Other Options</string>
     <string name="commands">L\'Impératif</string>
     <string name="personal_infinitive">L\'Infinitif</string>
-    <string name="gerunds">Gerunds</string>
-    <string name="past_participle">Past Participle</string>
-    <string name="regular_ar" translatable="false">Regular -ar</string>
-    <string name="regular_er" translatable="false">Regular -er</string>
-    <string name="regular_ir" translatable="false">Regular -ir</string>
-    <string name="irregular">Irregular</string>
-    <string name="reflexive">Reflexive</string>
-    <string name="biggest_struggles">Biggest struggles</string>
-    <string name="ten_most_common">10 most common verbs</string>
-    <string name="twenty_most_common">20 most common verbs</string>
-    <string name="fifty_most_common">50 most common verbs</string>
-    <string name="hundred_most_common">100 most common verbs</string>
-    <string name="all_seen">All studied verbs</string>
-    <string name="all_verbs">All verbs</string>
-    <string name="full_conjugation">Full conjugation</string>
-    <string name="individual_conjugations">Individual conjugation</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

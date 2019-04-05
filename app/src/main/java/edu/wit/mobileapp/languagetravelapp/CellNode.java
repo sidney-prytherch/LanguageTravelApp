@@ -49,6 +49,7 @@ public class CellNode {
         this.acrossRoot = cellNode.acrossRoot;
         this.downRoot = cellNode.downRoot;
         this.square = cellNode.square;
+        this.solutionLetter = cellNode.solutionLetter;
     }
 
     public RootNode getRoot(WordOrientation wordOrientation) {

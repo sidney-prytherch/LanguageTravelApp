@@ -1,8 +1,20 @@
 package edu.wit.mobileapp.languagetravelapp;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.PorterDuff;
+import android.graphics.drawable.Animatable;
+import android.graphics.drawable.AnimatedVectorDrawable;
+import android.graphics.drawable.Drawable;
+import android.media.Image;
+import android.os.AsyncTask;
+import android.os.Handler;
+import android.os.Looper;
+import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.NavigationView;
+import android.support.graphics.drawable.Animatable2Compat;
+import android.support.graphics.drawable.AnimatedVectorDrawableCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -11,8 +23,12 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TableLayout;
 
 public class LanguageHomeActivity extends AppCompatActivity {
+
+    private NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,8 +46,14 @@ public class LanguageHomeActivity extends AppCompatActivity {
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
+        navigationView.getMenu().getItem(2).setChecked(true);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
         navigationView.getMenu().getItem(2).setChecked(true);
     }
 
@@ -66,7 +88,7 @@ public class LanguageHomeActivity extends AppCompatActivity {
     }
 
     public void goToCrossword(View view) {
-        Intent intent = new Intent(LanguageHomeActivity.this, CrosswordActivity.class);
+        Intent intent = new Intent(LanguageHomeActivity.this, CrosswordSettingsActivity.class);
         startActivity(intent);
     }
 
@@ -74,4 +96,6 @@ public class LanguageHomeActivity extends AppCompatActivity {
         Intent intent = new Intent(LanguageHomeActivity.this, WordsearchActivity.class);
         startActivity(intent);
     }
+
+
 }

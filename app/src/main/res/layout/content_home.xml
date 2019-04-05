@@ -40,8 +40,8 @@
         <android.support.v7.widget.AppCompatImageView
             android:id="@+id/travel_icon"
             android:layout_width="0dp"
-            android:layout_margin="10dp"
             android:padding="15dp"
+            android:layout_margin="10dp"
             android:layout_height="match_parent"
             android:src="@drawable/ic_travel_big"
             app:layout_constraintDimensionRatio="1:1"
@@ -92,6 +92,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             android:tint="@color/background"
             />
+
     </android.support.constraint.ConstraintLayout>
 
     <TextView

@@ -33,6 +33,7 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
     private CheckBox[] verbTypesCheckBoxes;
     private RadioGroup verbSetRadioGroup;
     private RadioGroup fullOrIndividualRadioGroup;
+    private NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,7 +49,7 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
         navigationView.getMenu().getItem(4).setChecked(true);
 
@@ -75,6 +76,12 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
 
         setChecked(verbTypesCheckBoxes, new int[]{0, 1, 2, 3});
 
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        navigationView.getMenu().getItem(4).setChecked(true);
     }
 
     public void onButtonClickSpecial(View view) {
@@ -217,10 +224,10 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
                 if (buttons[i].getId() == buttonId) {
                     scrollViews[i].scrollTo(0,0);
                     scrollViewLayoutParams[i].matchConstraintPercentHeight = FULL_HEIGHT_PERCENT;
-                    buttons[i].setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.dropdown_arrow_down, 0, 0, 0);
+                    buttons[i].setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_dropdown_arrow_down, 0, 0, 0);
                 } else {
                     scrollViewLayoutParams[i].matchConstraintPercentHeight = ZERO_HEIGHT_PERCENT;
-                    buttons[i].setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.dropdown_arrow_right, 0, 0, 0);
+                    buttons[i].setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_dropdown_arrow_right, 0, 0, 0);
                 }
                 scrollViews[i].setLayoutParams(scrollViewLayoutParams[i]);
             }

@@ -1,0 +1,31 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/ic_build"
+        android:title="@string/pref_header_general" />
+
+    <header
+        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$TravelPreferenceFragment"
+        android:icon="@drawable/ic_travel"
+        android:title="@string/pref_header_travel" />
+
+    <header
+        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$VerbConjugationsPreferenceFragment"
+        android:icon="@drawable/ic_conjugation_practice"
+        android:title="@string/pref_header_verb_conjugations" />
+
+    <header
+        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$LearnAndReviewPreferenceFragment"
+        android:icon="@drawable/ic_learn_and_review"
+        android:title="@string/pref_header_learn_and_review" />
+
+    <header
+        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$PuzzlePreferenceFragment"
+        android:icon="@drawable/ic_crossword"
+        android:title="@string/pref_header_puzzle" />
+
+
+</preference-headers>

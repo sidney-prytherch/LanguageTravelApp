@@ -8,7 +8,7 @@
     <string name="check_word_always_menu_option">Check word automatically</string>
     <string name="select_verb_types">Select types of verbs</string>
     <string name="select_verb_forms">Select verb forms to study</string>
-    <string name="other_settings">Other Settings</string>
+    <string name="other_settings">Verb Set and Conjugations</string>
     <string name="continue_to_next_screen">Continue</string>
     <string name="select_verb_set">Select Verb Set</string>
     <string name="full_or_individual_conjugations">Select Full or Individual Conjugation</string>
@@ -17,13 +17,14 @@
     <string name="travel_button">Travel</string>
     <string name="language_button">Language</string>
     <string name="crossword_button">Crossword</string>
-    <string name="wordsearch_button">Wordsearch</string>
+    <string name="wordsearch_button">Word Search</string>
     <string name="learn_and_review_button">Learn Vocab</string>
     <string name="review_button">Review Vocab</string>
     <string name="test_button">Test</string>
     <string name="verb_conjugations_button">Verb Conjugations</string>
-    <string name="quick_button">Set-up Quick-Access Button</string>
-    <string name="empty"></string>
+    <string name="quick_button">Setup Quick-Access Button</string>
+    <string name="empty" translatable="false"></string>
+    <string name="select_crossword_size">Select Crossword Grid Size</string>
 
     <!-- Verb Types -->
     <string name="recommended_verb_forms">Recommended Verb Forms</string>
@@ -92,4 +93,145 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+
+    <string name="size5x5">5x5</string>
+    <string name="size7x7">7x7</string>
+    <string name="size9x9">9x9</string>
+    <string name="size11x11">11x11</string>
+    <string name="size13x13">13x13</string>
+    <string name="size15x15">15x15</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_quick_access_button">Quick-Access Button</string>
+    <string-array name="pref_quick_access_button_list_titles">
+        <item>Learn and Review</item>
+        <item>Verb Conjugation</item>
+        <item>Crossword</item>
+        <item>Wordsearch</item>
+    </string-array>
+    <string-array name="pref_quick_access_button_list_values">
+        <item>learn</item>
+        <item>verb</item>
+        <item>crossword</item>
+        <item>wordsearch</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_travel">Travel</string>
+
+    <string name="pref_title_country_travel">Country you are travelling to</string>
+    <string-array name="pref_countries_titles">
+        <item>Portugal</item>
+        <item>France</item>
+        <item>Brazil</item>
+    </string-array>
+    <string-array name="pref_countries_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="puzzle_menu_title">Puzzle</string>
+
+    <string name="pref_header_puzzle">Puzzle</string>
+    <string name="pref_title_crossword_size">Default crossword grid size</string>
+    <string-array name="pref_title_crossword_size_titles">
+        <item>5x5</item>
+        <item>7x7</item>
+        <item>9x9</item>
+        <item>11x11</item>
+        <item>13x13</item>
+        <item>15x15</item>
+    </string-array>
+    <string-array name="pref_title_crossword_size_values">
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>11</item>
+        <item>13</item>
+        <item>15</item>
+    </string-array>
+
+    <string name="pref_header_wordsearch">Wordsearch</string>
+    <string name="pref_title_wordsearch_size">Default wordsearch grid size</string>
+    <string-array name="pref_title_wordsearch_size_titles">
+        <item>5x5</item>
+        <item>7x7</item>
+        <item>9x9</item>
+        <item>11x11</item>
+        <item>13x13</item>
+        <item>15x15</item>
+    </string-array>
+    <string-array name="pref_title_wordsearch_size_values">
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+        <item>11</item>
+        <item>13</item>
+        <item>15</item>
+    </string-array>
+
+
+    <string name="pref_header_learn_and_review">Learn and Review</string>
+    <string name="pref_header_verb_conjugations">Verb Conjugations</string>
+
 </resources>

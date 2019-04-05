@@ -22,7 +22,7 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/user_verb_response"
-        app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+        app:srcCompat="@drawable/ic_right_arrow" />
 
     <ImageButton
         android:id="@+id/prev_verb"
@@ -36,7 +36,7 @@
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/user_verb_response"
-        app:srcCompat="@drawable/ic_chevron_left_black_24dp" />
+        app:srcCompat="@drawable/ic_left_arrow" />
 
     <EditText
         android:id="@+id/user_verb_response"
@@ -45,7 +45,6 @@
         android:layout_margin="8dp"
         android:background="@drawable/box_simple"
         android:ems="10"
-        android:fontFamily="@font/amarante"
         android:inputType="textNoSuggestions|textVisiblePassword"
         android:padding="8dp"
         android:singleLine="true"

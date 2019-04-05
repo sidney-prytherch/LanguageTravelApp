@@ -11,6 +11,9 @@ import android.support.design.widget.TabLayout;
 import android.support.v7.widget.Toolbar;
 
 public class TravelActivity extends AppCompatActivity {
+
+    private NavigationView navigationView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +28,7 @@ public class TravelActivity extends AppCompatActivity {
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
         navigationView.getMenu().getItem(1).setChecked(true);
 
@@ -54,6 +57,12 @@ public class TravelActivity extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {
             }
         });
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        navigationView.getMenu().getItem(1).setChecked(true);
     }
 
     @Override
