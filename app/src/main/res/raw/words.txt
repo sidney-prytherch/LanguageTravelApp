@@ -1,0 +1,3010 @@
+you|22484400|determiner|the individual or group spoken/written to|seu|m
+you|22484400|determiner|the individual or group spoken/written to|sua|f
+you|22484400|determiner|the individual or group spoken/written to|seus|m-p
+you|22484400|determiner|the individual or group spoken/written to|suas|f-p
+you|22484400|determiner|used before epithets for emphasis|seu|
+you|22484400|pron|object pronoun: the group being addressed|vos|
+you|22484400|pron|object pronoun: the group being addressed|convosco|
+you|22484400|pron|object pronoun: the group being addressed|vocês|
+you|22484400|pron|object pronoun: the group being addressed|consigo|
+you|22484400|pron|object pronoun: the group being addressed|os senhores|m
+you|22484400|pron|object pronoun: the group being addressed|as senhoras|f
+you|22484400|pron|object pronoun: the person being addressed|te|
+you|22484400|pron|object pronoun: the person being addressed|ti|
+you|22484400|pron|object pronoun: the person being addressed|contigo|
+you|22484400|pron|object pronoun: the person being addressed|você|
+you|22484400|pron|object pronoun: the person being addressed|consigo|
+you|22484400|pron|object pronoun: the person being addressed|o senhor|m
+you|22484400|pron|object pronoun: the person being addressed|a senhora|f
+you|22484400|pron|one|você|
+you|22484400|pron|one|se|
+you|22484400|pron|one|a pessoa|
+you|22484400|pron|subject pronoun: the group being addressed|vós|
+you|22484400|pron|subject pronoun: the group being addressed|vocês|
+you|22484400|pron|subject pronoun: the group being addressed|os senhores|m
+you|22484400|pron|subject pronoun: the group being addressed|as senhoras|f
+you|22484400|pron|subject pronoun: the person being addressed|tu|
+you|22484400|pron|subject pronoun: the person being addressed|você|
+you|22484400|pron|subject pronoun: the person being addressed|o senhor|m
+you|22484400|pron|subject pronoun: the person being addressed|a senhora|f
+i|19975318|n|name of the letter I, i|i|m
+I|19975318|pron|personal pronoun|eu|
+the|17594291|adv|indicating a result like the comparative|No word accompanies the comparative in this usage.|
+the|17594291|adv|the + ～comparative, the + comparative|quanto + comp.|
+the|17594291|adv|the + ～comparative, the + comparative|comp. (ex: quanto mais quente, melhor "the hotter the better")|
+the|17594291|article|article|o|m
+the|17594291|article|article|a|f
+the|17594291|article|article|os|m-p
+the|17594291|article|article|as|f-p
+the|17594291|article|with an adjectival noun, as in “the hungry” to mean “hungry people”|o|m
+the|17594291|article|with an adjectival noun, as in “the hungry” to mean “hungry people”|a|f
+the|17594291|article|with an adjectival noun, as in “the hungry” to mean “hungry people”|os|m-p
+the|17594291|article|with an adjectival noun, as in “the hungry” to mean “hungry people”|as|f-p
+to|13200962|prep|in the direction of, and arriving at|a|
+to|13200962|prep|in the direction of, and arriving at|para|
+to|13200962|prep|used after certain adjectives to indicate a relationship|com|
+to|13200962|prep|used to indicate ratios|a|
+to|13200962|prep|used to indicate the indirect object|a|
+to|13200962|prep|used to indicate the indirect object|para|
+a|11230036|n|name of the letter A, a|á|m
+it|10556589|pron|object|o|m
+it|10556589|pron|object|a|f
+it|10556589|pron|subject — inanimate thing|ele|m
+it|10556589|pron|subject — inanimate thing|ela|f
+it|10556589|pron|subject — inanimate thing|isso  (often not translated)|n
+it|10556589|pron|subject of impersonal statement|Not used in Portuguese|
+IT|10556589|initialism|information technology|TI|
+and|8092405|conj|used at the end of a list to indicate the last item|e|
+and|8092405|conj|used to connect two similar words, phrases, et cetera|e|
+and|8092405|conj|used to string together sentences or sentence fragments in chronological order|e|
+that|7789269|adv|degree|tão|
+that|7789269|adv|degree|assim|
+that|7789269|adv|so, so much, very|tão|
+that|7789269|adv|so, so much, very|tanto|
+that|7789269|adv|so, so much, very|tanto|
+that|7789269|conj|connecting clause indicating purpose|para que|
+that|7789269|conj|connecting noun clause|que|
+that|7789269|determiner|what is being indicated|esse|m
+that|7789269|determiner|what is being indicated|essa|f
+that|7789269|determiner|what is being indicated|isso|n
+that|7789269|determiner|what is being indicated|aquele|m
+that|7789269|determiner|what is being indicated|aquela|f
+that|7789269|determiner|what is being indicated|aquilo|n
+that|7789269|pron|that thing|esse|m
+that|7789269|pron|that thing|essa|f
+that|7789269|pron|that thing|isso|n
+that|7789269|pron|that thing|aquele|m
+that|7789269|pron|that thing|aquela|f
+that|7789269|pron|that thing|aquilo|n
+that|7789269|pron|which|que|
+that|7789269|pron|which|qual|
+of|6839325|prep|connecting numeral or quantifier with quantified|de (not used with quantifiers like todo, nem todo, para todo)|
+of|6839325|prep|containing, comprising or made from|de|
+of|6839325|prep|indicative of age|de|
+of|6839325|prep|introducing subject matter|de|
+of|6839325|prep|introducing subject matter|sobre|
+of|6839325|prep|introducing subject matter|em|
+of|6839325|prep|introducing subject matter|a respeito de|
+of|6839325|prep|linking class with example of class|de|
+of|6839325|prep|objective genitive: connecting noun with object|de|
+of|6839325|prep|possessive genitive: belonging to|de|
+of|6839325|prep|(time) before, to|para|
+is|5713829|v||é|
+is|5713829|v||está|
+in|5649786|prep|after a period of time|em|
+in|5649786|prep|by the virtue of|ao|
+in|5649786|prep|contained by|em|
+in|5649786|prep|into|em|
+in|5649786|prep|part, member of|em|
+in|5649786|prep|pertaining to|em|
+in|5649786|prep|surrounded by|em|
+what|5391571|adv|such|que|
+what|5391571|adv|why (see also why)|por que|
+what|5391571|determiner|how much|quanto|
+what|5391571|determiner|which|que|
+what|5391571|determiner|which|qual|
+what|5391571|interj|expression of surprise|o quê?|
+what|5391571|pron|interrogative pronoun|o que|
+what|5391571|pron|nonstandard relative pronoun|que|
+what|5391571|pron|relative pronoun|o que|
+what|5391571|pron|that which; those that; the thing that|o que|
+we|5206831|pron|the speakers, or the speaker(s) and other person(s) not being addressed (exclusive we: he or she or they and I)|nós|
+we|5206831|pron|the speakers, or the speaker(s) and other person(s) not being addressed (exclusive we: he or she or they and I)|a gente|
+me|5075554|pron|complement of the copula|eu|
+me|5075554|pron|direct object of a verb|me|
+me|5075554|pron|direct object of a verb|mim|
+me|5075554|pron|indirect object of a verb|me|
+me|5075554|pron|marking ownership|meu|m
+me|5075554|pron|object of a preposition|mim|
+me|5075554|pron|obsolete reflexive|me|
+me|5075554|pron|obsolete reflexive|mim|
+me|5075554|pron|reflexive indirect object of a verb|para mim|
+me|5075554|pron|subject of a verb with “and”|eu|
+me|5075554|pron|subject of a verb without “and”|eu|
+this|4419586|determiner|known (thing) about to be mentioned|este|m
+this|4419586|determiner|known (thing) about to be mentioned|esse|m
+this|4419586|determiner|known (thing) just mentioned|este|m
+this|4419586|determiner|known (thing) just mentioned|esse|m
+this|4419586|determiner|known (thing) that the speaker does not think is known to the audience|um|m
+this|4419586|determiner|the (thing) here|este|m
+this|4419586|determiner|the (thing) here|esta|f
+this|4419586|determiner|the (thing) here|isto|n
+this|4419586|determiner|the (thing) here|estes|m-p
+this|4419586|determiner|the (thing) here|estas|f-p
+this|4419586|pron|The thing, item, etc. being indicated|isto|
+this|4419586|pron|The thing, item, etc. being indicated|isso|m
+he|4295049|pron|personal pronoun "he"|ele|
+for|4002824|conj|because|porque|
+for|4002824|prep|because of|por|
+for|4002824|prep|directed at, intended to belong to|para|
+for|4002824|prep|supporting|por|
+for|4002824|prep|towards|para|
+my|3855861|determiner|belonging to me|meu|m
+on|3731903|adj|in the state of being active, functioning or operating|ligado|
+on|3731903|prep|at the date of|na|
+on|3731903|prep|at the date of|no|
+on|3731903|prep|covering|em|
+on|3731903|prep|dealing with the subject of|na|
+on|3731903|prep|dealing with the subject of|no|
+on|3731903|prep|positioned at the upper surface of|na|
+on|3731903|prep|positioned at the upper surface of|no|
+on|3731903|prep|positioned at the upper surface of|sobre|
+on|3731903|prep|touching; hanging from|na|
+on|3731903|prep|touching; hanging from|no|
+have|3705127|v|auxiliary used in forming the perfect and the past perfect tenses|haver|
+have|3705127|v|cause to be|ter|
+have|3705127|v|cause to, by command or request|fazer|
+have|3705127|v|give birth to|ter|
+have|3705127|v|must|ter que|
+have|3705127|v|must|haver de|
+have|3705127|v|to possess|ter|
+have|3705127|v|to possess|possuir|
+your|3611383|determiner|belonging to you (plural; more owners)|vosso|m
+your|3611383|determiner|belonging to you (plural; more owners)|vossa|f
+your|3611383|determiner|belonging to you (singular; one owner)|teu|m
+your|3611383|determiner|belonging to you (singular; one owner)|tua|f
+your|3611383|determiner|belonging to you (singular; one owner)|seu|m
+your|3611383|determiner|belonging to you (singular; one owner)|sua|f
+do|3437767|n|hairdo|penteado|m
+do|3437767|n|tonic of a major scale|dó|
+do|3437767|v|cook|fazer|
+do|3437767|v|perform, execute|fazer|
+do|3437767|v|work, suffice|servir|
+no|3403577|determiner|not any|nenhum|m
+no|3403577|determiner|not any|nada de|
+no|3403577|determiner|used to show an activity is forbidden|é proibido|
+no|3403577|n|a negating expression|não|m
+no|3403577|n|a vote not in favor|não|
+no|3403577|particle|used to show agreement with a negative question (in some languages this response is the usual word for "yes")|não|
+no|3403577|particle|used to show disagreement or negation|não|
+not|3319097|adv|negates meaning of verb|não|
+not|3319097|conj|And not|não|
+are|3290764|n|unit of area|are|m
+don|3269470|v|put on clothes|vestir|
+Don|3269470|prop|River in European Russia|Don|m
+be|3258954|v|(archaic) used to form the perfect aspect with certain intransitive verbs|ser|
+be|3258954|v|(archaic) used to form the perfect aspect with certain intransitive verbs|ter|
+be|3258954|v|elliptical form of "be here", or similar|estar|
+be|3258954|v|exist|ser|
+be|3258954|v|exist|existir|
+be|3258954|v|occupy a place|estar|
+be|3258954|v|occur, take place|ser|
+be|3258954|v|used to connect a noun to an adjective that describes it|ser|
+be|3258954|v|used to connect a noun to an adjective that describes it|estar|
+be|3258954|v|used to form future tenses, especially the future subjunctive|use the future subjunctive tense|
+be|3258954|v|used to form the continuous forms of various tenses|estar + gerund|
+be|3258954|v|used to form the passive voice|ser|
+be|3258954|v|used to indicate that the subject and object are the same|ser|
+be|3258954|v|used to indicate that the subject has the qualities described by a noun or noun phrase|ser|
+be|3258954|v|used to indicate that the subject has the qualities described by a noun or noun phrase|estar|
+be|3258954|v|used to indicate that the subject plays the role of the predicate nominative|ser|
+be|3258954|v|used to indicate that the values on either side of an equation are the same|ser|
+be|3258954|v|used to indicate weather, air quality, or the like|fazer|
+be|3258954|v|used to indicate weather, air quality, or the like|estar|
+know|3010563|v|be acquainted or familiar with|conhecer|
+know|3010563|v|be certain or sure about (something)|saber|
+know|3010563|v|be certain or sure about (something)|conhecer|
+know|3010563|v|be informed about|saber|
+know|3010563|v|be informed about|aperceber-se|
+know|3010563|v|experience|conhecer|
+know|3010563|v|experience|experimentar|
+know|3010563|v|have knowledge of|conhecer|
+know|3010563|v|have knowledge of|saber|
+know|3010563|v|understand (a subject)|saber|
+know|3010563|v|understand (a subject)|conhecer|
+know|3010563|v|understand (a subject)|entender|
+can|2974080|n|a container used to carry and dispense water for plants|regador|m
+can|2974080|n|a more or less cylindrical vessel for liquids|lata|f
+can|2974080|n|a tin-plate canister|lata|f
+can|2974080|n|toilet|vaso|m
+can|2974080|v|may|poder|
+can|2974080|v|to be able|poder|
+can|2974080|v|to be able|ser capaz|
+can|2974080|v|to be able|conseguir|
+can|2974080|v|to discard|descartar|
+can|2974080|v|to discard|jogar fora|
+can|2974080|v|to fire or dismiss an employee|demitir|
+can|2974080|v|to fire or dismiss an employee|mandar embora|
+can|2974080|v|to preserve|enlatar|
+can|2974080|v|to shut up|calar|
+with|2955209|prep|against|contra|
+with|2955209|prep|against|com|
+with|2955209|prep|as nourishment|de|
+with|2955209|prep|by means of|com|
+with|2955209|prep|in addition to|com|
+with|2955209|prep|in support of|com|
+with|2955209|prep|in the company of|com|
+but|2794737|conj|although|embora|
+but|2794737|conj|except|exceto|
+but|2794737|conj|except|salvo|
+but|2794737|conj|rather|mas|
+but|2794737|conj|rather|porém|
+all|2726999|adv|intensifier|tudo|
+all|2726999|determiner|every individual of the given class|todo|m
+all|2726999|determiner|every individual of the given class|toda|f
+all|2726999|determiner|every individual of the given class|tudo|n
+all|2726999|determiner|every individual of the given class|todos|p
+all|2726999|determiner|every individual of the given class|todas|f-p
+all|2726999|determiner|throughout the whole of (a stated period of time)|todo|m
+all|2726999|determiner|throughout the whole of (a stated period of time)|toda|f
+all|2726999|n|everything possible|todo|m
+so|2627759|adj|true|assim|
+so|2627759|adv|in a particular manner|assim|
+so|2627759|adv|slang: very much|tão|
+so|2627759|adv|to a particular extent|tão|
+so|2627759|adv|very|tão|
+so|2627759|conj|in order that|para que|
+so|2627759|conj|with the result that|então|
+so|2627759|interj|interjection used to introduce a new topic|então|
+so|2627759|interj|interjection used to introduce a new topic|e aí|
+just|2538768|adj|factually fair, correct|justo|
+just|2538768|adj|morally fair, righteous|justo|
+just|2538768|adv|nearly|por pouco|
+just|2538768|adv|only, simply, merely|só|
+just|2538768|adv|only, simply, merely|somente|
+just|2538768|adv|only, simply, merely|simplesmente|
+just|2538768|adv|only, simply, merely|apenas|
+just|2538768|adv|perfectly|bem|
+just|2538768|adv|recently|recentemente|
+just|2538768|adv|recently|acabar de|
+just|2538768|adv|recently|recém|
+here|2448203|adv|in, on, or at this place|aqui|
+here|2448203|adv|to this place|(para) aqui|
+here|2448203|adv|to this place|(para) cá|
+here|2448203|n|this place|aqui|m
+here|2448203|n|this time, the present situation|aqui e agora|m
+there|2435611|adv|in existence|aí|
+there|2435611|adv|in or at that place|aí|
+there|2435611|adv|in or at that place|ali|
+there|2435611|adv|in or at that place|lá|
+there|2435611|adv|in that matter, relation, etc.; at that point, stage, etc.|aí|
+there|2435611|adv|in that matter, relation, etc.; at that point, stage, etc.|por aí|
+there|2435611|adv|to or into that place; thither|para aí|
+there|2435611|adv|to or into that place; thither|para ali|
+there|2435611|adv|to or into that place; thither|para lá|
+they|2366899|pron|one, people, some people|se|
+they|2366899|pron|third-person plural pronoun|eles|m
+they|2366899|pron|third-person plural pronoun|elas|f
+they|2366899|pron|third-person singular, of unknown or irrelevant gender|se|
+like|2286933|adj|similar|semelhante|
+like|2286933|adv|such as|como|
+like|2286933|adv|such as|tipo|
+like|2286933|n|something similar to a given person or object|tipo|m
+like|2286933|n|something that a person likes|gosto|m
+like|2286933|particle|colloquial: mild intensifier|tipo|
+like|2286933|particle|colloquial: mild intensifier|tipo assim|
+like|2286933|particle|colloquial: used to precede paraphrased quotations|tipo|
+like|2286933|prep|somewhat similar to|como|
+like|2286933|v|enjoy|gostar|
+like|2286933|v|find attractive|gostar|
+get|2238814|v|become|tornar-se|
+get|2238814|v|become|ficar|
+get|2238814|v|become|(get + <adjective> is often translated by a reflexive verb in Portuguese; get drunk = embriagar-se)|
+get|2238814|v|colloquial: be|ser|
+get|2238814|v|colloquial: understand|entender|
+get|2238814|v|fetch|pegar|
+get|2238814|v|obtain|obter|
+get|2238814|v|obtain|conseguir|
+get|2238814|v|receive|receber|
+she|2158362|pron|person|ela|
+go|2153280|n|attempt|tentativa|f
+go|2153280|n|board game|go|m
+go|2153280|n|turn at something|vez|f
+go|2153280|n|turn at something|turno|m
+go|2153280|v|of a machine, to work |andar|
+go|2153280|v|of a machine, to work |ir|
+go|2153280|v|of a machine, to work |funcionar|
+go|2153280|v|slang: to say , see also: say|dizer|
+go|2153280|v|to become |virar|
+go|2153280|v|to become |tornar-se|
+go|2153280|v|to be destroyed |ir-se|
+go|2153280|v|to belong; to have as its/their proper place |ir|
+go|2153280|v|to date |sair|
+go|2153280|v|to disappear |desaparacer|
+go|2153280|v|to disappear |sumir|
+go|2153280|v|to disappear |ir-se|
+go|2153280|v|to fit |caber|
+go|2153280|v|to make (a specified sound) |fazer|
+go|2153280|v|to move through space (especially from one place to another) |ir|
+go|2153280|v|to take a turn |ir|
+if|2041724|conj|(computing)|se|
+if|2041724|conj|supposing that|se|
+if|2041724|conj|supposing that|caso|
+if|2041724|conj|whether|se|
+if|2041724|n|a theoretical condition|hipótese|f
+if|2041724|n|a theoretical condition|suposição|f
+right|1974545|adj|appropriate, fit for purpose|correto|
+right|1974545|adj|complying with justice, correct|correto|
+right|1974545|adj|complying with justice, correct|justo|
+right|1974545|adj|complying with justice, correct|certo|
+right|1974545|adj|conservative|de direita|
+right|1974545|adj|of direction|direito|m
+right|1974545|adj|of direction|direita|f
+right|1974545|adj|perpendicular|perpendicular|
+right|1974545|adj|perpendicular|reto|
+right|1974545|adj|straight, not bent|direto|
+right|1974545|adj|straight, not bent|reto|
+right|1974545|adv|on the right side|à direita|
+right|1974545|adv|towards the right side|à direita|
+right|1974545|interj|checking agreement|né|
+right|1974545|n|legal or moral entitlement|direito|m
+right|1974545|n|right, not left, side|direita|f
+right|1974545|n|right-wing politicians and parties|direita|f
+right|1974545|v|(intransitive) to return to normal upright position|endireitar-se|
+right|1974545|v|to correct|corrigir|
+out|1937990|adv|at a distance|longe|
+out|1937990|adv|away from expected or default place|fora|
+out|1937990|prep|away from the inside|para fora|
+about|1911008|adv|here and there|por aí|
+about|1911008|adv|in circuit|ao redor|
+about|1911008|adv|nearly, approximately|aproximadamente|
+about|1911008|adv|nearly, approximately|cerca de|
+about|1911008|adv|nearly, approximately|mais ou menos|
+about|1911008|adv|on all sides|ao redor|
+about|1911008|adv|on all sides|em volta|
+about|1911008|prep|concerned with, engaged in|preocupado/lidando com|
+about|1911008|prep|concerning|sobre|
+about|1911008|prep|in the immediate neighborhood of|perto|
+about|1911008|prep|near, approximately, regarding time, size or quantity|por volta de|
+about|1911008|prep|near, approximately, regarding time, size or quantity|perto de|
+about|1911008|prep|on every side of|ao redor de|
+about|1911008|prep|on every side of|nas redondezas de|
+about|1911008|prep|on the point or verge of|prestes a|
+about|1911008|prep|over or upon different parts of|por aí|
+up|1910433|adj|facing upwards|para cima|
+up|1910433|adj|facing upwards|para o alto|
+up|1910433|adj|facing upwards|para o ar|
+up|1910433|adj|informed about|a par|
+up|1910433|adj|informed about|por dentro|
+up|1910433|adj|standing|em pé|
+up|1910433|adv|away from earth’s centre|(para) cima|
+up|1910433|adv|away from earth’s centre|acima|
+up|1910433|adv|higher in pitch|aumentar|
+up|1910433|adv|higher in pitch|elevar|
+up|1910433|adv|higher, louder|aumentar|
+up|1910433|adv|higher, louder|elevar|
+up|1910433|prep|further along|adiante|
+up|1910433|prep|toward the top|alto|
+up|1910433|prep|toward the top|no alto|
+up|1910433|prep|toward the top|para o alto|
+him|1904981|pron|accusative / direct object|o|
+him|1904981|pron|dative / indirect object|lhe|
+him|1904981|pron|objective after preposition|ele|
+at|1879311|prep|indicating time|a|
+at|1879311|prep|in or very near a particular place|a|
+at|1879311|prep|in or very near a particular place|em|
+at|1879311|prep|in the direction of|a|
+now|1768245|adv|at the present time|agora|
+now|1768245|conj|since, because|agora que|
+now|1768245|conj|since, because|já que|
+now|1768245|interj|signal to begin|agora|
+now|1768245|interj|signal to begin|já|
+now|1768245|n|the present time|agora|
+one|1757361|n|digit or figure|um|m
+one|1757361|num|cardinal number 1|um|m
+one|1757361|pron|impersonal pronoun|not translated|
+one|1757361|pron|indefinite personal pronoun|use third-person singular reflexive|
+come|1743498|v|to arrive, to appear|chegar|
+come|1743498|v|to move from further away to nearer to|vir|
+come|1743498|v|to orgasm|gozar|
+oh|1719430|interj|expression of surprise|ó|
+her|1681932|determiner|belonging to|seu|
+her|1681932|determiner|belonging to|dela|
+her|1681932|pron|she|ela|f
+how|1666673|adv|in what manner|como|
+how|1666673|adv|in what state|como|
+how|1666673|adv|to what degree|quanto|
+how|1666673|adv|to what degree|o quanto|
+how|1666673|adv|used as a modifier to indicate surprise, delight, or other strong feelings|como|
+how|1666673|adv|used as a modifier to indicate surprise, delight, or other strong feelings|quão|
+how|1666673|conj|in which way|como|
+well|1621442|adj|in good health|bem|
+well|1621442|adv|accurately; competently|bem|
+well|1621442|adv|completely; fully|bem|
+well|1621442|adv|(slang) very|bem|
+well|1621442|adv|to a significant degree|bem|
+well|1621442|interj|exclamation of surprise|ora|
+well|1621442|interj|exclamation of surprise|ora; muito bem|
+well|1621442|interj|exclamation of surprise|muito que bem|
+well|1621442|interj|to acknowledge a statement or situation|bem|
+well|1621442|interj|used in conversation to fill space|é...|
+well|1621442|interj|used in conversation to fill space|pois|
+well|1621442|interj|used in conversation to fill space|sabe|
+well|1621442|interj|used to introduce a statement that may be contrary to expectations|bem|
+well|1621442|interj|used to introduce a statement that may be contrary to expectations|bom|
+well|1621442|n|hole sunk into the ground|poço|m
+well|1621442|n|spring|fonte|f
+well|1621442|n|spring|vertente|f
+well|1621442|n|spring|vertedouro|m
+well|1621442|v|to issue forth|verter|
+will|1539938|n|intent or volition|vontade|f
+will|1539938|n|legal document|testamento|m
+want|1535169|n|desire, wish, longing|afã|m
+want|1535169|v|desire|querer|
+want|1535169|v|desire|desejar|
+yeah|1499782|adv|expressing joy|é!|
+yeah|1499782|adv|expressing joy|isso aí!|
+yeah|1499782|adv|yes|sim|
+think|1416770|n|an act of thinking|pensada|f
+think|1416770|v|be of the opinion that|pensar|
+think|1416770|v|be of the opinion that|achar|
+think|1416770|v|communicate to oneself in one’s mind|pensar|
+think|1416770|v|communicate to oneself in one’s mind|refletir|
+think|1416770|v|consider, judge, regard something as|considerar|
+think|1416770|v|guess, reckon|pensar|
+think|1416770|v|guess, reckon|achar|
+think|1416770|v|to conceive of something or someone|considerar|
+think|1416770|v|to conceive of something or someone|ter por|
+think|1416770|v|to conceive of something or someone|ter como|
+think|1416770|v|to ponder, to go over in one's head|pensar|
+think|1416770|v|to seem, to appear|parecer|
+see|1386818|n|diocese|sé|f
+see|1386818|n|diocese|diocese|f
+see|1386818|v|perceive with the eyes|ver|
+see|1386818|v|perceive with the eyes|enxergar|
+see|1386818|v|perceive with the eyes|olhar|
+see|1386818|v|understand|entender|
+see|1386818|v|understand|ver|
+as|1374881|adv|to such an extent or degree|tão|
+as|1374881|adv|to such an extent or degree|tanto|
+as|1374881|conj|at the same instant that|quando|
+as|1374881|conj|at the same instant that|assim que|
+as|1374881|conj|because|visto que|
+as|1374881|conj|because|já que|
+as|1374881|conj|because|porque|
+as|1374881|conj|in the manner of|como|
+as|1374881|conj|in the same way that|como|
+as|1374881|conj|varying through time to the same proportion that|conforme|
+as|1374881|conj|varying through time to the same proportion that|à medida que|
+as|1374881|conj|while|enquanto|
+as|1374881|n|Roman coin|asse|m
+as|1374881|prep|Introducing a basis of comparison|quanto|
+who|1354196|pron|who? (interrogative pronoun)|quem|
+who|1354196|pron|who (relative pronoun)|que|
+who|1354196|pron|who (relative pronoun)|quem|
+good|1353790|adj|acting in the interest of good; ethical good intentions|bom|m
+good|1353790|adj|acting in the interest of good; ethical good intentions|boa|f
+good|1353790|adj|beneficial; worthwhile|bom|m
+good|1353790|adj|beneficial; worthwhile|boa|f
+good|1353790|adj|effective|bom|m
+good|1353790|adj|effective|boa|f
+good|1353790|adj|favourable|bom|m
+good|1353790|adj|favourable|boa|f
+good|1353790|adj|favourable|boa|f
+good|1353790|adj|healthful|bom|m
+good|1353790|adj|healthful|boa|f
+good|1353790|adj|of food, edible; not stale or rotten|bom|m
+good|1353790|adj|of food, edible; not stale or rotten|boa|f
+good|1353790|adj|of food, having a particularly pleasant taste|bom|m
+good|1353790|adj|of food, having a particularly pleasant taste|boa|f
+good|1353790|adj|of people, competent or talented|bom|m
+good|1353790|adj|of people, competent or talented|boa|f
+good|1353790|adj|pleasant; enjoyable|bom|m
+good|1353790|adj|pleasant; enjoyable|boa|f
+good|1353790|adj|useful for a particular purpose (it’s a good watch)|bom|m
+good|1353790|adj|useful for a particular purpose (it’s a good watch)|boa|f
+good|1353790|n|the forces of good|bem|m
+why|1351530|adv|for what reason|por que|
+why|1351530|adv||por que|
+why|1351530|adv||porque|
+why|1351530|interj|exclamation of surprise|uai|
+why|1351530|n|the reason|porquê|
+let|1335090|v|to allow|deixar|
+let|1335090|v|to put up for rent|alugar|
+from|1320557|prep|with the origin, starting point or initial reference of or at|de|
+from|1320557|prep|with the separation, exclusion or differentiation of|de|
+from|1320557|prep|with the source or provenance of or at|de (which see for forms of "de" before a definite article)|
+his|1292908|determiner|attributive: belonging to him|seu|
+his|1292908|pron|that which belongs to him|dele|
+yes|1272870|interj|expression of pleasure, joy or great excitement|sim!|
+yes|1272870|interj|expression of pleasure, joy or great excitement|é!|
+yes|1272870|n|answer that shows agreement or acceptance|sim|m
+yes|1272870|n|answer that shows agreement or acceptance|afirmativo|m
+yes|1272870|n|vote of support|sim|m
+yes|1272870|n|vote of support|a favor|m
+yes|1272870|particle|word used to indicate agreement or acceptance|sim|
+yes|1272870|particle|word used to indicate disagreement or dissent in reply to a negative statement|sim|
+when|1184778|adv|direct question|quando|
+when|1184778|adv|indirect question|quando|
+when|1184778|conj|as soon as|quando|
+when|1184778|conj|as soon as|assim que|
+when|1184778|conj|at a time in the past|quando|
+when|1184778|conj|at such time as|quando|
+when|1184778|conj|at what time|quando|
+when|1184778|n|the time|quando|
+when|1184778|pron|what time; which time|quando|
+an|1117568|article|indefinite article|um|m
+an|1117568|article|indefinite article|uma|f
+an|1117568|prep|in each; to or for each; per|o|m
+an|1117568|prep|in each; to or for each; per|a|f
+an|1117568|prep|in each; to or for each; per|por|
+time|1117449|n|era|era|f
+time|1117449|n|era|época|f
+time|1117449|n|era|tempo|m
+time|1117449|n|inevitable passing of events|tempo|m
+time|1117449|n|instance or occurrence|vez|f
+time|1117449|n|measurement of a quantity of time|tempo|m
+time|1117449|n|measurement under some system of the time of day or moment in time|horário|m
+time|1117449|n|numerical indication of a particular moment in time|horário|m
+time|1117449|n|particular moment or hour|horas|f-p
+time|1117449|n|quantity of availability in time|tempo|m
+time|1117449|n|ratio of comparison|vez|f
+time|1117449|n|slang: serving of a prison sentence|pena|f
+time|1117449|n|time of day, as indicated by a clock, etc|hora|f
+time|1117449|n|time of day, as indicated by a clock, etc|horário|m
+time|1117449|n|youth or young adulthood|época|f
+time|1117449|v|to choose the time for|marcar|
+time|1117449|v|to choose the time for|programar|
+time|1117449|v|to measure time|cronometrar|
+back|1088055|adj|far from the main area|afastado|
+back|1088055|adj|near the rear|de trás|
+back|1088055|adj|near the rear|traseiro|
+back|1088055|adj|near the rear|dos fundos|
+back|1088055|adj|near the rear|posterior|
+back|1088055|adj|not current|antigo|
+back|1088055|adj|phonetics: produced in the back of the mouth|posterior|
+back|1088055|adv|away from the front or from an edge|para trás|
+back|1088055|adv|in a manner that impedes|para trás|
+back|1088055|adv|to or in a previous condition or place|de volta|
+back|1088055|n|a position behind most players on the team|zagueiro|m
+back|1088055|n|a position behind most players on the team|beque|m
+back|1088055|n|that which is farthest away from the front|fundo|m
+back|1088055|n|the backrest, the part of a piece of furniture which receives the human back|encosto (para as costas)|m
+back|1088055|n|the part of something that goes last|fundo|m
+back|1088055|n|the rear of body|costas|f-p
+back|1088055|n|the rear of body|lombo|
+back|1088055|n|the reverse side|dorso|m
+back|1088055|n|the reverse side|reverso|m
+back|1088055|n|the reverse side|traseira|f
+back|1088055|n|the reverse side|parte de trás|
+back|1088055|v|to go in the reverse direction|fazer marcha atrás|
+back|1088055|v|to go in the reverse direction|fazer marcha-à-ré|
+back|1088055|v|to support|apoiar|
+look|1050480|n|action of looking|olhada|f
+look|1050480|n|facial expression|olhar|m
+look|1050480|n|physical appearance|aspecto|m
+look|1050480|v|to appear, to seem|parecer|
+look|1050480|v|to expect|esperar|
+look|1050480|v|to face|resguardar|
+look|1050480|v|to search|procurar|
+look|1050480|v|to try to see|olhar|
+us|1046373|pron|objective case of "we"|nos|
+uS|1046373|prop|abbreviation of united States|E.u.A.|m-p
+where|1036121|adv|at what place; to what place; from what place|onde|
+where|1036121|adv|at what place; to what place; from what place|aonde|
+where|1036121|adv|at what place; to what place; from what place|de onde|
+where|1036121|adv|in what situation|aonde|
+where|1036121|conj|at or in which place|onde|
+where|1036121|conj|at or in which place|aonde|
+where|1036121|conj|legal: in the situation in which|onde|
+where|1036121|conj|to which place or situation|onde|
+where|1036121|conj|to which place or situation|aonde|
+where|1036121|conj|while on the contrary, although, whereas|enquanto|
+where|1036121|n|the place in which something happens|onde|
+where|1036121|pron|the place in which|onde|
+them|1034857|pron|third personal plural pronoun used after a preposition or as the object of a verb|os|m-p
+them|1034857|pron|third personal plural pronoun used after a preposition or as the object of a verb|lhes|m-f-p
+them|1034857|pron|third personal plural pronoun used after a preposition or as the object of a verb|eles|m-p
+take|1030966|n|act of taking|tomada|f
+take|1030966|n|film: attempt to record a scene|tomada|f
+take|1030966|n|interpretation or view|ponto de vista|m
+take|1030966|n|profit or reward|rendimento|m
+take|1030966|v|military: to gain a position by force|tomar|
+take|1030966|v|to accept|aceitar|
+take|1030966|v|to assume or interpret to be|ter|
+take|1030966|v|to assume or interpret to be|tomar|
+take|1030966|v|to carry|levar|
+take|1030966|v|to carry|carregar|
+take|1030966|v|to choose|tomar|
+take|1030966|v|to choose|escolher|
+take|1030966|v|to endure|aguentar|
+take|1030966|v|to get into one's possession|tomar|
+take|1030966|v|to grab and move to oneself|tomar|
+take|1030966|v|to grab with the hands|tomar|
+take|1030966|v|to grab with the hands|agarrar|
+take|1030966|v|to grab with the hands|pegar|
+take|1030966|v|to ingest medicine|tomar|
+take|1030966|v|to last or expend [an amount of time]|durar|
+take|1030966|v|to support or carry without failing or breaking|aguentar|
+would|1024970|v|indicating an action in the past that happened repeatedly or commonly|use the imperfect tense; In the winters|
+would|1024970|v|indicating an action in the past that happened repeatedly or commonly|we would sit by the hole on the frozen lake and fish for hours. - No inverno|
+would|1024970|v|indicating an action in the past that happened repeatedly or commonly|nos sentávamos perto do buraco do lago congelado e pescávamos por horas.|
+would|1024970|v|indicating an action in the past that was planned or intended|use the conditional tense (futuro do pretérito); The waiter said he would be right back. - O garçom disse que voltaria logo.|
+would|1024970|v|indicating a possible (but not definite) future action or state|use the conditional tense (futuro do pretérito); We sat on the bench|
+would|1024970|v|indicating a possible (but not definite) future action or state|wondering if the bus would be late this time. - Nos sentamos no banco|
+would|1024970|v|indicating a possible (but not definite) future action or state|perguntando-nos se o ônibus chegaria tarde esta vez.|
+would|1024970|v|indicating in action or state that is conditional on another|use the conditional tense; We would be warmer if you hadn't opened the window! - Estaríamos mais quentes se você não tivesse aberto a janela.|
+would|1024970|v|used to express a polite request|por favor; Would you please turn off the TV? - Pode desligar a televisão|
+would|1024970|v|used to express a polite request|por favor?|
+would|1024970|v|used to express a polite request|; Poderia desligar a televisão|
+would|1024970|v|used to express a polite request|por favor?|
+would|1024970|v|used to express a polite request|; Me faria a gentileza de desligar a televisão|
+would|1024970|v|used to express a polite request|por favor?|
+then|985863|adv|at that time|então|
+then|985863|adv|at that time|naquele tempo|
+then|985863|adv|at that time|naquela época|
+then|985863|adv|at the same time; on the other hand|ao mesmo tempo|
+then|985863|adv|at the same time; on the other hand|simultaneamente; entretanto|
+then|985863|adv|in that case|então|
+then|985863|adv|in that case|nesse caso|
+then|985863|adv|next in order|então|
+then|985863|adv|next in order|depois|
+then|985863|adv|next in order|seguidamente|
+then|985863|adv|next in order|sequencialmente|
+then|985863|adv|soon afterward|então|
+then|985863|adv|soon afterward|depois|
+then|985863|adv|soon afterward|em seguida|
+or|980608|adj|of yellow or gold tincture on a coat of arms|ouro|
+or|980608|conj|conjunction|ou|
+or|980608|n|gold or yellow tincture|ouro|m
+tell|922643|v|to discern, notice, identify or distinguish|dizer|
+tell|922643|v|to instruct|mandar|
+tell|922643|v|to instruct|dizer|
+tell|922643|v|to pass information|contar|
+tell|922643|v|to pass information|dizer|
+our|921974|determiner|belonging to us|nosso|
+man|910369|interj|an interjection used to place emphasis upon something or someone|cara|m
+man|910369|n|adult male human|homem|m
+man|910369|n|adult male human|varão|m
+man|910369|n|adult male human|mane|m
+man|910369|n|human|homem|m
+man|910369|n|human|ser humano|m
+man|910369|n|piece in board games|homenzinho|m
+man|910369|v|to supply with staff or crew|tripular|
+man|910369|v|to take up position in order to operate something|operar|
+Man|910369|prop|genus Homo|homem|m
+Man|910369|prop|genus Homo|ser humano|m
+Man|910369|prop|genus Homo|humano|
+some|903823|adv|approximately, roughly|uns|
+some|903823|adv|approximately, roughly|mais ou menos|
+some|903823|determiner|certain proportion of|algum|
+some|903823|determiner|certain, unspecified or unknown|algum|
+some|903823|determiner|certain, unspecified or unknown|um|
+some|903823|determiner|considerable quantity or number of|algum|
+some|903823|determiner|informal: remarkable|que|
+some|903823|determiner|unspecified amount of|um pouco|
+some|903823|determiner|unspecified quantity or number of|algum|
+some|903823|pron|certain number|algum|m
+some|903823|pron|indefinite amount, part|um pouco|m
+some|903823|pron|indefinite amount, part|alguns|
+some|903823|pron|indefinite quantity or number|um pouco|m
+say|901201|v|imperative: let's say|suponhamos|
+say|901201|v|imperative: let's say|digamos|
+say|901201|v|to communicate verbally or in writing|dizer|
+say|901201|v|to communicate verbally or in writing|falar|
+say|901201|v|to have a common expression|diz-se|
+say|901201|v|to have a common expression|dizem|
+say|901201|v|to indicate in a written form|dizer|
+say|901201|v|to pronounce|dizer|
+say|901201|v|to pronounce|falar|
+say|901201|v|to recite|recitar|
+really|898387|adv|actually|na verdade|
+really|898387|adv|actually|realmente|
+really|898387|adv|actually|mesmo|
+really|898387|adv|informally, as an intensifier; very, very much|realmente|
+really|898387|adv|informally, as an intensifier; very, very much|mesmo|
+really|898387|interj|indicating surprise at, or requesting confirmation of, some new information|sério?|
+hey|879676|interj|exclamation to get attention|ei|
+hey|879676|interj|expression of surprise|epa|
+hey|879676|interj|expression of surprise|opa|
+hey|879676|interj|informal greeting|oi|
+hey|879676|interj|meaningless beat marker, filler syllable|é|
+hey|879676|interj|meaningless beat marker, filler syllable|hey|
+hey|879676|interj|protest or reprimand|ei|
+hey|879676|interj|protest or reprimand|epa|
+hey|879676|interj|protest or reprimand|opa|
+hey|879676|interj|request for repetition or explanation|hã|
+hey|879676|interj|request for repetition or explanation|hem|
+by|841594|adv|along a path|por mim|s
+by|841594|adv|along a path|por nós|p
+by|841594|prep|indicates a means|por|
+by|841594|prep|indicates a means|a|
+by|841594|prep|indicates a rule followed|por|
+by|841594|prep|indicates creator of a work|por|
+by|841594|prep|indicates creator of a work|de|
+by|841594|prep|indicating amount of progression|em|
+by|841594|prep|indication of passive voice|por|
+by|841594|prep|near, or next to|perto|
+by|841594|prep|near, or next to|próximo|m
+by|841594|prep|some time before the given time|próximo de|
+by|841594|prep|some time before the given time|até|
+by|841594|prep|steady progression|por|
+by|841594|prep|with the authority of|por|
+something|802331|pron|somebody who is superlative in some way|algo mais|
+something|802331|pron|talent that is hard to pin down|algo mais|m
+something|802331|pron|unspecified object|algo|m
+something|802331|pron|unspecified object|alguma coisa|f
+too|800203|adv|likewise|também|
+too|800203|adv|more than enough; as too much|demais|
+need|796316|n|something needed|necessidade|f
+need|796316|v|to be obliged to|precisar|
+need|796316|v|to have an absolute requirement for|necessitar|
+need|796316|v|to have an absolute requirement for|precisar|
+need|796316|v|to want strongly|precisar|
+more|780363|adv|comparative of much|mais|
+more|780363|adv|word to form a comparative|mais|
+more|780363|determiner|comparative of many|mais|
+more|780363|determiner|comparative of much|mais|
+way|768867|adv|very|muito|
+way|768867|adv|very|bastante|
+way|768867|adv|very|assaz|
+way|768867|n|means|meio|m
+way|768867|n|method|maneira|f
+way|768867|n|method|modo|m
+way|768867|n|method|jeito|m
+way|768867|n|wide path|caminho|m
+way|768867|n|wide path|via|f
+down|761224|adj|depressed|triste|
+down|761224|adj|depressed|deprimido|
+down|761224|adj|on a lower level than before|baixo|
+down|761224|adv|away from the city|fora|
+down|761224|adv|from a high to a low position, downwards|abaixo|
+down|761224|adv|from a high to a low position, downwards|para baixo|
+down|761224|adv|from a high to a low position, downwards|juso|
+down|761224|adv|in a lower position|embaixo|
+down|761224|adv|south|embaixo|
+down|761224|n|hill, rolling grassland|colina|f
+down|761224|n|soft, immature feathers|penugem|f
+down|761224|prep|from one end to another|por|
+down|761224|prep|from one end to another|através de|
+down|761224|v|to drink or swallow|engolir|
+make|745120|n|brand |marca|
+make|745120|v|to bring into success|fazer|
+make|745120|v|to cause to be|fazer|
+make|745120|v|to cause to do|fazer|
+make|745120|v|to constitute|fazer|
+make|745120|v|to construct|fazer|
+make|745120|v|to construct|construir|
+make|745120|v|to create|fazer|
+make|745120|v|to force to do|fazer|
+make|745120|v|to indicate or suggest to be|fazer|
+make|745120|v|to interpret|interpretar|
+make|745120|v|to produce|fazer|
+never|728075|adv|at no time|nunca|
+never|728075|adv|at no time|jamais|
+very|726857|adj|the same; identical|próprio|
+very|726857|adv|to a high degree|muito|
+very|726857|adv|true, truly|de facto|
+very|726857|adv|true, truly|de fato|
+only|691912|adj|alone in a category|único|
+only|691912|adj|singularly superior; the best|único|
+only|691912|adj|singularly superior; the best|melhor|
+only|691912|adj|without sibling|filho único|
+only|691912|adv|as recently as|apenas|
+only|691912|adv|as recently as|somente|
+only|691912|adv|no more than|apenas|
+only|691912|adv|no more than|somente|
+only|691912|adv|without others or anything further; exclusively|apenas|
+only|691912|adv|without others or anything further; exclusively|somente|
+only|691912|conj|but|mas|
+only|691912|conj|but|porém|
+only|691912|conj|but|todavia|
+only|691912|conj|except|salvo que|
+only|691912|conj|except|exceto que|
+only|691912|conj|however|mas|
+only|691912|conj|however|porém|
+only|691912|conj|however|todavia|
+over|681599|adj|ended|terminado|
+over|681599|adj|ended|acabado|
+over|681599|adj|ended|concluído|
+over|681599|adv|again|de novo|
+over|681599|interj|end of sentence in radio communication|câmbio|
+over|681599|prep|physical positioning: on top of; above|sobre|
+people|679620|n|a body of human beings; a group of two or more persons|pessoas|f-p
+people|679620|n|a body of human beings; a group of two or more persons|gente|f
+people|679620|n|a group of persons forming or belonging to a particular nation etc.|povo|m
+people|679620|n|a group of persons regarded as being employees etc.|pessoal|m
+people|679620|n|a person's ancestors, relatives or family|família|f
+people|679620|n|the mass of community as distinguished from a special class|povo|m
+people|679620|v|to become populous|povoar-se|
+people|679620|v|to fill with people|povoar|
+people|679620|v|to inhabit, to occupy|povoar|
+because|674954|adv|on account|porque|
+because|674954|adv|on account|pois|
+because|674954|adv|on account|que|
+because|674954|conj|as known because; as inferred because; as determined because|porque|
+because|674954|conj|by or for the cause that; on this account that; for the reason that|porque|
+because|674954|conj|by or for the cause that; on this account that; for the reason that|já que|
+little|665616|adj|Insignificant, trivial|menor|
+little|665616|adj|Insignificant, trivial|pequeno|
+little|665616|adj|(of a sibling) younger|mais novo|
+little|665616|adj|small in number, few|pequeno|
+little|665616|adj|small in number, few|pouco|
+little|665616|adj|small in size|pequeno|
+little|665616|adj|very young|pequenino|
+little|665616|adv|not much|pouco|
+little|665616|determiner|small amount|pouco|
+please|657147|adv|expression of annoyance or impatience|por favor|
+please|657147|adv|expression of annoyance or impatience|faça-me o favor|
+please|657147|adv|interjection to make a polite request|por favor|
+please|657147|adv|interjection to make a polite request|faça favor|
+please|657147|v|to make happy or satisfy|agradar|
+love|654135|n|darling or sweetheart|amor|m
+love|654135|n|romantic feelings|amor|m
+love|654135|n|strong affection|amor|
+love|654135|n|zero|zero|
+love|654135|v|be strongly inclined towards doing|adorar|
+love|654135|v|be strongly inclined towards doing|amar|
+love|654135|v|care about; will good for|amar|
+love|654135|v|have a strong affection for|amar|
+give|642152|v|transfer the possession of something to someone else|dar|
+should|639866|v|expressing likelihood|dever|
+should|639866|v|expressing obligation|dever|
+should|639866|v|If; in case of|se|
+should|639866|v|If; in case of|caso|
+sorry|634261|adj|poor, regrettable|lastimável|m
+sorry|634261|adj|regretful for an action or grieved|desculpa|
+sorry|634261|adj|regretful for an action or grieved|perdão|
+sorry|634261|interj|expression of regret or sorrow|desculpa|
+sorry|634261|interj|expression of regret or sorrow|perdão|
+sorry|634261|interj|expression of regret or sorrow|foi mal|
+sorry|634261|interj|request to repeat|quê? como?|
+sorry|634261|interj|request to repeat|hein?|
+sorry|634261|interj|request to repeat|perdão?|
+mean|626131|adj|accomplished with great skill; deft; hard to compete with|excelente|
+mean|626131|adj|accomplished with great skill; deft; hard to compete with|ótimo|
+mean|626131|adj|accomplished with great skill; deft; hard to compete with|formidável|
+mean|626131|adj|acting without consideration of others|mau|
+mean|626131|adj|acting without consideration of others|ruim|
+mean|626131|adj|causing or intending to cause intentional harm|mau|
+mean|626131|adj|causing or intending to cause intentional harm|ruim|
+mean|626131|adj|causing or intending to cause intentional harm|maldoso|
+mean|626131|adj|having the mean as its value|médio|
+mean|626131|adj|low in quality; inferior|mau|
+mean|626131|adj|low in quality; inferior|inferior|
+mean|626131|adj|middling; moderately good|mediano|
+mean|626131|adj|miserly, stingy|avarento|
+mean|626131|adj|miserly, stingy|mesquinho|
+mean|626131|adj|miserly, stingy|tacanho|
+mean|626131|adj|powerful; fierce; harsh; damaging|cruel|
+mean|626131|adj|powerful; fierce; harsh; damaging|terrível|
+mean|626131|n|alto, in music|alto|m
+mean|626131|n|arithmetic mean|média|f
+mean|626131|n|intermediate step|meio|
+mean|626131|n|intermediate step|passo|
+mean|626131|n|intermediate value|média|f
+mean|626131|n|method by which something is done|meio|m
+mean|626131|n|method by which something is done|recurso|m
+mean|626131|n|the statistical value|média|f
+mean|626131|v|to complain, lament|reclamar|
+mean|626131|v|to complain, lament|lamentar|
+mean|626131|v|to convey, indicate|querer dizer|
+mean|626131|v|to convey, indicate|indicar|
+mean|626131|v|to have conviction in what one says|falar sério|
+mean|626131|v|to have intentions of some kind|querer|
+mean|626131|v|to intend; plan on doing|pretender|
+mean|626131|v|to intend; plan on doing|tencionar|
+mean|626131|v|to pity, comfort|apiedar-se|
+mean|626131|v|to pity, comfort|compadecer-se|
+mean|626131|v|to result in; bring about|significar|
+mean|626131|v|to result in; bring about|representar|
+mean|626131|v|to signify|significar|
+mean|626131|v|to signify|querer dizer|
+off|623312|adj|inoperative, disabled|desligado|
+off|623312|adj|rotten|estragado|
+off|623312|adv|into a state of non-operation or non-existence|desligado|
+off|623312|v|To kill|apagar|
+off|623312|v|To switch off|apagar|
+off|623312|v|To switch off|desligar|
+any|594507|determiner|at least one (kind)|algum|
+any|594507|determiner|no matter what kind|qualquer|
+any|594507|pron|Any things or persons|qualquer um|
+two|594409|n|digit or figure|dois|m
+two|594409|n|digit or figure|duas|m
+two|594409|n|two-dollar bill|cédula de dois dólares|f
+two|594409|n|two-dollar bill|nota de dois dólares|f
+two|594409|num|one plus one|dois|m
+two|594409|num|one plus one|duas|f
+two|594409|num|set or group with two components|par|m
+two|594409|num|set or group with two components|pares|m-p
+thank|590296|v|express gratitude or appreciation to someone|agradecer|
+even|576222|adj|arithmetic: divisible by two|par|
+even|576222|adj|equal|quite|
+even|576222|adj|flat and level|plano|
+even|576222|adj|flat and level|nivelado|
+even|576222|adj|without great variation|uniforme|
+even|576222|adj|without great variation|constante|
+even|576222|adj|without great variation|padronizado|
+even|576222|adv|emphasising comparative|igualmente|
+even|576222|adv|emphasising comparative|ainda|
+even|576222|adv|exactly, fully|exatamente|
+even|576222|adv|exactly, fully|completamente|
+even|576222|adv|implying extreme example|até|
+even|576222|adv|implying extreme example|mesmo|
+even|576222|adv|implying extreme example|nem sequer|
+even|576222|v|make even|igualar|
+even|576222|v|make even|nivelar|
+even|576222|v|make even|padronizar|
+even|576222|v|make even|uniformizar|
+much|569337|adv|to a great extent|muito|
+much|569337|determiner|a large amount of|muito(s)|
+much|569337|determiner|a large amount of|muita(s)|
+much|569337|determiner|a large amount of|um monte de|
+sure|546535|adj|certain, reliable|certo|
+sure|546535|adj|certain, reliable|seguro|
+sure|546535|interj|yes, of course|tá|
+sure|546535|interj|yes, of course|claro|
+sure|546535|interj|yes, of course|tudo bem|
+thing|535354|n|that which is considered to exist as a separate entity, object, quality or concept|coisa|f
+Thing|535354|n|public assembly|thing|m
+these|524478|determiner|plural of this, 1st person, close to the speaker|estes|
+these|524478|determiner|plural of this, 2nd person, close to the listener|esses|
+these|524478|pron|plural of this|esses|
+these|524478|pron|plural of this|estes|m-p
+help|518511|n|action given to provide assistance|ajuda|f
+help|518511|n|action given to provide assistance|socorro|m
+help|518511|n|action given to provide assistance|auxílio|m
+help|518511|n|person employed to help in the maintenance of a house|criado|m
+help|518511|n|person employed to help in the maintenance of a house|criada|f
+help|518511|n|person or persons who provides assistance with some task|ajudante|m
+help|518511|n|person or persons who provides assistance with some task|servente|m
+help|518511|v|contribute in some way to|ajudar|
+help|518511|v|transitive: provide assistance to (someone or something)|ajudar|
+help|518511|v|transitive: provide assistance to (someone or something)|socorrer|
+first|506597|adj|numeral first|primeiro|m
+first|506597|adj|numeral first|primeira|f
+first|506597|adv|before anything else|primeiro|m
+first|506597|n|person or thing in the first position|primeiro|m
+into|499706|prep|against, with force|em|
+into|499706|prep|going inside|para dentro de|
+into|499706|prep|going to a geographic region|até|
+anything|497858|n|someone or something|qualquer coisa|f
+anything|497858|pron|any thing of any kind|qualquer coisa|f
+still|495161|adj|not moving|imóvel|m
+still|495161|adj|not moving|parado|
+still|495161|adv|nevertheless|mesmo assim|
+still|495161|adv|nevertheless|ainda assim|
+still|495161|adv|to an even greater degree|ainda|
+still|495161|adv|up to a time, as in the preceding time|ainda|
+sir|492042|n|address to a military superior|senhor|m
+sir|492042|n|address to any male, especially if his name or proper address is unknown|senhor|m
+sir|492042|n|man of a higher rank or position|senhor|m
+life|490450|n|a status given to entities which have the properties of replication and metabolism|vida|f
+life|490450|n|A worthwhile existence|vida|f
+life|490450|n|duration|duração|f
+life|490450|n|life sentence|perpétua|f
+life|490450|n|something inherently part of a person's existence|vida|f
+life|490450|n|the essence of the manifestation and the foundation of the being|vida|f
+life|490450|n|The state between birth and death|vida|f
+life|490450|n|the subjective and inner manifestation of the individual|vida|f
+life|490450|n|The world in general, existence|vida|f
+nothing|490006|pron|not any thing|nada|
+find|485184|n|act of finding|encontro|m
+find|485184|n|anything found|achado|m
+find|485184|v|decide that|achar|
+find|485184|v|determine, judge|determinar|
+find|485184|v|determine, judge|julgar|
+find|485184|v|encounter, locate, discover|achar|
+find|485184|v|encounter, locate, discover|encontrar|
+find|485184|v|point out|achar|
+find|485184|v|point out|encontrar|
+god|483327|n|deity|deus|m
+god|483327|n|idol|ídolo|m
+god|483327|v|deify|deificar|
+god|483327|v|idolize|idolatrar|
+God|483327|prop|impersonal, universal, spiritual presence|Deus|m
+God|483327|prop|omnipotent being|Deus|m
+God|483327|prop|single deity of monotheism|Deus|m
+God|483327|prop|single male deity of duotheism|Deus|m
+day|478964|n|part of a day period which one spends at one’s job, school, etc.|dia|m
+day|478964|n|period between sunrise and sunset|dia|m
+day|478964|n|period from midnight to the following midnight|dia|m
+day|478964|n|period of 24 hours|dia|m
+day|478964|n|rotational period of a planet|dia|m
+work|470130|n|effort expended on a particular task|trabalho|m
+work|470130|n|labour, employment, occupation, job|trabalho|m
+work|470130|n|literary, artistic, or intellectual production|obra|f
+work|470130|n|literary, artistic, or intellectual production|trabalho|m
+work|470130|n|measure of energy expended in moving an object|trabalho|m
+work|470130|n|place where one is employed|trabalho|m
+work|470130|n|place where one is employed|emprego|m
+work|470130|v|function correctly|funcionar|
+work|470130|v|shape, form, or improve a material|trabalhar|
+work|470130|v|to do a specific task|trabalhar|
+again|461474|adv|another time|de novo|
+again|461474|adv|another time|outra vez|
+again|461474|adv|another time|novamente|
+again|461474|adv|used in a question to ask something one has forgotten|mesmo|
+must|460337|n|something mandatory|dever|m
+must|460337|n|unfermented fruit juice|mosto|m
+must|460337|v|must|dever|
+their|460207|determiner|belonging to them (plural)|seu|
+their|460207|determiner|belonging to them (plural)|seus|
+stop|450397|n|consonant sound|oclusiva|f
+stop|450397|n|consonant sound|plosiva|f
+stop|450397|n|device to block path|obstáculo|m
+stop|450397|n|interruption of travel|parada|f
+stop|450397|n|place to get on and off line buses or trams|ponto|m
+stop|450397|n|punctuation symbol|ponto final|m
+stop|450397|n|short for stopper|parada|f
+stop|450397|n|short for stopper|interrupção|f
+stop|450397|v|cause (something) to cease moving|parar|
+stop|450397|v|cause (something) to come to an end|parar|
+stop|450397|v|cease moving|parar|
+stop|450397|v|cease moving|deixar de|
+stop|450397|v|close an aperture|tampar|
+stop|450397|v|close an aperture|tapar|
+stop|450397|v|come to an end|parar|
+stop|450397|v|come to an end|deixar de|
+stop|450397|v|stay a while|passar|
+stop|450397|v|tarry|parar|
+maybe|449837|adv|as a pro-sentence|é possível|
+maybe|449837|adv|as a pro-sentence|pode ser|
+maybe|449837|adv|as a pro-sentence|talvez|
+maybe|449837|adv|indicating a lack of certainty|talvez|
+call|447868|n|beckoning or summoning|chamada|f
+call|447868|n|beckoning or summoning|chamado|m
+call|447868|n|characteristic cry of a bird or other animal|canto|m
+call|447868|n|(computing): the act of jumping to a subprogram|chamada|f
+call|447868|n|cry or shout|chamada|f
+call|447868|n|cry or shout|grito|m
+call|447868|n|(medicine): overnight duty in the hospital|plantão médico|
+call|447868|n|social visit|visita|f
+call|447868|n|telephone conversation|telefonema|m
+call|447868|n|telephone conversation|chamada|
+call|447868|n|telephone conversation|ligação|
+call|447868|v|to be called|chamar-se|
+call|447868|v|to contact by telephone|telefonar|
+call|447868|v|to contact by telephone|ligar|
+call|447868|v|to cry or shout|gritar|
+call|447868|v|to cry or shout|chamar|
+call|447868|v|to name or refer to|chamar|
+call|447868|v|to pay a social visit|visitar|
+call|447868|v|to request, summon, or beckon|chamar|
+call|447868|v|to require, demand|requerer|
+wait|446912|n|a delay|espera|f
+wait|446912|v|delay until some event|esperar|
+wait|446912|v|delay until some event|aguardar|
+wait|446912|v|to serve customers|servir|
+before|446510|adv|at an earlier time|antes|
+before|446510|adv|in advance|primeiro|
+before|446510|prep|earlier than in time|antes de|
+before|446510|prep|in front of according to an ordering system|antes de|
+before|446510|prep|in front of in space|ante|
+before|446510|prep|in front of in space|em frente a|
+before|446510|prep|in front of in space|na frente de|
+before|446510|prep|in front of in space|diante de|
+other|446105|adj|not the one|outro|
+other|446105|adj|not the one|outra|f
+other|446105|adv|apart from|fora|
+other|446105|determiner|not the one referred to|outro|
+other|446105|n|an other one|outro|m
+other|446105|n|an other one|outra|f
+away|443108|adj|not here; gone|ausente|
+away|443108|adj|traveling; on vacation|fora|
+away|443108|adj|unavailable|indisponível|
+away|443108|adv|absent; gone; at a distance|longe|
+away|443108|adv|aside; off; in another direction|para fora|
+away|443108|adv|at a distance in time or space|a|
+away|443108|adv|at a distance in time or space|daqui a|
+away|443108|adv|equivalent to an imperative: Go or come away; begone; take away|sai|
+away|443108|adv|equivalent to an imperative: Go or come away; begone; take away|saia|
+away|443108|adv|equivalent to an imperative: Go or come away; begone; take away|vai/vá embora|
+away|443108|adv|equivalent to an imperative: Go or come away; begone; take away|suma/some daqui|
+away|443108|adv|from a place; hence|embora|
+talk|442738|n|conversation|conversa|f
+talk|442738|n|conversation|conversação|f
+talk|442738|n|lecture|discurso|m
+talk|442738|n|what is being said|assunto|m
+talk|442738|v|to communicate by speech|falar|
+talk|442738|v|to communicate by speech|conversar|
+after|442323|adv|behind; later in time; following|depois|
+after|442323|conj|Signifies that the action of its clause takes place before the action of the other clause|depois de|
+after|442323|prep|as a result of|devido a|
+after|442323|prep|as a result of|por causa de|
+after|442323|prep|behind|atrás de|
+after|442323|prep|in allusion to, in imitation of; following or referencing|por|
+after|442323|prep|in allusion to, in imitation of; following or referencing|segundo|
+after|442323|prep|in pursuit of, seeking|atrás de|
+after|442323|prep|in spite of|apesar de|
+after|442323|prep|next in importance or rank|atrás de|
+after|442323|prep|next in importance or rank|depois de|
+after|442323|prep|subsequently; following in time; later than|depois de|
+night|435343|n|darkness|escuridão|m
+night|435343|n|darkness|noite|f
+night|435343|n|darkness|trevas|f
+night|435343|n|evening or night spent at a particular activity|noitada|f
+night|435343|n|evening or night spent at a particular activity|noite|f
+night|435343|n|nightfall|anoitecer|m
+night|435343|n|night spent at a hotel|pernoite|m
+night|435343|n|night spent at a hotel|pernoitada|f
+night|435343|n|period between sunset and sunrise|noite|f
+night|435343|n|quality of sleep obtained during a night|sono|m
+home|434860|adv|at home|em casa|
+home|434860|adv|homewards|para casa|
+home|434860|n|childhood or parental home|lar|m
+home|434860|n|childhood or parental home|casa|f
+home|434860|n|habitat|lar|m
+home|434860|n|habitat|habitat|m
+home|434860|n|house or structure in which someone lives|lar|m
+home|434860|n|house or structure in which someone lives|casa|f
+home|434860|n|place of refuge or rest|casa|f
+home|434860|n|place of refuge or rest|lar|m
+home|434860|n|place of the affections|lar|m
+home|434860|n|place of the affections|casa|f
+home|434860|n|someone’s native land|lar|m
+home|434860|n|someone’s native land|casa|f
+home|434860|n|someone’s native land|terra|f
+uh|431647|interj|expression of confusion or uncertainty|hã|
+uh|431647|interj|space filler or pause during conversation|hã|
+uh|431647|interj|space filler or pause during conversation|é|
+than|431472|prep|Introduces a comparison|que|
+than|431472|prep|Introduces a comparison|do que|
+thought|430366|n|form created in the mind|pensamento|m
+thought|430366|n|form created in the mind|ideia|
+thought|430366|n|the state or condition of thinking|pensamento|m
+put|427773|v|to place something somewhere|pôr|
+put|427773|v|to place something somewhere|colocar|
+put|427773|v|to place something somewhere|botar|
+great|422753|adj|important title|grande|
+great|422753|adj|important title|grandioso|
+great|422753|adj|important title|distinto|
+great|422753|adj|very big, large scale|grande|
+great|422753|adj|very big, large scale|grandioso|
+great|422753|adj|very big, large scale|enorme|
+great|422753|adj|very good|ótimo|m
+great|422753|adv|very well|bem|
+great|422753|interj|great!|magnífico|
+great|422753|interj|great!|ótimo|
+great|422753|n||grande|m
+last|409312|adj|Final|último|
+last|409312|adj|Least preferable|último|
+last|409312|adj|Most recent|último|
+last|409312|adv|after everything else|por último|
+last|409312|adv|finally|por último|
+last|409312|n|tool|forma|f
+last|409312|v|endure, continue over time|durar|
+last|409312|v|to hold out|durar|
+last|409312|v|to hold out|aguentar|
+last|409312|v|to hold out|resistir|
+better|404394|adj|comparative of the adjectives good or well|melhor|
+better|404394|adv|comparative form of the adverb well|melhor|
+better|404394|v|to improve|melhorar|
+everything|404124|pron|all the things|tudo|
+told|402035|v|past participle|dito|
+told|402035|v|simple past tense|disse|
+new|391948|adj|additional, recently discovered|novo|
+new|391948|adj|current or later|novo|
+new|391948|adj|distinguishing something established more recently|novo|
+new|391948|adj|inexperienced, unaccustomed|novo|
+new|391948|adj|in original condition, pristine|novo|
+new|391948|adj|of recent origin|novo|
+new|391948|adj|recently arrived or appeared|novo|
+new|391948|adj|recently made or created|novo|
+new|391948|adj|refreshed, reinvigorated|novo|
+new|391948|adj|strange, unfamiliar|novo|
+new|391948|adj|young|novo|
+always|391777|adv|at all times|sempre|
+always|391777|adv|constantly during a certain period, or regularly at stated intervals|sempre|
+always|391777|adv|constantly during a certain period, or regularly at stated intervals|constantemente|
+long|386512|adj|having great duration|comprido|
+long|386512|adj|having great duration|longo|
+long|386512|adj|having much distance from one point to another|longo|
+long|386512|adj|having much distance from one point to another|comprido|
+long|386512|adv|over a great distance|distante|
+long|386512|v|to wait, to aspire|ansiar|
+long|386512|v|to wait, to aspire|suspirar|
+keep|385887|n|main tower|torre de menagem|f
+keep|385887|n|support|apoio|m
+keep|385887|v|of livestock: to raise; to care for|criar|
+keep|385887|v|supply with necessities and financially support a person|manter|
+keep|385887|v|to continue|continuar|
+keep|385887|v|to continue|seguir|
+keep|385887|v|to continue|manter-se|
+keep|385887|v|to maintain possession of|manter|
+keep|385887|v|to maintain possession of|guardar|
+keep|385887|v|to maintain the condition of; to preserve|manter|
+keep|385887|v|to maintain the condition of; to preserve|deixar|
+keep|385887|v|to remain in, to be confined to|permanecer|
+keep|385887|v|to restrain|conter|
+leave|377887|n|absence from work|licença|f
+leave|377887|n|absence from work|afastamento|m
+leave|377887|n|departure|saída|f
+leave|377887|n|departure|partida|f
+leave|377887|n|permission|permissão|f
+leave|377887|v|To cause to remain as available, not take away, refrain from depleting|deixar|
+leave|377887|v|To depart from, end one's connection or affiliation with|partir|
+leave|377887|v|To depart from, end one's connection or affiliation with|sair|
+leave|377887|v|To depart (intransitive)|partir|
+leave|377887|v|To end one's membership in|deixar|
+leave|377887|v|To end one's membership in|sair|
+leave|377887|v|To give (something) to someone; to deliver (something) to a repository; to deposit|deixar|
+leave|377887|v|To transfer possession after death|deixar|
+leave|377887|v|To transfer responsibility or attention|deixar|
+money|370857|n|cash|dinheiro|m
+money|370857|n|currency|dinheiro|m
+money|370857|n|means of exchange and measure of value|dinheiro|m
+money|370857|n|wealth|riqueza|f
+around|363503|adv|nearby, in the area|por aqui|
+around|363503|prep|defining a circle or closed curve containing|em torno de|
+around|363503|prep|near|em torno de|
+around|363503|prep|near|por volta de|
+around|363503|prep|near|perto de|
+name|357006|n|reputation|nome|m
+name|357006|n|reputation|fama|f
+name|357006|n|reputation|reputação|f
+name|357006|n|word or phrase indicating a particular person, place, class or thing|nome|m
+name|357006|v|to designate for a role|nomear|
+name|357006|v|to give a name to|nomear|
+name|357006|v|to give a name to|denominar|
+name|357006|v|to give a name to|chamar|
+name|357006|v|to identify, define, specify|especificar|
+name|357006|v|to identify, define, specify|precisar|
+name|357006|v|to mention, specify|escolher|
+name|357006|v|to mention, specify|eleger|
+name|357006|v|to publicly implicate|identificar|
+father|349150|n|male parent|pai|m
+father|349150|v|to sire|gerar|
+father|349150|v|to sire|procriar|
+Father|349150|prop|God, the father of Creation|Pai|m
+Father|349150|prop|term of address for a Christian priest|padre|m
+guy|344197|n|man|tipo|m
+guy|344197|n|man|cara|
+Guy|344197|prop|male given name|Guido|
+place|343632|n|a role or purpose, a station|posição|f
+place|343632|n|a role or purpose, a station|papel|m
+place|343632|n|frame of mind|mentalidade|f
+place|343632|n|group of houses|vila|f
+place|343632|n|informal: house or home|casa|f
+place|343632|n|location, position|lugar|m
+place|343632|n|location, position|local|m
+place|343632|n|location, position|posição|f
+place|343632|n|numeric: the column counting a certain quantity|casa|f
+place|343632|n|numeric: the column counting a certain quantity|algarismo|m
+place|343632|n|open space, courtyard, market square|praça|
+place|343632|n|region of a land|área|f
+place|343632|n|region of a land|região|f
+place|343632|n|somewhere to sit|lugar|m
+place|343632|n|somewhere to sit|assento|m
+place|343632|n|the position as a member of a team|lugar|m
+place|343632|n|the position as a member of a team|posição|f
+place|343632|n|the position of a contestant in a competition|lugar|m
+place|343632|n|the position of a contestant in a competition|posição|f
+place|343632|v|passive: to achieve (a certain position)|classificar-se|
+place|343632|v|passive: to achieve (a certain position)|chegar|
+place|343632|v|passive: to achieve (a certain position)|obter|
+place|343632|v|to arrange for, make (a bet)|apostar|
+place|343632|v|to earn a given spot in a competition|classificar-se|
+place|343632|v|to earn a given spot in a competition|chegar|
+place|343632|v|to earn a given spot in a competition|obter|
+place|343632|v|to put in a specific location|colocar|
+place|343632|v|to put in a specific location|pôr|
+place|343632|v|to recruit or match an appropriate person for a job|contratar|
+place|343632|v|to remember where and when something or someone was previously encountered|lembrar-se|
+place|343632|v|to sing (a note) with the correct pitch|cantar|
+place|343632|v|to sing (a note) with the correct pitch|entoar|
+feel|342785|n|quality|tato|m
+feel|342785|v|copulative: to seem|parecer|
+feel|342785|v|intransitive: to experience an emotion or other mental state|sentir|
+feel|342785|v|intransitive: to search by touching|palpar|
+feel|342785|v|transitive: to experience an emotion or other mental state about|sentir|
+feel|342785|v|transitive: to experience an emotion or other mental state about|sentir-se|
+feel|342785|v|transitive: to sense by touch|apalpar|
+feel|342785|v|transitive: to sense by touch|tocar|
+feel|342785|v|transitive: to sense by touch|sentir|
+feel|342785|v|transitive: to think or believe|pensar/crer/achar que|
+ever|342727|adv|always|sempre|
+ever|342727|adv|at any time|alguma vez|
+old|337441|adj|former|antigo|
+old|337441|adj|having existed or lived for the specified time|de|
+old|337441|adj|having existed or lived for the specified time|com; (to be X old: ter + X)|
+old|337441|adj|of a living being: having lived for relatively many years|velho|
+old|337441|adj|of a living being: having lived for relatively many years|idoso|
+old|337441|adj|(of an item) used, not new|usado|
+old|337441|adj|of an object, concept, etc: having existed for a relatively long period of time|velho|
+old|337441|adj|of an object, concept, etc: having existed for a relatively long period of time|antigo|
+old|337441|adj|tiresome|cansativo|
+big|323322|adj|adult|maior|
+big|323322|adj|adult|adulto|
+big|323322|adj|of a great size, see also: large|grande|
+which|322915|determiner|(interrogative) what, of those mentioned or implied|qual|
+which|322915|determiner|(interrogative) what one or ones|qual|
+which|322915|determiner|(relative) the one(s) that|qual|
+which|322915|pron|(relative) who, whom, what|que|
+nice|319252|adj|attractive|bom|
+nice|319252|adj|attractive|agradável|
+nice|319252|adj|having a pleasant taste or aroma|agradável|
+nice|319252|adj|pleasant|bonito|
+nice|319252|adj|pleasant|agradável|
+nice|319252|adj|pleasant|simpático|
+nice|319252|interj||ótimo|
+nice|319252|interj||beleza|
+Nice|319252|prop|city in France|Nice|f
+girl|318851|n|woman|mulher|f
+girl|318851|n|young female|menina|f
+girl|318851|n|young female|garota|f
+girl|318851|n|young female|moça|f
+hello|318629|interj|expression of puzzlement|o que|
+hello|318629|interj|greeting|oi|
+hello|318629|interj|greeting|olá|
+hello|318629|interj|greeting|e aí?|
+hello|318629|interj|is anyone there?|olá|
+hello|318629|interj|sarcastic: that was foolish|acorda|
+hello|318629|interj|sarcastic: that was foolish|alô|
+hello|318629|interj|when answering the telephone|alô|
+believe|314933|v|to accept as true|acreditar|
+believe|314933|v|to accept as true|crer|
+believe|314933|v|to accept as true|confiar|
+believe|314933|v|to accept that someone is telling the truth (object: person)|acreditar|
+believe|314933|v|to accept that someone is telling the truth (object: person)|crer|
+believe|314933|v|to consider likely|acreditar|
+believe|314933|v|to consider likely|crer|
+believe|314933|v|to consider likely|achar|
+believe|314933|v|to have religious faith; to believe in a greater truth|acreditar|
+believe|314933|v|to have religious faith; to believe in a greater truth|crer|
+lot|312006|n|distinct portion or plot of land|lote|
+lot|312006|n|informal: a number of people taken collectively|bando|m
+lot|312006|n|number of things taken collectively|quantidade|
+fine|311091|adj|being acceptable, adequate, passable, or satisfactory|bom|
+fine|311091|adj|good-looking, attractive|bonito|
+fine|311091|adj|of superior quality|fino|
+fine|311091|adj|of weather: sunny and not raining|bom|
+fine|311091|adj|particularly slender; especially thin, narrow, or of small girth|fino|
+fine|311091|n|payment for breaking the law|multa|f
+fine|311091|v|to issue a fine as punishment|multar|
+someone|310599|pron|some person|alguém|
+thanks|310176|interj|used to express appreciation or gratitude|obrigado|m
+thanks|310176|interj|used to express appreciation or gratitude|obrigada|f
+thanks|310176|interj|used to express appreciation or gratitude|valeu|
+thanks|310176|n|expression of gratitude|agradecimentos|m-p
+thanks|310176|n|grateful feelings|gratidão|f
+house|303903|n|an establishment, business|casa|f
+house|303903|n|archetypal structure of a human abode|casa|f
+house|303903|n|astrology: one of the twelve divisions of an astrological chart|casa|f
+house|303903|n|debating chamber for government politicians|câmara|f
+house|303903|n|dynasty, familiar descendance|casa|f
+house|303903|n|human abode|casa|f
+house|303903|n|theatre|teatro|
+house|303903|v|admit to residence|alojar|
+house|303903|v|admit to residence|hospedar|
+house|303903|v|keep within a structure or container|armazenar|
+wanted|302530|adj|law: subject to immediate detainment|procurado|m
+kind|300566|adj|affectionate, nice|amável|
+kind|300566|n|type, race, category|tipo|m
+kind|300566|n|type, race, category|categoria|f
+kind|300566|n|type, race, category|género|m
+kind|300566|n|type, race, category|raça|f
+kind|300566|n|type, race, category|classe|f
+every|299844|determiner|all of a countable group|cada|
+stay|297670|n|period of time spent in a place|estada|f
+stay|297670|n|period of time spent in a place|estadia|f
+stay|297670|n|postponement|suspensão|f
+stay|297670|v|To continue to have a particular quality|ficar|
+stay|297670|v|To continue to have a particular quality|permanecer|
+stay|297670|v|To continue to have a particular quality|continuar|
+stay|297670|v|To continue to have a particular quality|manter|
+stay|297670|v|To postpone|adiar|
+stay|297670|v|To remain in a particular place|ficar|
+stay|297670|v|To remain in a particular place|permanecer|
+left|296563|adj|pertaining to the political left; liberal|de esquerda|
+left|296563|adj|pertaining to the political left; liberal|liberal|
+left|296563|adj|pertaining to the political left; liberal|esquerdista|
+left|296563|adj|the west side of the body when one is facing north|esquerdo|
+left|296563|adv|on the left side|à esquerda|
+left|296563|adv|towards the left side|esquerdo|
+left|296563|adv|towards the left side|sestro|
+left|296563|n|the ensemble of left-wing political parties|esquerda|f
+left|296563|n|the left side|esquerda|f
+left|296563|v|remaining|deixado|
+left|296563|v|remaining|sobrar|
+left|296563|v|remaining|restar|
+mother|296509|n|female (human) who parents a child, gives birth to a baby, or is pregnant|mãe|f
+mother|296509|n|one’s female parent|mãe|f
+through|296463|adv|From one side to the other|através|
+through|296463|prep|by means of|por|
+through|296463|prep|entering, then later exiting|através de|
+through|296463|prep|entering, then later exiting|pelo|
+through|296463|prep|entering, then later exiting|pela|
+through|296463|prep|from one side of an opening to the other|pelo|
+through|296463|prep|from one side of an opening to the other|pela|
+through|296463|prep|surrounded by (while moving)|através de|
+through|296463|prep|surrounded by (while moving)|por entre|
+being|293158|n|a living creature|ser|m
+being|293158|n|a living creature|criatura|f
+being|293158|n|the state or fact of existence|existência|f
+enough|292765|adv|sufficiently|bastante|
+enough|292765|adv|sufficiently|suficientemente|
+enough|292765|determiner|sufficient|bastante|
+enough|292765|determiner|sufficient|suficiente|
+enough|292765|interj|stop!|basta!|
+enough|292765|interj|stop!|chega!|
+enough|292765|pron|a sufficient or adequate number, amount, etc|o suficiente|
+may|292266|n|the hawthorn bush or its blossom|pilriteiro|m
+may|292266|n|the hawthorn bush or its blossom|estrepeiro|m
+may|292266|v|have permission to|poder|
+may|292266|v|possibly, but not certainly|talvez|
+may|292266|v|possibly, but not certainly|pode ser|
+May|292266|prop|fifth month of the Gregorian calendar|maio|m
+course|292055|n|direction of movement of a vessel|curso|m
+course|292055|n|intended passage for ship|curso|
+course|292055|n|itinerary of a race|percurso|m
+course|292055|n|onward movement|curso|m
+course|292055|n|part of a meal|prato|m
+course|292055|n|path taken by a waterway|curso|m
+course|292055|n|period of learning|curso|m
+course|292055|n|row of bricks|fileira|f
+course|292055|n|trajectory of a ball etc.|trajetória|f
+course|292055|v|Flow|correr|
+dad|292023|n|familiar address of one's own father|papá|m
+dad|292023|n|informal a father|papá|m
+wrong|290709|adj|asserting something incorrect|errado|
+wrong|290709|adj|asserting something incorrect|equivocado|
+wrong|290709|adj|designed to be worn or placed inward|errado|m
+wrong|290709|adj|designed to be worn or placed inward|avesso|
+wrong|290709|adj|immoral|errado|
+wrong|290709|adj|immoral|imoral|
+wrong|290709|adj|improper|errado|
+wrong|290709|adj|improper|impróprio|
+wrong|290709|adj|improper|inadequado|
+wrong|290709|adj|incorrect|errado|
+wrong|290709|adj|incorrect|incorreto|
+wrong|290709|adj|not working|errado|
+wrong|290709|adv|done incorrectly|incorretamente|
+wrong|290709|adv|done incorrectly|erroneamente|
+wrong|290709|adv|done incorrectly|erradamente|
+wrong|290709|n|instance of wronging someone|erro|m
+wrong|290709|n|opposite of right|injúria|f
+wrong|290709|n|something immoral|mal|m
+wrong|290709|v|to deprive of a right|injustiçar|
+wrong|290709|v|to deprive of a right|lesar|
+wrong|290709|v|to slander or impute evil|ofender|
+wrong|290709|v|to treat unjustly|maltratar|
+wrong|290709|v|to treat unjustly|injustiçar|
+listen|289148|v|to accept advice or obey instruction|ouvir|
+listen|289148|v|to expect or wait for a sound|escutar|
+listen|289148|v|to hear (something)|escutar|
+listen|289148|v|to hear (something)|ouvir|
+listen|289148|v|to pay attention to a sound|escutar|
+bad|289092|adj|evil, wicked|mau|
+bad|289092|adj|evil, wicked|malvado|
+bad|289092|adj|evil, wicked|ruim|
+bad|289092|adj|faulty; not functional|quebrado|
+bad|289092|adj|faulty; not functional|enguiçado|
+bad|289092|adj|faulty; not functional|estragado|
+bad|289092|adj|not good|ruim|
+bad|289092|adj|not good|mau|
+bad|289092|adj|not suitable or fitting|mau|
+bad|289092|adj|not suitable or fitting|errado|
+bad|289092|adj|of breath: malodorous|mau|
+bad|289092|adj|of breath: malodorous|ruim|
+bad|289092|adj|seemingly non-appropriate, in manners|ruim|
+bad|289092|adj|seemingly non-appropriate, in manners|mau|
+bad|289092|adj|seemingly non-appropriate, in manners|feio|
+bad|289092|adj|tricky; stressful; unpleasant|mau|
+bad|289092|adj|tricky; stressful; unpleasant|desagradável|
+understand|286339|v|to be aware of the meaning of|compreender|
+understand|286339|v|to be aware of the meaning of|entender|
+understand|286339|v|to believe, based on information|acreditar|
+understand|286339|v|to impute meaning, character etc. that is not explicitly stated|compreender|
+three|285772|n|digit/figure 3|três|m
+three|285772|num|cardinal number 3|três|
+today|285406|adv|nowadays|hoje|
+today|285406|adv|nowadays|hoje em dia|
+today|285406|adv|nowadays|atualmente|
+today|285406|adv|on the current day|hoje|
+today|285406|n|today (noun)|hoje|
+world|284978|n|human collective existence|mundo|m
+world|284978|n|individual or group perspective or social setting|mundo|m
+world|284978|n|inhabited planet|mundo|m
+world|284978|n|the earth|mundo|m
+another|282815|determiner|any or some|outro|m
+another|282815|determiner|not the same; different|outro|
+another|282815|determiner|one more, in addition to a former number|outro|
+hear|280721|v|to perceive with the ear|ouvir|
+remember|278873|v|to memorize|decorar|
+remember|278873|v|to memorize|memorizar|
+remember|278873|v|to recall from one's memory|lembrar-se|
+remember|278873|v|to recall from one's memory|recordar-se|
+might|278856|v|indicator of conditional or possible actions|pode ser que|
+might|278856|v|indicator of conditional or possible actions|talvez|
+ask|278627|v|make a request|pedir|
+ask|278627|v|make a request|solicitar|
+ask|278627|v|make a request|requerer|
+ask|278627|v|make a request|requisitar|
+ask|278627|v|request an answer|perguntar|
+own|271754|adj|belonging to (determiner)|próprio|
+own|271754|v|have rightful possession of|possuir|
+same|269288|adj|not different as regards self; identical|mesmo|m
+same|269288|adj|not different as regards self; identical|o mesmo|
+same|269288|adj|similar, alike|mesmo|
+same|269288|pron|something similar, something of the identical type|mesmo|
+same|269288|pron|the identical thing|mesmo|m
+kill|269104|n|act of killing|morte|
+kill|269104|v|put to death|matar|
+show|266861|n|broadcast program(me)|programa|m
+show|266861|n|demonstration|demonstração|f
+show|266861|n|entertainment|show|m
+show|266861|n|entertainment|espetáculo|m
+show|266861|n|exhibition|mostra|f
+show|266861|n|exhibition|exposição|f
+show|266861|v|to display|mostrar|
+show|266861|v|to display|apresentar|
+show|266861|v|to indicate (a fact) to be true|demonstrar|
+else|265293|adj|other|mais|
+else|265293|adv|statement in computing that indicates the result of a conditional statement (if) evaluating as false|senão|
+else|265293|adv|word that implies any result with the exception of the one being referred to|senão|
+else|265293|adv|word that implies any result with the exception of the one being referred to|em vez de|
+else|265293|adv|word that implies any result with the exception of the one being referred to|além disso|
+found|260586|v|to begin building|fundar|
+found|260586|v|to start organization|fundar|
+care|259376|n|close attention, concern or responsibility|cuidado|m
+care|259376|n|treatment of those in need|atendimento|m
+care|259376|n|treatment of those in need|assistência|f
+care|259376|n|treatment of those in need|tratamento|
+care|259376|v|to be concerned about|preocupar-se|
+care|259376|v|to be concerned about|importar-se|
+care|259376|v|to look after|cuidar de|
+son|258744|n|a male person in relation to his parents|filho|m
+son|258744|n|an adopted son|filho|m
+son|258744|n|familiar address|filho|m
+son|258744|n|male descendant|filho|m
+car|258312|n|automobile, a vehicle steered by a driver|carro|m
+car|258312|n|automobile, a vehicle steered by a driver|viatura|f
+car|258312|n|automobile, a vehicle steered by a driver|automóvel|m
+car|258312|n|moving, load-carrying component of an elevator|elevador  (passenger)|m
+car|258312|n|moving, load-carrying component of an elevator|monta-cargas  (cargo)|m
+car|258312|n|passenger-carrying unit in a subway or elevated train, whether powered or not|carruagem|f
+next|257757|adj|being closer to the present location than all other items|perto|
+next|257757|adj|being closer to the present location than all other items|próximo|
+next|257757|adj|following in a sequence|próximo|
+next|257757|adj|following in a sequence|seguinte|
+next|257757|adj|nearest date, time, space or order|próximo|
+next|257757|adj|nearest date, time, space or order|seguinte|
+next|257757|adv|In a time, place or sequence closest or following|perto|
+next|257757|adv|In a time, place or sequence closest or following|próximo|
+next|257757|adv|On the first subsequent occasion|a seguir|
+next|257757|adv|On the first subsequent occasion|seguinte|
+next|257757|adv|On the first subsequent occasion|depois|
+next|257757|adv|On the first subsequent occasion|próximo|
+next|257757|n|the one that follows after this one (in languages with a definite article that is generally required in this sense)|próximo|
+next|257757|prep|on the side of|ao lado|
+try|252652|n|an act of tasting or sampling|teste|m
+try|252652|n|an act of tasting or sampling|prova|f
+try|252652|n|an attempt|tentativa|f
+try|252652|n|a score in rugby|try|m
+try|252652|n|a score in rugby|ensaio|m
+try|252652|v|to attempt|tentar|
+try|252652|v|to make an experiment|tentar|
+try|252652|v|to make an experiment|experimentar|
+try|252652|v|to make an experiment|provar|
+try|252652|v|to put on trial|processar|
+try|252652|v|to put on trial|autuar|
+try|252652|v|to put on trial|acionar|
+try|252652|v|to put to test|testar|
+try|252652|v|to taste, sample, etc|experimentar|
+try|252652|v|to taste, sample, etc|provar|
+try|252652|v|to work on something|esforçar-se|
+woman|252064|n|adult female human being|mulher|f
+dead|252020|adj|experiencing pins and needles|dormente|
+dead|252020|adj|idiomatic: hated|morto|
+dead|252020|adj|no longer alive|morto|
+dead|252020|n|those who have died|mortos|m-p
+hi|250541|interj|friendly, informal greeting|olá|
+hi|250541|interj|friendly, informal greeting|oi|
+hi|250541|interj|friendly, informal greeting|alô|
+hi|250541|interj|friendly, informal greeting|e ai?|
+many|244689|determiner|an indefinite large number of|muitos|m-p
+many|244689|determiner|an indefinite large number of|muitas|f-p
+friend|243502|n|boyfriend or girlfriend|namorado|m
+friend|243502|n|boyfriend or girlfriend|namorada|f
+friend|243502|n|person who provides assistance|aliado|m
+friend|243502|n|person who provides assistance|aliada|f
+friend|243502|n|person whose company one enjoys|amigo|m
+friend|243502|n|person whose company one enjoys|amiga|f
+friend|243502|n|person with whom you are acquainted|conhecido|m
+friend|243502|n|person with whom you are acquainted|conhecida|f
+friend|243502|n|(sarcastic) form of address used to warn someone|amigo|m
+friend|243502|n|(sarcastic) form of address used to warn someone|amiga|f
+friend|243502|n|(sarcastic) form of address used to warn someone|companheiro|m
+friend|243502|n|(sarcastic) form of address used to warn someone|companheira|f
+friend|243502|n|(sarcastic) form of address used to warn someone|camarada|m
+friend|243502|v|to act as the friend of|favorecer|
+friend|243502|v|to add as a friend|amigar|
+friend|243502|v|to add as a friend|marcar como amigo|
+mind|243163|n|ability for rational thought|mente|f
+mind|243163|v|to dislike, object to, have a contrary opinion toward|importar-se|
+mind|243163|v|to look after|tomar conta|
+mind|243163|v|to look after|cuidar|
+hell|240825|n|place of suffering in life|inferno|m
+hell|240825|prop|where sinners go|inferno|m
+boy|237032|interj|surprise or pleasure|puxa|
+boy|237032|n|adult male found attractive|garanhão|m
+boy|237032|n|affectionate term of address for male dog|garotão|m
+boy|237032|n|male friend|garotos|m-p
+boy|237032|n|male friend|meninos|p
+boy|237032|n|male friend|rapaziada|m-p
+boy|237032|n|male friend|rapazes|m-p
+boy|237032|n|male friend|turma|p
+boy|237032|n|male friend|galera|p
+boy|237032|n|male friend|meninada|p
+boy|237032|n|male of any age, used as a friendly diminutive|rapaz|m
+boy|237032|n|male of any age, used as a friendly diminutive|moço|m
+boy|237032|n|male servant|criado|m
+boy|237032|n|young male|garoto|m
+boy|237032|n|young male|menino|m
+boy|237032|n|young male|moço|m
+boy|237032|n|young male|rapaz|m
+boy|237032|n|young male|mancebo|m
+boy|237032|n|young male|puto|m
+boy|237032|n|young male|miúdo|m
+best|236388|adj|superlative of the adjective good|o melhor|
+best|236388|adv|superlative of the adverb well|melhor|
+best|236388|n|person|melhor|m
+yourself|235719|pron|(reflexive) your own self|te|
+yourself|235719|pron|(reflexive) your own self|se|
+yourself|235719|pron|you, used emphatically|você/tu mesmo|m
+morning|234014|n|part of the day between dawn and midday|manhã|
+morning|234014|n|the part of the day after midnight and before midday|manhã|f
+morning|234014|n|the part of the day after midnight and before midday|madrugada|f
+together|233103|adv|at the same time, in the same place|junto|
+together|233103|adv|into one place|junto|
+saw|231266|n|saying or proverb|provérbio|m
+saw|231266|n|tool|serra|f
+saw|231266|n|tool|serrote|m
+saw|231266|v|cut with a saw|serrar|
+job|230173|n|computing: task(s) carried out in batch mode|job|m
+job|230173|n|economic role for which a person is paid|trabalho|m
+job|230173|n|economic role for which a person is paid|emprego|m
+job|230173|n|plastic surgery|plástica|f
+job|230173|n|task|tarefa|f
+job|230173|n|task|trabalho|m
+job|230173|n|task|serviço|m
+job|230173|v|to do odd jobs|empreitar|
+Job|230173|prop|biblical character|Jó|
+Job|230173|prop|book of the Bible|Jó|
+without|226498|prep|not having|sem|
+real|226082|adj|absolute, complete, utter|real|m
+real|226082|adj|genuine, not artificial, counterfeit or fake|real|m
+real|226082|adj|genuine, unfeigned, sincere|real|m
+real|226082|adj|mathematics: relating to numbers with a one-to-one correspondence to the points on a line|real|m
+real|226082|adj|that has physical existence|real|m
+real|226082|adj|true, genuine, not merely nominal|real|m
+real|226082|n|a unit of currency formerly used in Portugal and Brazil|real|m
+real|226082|n|a unit of currency used in Brazil|real|m
+baby|225931|n|form of address to a man or a woman considered to be attractive|docinho|
+baby|225931|n|immature or infantile person|criancinha|f
+baby|225931|n|lastborn of a family|benjamim|m
+baby|225931|n|term of endearment|querido|
+baby|225931|n|very young human being|bebé|m
+baby|225931|n|very young human being|bebê|m
+baby|225931|n|very young human being|nenê|m
+baby|225931|n|young animal|filhote|m
+family|225126|n|group of people related by blood, marriage, law, or custom|família|f
+family|225126|n|immediate family, e.g. parents and their children|família|f
+family|225126|n|linguistics: a group of languages believed to have descended from the same ancestral language|família|f
+family|225126|n|music: a group of instrument having the same basic method of tone production|família|f
+family|225126|n|rank in a taxonomic classification, above both genus and species|família|f
+family|225126|n|(used attributively)|familiar|
+room|224802|n|division in a building|sala|m
+room|224802|n|division in a building|aposento|m
+room|224802|n|division in a building|quarto  (especially a bedroom)|m
+room|224802|n|division in a building|câmara|f
+room|224802|n|space|espaço|m
+move|223103|n|the act of moving; a movement|movimento|m
+move|223103|n|the act of moving a token on a gameboard|mexida|f
+move|223103|n|the event of changing one's residence|mudança|f
+move|223103|v|to act; to take action|agir|
+move|223103|v|to arouse the feelings or passions of|emocionar|
+move|223103|v|to arouse the feelings or passions of|comover|
+move|223103|v|to cause to change place or posture; to set in motion|mover|
+move|223103|v|to change place or posture; to go|mover|
+move|223103|v|to change residence|mudar|
+move|223103|v|to change the place of a piece|mover|
+move|223103|v|to excite to action|levar a|
+move|223103|v|to propose; to recommend|propor|
+move|223103|v|to transfer from one space or position to another|trasladar|
+already|223003|adv|prior to some time|já|
+already|223003|adv|so soon|já|
+live|221967|adj|(broadcasting) Seen or heard from a broadcast, as it happens|ao vivo|
+live|221967|adj|capable of causing harm|ativo|
+live|221967|adj|electrically charged|carregado|
+live|221967|adj|having life|vivo|
+live|221967|adv|as it happens|ao vivo|
+live|221967|v|be alive|viver|
+live|221967|v|have permanent residence|viver|
+live|221967|v|have permanent residence|morar|
+live|221967|v|survive, persevere|sobreviver|
+live|221967|v|survive, persevere|perseverar|
+miss|215889|n|unmarried woman|senhorita|
+miss|215889|v|to avoid|evitar|
+miss|215889|v|to be late for something|perder|
+miss|215889|v|to fail to attend|faltar|
+miss|215889|v|to fail to hit|falhar|
+miss|215889|v|to fail to hit|errar|
+miss|215889|v|to fail to understand|não perceber|
+miss|215889|v|to fail to understand|não compreender (not to understand)|
+miss|215889|v|to feel the absence of someone or something|sentir falta/saudade/saudades de|
+Miss|215889|n|title|senhorita  (Srta.)|f
+most|215572|adv|adverb forming superlative|o/a/os/as mais|
+most|215572|adv|highly|muito|
+most|215572|adv|highly|extremamente|
+most|215572|adv|highly|-íssimo|
+most|215572|adv|superlative of many|maioria|m
+most|215572|adv|superlative of much|maioria|f
+most|215572|determiner|majority of |maioria|f
+actually|209504|adv|In act or in fact; really; in truth; positively|na verdade|
+actually|209504|adv|In act or in fact; really; in truth; positively|realmente (not: atualmente)|
+once|209308|adv|formerly|outrora|
+once|209308|adv|one and only one time|uma vez|
+once|209308|conj|as soon as|tão logo|
+brother|207590|n|male fellow member of a religious community|frade|m
+brother|207590|n|male fellow member of a religious community|irmão|m
+brother|207590|n|male having parents in common|irmão|m
+brother|207590|n|male sibling|irmão|m
+head|206988|n|foam on carbonated beverages|colarinho|m
+head|206988|n|headmaster, headmistress|director|m
+head|206988|n|headmaster, headmistress|directora|f
+head|206988|n|headmaster, headmistress|diretor|m
+head|206988|n|headmaster, headmistress|diretora|f
+head|206988|n|leader or chief|chefe|m
+head|206988|n|leader or chief|cabeça|m
+head|206988|n|leader or chief|líder|m
+head|206988|n|part of the body|cabeça|f
+head|206988|v|(intransitive) move in a specified direction|dirigir-se|
+head|206988|v|(intransitive) move in a specified direction|encaminhar-se|
+head|206988|v|(intransitive) move in a specified direction|rumar|
+head|206988|v|(transitive) be in command of|comandar|
+head|206988|v|(transitive) be in command of|dirigir|
+head|206988|v|(transitive) be in command of|liderar|
+ready|206516|adj|Inclined, apt to happen|pronto|
+ready|206516|adj|Prepared for immediate action or use|pronto|m
+ready|206516|adj|Prepared for immediate action or use|preparado|m
+ready|206516|v|to make prepared for action|preparar|
+ready|206516|v|to make prepared for action|aprontar|
+happy|205956|adj|content (to do something); having no objection (to something)|feliz|
+happy|205956|adj|content (to do something); having no objection (to something)|contente|
+happy|205956|adj|enjoying peace, comfort, etc.; contented, joyous|feliz|
+happy|205956|adj|fortunate|feliz|
+huh|205097|interj|expressing doubt or confusion|ué|
+huh|205097|interj|expressing doubt or confusion|como|
+huh|205097|interj|expressing doubt or confusion|hã|
+huh|205097|interj|"I know, huh" what huh|dã|
+huh|205097|interj|"I know, huh" what huh|não brinca|
+huh|205097|interj|to express amusement or subtle surprise|puxa|
+huh|205097|interj|to express amusement or subtle surprise|eta|
+huh|205097|interj|to express amusement or subtle surprise|eita|
+huh|205097|interj|to express amusement or subtle surprise|caramba|
+huh|205097|interj|to indicate that one didn't hear|hã|
+huh|205097|interj|to indicate that one didn't hear|hem|
+huh|205097|interj|to indicate that one didn't hear|como|
+huh|205097|interj|to reinforce a question|hein|
+huh|205097|interj|to reinforce a question|hã|
+huh|205097|interj|to reinforce a question|hein|
+hold|204882|v|to be or remain valid|contar|
+hold|204882|v|to be or remain valid|valer|
+hold|204882|v|to cause to wait|segurar|
+hold|204882|v|to cause to wait|atrasar|
+hold|204882|v|to contain|segurar|
+hold|204882|v|to contain|aguentar|
+hold|204882|v|to contain|ter|
+hold|204882|v|to contain|conter|
+hold|204882|v|to detain|conter|
+hold|204882|v|to detain|deter|
+hold|204882|v|to grasp|segurar|
+hold|204882|v|to grasp|pegar|
+hold|204882|v|to keep possession|ter|
+hold|204882|v|to keep possession|possuir|
+hold|204882|v|to maintain, to consider|considerar|
+hold|204882|v|to maintain, to consider|sustentar|
+hold|204882|v|to organise an event or meeting|realizar|
+hold|204882|v|to reserve|segurar|
+hold|204882|v|to reserve|guardar|
+such|204165|determiner|like this, that, these, those; used to make a comparison with something implied by context|tal|
+such|204165|determiner|like this, that, these, those; used to make a comparison with something implied by context|assim|
+both|203615|conj|both...and...|ambos ... e ...|
+both|203615|conj|both...and...|tanto ... quanto ...|
+both|203615|determiner|each of two; one and the other|ambos|
+used|203320|adj|accustomed|acostumado|
+used|203320|adj|that has or have previously been owned by someone else|usado|
+used|203320|adj|that has or have previously been owned by someone else|de segunda mão|
+used|203320|adj|that is or has or have been used|usado|
+men|202903|n|human people|homens|m-p
+haven|202280|n|harbour|porto|m
+haven|202280|n|refuge|refúgio|m
+idea|201867|n|image formed in the mind|ideia|f
+wife|201046|n|married woman|esposa|f
+wife|201046|n|married woman|mulher|f
+yet|200667|adv||ainda|
+yet|200667|adv|at some future time|ainda|
+yet|200667|adv|continuously up to this point in time|ainda|
+yet|200667|adv|in addition|ainda|
+yet|200667|adv|thus far|ainda|
+yet|200667|conj|nevertheless; however|porém|
+yet|200667|conj|nevertheless; however|mas|
+also|198668|adv|in addition; besides; as well; further; too|também|
+pretty|198155|adj|especially of women and children: pleasant, attractive|bonito|
+pretty|198155|adj|of objects: nice-looking|bonito|
+pretty|198155|adj|of objects: nice-looking|belo|
+pretty|198155|adj|only superficially attractive|bonitinho|
+pretty|198155|adv|somewhat|meio|
+pretty|198155|adv|somewhat|; bem|
+pretty|198155|adv|somewhat|bastante|
+days|197960|n|(idiomatic) life|vida|f
+days|197960|n|(idiomatic) life|dia-a-dia|m
+days|197960|n|plural of days|dias|m
+since|197795|adv|from a specified time in the past|desde|
+since|197795|conj|because|já que|
+since|197795|conj|because|porque|
+since|197795|conj|because|pois|
+since|197795|conj|because|visto que|
+since|197795|conj|because|uma vez que|
+since|197795|conj|from the time that|desde que|
+since|197795|conj|from the time that|desde quando|
+since|197795|prep|from (time)|desde|
+since|197795|prep|from (time)|a partir de|
+while|197116|conj|although|embora|
+while|197116|conj|although|malgrado|
+while|197116|conj|during the same time that|enquanto|
+while|197116|n|uncertain duration of time, a period of time|tempo|m
+whole|197015|adj|entire|inteiro|
+whole|197015|adj|food with no constituents removed|integral|
+whole|197015|adv|colloquial: in entirety|inteiro|
+whole|197015|n|something complete|todo|m
+tomorrow|196855|adv|on the day after the present day|amanhã|
+tomorrow|196855|n|the day after the present day|amanhã|m
+start|196605|n|beginning of an activity|começo|m
+start|196605|n|beginning of an activity|início|m
+start|196605|n|beginning of an activity|princípio|m
+start|196605|n|beginning point of a race|largada|m
+start|196605|n|beginning point of a race|partida|f
+start|196605|n|sudden involuntary movement|sobressalto|m
+start|196605|v|of an activity, to begin|começar|
+start|196605|v|to begin|começar|
+start|196605|v|to begin|iniciar|
+start|196605|v|to initiate operation of a vehicle or machine|ligar|
+start|196605|v|to jerk suddenly in surprise|sobressaltar|
+start|196605|v|to set in motion|abrir|
+start|196605|v|to set in motion|começar|
+use|196453|n|act of using|uso|m
+use|196453|n|function|uso|m
+use|196453|n|usefulness|uso|m
+use|196453|n|usefulness|utilidade|f
+use|196453|v|employ, apply|usar|
+use|196453|v|employ, apply|utilizar|
+use|196453|v|rare: to habitually do|costumar|
+door|196315|n|portal of entry into a building, room or vehicle|porta|f
+bit|195828|n|computing smallest unit of storage|bit|m
+bit|195828|n|datum that may take on one of exactly two values|bit|m
+bit|195828|n|math: binary digit|bit|m
+bit|195828|n|metal in horse's mouth|bocado|m
+bit|195828|n|metal in horse's mouth|bocal|m
+bit|195828|n|metal in horse's mouth|morso ; (Brazil) freio|m
+bit|195828|n|portion|bocado|m
+bit|195828|n|portion|pedaço|m
+bit|195828|n|portion|porção|f
+bit|195828|n|rotary cutting tool|broca|f
+bit|195828|n|rotary cutting tool|pua|f
+bit|195828|n|rotary cutting tool|verruma|f
+bit|195828|n|small amount of something|bocado|m
+bit|195828|n|small amount of something|pedaço|m
+bit|195828|n|small amount of something|porção|f
+matter|193243|n|basic structural component of the universe|matéria|f
+matter|193243|n|cause|causa|f
+matter|193243|n|cause|motivo|m
+matter|193243|n|cause|razão|f
+matter|193243|n|kind of substance|matéria|f
+matter|193243|n|non-antimatter matter|matéria|f
+matter|193243|n|reason for concern|problema|m
+matter|193243|n|situation|situação|f
+matter|193243|v|to be important|importar|
+bring|193182|v|to transport toward somebody/somewhere|trazer|
+meet|192793|v|comply with|satisfazer|
+meet|192793|v|converge and touch|encontrar|
+meet|192793|v|encounter by accident|encontrar|
+meet|192793|v|see through arrangement|encontrar|
+tonight|191971|adv|during today's evening|hoje à tardinha|
+tonight|191971|adv|during today's evening|hoje à noitinha|
+tonight|191971|adv|during today's nighttime|hoje à noite|
+tonight|191971|adv|during today's nighttime|esta/essa noite|
+tonight|191971|n|nighttime today|esta noite|
+guess|191832|n|prediction about the outcome of something|suposição|f
+guess|191832|v|to reach an unqualified conclusion|adivinhar|
+run|191100|n|gallop|galopar|
+run|191100|n|the act of running|corrida|f
+run|191100|v|to flow|correr|
+run|191100|v|to flow|manar|
+run|191100|v|to flow|fluir|
+run|191100|v|to move quickly on two feet|correr|
+alone|190824|adv|by oneself|sozinho|
+alone|190824|adv|only|só|
+alone|190824|adv|without outside help|sozinho|
+everyone|188384|pron|every person|todos|m-p
+everyone|188384|pron|every person|todo mundo|m
+school|187749|n|a department/institute at a college or university|faculdade|f
+school|187749|n|a group of fish|cardume|m
+school|187749|n|an institution dedicated to teaching and learning before college or university|escola|f
+school|187749|n|an institution dedicated to teaching and learning|escola|f
+school|187749|n|an institution dedicated to teaching and learning|colégio|m
+school|187749|n|a particular doctrine|escola|f
+school|187749|n|a particular doctrine|doutrina|f
+school|187749|n|college or university|universidade|f
+school|187749|v|educate, teach, or train|educar|
+school|187749|v|educate, teach, or train|instruir|
+school|187749|v|educate, teach, or train|ensinar|
+school|187749|v|educate, teach, or train|escolarizar|
+hard|186967|adj|demanding a lot of effort to endure|duro|
+hard|186967|adj|demanding a lot of effort to endure|difícil|
+hard|186967|adj|of drink: strong|forte|
+hard|186967|adj|of water, high in dissolved calcium compounds|duro|
+hard|186967|adj|requiring a lot of effort to do or understand|difícil|
+hard|186967|adj|resistant to pressure|duro|m
+hard|186967|adj|severe|difícil|
+hard|186967|adj|severe|severo|
+hard|186967|adj|unquestionable|inquestionável|
+hard|186967|adv|with much force or effort (related to act of think)|bem|
+myself|186764|n|that being which is oneself|eu mesmo|m
+myself|186764|n|that being which is oneself|eu mesma|f
+myself|186764|pron|in apposition with I; personally|eu mesmo|m
+myself|186764|pron|in apposition with I; personally|eu mesma|f
+myself|186764|pron|me, reflexive case of I|me|
+play|184286|n|playful activity|jogo|m
+play|184286|n|playful activity|brincadeira|f
+play|184286|n|theatrical performance|peça|f
+play|184286|v|act in a manner such that one has fun|jogar|
+play|184286|v|act in a manner such that one has fun|brincar|
+play|184286|v|act in a performance|atuar|
+play|184286|v|act in a performance|representar|
+play|184286|v|participate in (a sport or game)|jogar|
+play|184286|v|produce music using a musical instrument (intransitive sense, not affecting a noun)|tocar|
+play|184286|v|produce music using a musical instrument (transitive sense), affecting a noun|tocar|
+play|184286|v|use a device to hear (a recording)|tocar|
+play|184286|v|use a device to hear (a recording)|reproduzir|
+problem|182547|n|difficulty|problema|m
+problem|182547|n|puzzling circumstance|problema|m
+problem|182547|n|schoolwork exercise|problema|m
+problem|182547|n|schoolwork exercise|exercício|m
+end|182462|n|death|fim|m
+end|182462|n|extreme part|fim|
+end|182462|n|extreme part|cabo|m
+end|182462|n|extreme part|término|m
+end|182462|n|purpose|fim|m
+end|182462|v|ergative, intransive: be finished, be terminated|acabar|
+end|182462|v|ergative, intransive: be finished, be terminated|terminar|
+end|182462|v|ergative, intransive: be finished, be terminated|findar|
+end|182462|v|ergative, intransive: be finished, be terminated|finalizar|
+end|182462|v|ergative, intransive: be finished, be terminated|concluir|
+end|182462|v|transitive: finish, terminate (something)|acabar|
+end|182462|v|transitive: finish, terminate (something)|terminar|
+saying|182062|n|proverb or maxim|ditado|m
+saying|182062|n|proverb or maxim|provérbio|m
+open|180368|adj|not closed|aberto|
+open|180368|adj|prepared to conduct business|aberto|
+open|180368|adj|public|aberto|
+open|180368|adj|receptive|aberto|
+open|180368|n|sports event|aberto|m
+open|180368|v|to become open|abrir|
+open|180368|v|to begin conducting business|abrir|
+open|180368|v|to bring up (a topic)|abrir|
+open|180368|v|to make accessible to customers|abrir|
+open|180368|v|to make something accessible|abrir|
+open|180368|v|to start (a campaign)|iniciar|
+open|180368|v|to start (a campaign)|começar|
+friends|179615|n|participants in a two-way friendship|amigos|
+friends|179615|n|participants in a two-way friendship|amigas|f
+ago|178965|prep|past; gone by; since|há|
+ago|178965|prep|past; gone by; since|atrás|
+ago|178965|prep|past; gone by; since|faz|
+few|178499|determiner|indefinite, usually small number|poucos|m
+few|178499|determiner|indefinite, usually small number|poucas|f
+few|178499|determiner|small number|poucos|m
+few|178499|determiner|small number|poucas|f
+ah|177708|interj|an expression|ah|
+anyone|177385|pron|anybody|qualquer um|
+phone|176725|n|A device for transmitting conversations (telephone)|telefone|m
+phone|176725|v|to call (someone) on the telephone|telefonar|
+phone|176725|v|to call (someone) on the telephone|chamar|
+hope|175762|n|belief that something wished for can happen|esperança|f
+hope|175762|n|person or thing that is a source of hope|esperança|f
+hope|175762|v|to want something to happen, with expectation that it might|esperar|
+lost|175315|adj|unable to find one's way|perdido|
+excuse|174536|n|explanation designed to avoid or alleviate guilt or negative judgement|desculpa|f
+excuse|174536|v|explain with the aim of alleviating guilt or negative judgement|desculpar-se|
+excuse|174536|v|forgive, pardon|desculpar|
+excuse|174536|v|forgive, pardon|perdoar|
+face|174197|n|facial expression|cara|f
+face|174197|n|facial expression|face|f
+face|174197|n|of a polyhedron|face|f
+face|174197|n|of a polyhedron|lado|m
+face|174197|n|part of head|face|f
+face|174197|n|part of head|rosto|m
+face|174197|n|part of head|cara|f
+face|174197|n|public image|face|f
+face|174197|v|deal with, confront|encarar|
+face|174197|v|have its front closest to|encarar|
+face|174197|v|position oneself/itself towards|encarar|
+until|171928|conj|up to the time that|até|
+until|171928|prep|before|até que|
+until|171928|prep|up to the time of|até|
+die|171043|n|cubical part of a pedestal|plinto|m
+die|171043|n|cubical part of a pedestal|soclo|m
+die|171043|n|cubical part of a pedestal|soco|m
+die|171043|n|device for cutting into a specified shape|molde|m
+die|171043|n|embossed device used in stamping|cunho|m
+die|171043|n|polyhedron used in games of chance|dado|m
+die|171043|v|to stop living|morrer|
+die|171043|v|to stop living|falecer|
+turn|170913|n|chance to use (something) shared in sequence with others|vez|f
+turn|170913|n|chance to use (something) shared in sequence with others|turno|m
+turn|170913|n|change of direction or orientation|virada|f
+turn|170913|n|change of direction or orientation|giro|m
+turn|170913|n|change of direction or orientation|girada|f
+turn|170913|n|movement about an axis ending up with the same orientation|giro|m
+turn|170913|n|movement about an axis ending up with the same orientation|girada|f
+turn|170913|n|one's chance to make a move in a game|vez|f
+turn|170913|n|one's chance to make a move in a game|jogada|f
+turn|170913|n|single loop of a coil|espira|f
+turn|170913|n|time required to complete a project|prazo|m
+turn|170913|v|become|virar|
+turn|170913|v|become|tornar-se|
+turn|170913|v|become|tornar-se|
+turn|170913|v|change one's direction of travel|virar|
+turn|170913|v|change the direction or orientation of (something)|girar|
+turn|170913|v|change the direction or orientation of (something)|virar|
+turn|170913|v|go bad|estragar|
+turn|170913|v|metamorphose|virar|
+turn|170913|v|move around an axis through itself|girar|
+turn|170913|v|move around an axis through itself|virar|
+turn|170913|v|position (something) by folding it back on itself|girar|
+turn|170913|v|rebel|rebelar-se|
+turn|170913|v|shape (something) on a lathe|tornear|
+police|169874|n|an organisation that enforces the law|polícia|f
+police|169874|n|member of the police force|policial|m
+police|169874|n|member of the police force|polícia|m
+heart|169205|n|an organ|coração|m
+heart|169205|n|a shape or symbol|coração|m
+heart|169205|n|a suit of cards|copas|f-p
+heart|169205|n|centre or core|cerne  (ex: o cerne da questão / the core of the question)|m
+heart|169205|n|emotions or kindness|amabilidade|f
+heart|169205|n|emotions or kindness|bondade|f
+heart|169205|n|emotions or kindness|generosidade|f
+true|167457|adj|A state in Boolean logic that indicates an affirmative or positive result|verdadeiro|
+true|167457|adj|concurring with a given set of facts|verdadeiro|
+true|167457|adj|Genuine|verdadeiro|
+true|167457|adj|Genuine|autêntico|
+true|167457|adj|Legitimate|verdadeiro|
+true|167457|adj|Legitimate|legítimo|
+true|167457|adj|Loyal, faithful|verdadeiro|
+true|167457|v|straighten|endireitar|
+worry|166159|n|strong feeling of anxiety|preocupação|f
+worry|166159|v|be troubled|preocupar-se|
+worry|166159|v|disturb the peace of mind of|preocupar|
+soon|165829|adv|within a short time|logo|
+soon|165829|adv|within a short time|cedo|
+business|165777|n|commercial enterprise or establishment|negócio|m
+business|165777|n|occupation, work or trade of a person|ramo|
+business|165777|n|occupation, work or trade of a person|trabalho|m
+business|165777|n|occupation, work or trade of a person|negócio|m
+case|164274|n|box containing a number of identical items of manufacture|caixa|f
+case|164274|n|grammar: set of grammatical cases or their meanings|caso|m
+case|164274|n|instance or event as a topic of study|caso|m
+case|164274|n|legal proceeding|causa|f
+case|164274|n|outer covering or framework of a piece of apparatus|caixa|f
+case|164274|n|piece of furniture, constructed partially of transparent glass or plastic|vitrine|f
+case|164274|n|piece of furniture, constructed partially of transparent glass or plastic|mostruário|m
+case|164274|n|suitcase|maleta|f
+case|164274|n|suitcase|mala|f
+case|164274|n|typography: the nature of a piece of alphabetic type|caixa|f
+later|164215|adj|at some time in the future|mais atrasado|
+later|164215|adj|coming afterward in time|subsequentemente|
+later|164215|adj|coming afterward in time|posterior|
+later|164215|adj|more late|mais tarde|
+later|164215|adv|afterward in time|depois|
+later|164215|adv|at some unspecified time in the future|mais tarde|
+later|164215|adv|more late|mais atrasado|
+later|164215|interj|see you later|até mais|
+later|164215|interj|see you later|falou|
+later|164215|interj|see you later|até logo|
+each|164098|determiner|every|cada|
+watch|163334|n|particular time period|vigia|f
+watch|163334|n|particular time period|guarda|f
+watch|163334|n|person or group of people who guard|guarda|m
+watch|163334|n|portable or wearable timepiece|relógio|m
+watch|163334|n|portable or wearable timepiece|relógio de pulso|m
+watch|163334|n|portable or wearable timepiece|relógio de bolso|m
+watch|163334|v|to attend or guard|vigiar|
+watch|163334|v|to be wary|tomar/ter cuidado|
+watch|163334|v|to look at for a period of time|ver|
+watch|163334|v|to look at for a period of time|assistir|
+watch|163334|v|to observe|assistir|
+watch|163334|v|to observe|observar|
+year|161555|n|a Julian year|ano|m
+year|161555|n|a level or grade at school or college|série|f
+year|161555|n|a period between set dates that mark a year|ano|m
+year|161555|n|a scheduled part of a calendar year spent in a specific activity|ano|m
+year|161555|n|time it takes for any planetary body to make one revolution around another body|ano|m
+year|161555|n|time it takes for the Earth to complete one revolution of the Sun|ano|m
+hand|161068|n|bunch of bananas|cacho|m
+hand|161068|n|handwriting; style of penmanship|letra|f
+hand|161068|n|part of the fore limb|mão|f
+hand|161068|n|pointer of an analogue/analog clock|ponteiro|m
+hand|161068|n|servant, laborer, workman, trained for special duty; a performer|mão-de-obra|f
+hand|161068|n|set of cards held by a player in a card game|mão|f
+hand|161068|n|side; part; direction, either right or left|direção|f
+hand|161068|n|that which is, or may be, held in a hand at once|mão|f
+hand|161068|n|that which is, or may be, held in a hand at once|punhado|m
+hand|161068|n|that which is, or may be, held in a hand at once|mão-cheia|f
+hand|161068|n|that which is, or may be, held in a hand at once|mãozada|f
+hand|161068|v|to give, pass or transmit with the hand|dar|
+hand|161068|v|to give, pass or transmit with the hand|entregar|
+hand|161068|v|to give, pass or transmit with the hand|passar|
+hand|161068|v|to lead, guide, or assist with the hand|ajudar|
+hand|161068|v|to lead, guide, or assist with the hand|auxiliar|
+hand|161068|v|to lead, guide, or assist with the hand|conduzir|
+hand|161068|v|to lead, guide, or assist with the hand|guiar|
+beautiful|158066|adj|of weather: pleasant, clear|limpo|
+beautiful|158066|adj|possessing charm and attractive|belo|m
+beautiful|158066|adj|possessing charm and attractive|bela|f
+beautiful|158066|adj|possessing charm and attractive|bonito|m
+beautiful|158066|adj|possessing charm and attractive|bonita|f
+beautiful|158066|adj|possessing charm and attractive|lindo|m
+beautiful|158066|adj|possessing charm and attractive|linda|f
+doctor|157732|n|person who has attained a doctorate|doutor|m
+doctor|157732|n|person who has attained a doctorate|doutora|f
+doctor|157732|n|physician|doutor|m
+doctor|157732|n|physician|doutora|f
+doctor|157732|n|physician|médico|m
+eat|157103|v|consume|comer|
+eat|157103|v|eat a meal|comer|
+sit|156455|v|move oneself into such a position|sentar|
+sit|156455|v|move oneself into such a position|sentar-se|
+sit|156455|v|of a person, be in a position in which the upper body is upright and the legs are supported|estar sentado|
+probably|153277|adv|in all likelihood|provavelmente|
+late|151455|adj|euphemism for dead|falecido|m
+late|151455|adj|near the end of a period of time|tarde|
+late|151455|adj|near the end of the day|tarde|
+late|151455|adj|not arriving until after an expected time|atrasado|
+late|151455|adv|proximate in time|tarde|
+forget|150563|v|to cease remembering|esquecer|
+forget|150563|v|to lose remembrance of|esquecer|
+forget|150563|v|to unintentionally not do|esquecer|
+young|150389|adj|as if young|jovem|
+young|150389|adj|belonging in the early part of life|de juventude|
+young|150389|adj|in the early part of life or growth|jovem|
+young|150389|n|offspring|filhote|
+young|150389|n|people who are young|jovens|
+young|150389|n|the younger generation|juventude|f
+second|149931|adj|second (numeral)|segundo|m
+second|149931|adj|that which comes after the first|segundo|m
+second|149931|adv|at the second rank|segundo|
+second|149931|n|attendant of a duel or boxing match standing in for a contestant|segundo|m
+second|149931|n|manufactured item that fails to meet quality control standards|artigo de segunda|m
+second|149931|n|number two in a series|segundo|m
+second|149931|n|one that is next in rank|segundo|m
+second|149931|n|second gear|segunda|f
+second|149931|n|short, indeterminate amount of time|instante|m
+second|149931|n|short, indeterminate amount of time|momento|m
+second|149931|n|short, indeterminate amount of time|segundo|m
+second|149931|n|SI unit of time|segundo|m
+second|149931|n|unit of angular measure|segundo|m
+second|149931|v|to agree as a second person|apoiar|
+second|149931|v|to agree as a second person|secundar|
+kid|149070|n|child (colloq.)|criança|f
+kid|149070|n|child (colloq.)|miúdo|m
+kid|149070|n|child (colloq.)|piá|m
+kid|149070|n|child (colloq.)|guri|m
+kid|149070|n|young goat|cabrita|f
+kid|149070|n|young goat|cabrito|m
+kid|149070|n|young person (colloq.)|jovem|m
+kid|149070|v|make a fool of|enganar|
+kid|149070|v|make a joke with|brincar|
+kid|149070|v|make a joke with|zoar|
+kid|149070|v|make a joke with|caçoar|
+kid|149070|v|to joke|brincar|
+pay|148904|n|money given in return for work|pagamento|m
+pay|148904|v|to be profitable|compensar|
+pay|148904|v|to give money in exchange for goods or services|pagar|
+pay|148904|v|to give|prestar|
+crazy|148841|adj|insane, demented|louco|
+crazy|148841|adj|insane, demented|maluco|
+crazy|148841|adj|insane, demented|doido|
+crazy|148841|adj|out of control|louco|
+crazy|148841|adj|out of control|doido|
+crazy|148841|n|an insane or eccentric person|louco|m
+water|148734|n|body of water, or specific part of it|águas|f-p
+water|148734|n|clear liquid H₂O|água|f
+water|148734|n|one of the four elements in alchemy|água|f
+water|148734|v|to pour water into the soil surrounding (plants)|regar|
+water|148734|v|to provide (animals) with water|dar água a|
+death|148273|n|cessation of life|morte|f
+death|148273|n|personification of death|morte|f
+death|148273|n|Tarot|Morte|f
+death|148273|n|Tarot|arcano sem nome|m
+Death|148273|prop|the personification of death|Morte|f
+working|147548|adj|functioning|funcional|
+working|147548|n|method of operation|funcionamento|m
+working|147548|n|operation; action|serviço|m
+under|146610|prep|beneath the surface of|embaixo de|
+under|146610|prep|beneath the surface of|sob|
+under|146610|prep|in a lower level than|embaixo de|
+under|146610|prep|in a lower level than|sob|
+under|146610|prep|less than|menos que/de|
+under|146610|prep|subject of|sob|
+stuff|146452|n|miscellaneous items; things|coisas|f-p
+stuff|146452|n|the tangible substance that goes into the makeup of a physical object|material|m
+stuff|146452|v|preserve a dead animal|empalhar|
+stuff|146452|v|to fill (something) up in a compressed manner|entupir|
+minute|146345|adj|very small|minúsculo|
+minute|146345|n|record of meeting|ata|f
+minute|146345|n|short but unspecified period of time|instante|m
+minute|146345|n|short but unspecified period of time|minuto|m
+minute|146345|n|short but unspecified period of time|momento|m
+minute|146345|n|unit of angular measure|minuto|m
+minute|146345|n|unit of time|minuto|m
+part|146235|n|fraction of a whole |parte|f
+part|146235|n|fraction of a whole |pedaço|m
+part|146235|n|group inside a larger group |categoria|f
+part|146235|n|hair dividing line |linha|f
+part|146235|n|position or role |papel|m
+part|146235|n|section of a document |parte|f
+part|146235|v|to become divided in two or separated|partir|
+part|146235|v|to cut hair with a parting|repartir|
+part|146235|v|to divide in two|partir|
+part|146235|v|to divide in two|dividir|
+part|146235|v|to leave|partir|
+person|146077|n|any individual or formal organization with standing before the courts|pessoa|f
+person|146077|n|individual|pessoa|f
+person|146077|n|individual|indivíduo|m
+person|146077|n|linguistic category|pessoa|f
+person|146077|n|specifically a human being|pessoa|f
+person|146077|n|the physical body seen as distinct from the mind|corpo|m
+everybody|145732|pron|all people|todos|m-p
+everybody|145732|pron|all people|todo mundo|m
+damn|145579|adj|generic intensifier|maldito|
+damn|145579|adj|generic intensifier|merda de|
+damn|145579|adj|generic intensifier|porra de|
+damn|145579|interj|non-vulgar expression of contempt etc.|porcaria|
+damn|145579|interj|non-vulgar expression of contempt etc.|maldição|
+damn|145579|interj|non-vulgar expression of contempt etc.|droga|
+damn|145579|n|use of damn as a swear word|porcaria|f
+damn|145579|n|use of damn as a swear word|maldição|f
+damn|145579|v|theology: to condemn to hell|amaldiçoar|
+damn|145579|v|theology: to condemn to hell|danar|
+damn|145579|v|to put a curse upon|amaldiçoar|
+drink|145213|n|action of drinking|bebida|f
+drink|145213|n|alcoholic beverages in general|bebida|f
+drink|145213|n|alcoholic beverages in general|álcool|m
+drink|145213|n|served alcoholic beverage|bebida|f
+drink|145213|n|served alcoholic beverage|drinque|m
+drink|145213|n|served beverage|bebida|f
+drink|145213|n|type of beverage|bebida|f
+drink|145213|n|type of beverage|coquetel|m
+drink|145213|v|consume alcoholic beverages|beber|
+drink|145213|v|consume alcoholic beverages|tomar|
+drink|145213|v|consume liquid through the mouth|beber|
+drink|145213|v|consume liquid through the mouth|tomar|
+change|144892|n|a replacement|troca|f
+change|144892|n|a replacement|mudança|f
+change|144892|n|money given back|troco|m
+change|144892|n|small denominations of money given in exchange for a larger denomination|troco|m
+change|144892|n|small denominations of money given in exchange for a larger denomination|trocado|m
+change|144892|n|the process of becoming different|mudança|f
+change|144892|n|the process of becoming different|modificação|f
+change|144892|v|to become something different|mudar|
+change|144892|v|to make something into something different|alterar|
+change|144892|v|to make something into something different|mudar|
+change|144892|v|to replace|mudar|
+change|144892|v|to replace|trocar|
+change|144892|v|to replace one's own clothing|trocar-se|
+change|144892|v|to transfer to another vehicle|baldear|
+exactly|144044|adv|in an exact manner|exatamente|
+exactly|144044|adv|in an exact manner|exactamente|
+happen|143940|v|to occur|acontecer|
+happen|143940|v|to occur|suceder|
+shut|142579|v|to close|fechar|
+five|142320|n|digit|cinco|m
+five|142320|n|five-dollar bill|cincão|m
+five|142320|n|five o'clock|cinco|f-p
+five|142320|num|five |cinco|
+hit|140417|n|approximately correct answer in a test set|acerto|m
+hit|140417|n|attack on a location|ataque|m
+hit|140417|n|blow, punch|golpe|m
+hit|140417|n|blow, punch|batida|f
+hit|140417|n|(computing) (Internet) result of a search|acerto|m
+hit|140417|n|murder for criminal or political purposes|assassínio|m
+hit|140417|n|murder for criminal or political purposes|assassinato|m
+hit|140417|n|success, especially in the entertainment industry|hit|m
+hit|140417|n|success, especially in the entertainment industry|sucesso|m
+hit|140417|v|to come into contact with forcefully and suddenly|bater|
+hit|140417|v|to come into contact with forcefully and suddenly|chocar-se|
+hit|140417|v|to come into contact with forcefully and suddenly|colidir|
+hit|140417|v|to give a blow|golpear|
+hit|140417|v|to give a blow|bater|
+hit|140417|v|to kill a person on the instructions of a third party|apagar|
+hit|140417|v|to manage to touch in the right place|acertar|
+hit|140417|v|to manage to touch in the right place|bater|
+hit|140417|v|to manage to touch in the right place|atingir|
+far|140214|adj|remote in space|longe|
+far|140214|adj|remote in space|distante|
+far|140214|adv|distant in space, time, or degree|longe|
+far|140214|adv|distant in space, time, or degree|distante|
+easy|138793|adj|consenting readily to sex|fácil|m
+easy|138793|adj|requiring little skill or effort|fácil|
+whatever|138249|determiner|anything|qualquer coisa que|
+whatever|138249|determiner|no matter which; for any|qualquer que seja|
+whatever|138249|interj|indicating the speaker does not care what someone says|tanto faz|
+whatever|138249|pron|anything|qualquer coisa|
+its|137968|determiner|belonging to it|seu|
+its|137968|determiner|belonging to it|sua|
+its|137968|determiner|belonging to it|dele|m
+its|137968|determiner|belonging to it|dela|f
+its|137968|pron|that which belongs to it|seu|
+its|137968|pron|that which belongs to it|dele|m
+its|137968|pron|that which belongs to it|dela|f
+times|137085|prep|multiplied by|vezes|
+check|136543|n|a bill, particularly at a restaurant|conta|f
+check|136543|n|a checkered pattern|xadrez|
+check|136543|n|a control, limit or stop|controle|m
+check|136543|n|a control, limit or stop|limite|m
+check|136543|n|a mark like a v or sometimes x used as an indicator|marca|
+check|136543|n|a mark like a v or sometimes x used as an indicator|tique|
+check|136543|n|an inspection or examination|inspeção|f
+check|136543|n|an inspection or examination|exame|m
+check|136543|n|chess: when the king is directly threatened by an enemy piece|xeque|m
+check|136543|v|to control, limit, or halt|controlar|
+check|136543|v|to control, limit, or halt|limitar|
+check|136543|v|to inspect, examine|checar|
+check|136543|v|to inspect, examine|inspecionar|
+check|136543|v|to inspect, examine|examinar|
+check|136543|v|to mark with a checkmark|ticar|
+check|136543|v|to verify or compare with a source of information|checar|
+check|136543|v|to verify or compare with a source of information|verificar|
+music|135996|n|any pleasing or interesting sounds|música|f
+music|135996|n|sheet music|partitura|f
+music|135996|n|sound, organized in time in a melodious way|música|f
+inside|134522|adj|within|interno|
+inside|134522|adv|towards the interior|dentro|
+inside|134522|adv|towards the interior|adentro|
+inside|134522|adv|within the interior|dentro|
+inside|134522|n|interior or inner part|interior|m
+inside|134522|prep|within the interior of something, closest to the center or to a specific point of reference|dentro|
+sleep|134507|n|informal: act or instance of sleeping|sono|m
+sleep|134507|n|state of reduced consciousness|sono|m
+sleep|134507|n|substance found in the corner of the eyes / figurative objectification of sleep|remela|f
+sleep|134507|v|to rest in state of reduced consciousness|dormir|
+somebody|134216|pron|some unspecified person|alguém|
+mine|133717|n|exploding device|mina|f
+mine|133717|n|place from which ore is extracted|mina|f
+mine|133717|pron|that which belongs to me|meu|
+mine|133717|pron|that which belongs to me|minha|
+mine|133717|pron|that which belongs to me|meus|
+mine|133717|pron|that which belongs to me|minhas|
+mine|133717|v|remove from the ground|explorar|
+mine|133717|v|remove from the ground|minar|
+mine|133717|v|remove from the ground|minerar|
+mine|133717|v|sow mines in|minar|
+deal|133692|v|administer in portions|lidar|
+deal|133692|v|be concerned with|lidar|
+deal|133692|v|handle, manage|lidar|
+deal|133692|v|sell (illicit drugs)|traficar|
+different|133204|adj|not the same|diferente|m
+different|133204|adj|unlike most others|diferente|
+point|132432|n|any projecting extremity|ponta|f
+point|132432|n|arithmetic: decimal point (note: many languages use a comma (',') rather than a dot as a decimal point, and hence the translations into these languages reflect this.)|vírgula|f
+point|132432|n|compass point|direção|f
+point|132432|n|full stop|ponto final|m
+point|132432|n|geometry: zero-dimensional object|ponto|m
+point|132432|n|location or place|ponto|m
+point|132432|n|opinion which adds to the discussion|ponto|m
+point|132432|n|particular moment in an event or occurrence|momento|
+point|132432|n|peninsula|península|f
+point|132432|n|purpose or objective|propósito|m
+point|132432|n|purpose or objective|objetivo|m
+point|132432|n|railroad switch|agulha|f
+point|132432|n|sharp tip|ponta|f
+point|132432|n|smallest quantity of something|pingo|m
+point|132432|n|something tiny|pontinha|f
+point|132432|n|tenth part|décimo|m
+point|132432|n|tiny amount of time|milésimo|m
+point|132432|n|tiny amount of time|instante|m
+point|132432|n|unit of scoring in a game or competition|ponto|m
+point|132432|v|direct|apontar|
+point|132432|v|to extend finger|apontar para|
+point|132432|v|to extend finger|indicar|
+afraid|132423|adj|colloquially, express sorrow|temer|
+afraid|132423|adj|impressed with fear or apprehension; in fear; apprehensive|to always be afraid: ter medo|
+afraid|132423|adj|impressed with fear or apprehension; in fear; apprehensive|temer; to be temporarily afraid: estar com medo|
+body|130763|n|any physical object or material thing|corpo|m
+body|130763|n|collection of knowledge|corpus|m
+body|130763|n|comparative viscosity, solidity or substance|substância|f
+body|130763|n|corpse|corpo|m
+body|130763|n|fleshly or corporeal nature of a human|corpo|m
+body|130763|n|group having a common purpose or opinion|organização|f
+body|130763|n|largest or most important part of anything (e.g. car bodywork)|grosso|m
+body|130763|n|largest or most important part of anything (e.g. car bodywork)|carroceria|f
+body|130763|n|organisation, company or other authoritative group|organismo|m
+body|130763|n|organisation, company or other authoritative group|ente|m
+body|130763|n|physical structure of a human or animal|corpo|m
+body|130763|n|substance, material presence|sustância|f
+body|130763|n|substance, material presence|substância|f
+body|130763|n|torso|corpo|m
+anyway|130216|adv|in any way|de qualquer forma|
+anyway|130216|adv|regardless|mesmo assim|
+anyway|130216|adv|regardless|de qualquer forma|
+anyway|130216|adv|regardless|de qualquer maneira|
+anyway|130216|adv|regardless|de todo modo|
+anyway|130216|adv|used to indicate change of subject|de qualquer modo|
+anyway|130216|adv|used to indicate that a statement explains or supports a previous statement|mesmo|
+dear|130092|adj|a formal way to start (often after my) addressing somebody one likes or regards kindly|querido|
+dear|130092|adj|an informal way of addressing the recipient in a letter's opening line|querido|
+dear|130092|adj|an informal way of addressing the recipient in a letter's opening line|caro|
+dear|130092|adj|formal way of addressing|prezado|
+dear|130092|adj|formal way of addressing|caro|
+dear|130092|adj|high in price; expensive|caro|
+dear|130092|adj|loved; lovable|querido|
+dear|130092|adj|loved; lovable|caro|
+dear|130092|adj|precious to or greatly valued by someone|caro|
+four|129720|n|the digit or figure 4|quatro|m
+four|129720|num|the cardinal number 4|quatro|
+shall|129524|v|indicating determination or obligation|dever|
+shall|129524|v|indicating determination or obligation|precisar|
+shall|129524|v|indicating the simple future tense|use the future tense of the verb or present indicative of ir + the infinitive|
+shall|129524|v|in questions to suggest a possible future action|use the imperative tense of the verb or present indicative of ir + the infinitive|
+chance|129266|n|an opportunity or possibility|chance|f
+chance|129266|n|probability of something happening|probabilidade|
+chance|129266|n|random occurrence|acaso|
+close|129070|adj|at a little distance|próximo|
+close|129070|adj|at a little distance|vizinho|
+close|129070|adj|at a little distance|perto|
+close|129070|v|move (a door)|fechar|
+close|129070|v|move (a door)|cerrar|
+close|129070|v|obstruct (an opening)|fechar|
+close|129070|v|put an end to|fechar|
+close|129070|v|put an end to|encerrar|
+close|129070|v|put an end to|concluir|
+close|129070|v|put an end to|terminar|
+party|128048|n|law: particular side in a contract or legal action|parte|f
+party|128048|n|political group|partido|m
+party|128048|n|social gathering|festa|f
+party|128048|n|social gathering|balada|f
+party|128048|n|someone who takes part|participante|m
+party|128048|v|to celebrate at a party|festejar|
+party|128048|v|to celebrate at a party|festar|
+daughter|127888|n|female child|filha|f
+word|127723|n|computing: fixed-size group of bits handled as a unit|palavra|f
+word|127723|n|discussion|palavra|f
+word|127723|n|news, tidings|notícias|f
+word|127723|n|promise|palavra|f
+word|127723|n|promise|promessa|f
+word|127723|n|the word of God|verbo|
+word|127723|n|the word of God|palavra|f
+word|127723|n|the word of God|palavra do Senhor|f
+word|127723|n|the word of God|palavra divina|f
+word|127723|n|the word of God|palavra de Deus|f
+word|127723|n|unit of language|palavra|f
+word|127723|n|unit of language|vocábulo|m
+word|127723|v|say or write using particular words|frasear|
+against|127501|prep|as protection from|contra|
+against|127501|prep|close to|perto de|
+against|127501|prep|in a contrary direction to|contra|
+against|127501|prep|in competition with|contra|
+against|127501|prep|in contrast or comparison with|em relação a|
+against|127501|prep|in exchange for|por|
+against|127501|prep|in front of; before a background|defronte|
+against|127501|prep|in front of; before a background|diante de|
+against|127501|prep|in opposition to|contra|
+against|127501|prep|in physical contact with|contra|
+fun|126809|adj|enjoyable, amusing|divertido|
+fun|126809|n|enjoyment or amusement|divertimento|m
+number|126759|n|abstract entity|número|m
+number|126759|n|grammar: state of being singular, dual or plural|número|m
+number|126759|n|mathematical number|número|m
+number|126759|n|numeral|número|m
+number|126759|n|quantity|quantidade|f
+number|126759|n|used to show the rank of something in a list or sequence|número|m
+number|126759|v|label with numbers; assign numbers to|numerar|
+married|126555|adj|In a state of marriage; having a wife or a husband|casado|
+hurt|126494|adj|wounded, injured|machucado|
+hurt|126494|adj|wounded, injured|ferido|
+hurt|126494|v|to be painful|doer|
+hurt|126494|v|to cause emotional pain|magoar|
+hurt|126494|v|to cause physical pain and/or injury|ferir|
+hurt|126494|v|to cause physical pain and/or injury|machucar|
+hurt|126494|v|to cause physical pain and/or injury|aleijar|
+story|126405|n|account of events|estória|f
+story|126405|n|account of events|história|f
+story|126405|n|account of events|conto|m
+set|125954|adj|intent, determined|determinado|m
+set|125954|adj|ready, prepared|pronto|m
+set|125954|adj|ready, prepared|preparado|m
+set|125954|n|a series of, a group of |série|
+set|125954|n|a series of, a group of |conjunto|
+set|125954|n|collection of various objects for a particular purpose, such as a set of tools|jogo|
+set|125954|n|device for receiving broadcast radio waves; a radio or television|aparelho|m
+set|125954|n|group of people, usually meeting socially|grupo|m
+set|125954|n|in tennis|set|m
+set|125954|n|matching collection of similar things, such as a set of tables|jogo|
+set|125954|n|scenery for a film or play|cenário|m
+set|125954|n|set theory: collection of objects|conjunto|m
+set|125954|n|volleyball|set|m
+set|125954|v|of a heavenly body: to disappear below the horizon|pôr|
+set|125954|v|to adjust|ajustar|
+set|125954|v|to arrange with dishes and cutlery|dispor|
+set|125954|v|to compile, to make (a crossword)|completar|
+set|125954|v|to determine|determinar|
+set|125954|v|to devise and assign work|atribuir|
+set|125954|v|to devise and assign work|distribuir|
+set|125954|v|to direct the ball to a teammate for an attack|passar|
+set|125954|v|to introduce|apresentar|
+set|125954|v|to introduce|introduzir|
+set|125954|v|to locate, to backdrop|localizar|
+set|125954|v|to prepare (a stage or film set)|preparar|
+set|125954|v|to punch a nail into wood|pregar|
+set|125954|v|to put something down|pôr|
+set|125954|v|to put something down|colocar|
+set|125954|v|to solidify|solidificarse|
+wish|125807|n|a desire|desejo|m
+wish|125807|n|a desire|pedido|m
+wish|125807|v|to bestow a thought|desejar a|
+wish|125807|v|to hope for an outcome|desejar|
+least|125613|determiner|the smallest amount of|mínimo|
+quite|125453|adv|in a fully justified sense; truly|completamente|
+quite|125453|adv|in a fully justified sense; truly|totalmente|
+quite|125453|adv|to a moderate extent|bem|
+quite|125453|adv|to a moderate extent|bastante|
+quite|125453|adv|to a moderate extent|razoavelmente|
+quite|125453|adv|to the greatest extent; completely|totalmente|
+quite|125453|adv|to the greatest extent; completely|completamente|
+important|125420|adj|having relevant and crucial value|importante|
+husband|124638|n|male partner in marriage|marido|m
+husband|124638|n|male partner in marriage|esposo|m
+fire|124092|n|alchemy: one of the four basic elements|fogo|m
+fire|124092|n|heater or stove|fogão|m
+fire|124092|n|India and Japan: one of the five basic elements|fogo|m
+fire|124092|n|in-flight bullets|fogo|m
+fire|124092|n|occurrence of fire in a certain place|incêndio|m
+fire|124092|n|oxidation reaction|fogo|m
+fire|124092|n|something that has produced or is capable of producing this chemical reaction|fogo|m
+fire|124092|v|intransitive: to shoot|disparar|
+fire|124092|v|to heat pottery, etc.|cozinhar|
+fire|124092|v|to heat pottery, etc.|cozer|
+fire|124092|v|to terminate the employment of|despedir|
+fire|124092|v|to terminate the employment of|demitir|
+fire|124092|v|transitive: to shoot|disparar|
+fire|124092|v|transitive: to shoot|atirar|
+fight|123936|n|battle|batalha|f
+fight|123936|n|battle|luta|f
+fight|123936|n|conflict of will, strife|luta|f
+fight|123936|n|martial arts match|luta|f
+fight|123936|n|martial arts match|combate|m
+fight|123936|n|occasion of fighting|luta|f
+fight|123936|n|occasion of fighting|briga|f
+fight|123936|n|physical confrontation|briga|f
+fight|123936|n|will or ability to fight|combatividade|f
+fight|123936|v|to conduct or engage in|lutar|
+fight|123936|v|to contend in physical conflict|lutar com|
+fight|123936|v|to contend in physical conflict|contra|
+fight|123936|v|to counteract|lutar contra|
+fight|123936|v|to counteract|combater|
+fight|123936|v|to counteract|enfrentar|
+fight|123936|v|to engage in combat|combater|
+fight|123936|v|to engage in combat|lutar|
+fight|123936|v|to strive for|lutar|
+rest|123303|n|object designed to be used to support something else|apoio|m
+rest|123303|n|pause of a specified length in a piece of music|pausa|f
+rest|123303|n|peace, freedom from trouble, tranquility|paz|f
+rest|123303|n|peace, freedom from trouble, tranquility|tranquilidade|f
+rest|123303|n|physics: absence of motion|repouso|
+rest|123303|n|relief afforded by sleeping; sleep|repouso|m
+rest|123303|n|relief from exertion; state of quiet and recreation|descanso|m
+rest|123303|n|relief from exertion; state of quiet and recreation|repouso|m
+rest|123303|n|remainder|resto|m
+rest|123303|n|remainder|sobra|f
+rest|123303|n|repose afforded by death|descanso|m
+rest|123303|n|repose afforded by death|descanso eterno|m
+rest|123303|v|intransitive: lie or lean or be supported|repousar|
+rest|123303|v|intransitive: lie or lean or be supported|deitar|
+rest|123303|v|intransitive: take repose|descansar|
+moment|123055|n|moment of force|momento|m
+moment|123055|n|very brief period of time|instante|m
+moment|123055|n|very brief period of time|momento|m
+week|122947|n|period of seven days|semana|f
+read|122095|n|a reading or an act of reading|leitura|f
+read|122095|n|a reading or an act of reading|lida|f
+read|122095|v|be able to hear (in a radio communication)|copiar|
+read|122095|v|have the ability to read text or other information|ler|
+read|122095|v|look at and interpret letters or other information|ler|
+read|122095|v|make a study of|estudar|
+read|122095|v|of text, etc., to be interpreted or read in a particular way|ler-se|
+read|122095|v|speak aloud words or other information that is written|ler|
+read|122095|v|to consist of certain text|dizer|
+stand|121869|n|defensive position or effort|posto|m
+stand|121869|n|device to hold something upright or aloft|apoio|
+stand|121869|n|device to hold something upright or aloft|amparo|
+stand|121869|n|device to hold something upright or aloft|encosto|
+stand|121869|n|resolute, unwavering position|posto|m
+stand|121869|n|resolute, unwavering position|posição|
+stand|121869|n|small building or booth|estande|
+stand|121869|n|small building or booth|barraca|
+stand|121869|n|small building or booth|barraquinha|
+stand|121869|v|to place in an upright or standing position|encostar|
+stand|121869|v|to place in an upright or standing position|levantar|
+stand|121869|v|to place in an upright or standing position|erguer|
+stand|121869|v|to remain motionless|parar|
+stand|121869|v|to remain motionless|permanecer|
+stand|121869|v|to remain motionless|ficar|
+stand|121869|v|to rise to one’s feet|levantar|
+stand|121869|v|to rise to one’s feet|pôr-se de pé|
+stand|121869|v|to seek election|candidatar-se|
+stand|121869|v|to support oneself on the feet in an erect position|permanecer|
+stand|121869|v|to support oneself on the feet in an erect position|estar (de pé) (em pé)|
+stand|121869|v|to tolerate|tolerar|
+stand|121869|v|to tolerate|aguentar|
+stand|121869|v|to tolerate|suportar|
+stand|121869|v|to undergo; withstand; hold up|aguentar|
+stand|121869|v|to undergo; withstand; hold up|passar por|
+game|121499|adj|willing to participate|dentro|
+game|121499|n|contest between two individuals or teams|jogo|
+game|121499|n|playful activity, amusement, pastime|jogo|m
+game|121499|n|wild animals hunted for food|caça|f
+game|121499|v|to defeat the rules in order to obtain a result|burlar|
+cut|121215|adj|having been cut|cortado|
+cut|121215|adj|of a gem, carved into a shape|lapidado|
+cut|121215|adj|reduced|reduzido|
+cut|121215|n|act of cutting|corte|m
+cut|121215|n|lower than normal rate|redução|m
+cut|121215|n|opening resulting from cutting|corte|m
+cut|121215|n|partition of a graph’s vertices into two subgroups|corte|m
+cut|121215|n|result of cutting|corte|m
+cut|121215|v|colloquial, not to attend a class|matar|
+cut|121215|v|colloquial, not to attend a class|faltar|
+cut|121215|v|to cease recording|cortar|
+cut|121215|v|to divide a pack of playing cards|cortar|
+cut|121215|v|to divide with a sharp instrument|cortar|
+cut|121215|v|to enter a queue in a wrong place|furar|
+cut|121215|v|to form or shape by cutting|talhar|m
+cut|121215|v|to intersect dividing into half|atravessar|
+cut|121215|v|to perform an incision|cortar|
+cut|121215|v|to perform an incision|incisar|
+cut|121215|v|to reduce|diminuir|
+cut|121215|v|to reduce|reduzir|
+cut|121215|v|to separate from prior association|remover|
+cut|121215|v|to separate from prior association|retirar|
+sister|120634|n|a nun; a female member of a religious community|irmã|f
+sister|120634|n|a nun; a female member of a religious community|soror|f
+sister|120634|n|senior nurse|enfermeira|f
+sister|120634|n|woman or girl having the same parents|irmã|f
+speak|120116|n|jargon/terminology|jargão|m
+speak|120116|n|jargon/terminology|gíria|f
+speak|120116|v|to be able to communicate in a language|falar|
+speak|120116|v|to communicate with one's voice using words|falar|
+child|119840|n|a female or male child, a daughter or son|filho|m
+child|119840|n|a female or male child, a daughter or son|filha|f
+child|119840|n|a minor|criança|f
+child|119840|n|a minor|menino|m
+child|119840|n|a minor|menina|f
+side|119739|n|bounding straight edge of an object|lado|m
+side|119739|n|flat surface of an object|lado|m
+side|119739|n|flat surface of an object|face|f
+side|119739|n|group having a particular allegiance in a war|lado|m
+side|119739|n|left or right half|lado|m
+side|119739|n|one possible aspect of a concept|lado|m
+side|119739|n|one possible aspect of a concept|parte|f
+side|119739|n|region in a specified position with respect to something|lado|m
+side|119739|n|set of opponents in a game|time|m
+side|119739|n|surface of a sheet of paper|página|f
+side|119739|v|ally oneself|tomar parte|
+side|119739|v|ally oneself|aliar-se|
+between|117214|prep|combined by effort or ownership|entre|
+between|117214|prep|in the position or interval that separates two things|entre|
+between|117214|prep|in transit from one to the other|entre|
+between|117214|prep|one of, representing a choice|entre|
+between|117214|prep|shared in confidence by|entre|
+blood|116384|n|blood test or blood sample|teste/amostra de sangue|
+blood|116384|n|family relationship due to birth, e.g. between siblings|sangue|m
+blood|116384|n|vital liquid flowing in animal bodies|sangue|m
+blood|116384|v|to cause to be covered with blood|ensanguentar|
+though|116101|adv|however|no entanto|
+though|116101|adv|however|não obstante|
+though|116101|conj|although|apesar de|
+truth|115691|n|conformity to fact or reality|verdade|f
+truth|115691|n|pledge of loyalty or faith|juramento|m
+truth|115691|n|something acknowledged to be true|verdade|f
+truth|115691|n|state or quality of being true to someone or something|verdade|f
+truth|115691|n|that which is real|verdade|
+truth|115691|n|that which is real|verdades|f-p
+truth|115691|n|that which is real|realidade|f
+truth|115691|n|true facts|verdade|f
+lady|114711|n|mistress of a household|ama|f
+lady|114711|n|polite term referring a woman|dama|f
+lady|114711|n|polite term referring a woman|moça|f
+lady|114711|n|toilets intended for use by women|damas|f-p
+lady|114711|n|toilets intended for use by women|elas|f-p
+lady|114711|n|wife of a lord|senhora|f
+lady|114711|n|woman of breeding and authority|senhora|f
+lady|114711|n|woman of breeding and authority|dona|f
+lady|114711|n|woman of breeding and authority|dama|f
+Lady|114711|n|aristocratic title for a woman|Senhora|
+behind|114330|adv|at the back part; in the rear|para trás|
+behind|114330|adv|toward the back part or rear; backward|para trás|
+behind|114330|n|rear, back-end|traseira|f
+behind|114330|prep|after, time- or motion-wise|depois|
+behind|114330|prep|at the back of|atrás|
+behind|114330|prep|in support of|apoiando|
+behind|114330|prep|responsible for|por trás|
+behind|114330|prep|to the back of|atrás|
+almost|114152|adv|very close to|quase|
+shot|113597|n|heavy iron ball used for the shot put|peso|m
+shot|113597|n|launching of a ball or similar object toward a goal|chute|m
+shot|113597|n|photography: single unbroken sequence of photographic exposures|foto|f
+shot|113597|n|photography: single unbroken sequence of photographic exposures|fotografia|f
+shot|113597|n|result of launching a projectile|tiro|m
+war|112177|n|card game|guerra|f
+war|112177|n|conflict involving organized use of arms|guerra|f
+war|112177|n|rhetorical: campaign against something|guerra|f
+break|111719|n|rest or pause, usually from work|pausa|
+break|111719|n|temporary split in romantic relationship|tempo|m
+break|111719|v|intransitive, of a bone: to crack|quebrar|
+break|111719|v|intransitive, of a bone: to crack|partir|
+break|111719|v|intransitive: to separate into (to end up in) two or more pieces|quebrar|
+break|111719|v|intransitive: to separate into (to end up in) two or more pieces|partir|
+break|111719|v|intransitive: to separate into (to end up in) two or more pieces|romper|
+break|111719|v|intransitive: to stop functioning properly or altogether|quebrar|
+break|111719|v|intransitive: to stop functioning properly or altogether|partir|
+break|111719|v|to interrupt or cease one's work or occupation temporarily|pausar|
+break|111719|v|transitive: to cause (a bone) to crack|quebrar|
+break|111719|v|transitive: to cause (a bone) to crack|partir|
+break|111719|v|transitive: to cause to stop functioning|estragar|
+break|111719|v|transitive: to cause to stop functioning|partir|
+break|111719|v|transitive: to do that which is forbidden by (something)|desrespeitar|
+break|111719|v|transitive: to do that which is forbidden by (something)|violar|
+break|111719|v|transitive: to separate into (to cause to end up in) two or more pieces|quebrar|
+break|111719|v|transitive: to separate into (to cause to end up in) two or more pieces|partir|
+break|111719|v|transitive: to separate into (to cause to end up in) two or more pieces|romper|
+walk|110976|n|trip made by walking|caminhada|
+walk|110976|v|move on the feet|andar|
+walk|110976|v|move on the feet|caminhar|
+walk|110976|v|to take for a walk|passear|
+walk|110976|v|to travel a distance by walking|andar|
+walk|110976|v|to travel a distance by walking|caminhar|
+yours|110936|pron|possessive pronoun, plural|o seu|
+yours|110936|pron|possessive pronoun, plural|o vosso|
+yours|110936|pron|possessive pronoun, singular|o teu|m
+yours|110936|pron|possessive pronoun, singular|o seu|m
+yours|110936|pron|possessive pronoun (to be sorted into the preceding tables)|seu|
+able|110547|adj|legally qualified|competente|
+able|110547|adj|permitted to|possível|
+able|110547|adj|permitted to|permitido|
+able|110547|adj|skillful|capaz|
+reason|110475|n|motive for an action or determination|motivo|m
+reason|110475|n|that which causes: a cause|causa|f
+reason|110475|n|that which causes: a cause|motivo|m
+reason|110475|n|that which causes: a cause|razão|f
+reason|110475|n|(the capacity of the human mind for) rational thinking|razão|f
+reason|110475|v|to carry on a process of deduction or of induction|argumentar|
+reason|110475|v|to carry on a process of deduction or of induction|raciocinar|
+reason|110475|v|to exercise the rational faculty|raciocinar|
+trouble|110339|n|difficulty|dificuldade|f
+trouble|110339|n|distressful or dangerous situation|problema|m
+trouble|110339|v|to bother; to annoy|incomodar|
+trouble|110339|v|to bother; to annoy|irritar|
+trouble|110339|v|to bother; to annoy|molestar|
+city|109884|n|large settlement|cidade|f
+city|109884|n|large settlement|urbe|f
+town|109619|n|settlement|vila|f
+town|109619|n|settlement|aldeia|f
+town|109619|n|settlement|povoado|m
+town|109619|n|settlement|arraial|m
+trust|109349|n|a group of businessmen or traders|consórcio|m
+trust|109349|n|confidence in or reliance on some person or quality|confiança|f
+trust|109349|n|confidence in the future payment for goods or services supplied; credit|crédito|m
+trust|109349|n|dependence upon something in the future; hope|esperança|f
+trust|109349|n|trustworthiness, reliability|confiabilidade|f
+trust|109349|v|To place confidence in|confiar|
+question|108539|n|doubt or challenge|questão|f
+question|108539|n|sentence, phrase or word|questão|f
+question|108539|n|sentence, phrase or word|pergunta|f
+question|108539|n|subject or topic|questão|f
+question|108539|n|subject or topic|tema|m
+question|108539|v|ask questions of|questionar|
+question|108539|v|raise doubts about|questionar|
+buy|108052|v|to accept as true|engolir|
+buy|108052|v|to obtain something with money|comprar|
+buy|108052|v|to obtain something with money|adquirir|
+office|107711|n|administrative unit|escritório|m
+office|107711|n|building or room|escritório|m
+office|107711|n|good office|mediação|f
+half|107665|adj|consisting of a half|metade|
+half|107665|adj|consisting of a half|meio|
+half|107665|adj|consisting of some indefinite portion resembling a half|parte|
+half|107665|n|math: fraction|metade|f
+half|107665|n|one of two equal parts into which anything may be divided|metade|f
+half|107665|n|one of two equal parts into which anything may be divided|meio|
+bye|107546|interj|short for goodbye|tchau|
+high|107472|adj|elevated|alto|
+high|107472|adj|slang: stoned|alto|
+high|107472|adj|tall, lofty|alto|
+free|107167|adj|mathematics: unconstrained|livre|
+free|107167|adj|not imprisoned|livre|
+free|107167|adj|not in use|vago|
+free|107167|adj|not in use|livre|
+free|107167|adj|not in use|desocupado|
+free|107167|adj|obtainable without payment|grátis|
+free|107167|adj|obtainable without payment|gratuito|
+free|107167|adj|programming: not bound|livre|
+free|107167|adj|software: with very few limitations on distribution or improvement|livre|
+free|107167|adj|unconstrained|livre|
+free|107167|adj|unobstructed|livre|
+free|107167|adj|without obligations|livre|
+free|107167|adj|without|semideus|
+free|107167|adv|without needing to pay|grátis|
+free|107167|adv|without needing to pay|de graça|
+free|107167|adv|without needing to pay|gratuitamente|
+free|107167|v|make free|libertar|
+free|107167|v|make free|livrar|
+free|107167|v|make free|soltar|
+welcome|107033|adj|whose arrival is a cause of joy|bem-vindo|
+welcome|107033|interj|greeting given upon someone's arrival|bem-vindo!|m
+welcome|107033|interj|greeting given upon someone's arrival|bem-vinda!|f
+welcome|107033|interj|greeting given upon someone's arrival|bem-vindos!|p
+welcome|107033|interj|greeting given upon someone's arrival|bem-vindas!|f-p
+welcome|107033|n|act of greeting someone's arrival|recepção|
+welcome|107033|n|utterance of such a greeting|boas-vindas|f-p
+welcome|107033|v|affirm or greet the arrival of someone|dar as boas-vindas a|
+welcome|107033|v|affirm or greet the arrival of someone|receber|
+welcome|107033|v|affirm or greet the arrival of someone|acolher|
+welcome|107033|v|to accept willingly|aceitar|
+couple|106808|n|a small number of|poucos|
+couple|106808|n|a small number of|alguns|
+couple|106808|n|two of the same kind considered together|dupla|
+couple|106808|n|two of the same kind considered together|par|m
+couple|106808|n|two partners|casal|
+couple|106808|v|to join together|acoplar|
+either|105767|adv|(after a negative) as well|também não|
+either|105767|adv|(after a negative) as well|tampouco|
+either|105767|conj|Introduces the first of two options|ou...ou|
+either|105767|determiner|each of two|ambos|m-p
+either|105767|determiner|one or the other|ou ... ou|
+hurry|105446|n|rushed action|pressa|f
+hurry|105446|v|to do things quickly|apressar|
+hurry|105446|v|to speed up the rate|apressar|
+stupid|105060|adj|lacking in intelligence|estúpido|
+stupid|105060|adj|slang: amazing|estupendo|
+stupid|105060|adj|To the point of stupor|estupidificado|
+stupid|105060|adv|slang, dated: Extremely|estupidamente|
+honey|104949|n|colour|mel|
+honey|104949|n|sweet substance produced by bees|mel|m
+honey|104949|n|term of affection|querida|f
+honey|104949|n|term of affection|querido|m
+power|104938|n|biblical: fourth level of angels|potestade|m
+power|104938|n|control, particularly legal or political|poder|m
+power|104938|n|electricity supply|força|f
+power|104938|n|electricity supply|corrente|f
+power|104938|n|electricity supply|eletricidade|f
+power|104938|n|influence|poder|m
+power|104938|n|mathematics: product of equal factors|potência|f
+power|104938|n|nation having a strong military and/or economy|potência|f
+power|104938|n|physical force or strength|força|f
+power|104938|n|physical force or strength|potência|f
+power|104938|n|physics: measure of the rate of doing work or transferring energy|potência|f
+power|104938|n|physics: rate to magnify an optical image|potência|f
+power|104938|v|provide power for|alimentar|
+wow|104619|interj|amazement|uau|
+wow|104619|interj|amazement|uia|
+wow|104619|interj|amazement|nossa|
+wow|104619|interj|excitement|uau|
+wow|104619|interj|excitement|uia|
+wow|104619|interj|excitement|nossa|
+bed|104451|n|area where a large number of shellfish is found|banco|m
+bed|104451|n|bed as general place or concept|leito|m
+bed|104451|n|deposit of ore, coal etc.|leito|m
+bed|104451|n|deposit of ore, coal etc.|estrato|m
+bed|104451|n|flat surface or layer on which something else is to be placed|superfície|f
+bed|104451|n|foundation or supporting surface|base|f
+bed|104451|n|foundation or supporting surface|alicerce|m
+bed|104451|n|garden plot|canteiro|m
+bed|104451|n|piece of furniture|cama|f
+bed|104451|n|piece of furniture|leito|m
+bed|104451|n|prepared spot to spend the night in|cama|f
+bed|104451|n|the bottom of a lake or other body of water|leito|m
+bed|104451|v|to go to a sleeping bed|deitar|
+bed|104451|v|to put oneself to sleep|dormir|
+front|104372|n|facing side|dianteira|f
+front|104372|n|facing side|frente|f
+front|104372|n|main entrance side|frente|f
+front|104372|n|military: area or line of conflict|frente|f
+cool|104224|adj|allowing or suggesting heat relief|frio|
+cool|104224|adj|colloquial: all right, acceptable|aceitável|
+cool|104224|adj|colloquial: being considered as "popular" by others|bacana|
+cool|104224|adj|colloquial: being considered as "popular" by others|descolado|
+cool|104224|adj|colloquial: in fashion|descolado|
+cool|104224|adj|colloquial: in fashion|bacana|
+cool|104224|adj|colloquial: not upset|de boa|
+cool|104224|adj|colloquial: of a person, knowing what to do and how to behave in any situation|fixe|
+cool|104224|adj|colloquial: of a person, knowing what to do and how to behave in any situation|legal|
+cool|104224|adj|colloquial: of a person, knowing what to do and how to behave in any situation|massa|
+cool|104224|adj|having a slightly low temperature|fresco|
+cool|104224|adj|not showing emotion, calm|tranquilo|
+cool|104224|adj|unenthusiastic, lukewarm, skeptical|frio|
+answer|104085|n|reply to e-mail|resposta|f
+answer|104085|n|response|resposta|f
+answer|104085|n|solution|resposta|f
+answer|104085|v|to make a reply or response to|responder|
+answer|104085|v|to respond to a call|atender|
+send|103037|v|make something go somewhere|enviar|
+send|103037|v|make something go somewhere|emitir; coloq. mandar|
+send|103037|v|make something go somewhere|despachar|
+gun|102393|n|a less portable, long weapon|fuzil|m
+gun|102393|n|a less portable, long weapon|rifle|m
+gun|102393|n|a very portable, short weapon, for hand use|arma de fogo|f
+gun|102393|n|(military) A cannon with relatively long barrel, operating with relatively low angle of fire, and having a high muzzle velocity|canhão|m
+gun|102393|n|(military) a cannon with tube length 30 calibers or more|obus|m
+gun|102393|v|speed something up|acelerar|
+line|102053|n|catheter introduced in a vein or artery|linha|
+line|102053|n|exterior limit of a figure, plat, or territory; boundary; contour; outline|contorno|m
+line|102053|n|geography: circle of latitude or of longitude, as represented on a map|linha|f
+line|102053|n|geography: equator|equador|m
+line|102053|n|geometry: continuous finite segment of such a figure|segmento|m
+line|102053|n|geometry: infinite one-dimensional figure|reta|f
+line|102053|n|graph theory: edge of a graph|aresta|f
+line|102053|n|graph theory: edge of a graph|arco|m
+line|102053|n|path through two or more points, threadlike mark|linha|f
+line|102053|n|path through two or more points, threadlike mark|risco|m
+line|102053|n|path through two or more points, threadlike mark|traço|m
+line|102053|n|population of cells derived from a single cell and containing the same genetic makeup|linhagem|
+line|102053|n|rope, cord, or string|fio|m
+line|102053|n|rope, cord, or string|linha|f
+line|102053|n|sentence of dialogue, especially in a script or screenplay|fala|f
+line|102053|n|series or succession of ancestors or descendants of a given person|linhagem|f
+line|102053|n|single horizontal row of text on a screen, printed paper, etc.|linha|f
+line|102053|n|straight sequence of people, queue|fila|f
+line|102053|n|straight sequence of people, queue|linha|f
+line|102053|n|straight sequence of people, queue|fileira|f
+line|102053|n|telephone or network connection|linha|f
+line|102053|n|threadlike crease marking the face or the hand; hence, characteristic mark|linha|f
+line|102053|v|cover the inside surface of (something)|forrar|
+line|102053|v|to form or enter into a line|alinhar-se|
+line|102053|v|to mark with a line|traçar|
+line|102053|v|to place (objects) into a line|enfileirar|
+team|101875|n|group of people|equipe|f
+news|101557|n|new information of interest|notícias|f-p
+news|101557|n|reports of current events|noticiário|m
+news|101557|n|reports of current events|telejornal|m
+captain|100750|n|An army officer with a rank between the most senior grade of lieutenant and major|capitão|m
+captain|100750|n|A naval officer with a rank between commander and commodore or rear admiral|capitão|m
+captain|100750|n|One of the athletes on a sports team designated to make decisions|capitão|m
+captain|100750|n|The person lawfully in command of an airliner|capitão|m
+captain|100750|n|The person lawfully in command of a sea-going vessel|capitão|m
+captain|100750|n|The person lawfully in command of a sea-going vessel|capitã|
+captain|100750|n|The person lawfully in command of a sea-going vessel||f
+save|100595|v|accumulate money|poupar|
+save|100595|v|accumulate money|guardar|
+save|100595|v|economize|poupar|
+save|100595|v|store for future use|armazenar|
+save|100595|v|store for future use|estocar|
+save|100595|v|store for future use|guardar|
+save|100595|v|to help someone to survive|ajudar|
+save|100595|v|to help someone to survive|salvar|
+save|100595|v|to help someone to survive|socorrer|
+save|100595|v|to write a file to a disk|guardar|
+save|100595|v|to write a file to a disk|salvar|
+full|100468|adj|complete|completo|
+full|100468|adj|containing the maximum possible amount|cheio|
+full|100468|adj|satisfied, in relation to eating|cheio|
+full|100468|adj|satisfied, in relation to eating|satisfeito|
+full|100468|adj|total, entire|total|
+full|100468|adj|total, entire|inteiro|
+hate|100170|v|to dislike intensely|odiar|
+sometimes|100158|adv|on certain occasions, but not always|às vezes|
+become|100145|v|to begin to be|tornar-se|
+become|100145|v|to begin to be|virar|
+become|100145|v|to begin to be|transformar-se em|
