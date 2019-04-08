@@ -234,4 +234,36 @@
     <string name="pref_header_learn_and_review">Learn and Review</string>
     <string name="pref_header_verb_conjugations">Verb Conjugations</string>
 
+
+    <string name="indicative_tense_summary">This indicative tense will appear in crosswords</string>
+    <string name="perfect_tense_summary">This perfect/compound tense will appear in crosswords</string>
+    <string name="progressive_tense_summary">This progressive tense will appear in crosswords</string>
+    <string name="subjunctive_tense_summary">This subjunctive tense will appear in crosswords</string>
+    <string name="present_switch">Enable present tense</string>
+    <string name="preterite_switch">Enable preterite tense</string>
+    <string name="imperfect_switch">Enable imperfect tense</string>
+    <string name="simple_pluperfect_switch">Enable simple pluperfect tense</string>
+    <string name="future_switch">Enable future tense</string>
+    <string name="conditional_switch">Enable conditional tense</string>
+    <string name="present_perfect_switch">Enable present perfect tense</string>
+    <string name="pluperfect_switch">Enable pluperfect tense</string>
+    <string name="future_perfect_switch">Enable future perfect tense</string>
+    <string name="conditional_perfect_switch">Enable imperfect tense</string>
+    <string name="present_progressive_switch">Enable present progressive tense</string>
+    <string name="preterite_progressive_switch">Enable preterite progressive tense</string>
+    <string name="imperfect_progressive_switch">Enable imperfect progressive tense</string>
+    <string name="simple_pluperfect_progressive_switch">Enable simple pluperfect progressive tense</string>
+    <string name="future_progressive_switch">Enable future progressive tense</string>
+    <string name="conditional_progressive_switch">Enable conditional progressive tense</string>
+    <string name="present_perfect_progressive_switch">Enable present perfect progressive tense</string>
+    <string name="pluperfect_progressive_switch">Enable pluperfect progressive tense</string>
+    <string name="future_perfect_progressive_switch">Enable future perfect progressive tense</string>
+    <string name="conditional_perfect_progressive_switch">Enable conditional perfect progressive tense</string>
+    <string name="present_subjunctive_switch">Enable present tense</string>
+    <string name="present_perfect_subjunctive_switch">Enable present perfect tense</string>
+    <string name="imperfect_subjunctive_switch">Enable imperfect tense</string>
+    <string name="pluperfect_subjunctive_switch">Enable pluperfect tense</string>
+    <string name="future_subjunctive_switch">Enable future tense</string>
+    <string name="future_perfect_subjunctive_switch">Enable future perfect tense</string>
+
 </resources>
