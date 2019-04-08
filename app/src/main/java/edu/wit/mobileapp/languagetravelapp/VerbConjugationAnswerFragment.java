@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.Objects;
+
 
 public class VerbConjugationAnswerFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
@@ -73,7 +75,7 @@ public class VerbConjugationAnswerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_verb_conjugation, container, false);
+        View view = inflater.inflate(R.layout.fragment_verb_conjugation_answer, container, false);
 
         TextView questionTV = view.findViewById(R.id.verb_and_form_to_conjugate);
         questionTV.setText(question);
@@ -97,9 +99,22 @@ public class VerbConjugationAnswerFragment extends Fragment {
         if(input.toLowerCase().equals(answer.toLowerCase())){
             userMessageTV.setText("You got it!");
         }else{
-            userMessageTV.setText("The correct answer is: "+answer+"/n Your answer was: "+input);
+            userMessageTV.setText("The correct answer is: "+answer+"\n Your answer was: "+input);
         }
 
+        view.findViewById(R.id.next_verb).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((VerbConjugationActivity) Objects.requireNonNull(getHost())).goToNext();
+            }
+        });
+
+        view.findViewById(R.id.prev_verb).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((VerbConjugationActivity) Objects.requireNonNull(getHost())).goToPrevious();
+            }
+        });
 
         return view;
 

@@ -1168,7 +1168,6 @@ ofender~|~2912~|~v~|~~|~to offend~|~
 soar~|~2905~|~v~|~~|~make a sound~|~
 declarar~|~2899~|~v~|~~|~to declare~|~
 declarar~|~2899~|~v~|~~|~to state~|~
-chupar~|~2891~|~v~|~~|~to suck off (to give a blowjob)~|~
 publicar~|~2884~|~v~|~~|~to publish~|~
 traindo~|~2878~|~v~|~~|~gerund of trair~|~
 recuar~|~2854~|~v~|~~|~to indent~|~
@@ -1478,6 +1477,7 @@ embarcar~|~1980~|~v~|~~|~to embark~|~
 embarcar~|~1980~|~v~|~~|~to ship~|~
 duvidar~|~1979~|~v~|~~|~to disbelieve~|~
 duvidar~|~1979~|~v~|~~|~to doubt~|~
+evacuar~|~1978~|~v~|~~|~to defecate~|~
 evacuar~|~1978~|~v~|~~|~to evacuate (to make empty)~|~
 evacuar~|~1978~|~v~|~~|~to evacuate; to withdraw~|~
 pesar~|~1975~|~v~|~~|~to cause heartburn or indigestion~|~
@@ -1622,7 +1622,6 @@ impor~|~1615~|~v~|~~|~to impose~|~
 seduzir~|~1614~|~v~|~~|~to seduce (to win over or attract someone)~|~
 inventado~|~1613~|~v~|~~|~past participle of inventar~|~
 administrar~|~1605~|~v~|~~|~to administer (all senses)~|~
-trepar~|~1605~|~v~|~~|~To fuck~|~
 trepar~|~1605~|~v~|~~|~to climb~|~
 trepar~|~1605~|~v~|~~|~to mount~|~
 trepar~|~1605~|~v~|~~|~to tread on~|~
@@ -1989,3 +1988,13 @@ sacudir~|~954~|~v~|~~|~to shake~|~
 sacudir~|~954~|~v~|~~|~jolt~|~
 sacudir~|~954~|~v~|~~|~jar~|~
 sacudir~|~954~|~v~|~~|~jog~|~
+repensar~|~951~|~v~|~~|~to rethink (to think again about a problem)~|~
+gerenciar~|~950~|~v~|~~|~to manage~|~
+assaltar~|~946~|~v~|~~|~to assault~|~
+assaltar~|~946~|~v~|~~|~attack~|~
+assaltar~|~946~|~v~|~~|~to burgle~|~
+assaltar~|~946~|~v~|~~|~to rob~|~
+derretendo~|~945~|~v~|~~|~gerund of derreter~|~
+coçar~|~944~|~v~|~~|~to itch~|~
+coçar~|~944~|~v~|~~|~to scratch (to rub a surface with a sharp object)~|~
+exigindo~|~941~|~v~|~~|~gerund of exigir~|~

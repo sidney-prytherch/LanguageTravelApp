@@ -2,6 +2,7 @@ package edu.wit.mobileapp.languagetravelapp;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -86,6 +87,23 @@ public class VerbConjugationFragment extends Fragment {
         singularOrPluralTV.setText(singular ? "Singular" : "Plural");
 
         editText = view.findViewById(R.id.user_verb_response);
+
+        editText.setOnKeyListener(new View.OnKeyListener() {
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (event.getAction() == KeyEvent.ACTION_DOWN) {
+                    switch (keyCode) {
+                        case KeyEvent.KEYCODE_DPAD_CENTER:
+                        case KeyEvent.KEYCODE_ENTER:
+                            String input = editText.getText().toString();
+                            ((VerbConjugationActivity) Objects.requireNonNull(getHost())).goToSolution(input);
+                            return true;
+                        default:
+                            break;
+                    }
+                }
+                return false;
+            }
+        });
 
         view.findViewById(R.id.next_verb).setOnClickListener(new View.OnClickListener() {
             @Override

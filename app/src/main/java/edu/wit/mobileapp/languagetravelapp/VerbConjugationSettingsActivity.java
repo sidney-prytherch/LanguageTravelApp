@@ -79,17 +79,8 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onRestart() {
-        super.onRestart();
-        navigationView.getMenu().getItem(4).setChecked(true);
-    }
-
-    public void onButtonClickSpecial(View view) {
-        onButtonClick(buttons[0]);
-        continueToVerbPractice(view);
-    }
-
-    public void onButtonClick(View view) {
+    protected void onResume() {
+        super.onResume();
         findViewById(R.id.verbFormsScrollView).setVisibility(View.VISIBLE);
         findViewById(R.id.verbSetScrollView).setVisibility(View.VISIBLE);
 
@@ -181,6 +172,20 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
                 continueToVerbPractice(v);
             }
         });
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        navigationView.getMenu().getItem(4).setChecked(true);
+    }
+
+    public void onButtonClickSpecial(View view) {
+        onButtonClick(buttons[0]);
+        continueToVerbPractice(view);
+    }
+
+    public void onButtonClick(View view) {
         focusOnScrollView(view.getId());
     }
 

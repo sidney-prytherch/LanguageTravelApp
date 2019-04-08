@@ -13,11 +13,22 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
+import android.content.Context;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.util.ArrayList;
 
 public class VerbConjugationActivity extends AppCompatActivity {
 
+
     private NavigationView navigationView;
-    private int index = 0;
+    private int index = 1;
+    private String[] questions = new String[20];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +47,24 @@ public class VerbConjugationActivity extends AppCompatActivity {
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
         navigationView.getMenu().getItem(4).setChecked(true);
+
+        InputStream is = getResources().openRawResource(R.raw.words);
+        BufferedReader reader = new BufferedReader(
+                new InputStreamReader(is, Charset.forName("UTF-8"))
+        );
+        String line;
+        try {
+            ArrayList<String> verbs = new ArrayList<>();
+            while ((line = reader.readLine()) != null) {
+                String[] lineData = line.split("\\|");
+                String portugueseVerb = lineData[0];
+                String englishVerb = lineData[4];
+
+            }
+
+        } catch (IOException e) {
+            Log.v("myapp", "error reading file");
+        }
 
 
         if (savedInstanceState == null) {
@@ -79,6 +108,7 @@ public class VerbConjugationActivity extends AppCompatActivity {
 
     public void goToSolution(String input) {
         Log.v("bongleshnap", input);
+        closeKeyboard();
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
         Fragment verbFragment = new VerbConjugationAnswerFragment();
@@ -98,6 +128,7 @@ public class VerbConjugationActivity extends AppCompatActivity {
 
     public void goToPrevious() {
         if (index > 0) {
+            closeKeyboard();
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction transaction = fm.beginTransaction();
             Fragment verbFragment = new VerbConjugationFragment();
@@ -112,6 +143,34 @@ public class VerbConjugationActivity extends AppCompatActivity {
             verbFragment.setArguments(bundle);
             transaction.replace(R.id.container, verbFragment);
             transaction.commit();
+        }
+    }
+
+    public void goToNext() {
+        if (index < questions.length) {
+            closeKeyboard();
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction transaction = fm.beginTransaction();
+            Fragment verbFragment = new VerbConjugationFragment();
+            Bundle bundle = new Bundle();
+            bundle.putString(VerbConjugationFragment.VERB_TYPE, "Preterite");
+            bundle.putString(VerbConjugationFragment.ENGLISH_VERB, "To Stay");
+            bundle.putString(VerbConjugationFragment.PORTUGUESE_VERB, "Fica");
+            bundle.putString(VerbConjugationFragment.PERSON, "2nd");
+            bundle.putBoolean(VerbConjugationFragment.SINGULAR, false);
+            bundle.putString(VerbConjugationFragment.QUESTION, "I was");
+            bundle.putString(VerbConjugationFragment.ANSWER, "eu ficou");
+            verbFragment.setArguments(bundle);
+            transaction.replace(R.id.container, verbFragment);
+            transaction.commit();
+        }
+    }
+
+    private void closeKeyboard() {
+        View view = this.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
         }
     }
 }
