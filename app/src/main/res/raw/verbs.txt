@@ -1,0 +1,1991 @@
+vai~|~1187341~|~v~|~~|~will (used to express the third person singular future tense)~|~
+vamos~|~1126475~|~v~|~~|~forms the analytic first-person plural future indicative tense: we will~|~
+vamos~|~1126475~|~v~|~~|~forms the analytic first-person plural imperative: let’s~|~
+vou~|~896624~|~v~|~~|~(I) will (forms the first-person singular future indicative tense)~|~
+ser~|~857006~|~v~|~~|~forms the passive voice~|~
+ser~|~857006~|~v~|~~|~Auxiliary verb for the passive voice~|~
+ser~|~857006~|~v~|~~|~precedes verb in participle; to be~|~
+ser~|~857006~|~v~|~~|~Denotes a permanent quality; to be;~|~
+ser~|~857006~|~v~|~~|~Denotes location in time; to be;~|~
+ser~|~857006~|~v~|~~|~to be correct~|~
+ser~|~857006~|~v~|~~|~to be true; particularly as answer or reaffirmation of a previous statement~|~
+ser~|~857006~|~v~|~~|~to cost (to be worth a given amount of money)~|~
+ser~|~857006~|~v~|~~|~to happen; to take place~|~
+ter~|~609640~|~v~|~~|~to have~|~
+ter~|~609640~|~v~|~~|~must; to have to~|~
+ter~|~609640~|~v~|~~|~to consider (assign some quality to)~|~
+ter~|~609640~|~v~|~~|~there be (to exist, physically or abstractly)~|~
+ter~|~609640~|~v~|~~|~to give birth to~|~
+ter~|~609640~|~v~|~~|~to have~|~
+dizer~|~595850~|~v~|~~|~to communicate~|~
+dizer~|~595850~|~v~|~~|~either verbally or in writing~|~
+dizer~|~595850~|~v~|~~|~to discern~|~
+dizer~|~595850~|~v~|~~|~to tell~|~
+dizer~|~595850~|~v~|~~|~to distinguish~|~
+dizer~|~595850~|~v~|~~|~to indicate in a written form~|~
+dizer~|~595850~|~v~|~~|~to say~|~
+dizer~|~595850~|~v~|~~|~pronounce~|~
+ver~|~464936~|~v~|~~|~to see; to understand~|~
+ver~|~464936~|~v~|~~|~to see (to witness or observe by personal experience)~|~
+ver~|~464936~|~v~|~~|~to tell; to notice (to take notice of)~|~
+ver~|~464936~|~v~|~~|~to visit a place or someone~|~
+tão~|~440869~|~v~|~~|~eye dialect of estão~|~
+ir~|~417862~|~v~|~~|~will; to be going to; Used as an alternative to the simple future tense~|~
+ir~|~417862~|~v~|~~|~to go~|~
+ficar~|~336281~|~v~|~~|~followed by gerund~|~
+ficar~|~336281~|~v~|~~|~forms the habitual aspect~|~
+ficar~|~336281~|~v~|~~|~to engage in a romantic relationship with someone for one night or some short period of time~|~
+ficar~|~336281~|~v~|~~|~not to go any further~|~
+ficar~|~336281~|~v~|~~|~to remain (to be left over)~|~
+ficar~|~336281~|~v~|~~|~to stay (to remain in a particular place)~|~
+falar~|~323972~|~v~|~~|~to communicate by any means~|~
+falar~|~323972~|~v~|~~|~to talk to~|~
+falar~|~323972~|~v~|~~|~to tell (to convey by speech)~|~
+falar~|~323972~|~v~|~~|~to say something~|~
+falar~|~323972~|~v~|~~|~to speak (to be able to communicate in a language)~|~
+estar~|~281942~|~v~|~~|~followed by the preposition a and infinitive (Portugal) or by gerund (Brazil)~|~
+estar~|~281942~|~v~|~~|~forms the progressive aspect~|~
+estar~|~281942~|~v~|~~|~to be (denotes a transient quality; a quality expected to change)~|~
+estar~|~281942~|~v~|~~|~to be (indicates location in space)~|~
+estar~|~281942~|~v~|~~|~to cost (to be worth a certain amount of money)~|~
+estar~|~281942~|~v~|~~|~especially of something whose price changes often~|~
+saber~|~249301~|~v~|~~|~to know a fact~|~
+saber~|~249301~|~v~|~~|~to know a value~|~
+saber~|~249301~|~v~|~~|~to know how to do something~|~
+dar~|~245566~|~v~|~~|~to consider (assign some quality to)~|~
+dar~|~245566~|~v~|~~|~to administer (to cause to take (medicine))~|~
+dar~|~245566~|~v~|~~|~to be enough~|~
+dar~|~245566~|~v~|~~|~to cause (to produce as a result)~|~
+dar~|~245566~|~v~|~~|~to give (to carry out a physical interaction with something)~|~
+dar~|~245566~|~v~|~~|~to give (to cause a sensation or feeling to exist in)~|~
+dar~|~245566~|~v~|~~|~to give; to issue; to emit~|~
+dar~|~245566~|~v~|~~|~to give (to make a present or gift of)~|~
+dar~|~245566~|~v~|~~|~to give (to pass something into someone’s hand)~|~
+dar~|~245566~|~v~|~~|~to give (to provide a service)~|~
+dar~|~245566~|~v~|~~|~to give (to transfer one’s possession of something to someone without anything in return)~|~
+dar~|~245566~|~v~|~~|~to make (to tend or be able to become)~|~
+dar~|~245566~|~v~|~~|~to publish or broadcast news~|~
+dar~|~245566~|~v~|~~|~to throw (to organise an event)~|~
+dar~|~245566~|~v~|~~|~to yield; to produce; to generate~|~
+vão~|~207677~|~v~|~~|~followed by infinitive~|~
+vão~|~207677~|~v~|~~|~forms the third-person plural future indicative~|~
+sair~|~192994~|~v~|~~|~to lead (to begin a game, round, or trick)~|~
+sair~|~192994~|~v~|~~|~to come out (to be published or issued)~|~
+sair~|~192994~|~v~|~~|~to come out; to end up~|~
+sair~|~192994~|~v~|~~|~to exit; to leave (to go away from a certain place or situation)~|~
+sair~|~192994~|~v~|~~|~to go out (with) (to have a romantic relationship with someone)~|~
+sair~|~192994~|~v~|~~|~to stop working somewhere or in a field~|~
+voltar~|~159045~|~v~|~~|~to return~|~
+deixar~|~149879~|~v~|~~|~to abandon~|~
+deixar~|~149879~|~v~|~~|~to allow~|~
+deixar~|~149879~|~v~|~~|~let~|~
+deixar~|~149879~|~v~|~~|~to leave~|~
+ajudar~|~146352~|~v~|~~|~to help~|~
+ajudar~|~146352~|~v~|~~|~to aid~|~
+ajudar~|~146352~|~v~|~~|~to assist~|~
+pegar~|~130627~|~v~|~~|~to catch~|~
+pegar~|~130627~|~v~|~~|~to grab~|~
+pegar~|~130627~|~v~|~~|~to hold~|~
+pegar~|~130627~|~v~|~~|~to get someone in a situation~|~
+pegar~|~130627~|~v~|~~|~to take by~|~
+encontrar~|~113098~|~v~|~~|~find~|~
+encontrar~|~113098~|~v~|~~|~meet~|~
+matar~|~112494~|~v~|~~|~to kill~|~
+entrar~|~110190~|~v~|~~|~to enter~|~
+entrar~|~110190~|~v~|~~|~to go into~|~
+pensar~|~103481~|~v~|~~|~to think (communicate to oneself in one’s mind)~|~
+dê~|~98602~|~v~|~~|~First-person singular present subjunctive of dar~|~
+dê~|~98602~|~v~|~~|~Third-person singular present subjunctive of dar~|~
+tá~|~97857~|~v~|~~|~eye dialect of está~|~
+tá~|~97857~|~v~|~~|~eye dialect of estar~|~
+vir~|~95696~|~v~|~~|~to come~|~
+ouvir~|~95356~|~v~|~~|~to hear~|~
+ouvir~|~95356~|~v~|~~|~to perceive with the ear~|~
+ouvir~|~95356~|~v~|~~|~without necessarily paying attention to it~|~
+morrer~|~94566~|~v~|~~|~to die~|~
+passar~|~91385~|~v~|~~|~to be acceptable~|~
+passar~|~91385~|~v~|~~|~to be passable~|~
+passar~|~91385~|~v~|~~|~to cross (a bridge)~|~
+passar~|~91385~|~v~|~~|~to go~|~
+passar~|~91385~|~v~|~~|~to iron (clothes)~|~
+passar~|~91385~|~v~|~~|~to pass~|~
+passar~|~91385~|~v~|~~|~to put on (makeup)~|~
+passar~|~91385~|~v~|~~|~to spend (time)~|~
+parar~|~89092~|~v~|~~|~to stop~|~
+ia~|~89081~|~v~|~~|~first-~|~
+ia~|~89081~|~v~|~~|~third-person singular indicative imperfect of ir~|~
+poder~|~85401~|~v~|~~|~can (to be able)~|~
+tentar~|~85093~|~v~|~~|~to dare~|~
+tentar~|~85093~|~v~|~~|~to tease~|~
+tentar~|~85093~|~v~|~~|~to try~|~
+tentar~|~85093~|~v~|~~|~to go for~|~
+tentar~|~85093~|~v~|~~|~to attempt~|~
+trabalhar~|~81391~|~v~|~~|~to work (to do a specific task)~|~
+usar~|~80789~|~v~|~~|~to use~|~
+esperar~|~80680~|~v~|~~|~to hope~|~
+esperar~|~80680~|~v~|~~|~to wait~|~
+tirar~|~75654~|~v~|~~|~to remove~|~
+tirar~|~75654~|~v~|~~|~withdraw~|~
+tirar~|~75654~|~v~|~~|~to take~|~
+tirar~|~75654~|~v~|~~|~take out~|~
+tirar~|~75654~|~v~|~~|~take away~|~
+querido~|~73872~|~v~|~~|~past participle of querer~|~
+conseguir~|~71751~|~v~|~~|~to achieve~|~
+conseguir~|~71751~|~v~|~~|~to get~|~
+conseguir~|~71751~|~v~|~~|~to obtain~|~
+dormir~|~70658~|~v~|~~|~to sleep~|~
+acontecer~|~69945~|~v~|~~|~happen (to occur)~|~
+vindo~|~68616~|~v~|~~|~gerund of vir~|~
+jantar~|~68145~|~v~|~~|~to dine~|~
+viver~|~67297~|~v~|~~|~to live; to have life~|~
+sentir~|~66297~|~v~|~~|~to foretell~|~
+sentir~|~66297~|~v~|~~|~to feel (to use the sense of touch)~|~
+sentir~|~66297~|~v~|~~|~to be offended by~|~
+sentir~|~66297~|~v~|~~|~to be sorry~|~
+sentir~|~66297~|~v~|~~|~regretful~|~
+sentir~|~66297~|~v~|~~|~to feel (to experience an emotion)~|~
+sentir~|~66297~|~v~|~~|~to feel (to experience the consequences of)~|~
+sentir~|~66297~|~v~|~~|~to perceive (to be aware of)~|~
+sentir~|~66297~|~v~|~~|~to sense; to feel (to use biological senses)~|~
+pergunta~|~65425~|~v~|~~|~second-person singular present imperative form of perguntar~|~
+pergunta~|~65425~|~v~|~~|~third-person singular present indicative form of perguntar~|~
+mudar~|~62577~|~v~|~~|~to change (to become or cause to become something different)~|~
+perder~|~62374~|~v~|~~|~to lose~|~
+acreditar~|~61164~|~v~|~~|~to accredit~|~
+acreditar~|~61164~|~v~|~~|~to believe~|~
+conversar~|~60878~|~v~|~~|~to talk~|~
+olhar~|~60786~|~v~|~~|~to look~|~
+descobrir~|~60621~|~v~|~~|~to discover (to find something for the first time)~|~
+descobrir~|~60621~|~v~|~~|~to uncover (to remove something’s cover)~|~
+colocar~|~59506~|~v~|~~|~to hire~|~
+colocar~|~59506~|~v~|~~|~to place~|~
+colocar~|~59506~|~v~|~~|~to put~|~
+pedir~|~58605~|~v~|~~|~to ask for~|~
+pedir~|~58605~|~v~|~~|~to ask~|~
+pedir~|~58605~|~v~|~~|~to order (in a restaurant)~|~
+ligar~|~57457~|~v~|~~|~mind~|~
+ligar~|~57457~|~v~|~~|~pay attention~|~
+ligar~|~57457~|~v~|~~|~dial or call with a telephone~|~
+ligar~|~57457~|~v~|~~|~link~|~
+ligar~|~57457~|~v~|~~|~join~|~
+ligar~|~57457~|~v~|~~|~turn on~|~
+jogar~|~55268~|~v~|~~|~to play~|~
+jogar~|~55268~|~v~|~~|~to throw~|~
+acabar~|~54418~|~v~|~~|~(catenative) (followed by de) indicates recency~|~
+acabar~|~54418~|~v~|~~|~as in English just finish~|~
+acabar~|~54418~|~v~|~~|~to destroy completely~|~
+acabar~|~54418~|~v~|~~|~to defeat thoroughly~|~
+acabar~|~54418~|~v~|~~|~to end up~|~
+acabar~|~54418~|~v~|~~|~to finish~|~
+acabar~|~54418~|~v~|~~|~to complete~|~
+querer~|~54043~|~v~|~~|~to love~|~
+querer~|~54043~|~v~|~~|~be fond of~|~
+querer~|~54043~|~v~|~~|~have affection for~|~
+querer~|~54043~|~v~|~~|~to want~|~
+perguntar~|~53644~|~v~|~~|~to ask (request an answer)~|~
+manter~|~52784~|~v~|~~|~to hold~|~
+manter~|~52784~|~v~|~~|~sustain~|~
+manter~|~52784~|~v~|~~|~support~|~
+manter~|~52784~|~v~|~~|~to keep~|~
+manter~|~52784~|~v~|~~|~maintain~|~
+chamar~|~52383~|~v~|~~|~to call~|~
+chamar~|~52383~|~v~|~~|~summons~|~
+chamar~|~52383~|~v~|~~|~to invoke~|~
+chamar~|~52383~|~v~|~~|~to name (give a name to)~|~
+comprar~|~52098~|~v~|~~|~to buy~|~
+brincando~|~52025~|~v~|~~|~gerund of brincar~|~
+ganhar~|~51460~|~v~|~~|~to win~|~
+casar~|~48697~|~v~|~~|~to marry~|~
+casar~|~48697~|~v~|~~|~wed someone to (unite two others in wedlock)~|~
+perfeito~|~46329~|~v~|~~|~past participle of perfazer~|~
+entender~|~44898~|~v~|~~|~to understand~|~
+partir~|~44363~|~v~|~~|~to divide~|~
+partir~|~44363~|~v~|~~|~to split~|~
+partir~|~44363~|~v~|~~|~to go away~|~
+partir~|~44363~|~v~|~~|~to leave~|~
+partir~|~44363~|~v~|~~|~to depart~|~
+hey~|~42342~|~v~|~~|~obsolete spelling of hei~|~
+conhecer~|~41491~|~v~|~~|~to know (be acquainted or familiar with)~|~
+conhecer~|~41491~|~v~|~~|~to meet someone for the first time~|~
+trazer~|~40735~|~v~|~~|~bring (to transport toward somebody/somewhere)~|~
+salvar~|~40233~|~v~|~~|~to greet~|~
+salvar~|~40233~|~v~|~~|~to save (to write a file to disk)~|~
+salvar~|~40233~|~v~|~~|~to save (to redeem or protect someone from eternal damnation)~|~
+salvar~|~40233~|~v~|~~|~to greet with a salvo~|~
+salvar~|~40233~|~v~|~~|~to save (to help someone to survive; to make sure something isn’t destroyed)~|~
+seguir~|~38961~|~v~|~~|~to follow (to go or come after in physical space)~|~
+terminar~|~38465~|~v~|~~|~to end up~|~
+terminar~|~38465~|~v~|~~|~to finish~|~
+terminar~|~38465~|~v~|~~|~end~|~
+terminar~|~38465~|~v~|~~|~terminate~|~
+terminar~|~38465~|~v~|~~|~stop~|~
+monte~|~36475~|~v~|~~|~first-person singular subjunctive present of montar~|~
+monte~|~36475~|~v~|~~|~(that I) climb~|~
+monte~|~36475~|~v~|~~|~third-person singular imperative of montar~|~
+monte~|~36475~|~v~|~~|~(you) climb!~|~
+monte~|~36475~|~v~|~~|~third-person singular subjunctive present of montar~|~
+monte~|~36475~|~v~|~~|~(that you) climb~|~
+explicar~|~35134~|~v~|~~|~to explain~|~
+lembrar~|~34262~|~v~|~~|~to remember~|~
+lutar~|~33852~|~v~|~~|~to fight~|~
+lutar~|~33852~|~v~|~~|~to struggle~|~
+procurar~|~33438~|~v~|~~|~to try; to attempt~|~
+procurar~|~33438~|~v~|~~|~to reach out (attempt to initiate communication)~|~
+procurar~|~33438~|~v~|~~|~to search; to seek; to look for~|~
+procurar~|~33438~|~v~|~~|~to work as a procurator (attorney or agent)~|~
+ler~|~33114~|~v~|~~|~to read~|~
+ler~|~33114~|~v~|~~|~to look at and interpret letters or other information that is written~|~
+ler~|~33114~|~v~|~~|~to speak from a written book~|~
+tocar~|~33005~|~v~|~~|~to play (a musical instrument)~|~
+tocar~|~33005~|~v~|~~|~to touch~|~
+luta~|~32812~|~v~|~~|~third-person singular indicative present of lutar~|~
+haver~|~32301~|~v~|~~|~To have; to own; to possess~|~
+haver~|~32301~|~v~|~~|~ought to;~|~
+haver~|~32301~|~v~|~~|~have (auxiliary verb, used to form the perfect tense)~|~
+haver~|~32301~|~v~|~~|~There be; to exist~|~
+haver~|~32301~|~v~|~~|~to happen; to occur~|~
+haver~|~32301~|~v~|~~|~to recover; to regain~|~
+cair~|~30967~|~v~|~~|~to fall~|~
+esquecer~|~30246~|~v~|~~|~to forget~|~
+buscar~|~29619~|~v~|~~|~to fetch~|~
+buscar~|~29619~|~v~|~~|~to pick up~|~
+buscar~|~29619~|~v~|~~|~to search for~|~
+bater~|~29133~|~v~|~~|~to beat~|~
+bater~|~29133~|~v~|~~|~to clap~|~
+bater~|~29133~|~v~|~~|~to coin (a word, etc.)~|~
+bater~|~29133~|~v~|~~|~to scout (to explore a wide terrain)~|~
+bater~|~29133~|~v~|~~|~to snap (a photo)~|~
+escrever~|~29115~|~v~|~~|~to write (to form letters, etc.)~|~
+encontramos~|~28669~|~v~|~~|~first-person plural indicative present of encontrar~|~
+encontramos~|~28669~|~v~|~~|~we find~|~
+fugir~|~28375~|~v~|~~|~to escape; to run away; to flee~|~
+provar~|~28290~|~v~|~~|~to prove (to demonstrate that something is true; to give proof for)~|~
+provar~|~28290~|~v~|~~|~to taste~|~
+mandar~|~28073~|~v~|~~|~to order~|~
+mandar~|~28073~|~v~|~~|~command~|~
+mandar~|~28073~|~v~|~~|~to send~|~
+gostar~|~28032~|~v~|~~|~to like~|~
+correr~|~28016~|~v~|~~|~to drive fast~|~
+correr~|~28016~|~v~|~~|~to speed~|~
+correr~|~28016~|~v~|~~|~(rumors) to go around~|~
+correr~|~28016~|~v~|~~|~(time) to elapse~|~
+correr~|~28016~|~v~|~~|~to run (on foot)~|~
+correr~|~28016~|~v~|~~|~to rush~|~
+correr~|~28016~|~v~|~~|~(water) to flow~|~
+proteger~|~27341~|~v~|~~|~to protect~|~
+proteger~|~27341~|~v~|~~|~to support~|~
+sentar~|~27271~|~v~|~~|~to sit~|~
+sentar~|~27271~|~v~|~~|~to seat~|~
+resolver~|~26588~|~v~|~~|~to decide to do something~|~
+resolver~|~26588~|~v~|~~|~to annul (to formally revoke the validity of)~|~
+resolver~|~26588~|~v~|~~|~to dissolve; to dissipate~|~
+resolver~|~26588~|~v~|~~|~to solve (to find an answer or solution)~|~
+dançar~|~26298~|~v~|~~|~to fail~|~
+dançar~|~26298~|~v~|~~|~to be unsuccessful~|~
+dançar~|~26298~|~v~|~~|~to dance~|~
+dançar~|~26298~|~v~|~~|~to oscillate (particularly fire)~|~
+lidar~|~25668~|~v~|~~|~to bullfight~|~
+lidar~|~25668~|~v~|~~|~to deal with~|~
+lidar~|~25668~|~v~|~~|~to fight~|~
+confiar~|~25349~|~v~|~~|~to confide~|~
+confiar~|~25349~|~v~|~~|~entrust~|~
+confiar~|~25349~|~v~|~~|~to rely on~|~
+aceitar~|~25112~|~v~|~~|~to accept~|~
+aceitar~|~25112~|~v~|~~|~to receive~|~
+receber~|~24443~|~v~|~~|~to receive (to detect a signal from a transmitter)~|~
+receber~|~24443~|~v~|~~|~to be hit by something~|~
+receber~|~24443~|~v~|~~|~to collect or receive payment~|~
+receber~|~24443~|~v~|~~|~to get; to receive~|~
+receber~|~24443~|~v~|~~|~to receive (to act as a host for guests)~|~
+atirar~|~24107~|~v~|~~|~throw~|~
+escolher~|~23958~|~v~|~~|~to choose~|~
+perdido~|~23843~|~v~|~~|~past participle of perder~|~
+preocupar~|~23696~|~v~|~~|~to worry~|~
+preocupar~|~23696~|~v~|~~|~to concern~|~
+tornar~|~23666~|~v~|~~|~to return; to come back~|~
+roubar~|~21955~|~v~|~~|~to deprive someone or something of its qualities~|~
+roubar~|~21955~|~v~|~~|~to seduce someone who is on another relationship~|~
+roubar~|~21955~|~v~|~~|~to cheat (to violate rules in order to gain advantage from a situation)~|~
+roubar~|~21955~|~v~|~~|~to steal (to take illegally or without permission)~|~
+imaginar~|~21645~|~v~|~~|~to imagine (all senses)~|~
+peço~|~21523~|~v~|~~|~Singular first person present tense of pedir~|~
+criar~|~21508~|~v~|~~|~to breed animals or plants~|~
+criar~|~21508~|~v~|~~|~to invent~|~
+criar~|~21508~|~v~|~~|~to raise a child~|~
+funcionar~|~21313~|~v~|~~|~to work; to function~|~
+aparecer~|~21311~|~v~|~~|~to appear~|~
+evitar~|~20616~|~v~|~~|~to avoid~|~
+subir~|~20546~|~v~|~~|~to ascend~|~
+subir~|~20546~|~v~|~~|~to go up~|~
+subir~|~20546~|~v~|~~|~to climb~|~
+brincar~|~20484~|~v~|~~|~play~|~
+limpar~|~19901~|~v~|~~|~to remove all contents from a location or container~|~
+limpar~|~19901~|~v~|~~|~to clean (to remove dirt from a place or object)~|~
+limpar~|~19901~|~v~|~~|~to eviscerate and descale an animal for consumption~|~
+cortar~|~19755~|~v~|~~|~to chop~|~
+cortar~|~19755~|~v~|~~|~to cut~|~
+destruir~|~19722~|~v~|~~|~to destroy~|~
+havendo~|~19337~|~v~|~~|~gerund of haver~|~
+dirigir~|~19234~|~v~|~~|~to direct a film~|~
+responder~|~19104~|~v~|~~|~to answer; to reply (to give a written or spoken response)~|~
+responder~|~19104~|~v~|~~|~to correspond to (to be equivalent to)~|~
+responder~|~19104~|~v~|~~|~to counterattack~|~
+pôr~|~18738~|~v~|~~|~to put~|~
+agradecer~|~18482~|~v~|~~|~to be grateful for~|~
+agradecer~|~18482~|~v~|~~|~to thank~|~
+assistir~|~18403~|~v~|~~|~to assist~|~
+assistir~|~18403~|~v~|~~|~to attend~|~
+assistir~|~18403~|~v~|~~|~to watch or witness~|~
+preparar~|~18353~|~v~|~~|~to plan~|~
+preparar~|~18353~|~v~|~~|~to prepare (all senses)~|~
+chorar~|~18284~|~v~|~~|~to cry; to weep~|~
+dado~|~18197~|~v~|~~|~past participle of dar~|~
+escapar~|~18054~|~v~|~~|~to escape (to get free)~|~
+apresentar~|~18015~|~v~|~~|~to introduce~|~
+apresentar~|~18015~|~v~|~~|~to present~|~
+apresentar~|~18015~|~v~|~~|~to show~|~
+virar~|~17887~|~v~|~~|~to become~|~
+virar~|~17887~|~v~|~~|~To capsize~|~
+virar~|~17887~|~v~|~~|~to turn or bend (around)~|~
+virar~|~17887~|~v~|~~|~to upset or topple~|~
+arrumar~|~17657~|~v~|~~|~to fix~|~
+arrumar~|~17657~|~v~|~~|~to organise~|~
+arrumar~|~17657~|~v~|~~|~to set up~|~
+arrumar~|~17657~|~v~|~~|~to stow~|~
+arrumar~|~17657~|~v~|~~|~guard~|~
+arrumar~|~17657~|~v~|~~|~save~|~
+arrumar~|~17657~|~v~|~~|~to tidy~|~
+decidir~|~17651~|~v~|~~|~to decide~|~
+decidir~|~17651~|~v~|~~|~to deliberate~|~
+decidir~|~17651~|~v~|~~|~to determine~|~
+decidir~|~17651~|~v~|~~|~to resolve~|~
+levantar~|~17336~|~v~|~~|~to lift~|~
+levantar~|~17336~|~v~|~~|~to retrieve (e.g. a document from a government office)~|~
+discutir~|~17311~|~v~|~~|~to discuss~|~
+vencer~|~17082~|~v~|~~|~to defeat~|~
+vencer~|~17082~|~v~|~~|~to win~|~
+vencer~|~17082~|~v~|~~|~to conquer~|~
+vencer~|~17082~|~v~|~~|~to expire~|~
+quebrar~|~16959~|~v~|~~|~to beat up (to give a severe beating to)~|~
+quebrar~|~16959~|~v~|~~|~to break (collapse into surf)~|~
+quebrar~|~16959~|~v~|~~|~to break down (to stop, or to cause to stop, functioning properly or altogether)~|~
+quebrar~|~16959~|~v~|~~|~to break (to do that which is forbidden by a rule, promise, etc.)~|~
+quebrar~|~16959~|~v~|~~|~to break (to end up or cause to end up in two or more pieces that cannot easily be reassembled)~|~
+quebrar~|~16959~|~v~|~~|~to break (to ruin or be ruined financially)~|~
+quebrar~|~16959~|~v~|~~|~to break (to set a new record)~|~
+quebrar~|~16959~|~v~|~~|~to fracture a bone~|~
+fechar~|~16922~|~v~|~~|~to close~|~
+dever~|~16748~|~v~|~~|~ought (indicates that the subject of the sentence has some obligation to execute the sentence predicate.)~|~
+dever~|~16748~|~v~|~~|~owe (to be in debt.)~|~
+dever~|~16748~|~v~|~~|~should (indicates that an action is considered by the speaker to be obligatory)~|~
+dever~|~16748~|~v~|~~|~will likely (indicates that the subject of the sentence is likely to execute the sentence predicate.)~|~
+desistir~|~16734~|~v~|~~|~to desist~|~
+desistir~|~16734~|~v~|~~|~to give up~|~
+descansar~|~16459~|~v~|~~|~to rest~|~
+livrar~|~16419~|~v~|~~|~to save~|~
+sobreviver~|~16201~|~v~|~~|~keep going~|~
+sobreviver~|~16201~|~v~|~~|~keep on~|~
+sobreviver~|~16201~|~v~|~~|~outlive~|~
+sobreviver~|~16201~|~v~|~~|~survive~|~
+trocar~|~16031~|~v~|~~|~to change~|~
+trocar~|~16031~|~v~|~~|~exchange~|~
+controlar~|~15970~|~v~|~~|~to contain (to limit through restraint)~|~
+controlar~|~15970~|~v~|~~|~to control (to determine the behaviour of)~|~
+controlar~|~15970~|~v~|~~|~to govern (to exercise sovereign authority)~|~
+controlar~|~15970~|~v~|~~|~to keep under control~|~
+controlar~|~15970~|~v~|~~|~to limit (not to allow to go beyond a certain bound)~|~
+obter~|~15903~|~v~|~~|~to obtain~|~
+obter~|~15903~|~v~|~~|~get~|~
+querendo~|~15803~|~v~|~~|~gerund of querer~|~
+descer~|~15749~|~v~|~~|~to descend~|~
+descer~|~15749~|~v~|~~|~to go down~|~
+mentir~|~15734~|~v~|~~|~to lie (say something untrue)~|~
+voar~|~15726~|~v~|~~|~to fly~|~
+divertir~|~15125~|~v~|~~|~to dissuade (to convince not to try or do)~|~
+divertir~|~15125~|~v~|~~|~to distract (to divert the attention of)~|~
+divertir~|~15125~|~v~|~~|~to entertain~|~
+divertir~|~15125~|~v~|~~|~to amuse~|~
+morar~|~15095~|~v~|~~|~to live~|~
+morar~|~15095~|~v~|~~|~reside (have permanent residence)~|~
+enviar~|~15044~|~v~|~~|~to send~|~
+visitar~|~14839~|~v~|~~|~to visit~|~
+servir~|~14790~|~v~|~~|~to serve~|~
+dão~|~14548~|~v~|~~|~third-person plural indicative present of dar~|~
+juntar~|~14529~|~v~|~~|~to combine; to unite~|~
+juntar~|~14529~|~v~|~~|~to gather; to collect~|~
+verificar~|~14510~|~v~|~~|~to verify~|~
+ensinar~|~14436~|~v~|~~|~to teach~|~
+apaixonado~|~14353~|~v~|~~|~past participle of apaixonar~|~
+consertar~|~14166~|~v~|~~|~to fix~|~
+consertar~|~14166~|~v~|~~|~to repair~|~
+demorar~|~14029~|~v~|~~|~to linger (to stay or remain in a place or situation)~|~
+demorar~|~14029~|~v~|~~|~to take time (to require a comparatively long period of time)~|~
+rir~|~13994~|~v~|~~|~to laugh~|~
+tô~|~13876~|~v~|~~|~nonstandard spelling of estou~|~
+construir~|~13870~|~v~|~~|~to build~|~
+construir~|~13870~|~v~|~~|~to construct~|~
+matando~|~13230~|~v~|~~|~gerund of matar~|~
+crescer~|~13136~|~v~|~~|~to become more important within a group or context~|~
+crescer~|~13136~|~v~|~~|~to grow (become bigger, older, or taller)~|~
+crescer~|~13136~|~v~|~~|~to grow in number; to become more numerous~|~
+atacar~|~13044~|~v~|~~|~to strike~|~
+atacar~|~13044~|~v~|~~|~to attempt to score~|~
+atacar~|~13044~|~v~|~~|~to attack (to aggressively challenge a person or idea)~|~
+atacar~|~13044~|~v~|~~|~to attack (to apply violent force)~|~
+atacar~|~13044~|~v~|~~|~to attack (to deal with something in a direct way)~|~
+atacar~|~13044~|~v~|~~|~to eat voraciously~|~
+admitir~|~13034~|~v~|~~|~to acknowledge~|~
+admitir~|~13034~|~v~|~~|~to admit~|~
+admitir~|~13034~|~v~|~~|~accept~|~
+admitir~|~13034~|~v~|~~|~to allow~|~
+admitir~|~13034~|~v~|~~|~to concede~|~
+viajar~|~12930~|~v~|~~|~not to pay attention~|~
+viajar~|~12930~|~v~|~~|~to travel~|~
+oferecer~|~12914~|~v~|~~|~to give~|~
+oferecer~|~12914~|~v~|~~|~present~|~
+oferecer~|~12914~|~v~|~~|~to offer~|~
+oferecer~|~12914~|~v~|~~|~bid~|~
+oferecer~|~12914~|~v~|~~|~tender~|~
+oferecer~|~12914~|~v~|~~|~to proffer~|~
+impedir~|~12903~|~v~|~~|~to hinder~|~
+impedir~|~12903~|~v~|~~|~block~|~
+impedir~|~12903~|~v~|~~|~to impede~|~
+impedir~|~12903~|~v~|~~|~stop~|~
+impedir~|~12903~|~v~|~~|~to prevent~|~
+perceber~|~12862~|~v~|~~|~to realize~|~
+perceber~|~12862~|~v~|~~|~to notice~|~
+perceber~|~12862~|~v~|~~|~to understand~|~
+melhorar~|~12845~|~v~|~~|~to improve~|~
+melhorar~|~12845~|~v~|~~|~to ameliorate~|~
+gritar~|~12790~|~v~|~~|~to shout~|~
+gritar~|~12790~|~v~|~~|~to scream~|~
+avisar~|~12729~|~v~|~~|~to advise~|~
+avisar~|~12729~|~v~|~~|~notify~|~
+avisar~|~12729~|~v~|~~|~warn~|~
+recuperar~|~12700~|~v~|~~|~to recover~|~
+explodir~|~12561~|~v~|~~|~to explode (act violently)~|~
+explodir~|~12561~|~v~|~~|~to explode (blow up)~|~
+respirar~|~12429~|~v~|~~|~to breathe~|~
+segurar~|~12353~|~v~|~~|~to hold back (to act with reserve; to contain one’s full measure or power)~|~
+segurar~|~12353~|~v~|~~|~to hold back; to contain; to stop~|~
+segurar~|~12353~|~v~|~~|~to hold; to grasp~|~
+segurar~|~12353~|~v~|~~|~to insure (to provide for compensation if some specified risk occurs)~|~
+segurar~|~12353~|~v~|~~|~to make safe~|~
+ha~|~12261~|~v~|~~|~obsolete spelling of há~|~
+fingir~|~12142~|~v~|~~|~to pretend (to act as though something is different from what it is)~|~
+estudar~|~12077~|~v~|~~|~to study~|~
+tratar~|~12039~|~v~|~~|~to address someone with a specific form of address~|~
+tratar~|~12039~|~v~|~~|~to behave (To conduct oneself in a given way.)~|~
+tratar~|~12039~|~v~|~~|~to feed (to give food to eat)~|~
+tratar~|~12039~|~v~|~~|~to take care of; to care for (to attend to the needs of)~|~
+tratar~|~12039~|~v~|~~|~to treat (to apply medical care to)~|~
+tratar~|~12039~|~v~|~~|~to treat (to handle, deal with or behave towards in a specific way)~|~
+tratar~|~12039~|~v~|~~|~to treat; to negotiate with~|~
+tratar~|~12039~|~v~|~~|~to treat (to subject to a chemical or other action)~|~
+atender~|~12026~|~v~|~~|~to meet~|~
+atender~|~12026~|~v~|~~|~conform to~|~
+atender~|~12026~|~v~|~~|~deal with or cater to (circumstances, requirements or expectations)~|~
+atender~|~12026~|~v~|~~|~to serve or answer (at a service counter or help desk)~|~
+atender~|~12026~|~v~|~~|~to suit or accomodate (limitations, requirements or expectations)~|~
+atender~|~12026~|~v~|~~|~to take into account; to consider~|~
+pára~|~11815~|~v~|~~|~obsolete spelling of para~|~
+assinar~|~11789~|~v~|~~|~sign (to write one's signature on a document)~|~
+assinar~|~11789~|~v~|~~|~subscribe (to sign up to receive a publication)~|~
+prender~|~11772~|~v~|~~|~to arrest (to seize and take into legal custody)~|~
+prender~|~11772~|~v~|~~|~to attach or bind~|~
+prender~|~11772~|~v~|~~|~to become close (emotionally) to someone~|~
+prender~|~11772~|~v~|~~|~to restrain; to restrict~|~
+lavar~|~11183~|~v~|~~|~to wash (to clean with water)~|~
+devolver~|~11149~|~v~|~~|~to devolve~|~
+devolver~|~11149~|~v~|~~|~to return~|~
+devolver~|~11149~|~v~|~~|~refund~|~
+devolver~|~11149~|~v~|~~|~give back~|~
+checar~|~11140~|~v~|~~|~to check (to inspect, examine)~|~
+arranjar~|~11116~|~v~|~~|~to arrange~|~
+arranjar~|~11116~|~v~|~~|~to fix~|~
+arranjar~|~11116~|~v~|~~|~to organize~|~
+arranjar~|~11116~|~v~|~~|~to provide~|~
+desculpar~|~10897~|~v~|~~|~to forgive~|~
+desculpar~|~10897~|~v~|~~|~to justify~|~
+escutar~|~10868~|~v~|~~|~to listen~|~
+permitir~|~10815~|~v~|~~|~to enable~|~
+permitir~|~10815~|~v~|~~|~to permit~|~
+permitir~|~10815~|~v~|~~|~allow~|~
+permitir~|~10815~|~v~|~~|~tolerate~|~
+desligar~|~10809~|~v~|~~|~to hang up~|~
+desligar~|~10809~|~v~|~~|~to turn off~|~
+desligar~|~10809~|~v~|~~|~to unbind~|~
+beijar~|~10719~|~v~|~~|~to kiss~|~
+arriscar~|~10704~|~v~|~~|~to imperil~|~
+arriscar~|~10704~|~v~|~~|~to risk~|~
+arriscar~|~10704~|~v~|~~|~venture~|~
+arriscar~|~10704~|~v~|~~|~hazard~|~
+dirigindo~|~10697~|~v~|~~|~gerund of dirigir~|~
+cozinhar~|~10687~|~v~|~~|~to cook (food)~|~
+cozinhar~|~10687~|~v~|~~|~to bake~|~
+cozinhar~|~10687~|~v~|~~|~to fire (heat (pottery, etc.))~|~
+tirando~|~10653~|~v~|~~|~gerund of tirar~|~
+conversando~|~10608~|~v~|~~|~gerund of conversar~|~
+apostar~|~10576~|~v~|~~|~bet (to make a guess about the outcome of an event)~|~
+apostar~|~10576~|~v~|~~|~to bet (be quite certain of something)~|~
+mover~|~10536~|~v~|~~|~to move (to change the place of a piece)~|~
+mover~|~10536~|~v~|~~|~to induce; to persuade~|~
+mover~|~10536~|~v~|~~|~to move (to change position)~|~
+mover~|~10536~|~v~|~~|~to sue (to file legal action; with the preposition contra following the object)~|~
+enfrentar~|~10522~|~v~|~~|~to encounter~|~
+enfrentar~|~10522~|~v~|~~|~to face~|~
+enfrentar~|~10522~|~v~|~~|~confront~|~
+divertindo~|~10283~|~v~|~~|~gerund of divertir~|~
+guardar~|~10022~|~v~|~~|~to protect~|~
+guardar~|~10022~|~v~|~~|~defend~|~
+guardar~|~10022~|~v~|~~|~to save~|~
+guardar~|~10022~|~v~|~~|~keep~|~
+guardar~|~10022~|~v~|~~|~retain~|~
+guardar~|~10022~|~v~|~~|~preserve~|~
+dividir~|~9985~|~v~|~~|~to divide~|~
+dividir~|~9985~|~v~|~~|~to divide~|~
+dividir~|~9985~|~v~|~~|~to separate~|~
+dividir~|~9985~|~v~|~~|~to share~|~
+caindo~|~9961~|~v~|~~|~gerund of cair~|~
+assumir~|~9879~|~v~|~~|~to admit (one's faults)~|~
+assumir~|~9879~|~v~|~~|~to assume (to take on a position or duty)~|~
+defender~|~9870~|~v~|~~|~to formally present a dissertation~|~
+defender~|~9870~|~v~|~~|~thesis or project~|~
+defender~|~9870~|~v~|~~|~to defend~|~
+defender~|~9870~|~v~|~~|~to defend (to prevent the opponent from scoring)~|~
+defender~|~9870~|~v~|~~|~to defend (repel an attack)~|~
+defender~|~9870~|~v~|~~|~to defend (represent as a legal professional)~|~
+defender~|~9870~|~v~|~~|~to support (to back a cause, party etc.)~|~
+estragar~|~9730~|~v~|~~|~to botch~|~
+estragar~|~9730~|~v~|~~|~bungle~|~
+estragar~|~9730~|~v~|~~|~to spoil~|~
+estragar~|~9730~|~v~|~~|~damage~|~
+estragar~|~9730~|~v~|~~|~corrupt~|~
+acertar~|~9545~|~v~|~~|~to adjust~|~
+acertar~|~9545~|~v~|~~|~to coincide~|~
+acertar~|~9545~|~v~|~~|~to hit (a target)~|~
+acertar~|~9545~|~v~|~~|~to regulate~|~
+enganar~|~9463~|~v~|~~|~to deceive~|~
+convencer~|~9349~|~v~|~~|~to convince (to make someone believe, or feel sure about something)~|~
+assistindo~|~9267~|~v~|~~|~gerund of assistir~|~
+cuidando~|~9244~|~v~|~~|~gerund of cuidar~|~
+superar~|~9161~|~v~|~~|~to exceed~|~
+superar~|~9161~|~v~|~~|~to overcome~|~
+assustado~|~9070~|~v~|~~|~past participle of assustar~|~
+adivinhar~|~8916~|~v~|~~|~foretell~|~
+adivinhar~|~8916~|~v~|~~|~guess~|~
+entendendo~|~8898~|~v~|~~|~gerund of entender~|~
+formas~|~8846~|~v~|~~|~second-person singular present indicative form of formar~|~
+desaparecer~|~8834~|~v~|~~|~disappear (to vanish)~|~
+nadar~|~8720~|~v~|~~|~to swim~|~
+transformar~|~8521~|~v~|~~|~to transform~|~
+brigar~|~8467~|~v~|~~|~to brawl~|~
+brigar~|~8467~|~v~|~~|~fight~|~
+brigar~|~8467~|~v~|~~|~to quarrel~|~
+alimentar~|~8449~|~v~|~~|~to nurture~|~
+alimentar~|~8449~|~v~|~~|~to feed~|~
+acalmar~|~8374~|~v~|~~|~to calm~|~
+acalmar~|~8374~|~v~|~~|~calm down~|~
+participar~|~8371~|~v~|~~|~to take part~|~
+participar~|~8371~|~v~|~~|~to participate~|~
+votar~|~8320~|~v~|~~|~to poll~|~
+votar~|~8320~|~v~|~~|~to vote~|~
+sofrer~|~8193~|~v~|~~|~to suffer~|~
+sofrer~|~8193~|~v~|~~|~endure~|~
+sofrer~|~8193~|~v~|~~|~bear~|~
+sofrer~|~8193~|~v~|~~|~undergo~|~
+sofrer~|~8193~|~v~|~~|~put up with~|~
+carregar~|~8130~|~v~|~~|~carry~|~
+carregar~|~8130~|~v~|~~|~charge (load equipment with material required for its use)~|~
+carregar~|~8130~|~v~|~~|~load (load a software into the primary memory)~|~
+carregar~|~8130~|~v~|~~|~load (put wares into a vehicle)~|~
+importar~|~8078~|~v~|~~|~to import~|~
+importar~|~8078~|~v~|~~|~to matter (be important)~|~
+aproveitar~|~8066~|~v~|~~|~to avail~|~
+aproveitar~|~8066~|~v~|~~|~to seize = to utilize~|~
+aproveitar~|~8066~|~v~|~~|~to use~|~
+aproveitar~|~8066~|~v~|~~|~to be useful~|~
+aproveitar~|~8066~|~v~|~~|~to harness = to utilize~|~
+aproveitar~|~8066~|~v~|~~|~to take advantage of = to benefit~|~
+aproveitar~|~8066~|~v~|~~|~to put to (good/better) use~|~
+aproveitar~|~8066~|~v~|~~|~to make (good/better) use of~|~
+aproveitar~|~8066~|~v~|~~|~to make the best of~|~
+aproveitar~|~8066~|~v~|~~|~to take~|~
+aproveitar~|~8066~|~v~|~~|~appropriate~|~
+colar~|~8038~|~v~|~~|~to affix~|~
+colar~|~8038~|~v~|~~|~to attach~|~
+colar~|~8038~|~v~|~~|~to tie together~|~
+colar~|~8038~|~v~|~~|~to glue~|~
+colar~|~8038~|~v~|~~|~to invest~|~
+colar~|~8038~|~v~|~~|~to settle a bill~|~
+perdoar~|~8015~|~v~|~~|~to pardon (to grant an official pardon for a crime)~|~
+perdoar~|~8015~|~v~|~~|~to forgive a debt~|~
+perdoar~|~8015~|~v~|~~|~to forgive; to pardon~|~
+perdoar~|~8015~|~v~|~~|~to treat mercifully~|~
+aumentar~|~7975~|~v~|~~|~to increase~|~
+aumentar~|~7975~|~v~|~~|~augment (cause something to become larger)~|~
+aumentar~|~7975~|~v~|~~|~to increase (become larger)~|~
+eh~|~7855~|~v~|~~|~alternative spelling of é~|~
+soltar~|~7698~|~v~|~~|~to release~|~
+soltar~|~7698~|~v~|~~|~to let go~|~
+separar~|~7685~|~v~|~~|~to separate~|~
+acompanhar~|~7667~|~v~|~~|~to accompany~|~
+suportar~|~7648~|~v~|~~|~to support~|~
+suportar~|~7648~|~v~|~~|~to tolerate; put up with; take~|~
+gastar~|~7629~|~v~|~~|~to expend~|~
+gastar~|~7629~|~v~|~~|~to spend~|~
+nascer~|~7554~|~v~|~~|~to be born~|~
+investigar~|~7542~|~v~|~~|~to investigate~|~
+investigar~|~7542~|~v~|~~|~to research~|~
+compartilhar~|~7542~|~v~|~~|~to share (to give)~|~
+alcançar~|~7501~|~v~|~~|~to reach~|~
+preparando~|~7476~|~v~|~~|~gerund of preparar~|~
+cumprir~|~7474~|~v~|~~|~to fulfil~|~
+cumprir~|~7474~|~v~|~~|~carry out~|~
+cumprir~|~7474~|~v~|~~|~perform~|~
+incomodar~|~7440~|~v~|~~|~to bother; to annoy~|~
+retirar~|~7417~|~v~|~~|~to remove~|~
+retirar~|~7417~|~v~|~~|~to withdraw~|~
+atravessar~|~7407~|~v~|~~|~to cross~|~
+atravessar~|~7407~|~v~|~~|~to traverse~|~
+atravessar~|~7407~|~v~|~~|~to pierce~|~
+atravessar~|~7407~|~v~|~~|~to go through~|~
+aguentar~|~7362~|~v~|~~|~bear (to put up with)~|~
+adorar~|~7318~|~v~|~~|~to adore~|~
+adorar~|~7318~|~v~|~~|~worship~|~
+adorar~|~7318~|~v~|~~|~to love~|~
+experimentar~|~7299~|~v~|~~|~to experience~|~
+experimentar~|~7299~|~v~|~~|~to experiment~|~
+cobrir~|~7267~|~v~|~~|~cover (to conceal or protect)~|~
+caminhar~|~7193~|~v~|~~|~walk (to travel a distance by walking)~|~
+interromper~|~7165~|~v~|~~|~to discontinue~|~
+interromper~|~7165~|~v~|~~|~to interrupt~|~
+culpar~|~7157~|~v~|~~|~to blame~|~
+montar~|~7137~|~v~|~~|~to assemble~|~
+montar~|~7137~|~v~|~~|~to go up~|~
+montar~|~7137~|~v~|~~|~climb~|~
+montar~|~7137~|~v~|~~|~to mount~|~
+montar~|~7137~|~v~|~~|~to ride~|~
+repetir~|~7136~|~v~|~~|~to eat more than one plateful of something during a meal~|~
+repetir~|~7136~|~v~|~~|~to flunk (to fail a class; to not pass)~|~
+repetir~|~7136~|~v~|~~|~to repeat (to do again)~|~
+repetir~|~7136~|~v~|~~|~to repeat (to say again)~|~
+abandonar~|~7115~|~v~|~~|~to abandon~|~
+meter~|~7088~|~v~|~~|~to insert~|~
+meter~|~7088~|~v~|~~|~to put~|~
+derrubar~|~7083~|~v~|~~|~to destroy~|~
+derrubar~|~7083~|~v~|~~|~to fell~|~
+derrubar~|~7083~|~v~|~~|~knock down~|~
+derrubar~|~7083~|~v~|~~|~to overthrow~|~
+derrubar~|~7083~|~v~|~~|~overturn~|~
+caçar~|~7051~|~v~|~~|~to hunt (to chase down prey)~|~
+considerar~|~7021~|~v~|~~|~to consider~|~
+considerar~|~7021~|~v~|~~|~to think highly of~|~
+durar~|~7004~|~v~|~~|~to last~|~
+durar~|~7004~|~v~|~~|~endure~|~
+concordar~|~6941~|~v~|~~|~to agree~|~
+atrasar~|~6891~|~v~|~~|~to delay~|~
+puxar~|~6845~|~v~|~~|~to inherit traits in appearance or behaviour~|~
+puxar~|~6845~|~v~|~~|~to smoke marijuana~|~
+puxar~|~6845~|~v~|~~|~to drag (to pull along a surface)~|~
+puxar~|~6845~|~v~|~~|~to draw (pull out) a weapon~|~
+puxar~|~6845~|~v~|~~|~to initiate (to cause to begin) interaction with someone else~|~
+puxar~|~6845~|~v~|~~|~to pull (to apply force to something so it comes towards one)~|~
+encarar~|~6841~|~v~|~~|~to face (position oneself/itself towards)~|~
+encarar~|~6841~|~v~|~~|~to face (to deal with)~|~
+permanecer~|~6823~|~v~|~~|~to abide~|~
+permanecer~|~6823~|~v~|~~|~reside~|~
+permanecer~|~6823~|~v~|~~|~to remain~|~
+permanecer~|~6823~|~v~|~~|~stay~|~
+permanecer~|~6823~|~v~|~~|~persist~|~
+marcar~|~6807~|~v~|~~|~to score~|~
+marcar~|~6807~|~v~|~~|~to mark~|~
+marcar~|~6807~|~v~|~~|~man-mark~|~
+marcar~|~6807~|~v~|~~|~to mark~|~
+marcar~|~6807~|~v~|~~|~to set (a time or a tone)~|~
+marcar~|~6807~|~v~|~~|~to show (give a time)~|~
+encher~|~6801~|~v~|~~|~to fill~|~
+encher~|~6801~|~v~|~~|~fill up~|~
+confirmar~|~6771~|~v~|~~|~to confirm~|~
+confirmar~|~6771~|~v~|~~|~corroborate~|~
+confirmar~|~6771~|~v~|~~|~affirm~|~
+concentrar~|~6726~|~v~|~~|~to centralize~|~
+concentrar~|~6726~|~v~|~~|~to concentrate~|~
+concentrar~|~6726~|~v~|~~|~to focus or localize~|~
+envolver~|~6664~|~v~|~~|~to encompass (to include within the scope)~|~
+envolver~|~6664~|~v~|~~|~to involve (to envelop completely)~|~
+convidar~|~6664~|~v~|~~|~to invite (ask for the presence or participation of someone)~|~
+desejar~|~6625~|~v~|~~|~to desire~|~
+desejar~|~6625~|~v~|~~|~to wish~|~
+cometer~|~6603~|~v~|~~|~to commit~|~
+cometer~|~6603~|~v~|~~|~practice~|~
+cometer~|~6603~|~v~|~~|~undertake~|~
+faltando~|~6574~|~v~|~~|~gerund of faltar~|~
+ferrar~|~6555~|~v~|~~|~to screw (to beset with unfortunate circumstances)~|~
+ferrar~|~6555~|~v~|~~|~to horseshoe (to apply horseshoes to a horse or other hooved animal)~|~
+gostando~|~6554~|~v~|~~|~A form of verb gostar~|~
+assustar~|~6538~|~v~|~~|~to scare~|~
+assustar~|~6538~|~v~|~~|~frighten~|~
+assustar~|~6538~|~v~|~~|~to startle~|~
+amanhecer~|~6420~|~v~|~~|~dawn (to begin to brighten with daylight)~|~
+apagar~|~6376~|~v~|~~|~to chill out~|~
+apagar~|~6376~|~v~|~~|~to clear~|~
+apagar~|~6376~|~v~|~~|~to erase~|~
+apagar~|~6376~|~v~|~~|~to extinguish~|~
+apagar~|~6376~|~v~|~~|~to destroy~|~
+largar~|~6368~|~v~|~~|~to abandon~|~
+largar~|~6368~|~v~|~~|~leave~|~
+largar~|~6368~|~v~|~~|~to drop~|~
+largar~|~6368~|~v~|~~|~shed~|~
+identificar~|~6351~|~v~|~~|~to identify~|~
+identificar~|~6351~|~v~|~~|~to recognize~|~
+cancelar~|~6326~|~v~|~~|~call off (to cancel)~|~
+ganhando~|~6317~|~v~|~~|~gerund of ganhar~|~
+negar~|~6305~|~v~|~~|~to refuse to let go of a card~|~
+negar~|~6305~|~v~|~~|~to contest (to call into question)~|~
+negar~|~6305~|~v~|~~|~to deny (to assert that something is not true)~|~
+negar~|~6305~|~v~|~~|~to deny (to not allow)~|~
+deitar~|~6302~|~v~|~~|~to lie down~|~
+observando~|~6258~|~v~|~~|~gerund of observar~|~
+apoiar~|~6206~|~v~|~~|~to second (to agree as a second person)~|~
+apoiar~|~6206~|~v~|~~|~to support~|~
+confessar~|~6195~|~v~|~~|~to confess~|~
+confessar~|~6195~|~v~|~~|~own up~|~
+confessar~|~6195~|~v~|~~|~admit~|~
+apressar~|~6181~|~v~|~~|~to cause someone else to hurry~|~
+apressar~|~6181~|~v~|~~|~to hurry (act quickly)~|~
+eliminar~|~6147~|~v~|~~|~to eliminate (to completely destroy something)~|~
+informar~|~6125~|~v~|~~|~to inform~|~
+realizar~|~6114~|~v~|~~|~to realize~|~
+realizar~|~6114~|~v~|~~|~execute~|~
+realizar~|~6114~|~v~|~~|~carry out~|~
+realizar~|~6114~|~v~|~~|~put into practice~|~
+comemorar~|~6109~|~v~|~~|~to celebrate~|~
+comemorar~|~6109~|~v~|~~|~commemorate~|~
+negociar~|~6046~|~v~|~~|~to bargain~|~
+negociar~|~6046~|~v~|~~|~to negotiate~|~
+testemunhar~|~6028~|~v~|~~|~to testify~|~
+testemunhar~|~6028~|~v~|~~|~attest~|~
+testemunhar~|~6028~|~v~|~~|~to witness~|~
+mencionar~|~6027~|~v~|~~|~to mention (to speak of something)~|~
+julgar~|~6017~|~v~|~~|~to judge; to sentence (sit in judgment on, pass sentence on)~|~
+julgar~|~6017~|~v~|~~|~to arbitrate (pass opinion)~|~
+julgar~|~6017~|~v~|~~|~to consider; to suppose (have an opinion)~|~
+treinar~|~5934~|~v~|~~|~to coach~|~
+treinar~|~5934~|~v~|~~|~train~|~
+crescendo~|~5933~|~v~|~~|~gerund of crescer~|~
+resistir~|~5933~|~v~|~~|~to resist~|~
+mandando~|~5915~|~v~|~~|~gerund of mandar~|~
+arrancar~|~5909~|~v~|~~|~to pull down~|~
+arrancar~|~5909~|~v~|~~|~tear down~|~
+arrancar~|~5909~|~v~|~~|~to pull~|~
+arrancar~|~5909~|~v~|~~|~pluck~|~
+arrancar~|~5909~|~v~|~~|~rip~|~
+arrancar~|~5909~|~v~|~~|~to yank~|~
+arrancar~|~5909~|~v~|~~|~jerk~|~
+rezar~|~5905~|~v~|~~|~to celebrate a mass~|~
+rezar~|~5905~|~v~|~~|~to pray (to talk to a god)~|~
+formar~|~5856~|~v~|~~|~to form~|~
+lançar~|~5844~|~v~|~~|~to launch~|~
+lançar~|~5844~|~v~|~~|~to throw or shoot (with force)~|~
+reconhecer~|~5806~|~v~|~~|~to recognize~|~
+apertar~|~5797~|~v~|~~|~to press~|~
+apertar~|~5797~|~v~|~~|~clasp~|~
+apertar~|~5797~|~v~|~~|~clamp~|~
+apertar~|~5797~|~v~|~~|~to tighten~|~
+testar~|~5792~|~v~|~~|~to test~|~
+arruinar~|~5772~|~v~|~~|~to bankrupt~|~
+arruinar~|~5772~|~v~|~~|~to ruin~|~
+arruinar~|~5772~|~v~|~~|~spoil~|~
+crer~|~5751~|~v~|~~|~to believe~|~
+existir~|~5710~|~v~|~~|~to exist (to be)~|~
+reclamar~|~5650~|~v~|~~|~to claim~|~
+reclamar~|~5650~|~v~|~~|~to complain~|~
+pintar~|~5634~|~v~|~~|~paint (apply paint to)~|~
+contratar~|~5624~|~v~|~~|~to contract~|~
+contratar~|~5624~|~v~|~~|~hire~|~
+investigando~|~5617~|~v~|~~|~gerund of investigar~|~
+arrepender~|~5601~|~v~|~~|~to regret~|~
+protegendo~|~5567~|~v~|~~|~gerund of proteger~|~
+movendo~|~5562~|~v~|~~|~gerund of mover~|~
+esclarecer~|~5554~|~v~|~~|~to clarify~|~
+esclarecer~|~5554~|~v~|~~|~to enlighten~|~
+esclarecer~|~5554~|~v~|~~|~to explain~|~
+prometer~|~5449~|~v~|~~|~to indicate that something is likely~|~
+prometer~|~5449~|~v~|~~|~to promise (to commit to something or action; to make an oath)~|~
+imaginando~|~5433~|~v~|~~|~gerund of imaginar~|~
+odiar~|~5421~|~v~|~~|~to hate~|~
+filmar~|~5418~|~v~|~~|~to film~|~
+aproximar~|~5399~|~v~|~~|~to approach (get closer)~|~
+aproximar~|~5399~|~v~|~~|~to approximate~|~
+celebrar~|~5357~|~v~|~~|~to celebrate (all senses)~|~
+reunir~|~5300~|~v~|~~|~to gather~|~
+reunir~|~5300~|~v~|~~|~collect~|~
+reunir~|~5300~|~v~|~~|~to reunite~|~
+recusar~|~5290~|~v~|~~|~to refuse~|~
+recusar~|~5290~|~v~|~~|~decline~|~
+recusar~|~5290~|~v~|~~|~reject~|~
+ignorar~|~5278~|~v~|~~|~to not know~|~
+ignorar~|~5278~|~v~|~~|~to be ignorant about~|~
+atingir~|~5247~|~v~|~~|~to attain~|~
+atingir~|~5247~|~v~|~~|~reach~|~
+atingir~|~5247~|~v~|~~|~to understand~|~
+custar~|~5231~|~v~|~~|~to cost~|~
+passear~|~5189~|~v~|~~|~to stroll~|~
+passear~|~5189~|~v~|~~|~to wander~|~
+passear~|~5189~|~v~|~~|~to travel in leisure~|~
+passear~|~5189~|~v~|~~|~exploring a country or area~|~
+passear~|~5189~|~v~|~~|~to walk (to go for a walk)~|~
+passear~|~5189~|~v~|~~|~to walk (to take for a walk)~|~
+apanhar~|~5160~|~v~|~~|~to have hardships when trying to achieve an objective~|~
+apanhar~|~5160~|~v~|~~|~collect~|~
+apanhar~|~5160~|~v~|~~|~gather~|~
+apanhar~|~5160~|~v~|~~|~field (intercept or catch)~|~
+apanhar~|~5160~|~v~|~~|~grab~|~
+apanhar~|~5160~|~v~|~~|~pick up~|~
+apanhar~|~5160~|~v~|~~|~to receive a beating~|~
+libertar~|~5149~|~v~|~~|~to free~|~
+libertar~|~5149~|~v~|~~|~liberate (make free)~|~
+iniciar~|~5097~|~v~|~~|~to start~|~
+iniciar~|~5097~|~v~|~~|~begin~|~
+iniciar~|~5097~|~v~|~~|~initiate~|~
+brigando~|~5087~|~v~|~~|~gerund of brigar~|~
+notar~|~5087~|~v~|~~|~to notice~|~
+notar~|~5087~|~v~|~~|~to realize~|~
+revelar~|~5081~|~v~|~~|~to reveal~|~
+revelar~|~5081~|~v~|~~|~disclose~|~
+disparar~|~5071~|~v~|~~|~to shoot~|~
+disparar~|~5071~|~v~|~~|~fire (a weapon)~|~
+emprestar~|~5066~|~v~|~~|~to lend~|~
+emprestar~|~5066~|~v~|~~|~to loan~|~
+deter~|~5055~|~v~|~~|~to deter~|~
+deter~|~5055~|~v~|~~|~to stop~|~
+deter~|~5055~|~v~|~~|~arrest~|~
+deter~|~5055~|~v~|~~|~detain~|~
+deter~|~5055~|~v~|~~|~restrain~|~
+deter~|~5055~|~v~|~~|~to withhold~|~
+viciado~|~5034~|~v~|~~|~past participle of viciar~|~
+vingar~|~5025~|~v~|~~|~to avenge (to take vengeance for)~|~
+vingar~|~5025~|~v~|~~|~to thrive (to grow vigorously or luxuriantly)~|~
+vingar~|~5025~|~v~|~~|~to thrive (to increase in wealth or success)~|~
+praticar~|~5011~|~v~|~~|~to practice (to perform or observe in a habitual fashion)~|~
+praticar~|~5011~|~v~|~~|~to practice (to repeat an activity as a way of improving one’s skill)~|~
+gravar~|~5001~|~v~|~~|~to save; to write to memory~|~
+gravar~|~5001~|~v~|~~|~to memorise; to commit to memory~|~
+gravar~|~5001~|~v~|~~|~to engrave; to carve~|~
+gravar~|~5001~|~v~|~~|~to record (to make an audio or video recording of)~|~
+processar~|~4989~|~v~|~~|~to process~|~
+processar~|~4989~|~v~|~~|~to sue~|~
+carregando~|~4979~|~v~|~~|~gerund of carregar~|~
+chutar~|~4976~|~v~|~~|~kick (strike with or raise the foot or leg)~|~
+chutar~|~4976~|~v~|~~|~to take a guess~|~
+chutar~|~4976~|~v~|~~|~to kick a ball~|~
+ferir~|~4968~|~v~|~~|~to hurt~|~
+ferir~|~4968~|~v~|~~|~injure~|~
+pescar~|~4915~|~v~|~~|~to fish (attempt to find an object by searching among other objects)~|~
+pescar~|~4915~|~v~|~~|~to fish (to try to catch fish)~|~
+pescar~|~4915~|~v~|~~|~to remove an object from a body of water~|~
+mantendo~|~4913~|~v~|~~|~gerund of manter~|~
+perseguindo~|~4909~|~v~|~~|~gerund of perseguir~|~
+invadir~|~4903~|~v~|~~|~to invade~|~
+falhar~|~4820~|~v~|~~|~to fail~|~
+prestar~|~4811~|~v~|~~|~to pay (attention)~|~
+prestar~|~4811~|~v~|~~|~to render (services)~|~
+sorrir~|~4758~|~v~|~~|~to smile~|~
+organizar~|~4717~|~v~|~~|~to organize~|~
+doer~|~4694~|~v~|~~|~to hurt; to pain (to cause emotional pain)~|~
+derrotar~|~4655~|~v~|~~|~to defeat~|~
+observar~|~4625~|~v~|~~|~to observe~|~
+saltar~|~4615~|~v~|~~|~to be evident~|~
+saltar~|~4615~|~v~|~~|~to leap; to jump~|~
+discutindo~|~4589~|~v~|~~|~gerund of discutir~|~
+terminando~|~4538~|~v~|~~|~gerund of terminar~|~
+he~|~4509~|~v~|~~|~obsolete spelling of é~|~
+mexendo~|~4506~|~v~|~~|~gerund of mexer~|~
+cruzar~|~4485~|~v~|~~|~to cross (all senses)~|~
+cruzar~|~4485~|~v~|~~|~to intersect~|~
+unir~|~4483~|~v~|~~|~to bind; to connect~|~
+unir~|~4483~|~v~|~~|~to unite (to come or bring together as one)~|~
+colher~|~4477~|~v~|~~|~to harvest~|~
+colher~|~4477~|~v~|~~|~get~|~
+colher~|~4477~|~v~|~~|~reap~|~
+colher~|~4477~|~v~|~~|~gather~|~
+explorar~|~4462~|~v~|~~|~to discover~|~
+explorar~|~4462~|~v~|~~|~to exploit~|~
+explorar~|~4462~|~v~|~~|~to explore~|~
+explorar~|~4462~|~v~|~~|~to research~|~
+partindo~|~4444~|~v~|~~|~gerund of partir~|~
+demitir~|~4377~|~v~|~~|~to dismiss~|~
+demitir~|~4377~|~v~|~~|~displace~|~
+demitir~|~4377~|~v~|~~|~to fire (terminate the employment of)~|~
+forçar~|~4332~|~v~|~~|~to force~|~
+assegurar~|~4303~|~v~|~~|~to ensure~|~
+assegurar~|~4303~|~v~|~~|~assure or secure~|~
+comunicar~|~4273~|~v~|~~|~to communicate (to express or convey ideas)~|~
+comunicar~|~4273~|~v~|~~|~to communicate (to impart information or knowledge of; to make known)~|~
+comunicar~|~4273~|~v~|~~|~to communicate (to impart or transmit)~|~
+remover~|~4257~|~v~|~~|~to remove~|~
+recolher~|~4238~|~v~|~~|~to collect~|~
+recolher~|~4238~|~v~|~~|~gather~|~
+recolher~|~4238~|~v~|~~|~to save~|~
+liberar~|~4222~|~v~|~~|~to allow; to legalise~|~
+liberar~|~4222~|~v~|~~|~to release (to free or liberate)~|~
+rolar~|~4222~|~v~|~~|~to happen~|~
+rolar~|~4222~|~v~|~~|~to move~|~
+rolar~|~4222~|~v~|~~|~to roam; to wander~|~
+rolar~|~4222~|~v~|~~|~to roll (to cause to revolve or to revolve)~|~
+apontar~|~4184~|~v~|~~|~to aim~|~
+apontar~|~4184~|~v~|~~|~to point out~|~
+apontar~|~4184~|~v~|~~|~indicate~|~
+botar~|~4179~|~v~|~~|~to put~|~
+botar~|~4179~|~v~|~~|~to throw~|~
+trair~|~4145~|~v~|~~|~to betray~|~
+trair~|~4145~|~v~|~~|~to be unfaithful~|~
+sonhar~|~4141~|~v~|~~|~to dream (see imaginary events while sleeping)~|~
+sonhar~|~4141~|~v~|~~|~to dream (wish)~|~
+competir~|~4125~|~v~|~~|~to compete (to contend)~|~
+descrever~|~4107~|~v~|~~|~to depict~|~
+descrever~|~4107~|~v~|~~|~portray~|~
+descrever~|~4107~|~v~|~~|~to describe~|~
+descrever~|~4107~|~v~|~~|~report~|~
+descrever~|~4107~|~v~|~~|~account~|~
+examinar~|~4072~|~v~|~~|~to examine~|~
+examinar~|~4072~|~v~|~~|~to study~|~
+examinar~|~4072~|~v~|~~|~observe~|~
+virando~|~4063~|~v~|~~|~gerund of virar~|~
+completar~|~4031~|~v~|~~|~to complete~|~
+completar~|~4031~|~v~|~~|~to supplement~|~
+avançar~|~4024~|~v~|~~|~to go forward~|~
+avançar~|~4024~|~v~|~~|~advance~|~
+avançar~|~4024~|~v~|~~|~to surpass~|~
+avançar~|~4024~|~v~|~~|~exceed~|~
+avisando~|~4001~|~v~|~~|~gerund of avisar~|~
+cobrar~|~4001~|~v~|~~|~to demand that something be done~|~
+cobrar~|~4001~|~v~|~~|~to take~|~
+cobrar~|~4001~|~v~|~~|~to charge (to ask for a certain amount of money for something)~|~
+cobrar~|~4001~|~v~|~~|~to demand payment~|~
+sumir~|~3999~|~v~|~~|~to drown~|~
+sumir~|~3999~|~v~|~~|~to hide~|~
+sumir~|~3999~|~v~|~~|~to loose~|~
+sumir~|~3999~|~v~|~~|~to waste~|~
+sumir~|~3999~|~v~|~~|~to submerge~|~
+sumir~|~3999~|~v~|~~|~to sink~|~
+sumir~|~3999~|~v~|~~|~to vanish~|~
+sumir~|~3999~|~v~|~~|~to disappear~|~
+respeitar~|~3982~|~v~|~~|~to honour~|~
+respeitar~|~3982~|~v~|~~|~to respect~|~
+respeitar~|~3982~|~v~|~~|~look up to~|~
+respeitar~|~3982~|~v~|~~|~to revere~|~
+respeitar~|~3982~|~v~|~~|~venerate~|~
+apaixonar~|~3962~|~v~|~~|~to fall in love (with)~|~
+oferecendo~|~3956~|~v~|~~|~gerund of oferecer~|~
+ri~|~3955~|~v~|~~|~first-person singular indicative preterite of rir~|~
+ri~|~3955~|~v~|~~|~second-person singular imperative of rir~|~
+ri~|~3955~|~v~|~~|~third-person singular indicative present of rir~|~
+enterrar~|~3951~|~v~|~~|~to bury~|~
+enterrar~|~3951~|~v~|~~|~inter~|~
+enterrar~|~3951~|~v~|~~|~entomb~|~
+cavar~|~3924~|~v~|~~|~to dig~|~
+cavar~|~3924~|~v~|~~|~excavate~|~
+cavar~|~3924~|~v~|~~|~burrow~|~
+cavar~|~3924~|~v~|~~|~scoop~|~
+temer~|~3918~|~v~|~~|~to fear (to venerate; to feel awe towards)~|~
+temer~|~3918~|~v~|~~|~to be afraid (regretful, sorry)~|~
+temer~|~3918~|~v~|~~|~to fear (to feel fear about something)~|~
+impressionar~|~3909~|~v~|~~|~to impress~|~
+produzir~|~3885~|~v~|~~|~produce~|~
+produzir~|~3885~|~v~|~~|~make~|~
+conquistar~|~3856~|~v~|~~|~to conquer~|~
+enfiar~|~3850~|~v~|~~|~to stick (to place)~|~
+enfiar~|~3850~|~v~|~~|~to thread (to put thread through an orifice, especially a pinhole)~|~
+analisar~|~3845~|~v~|~~|~to analyze~|~
+espalhar~|~3843~|~v~|~~|~to spread; to scatter~|~
+espalhar~|~3843~|~v~|~~|~to thresh~|~
+alugar~|~3841~|~v~|~~|~to rent~|~
+executar~|~3831~|~v~|~~|~to run a software~|~
+executar~|~3831~|~v~|~~|~to carry out~|~
+executar~|~3831~|~v~|~~|~to execute (to kill as punishment)~|~
+executar~|~3831~|~v~|~~|~to play music~|~
+abraçar~|~3793~|~v~|~~|~to hug~|~
+abraçar~|~3793~|~v~|~~|~to embrace~|~
+determinar~|~3743~|~v~|~~|~to determine~|~
+diminuir~|~3723~|~v~|~~|~to decrease~|~
+diminuir~|~3723~|~v~|~~|~diminish~|~
+diminuir~|~3723~|~v~|~~|~lessen~|~
+diminuir~|~3723~|~v~|~~|~fall~|~
+diminuir~|~3723~|~v~|~~|~to lower~|~
+diminuir~|~3723~|~v~|~~|~to reduce~|~
+diminuir~|~3723~|~v~|~~|~shorten~|~
+localizar~|~3720~|~v~|~~|~to circumscribe~|~
+localizar~|~3720~|~v~|~~|~to localize~|~
+localizar~|~3720~|~v~|~~|~to locate~|~
+acender~|~3717~|~v~|~~|~to light a fire~|~
+acender~|~3717~|~v~|~~|~to turn on~|~
+acender~|~3717~|~v~|~~|~to switch on~|~
+estabelecer~|~3686~|~v~|~~|~to establish~|~
+obedecer~|~3658~|~v~|~~|~obey (to do as ordered)~|~
+anunciar~|~3649~|~v~|~~|~to advertise~|~
+anunciar~|~3649~|~v~|~~|~to announce~|~
+construindo~|~3646~|~v~|~~|~gerund of construir~|~
+significar~|~3633~|~v~|~~|~mean~|~
+significar~|~3633~|~v~|~~|~signify~|~
+comportar~|~3627~|~v~|~~|~to admit~|~
+comportar~|~3627~|~v~|~~|~to bear~|~
+comportar~|~3627~|~v~|~~|~support~|~
+conduzir~|~3615~|~v~|~~|~to conduct~|~
+conduzir~|~3615~|~v~|~~|~to drive a vehicle~|~
+conduzir~|~3615~|~v~|~~|~to wage (to conduct or carry out)~|~
+compensar~|~3605~|~v~|~~|~to compensate~|~
+compensar~|~3605~|~v~|~~|~to pay~|~
+compensar~|~3605~|~v~|~~|~to pay off~|~
+compensar~|~3605~|~v~|~~|~to be worthwhile or profitable~|~
+corrigir~|~3598~|~v~|~~|~to correct~|~
+chover~|~3592~|~v~|~~|~to rain~|~
+recomeçar~|~3591~|~v~|~~|~to restart~|~
+recomeçar~|~3591~|~v~|~~|~recommence~|~
+atrair~|~3588~|~v~|~~|~provoke~|~
+atrair~|~3588~|~v~|~~|~to amaze~|~
+atrair~|~3588~|~v~|~~|~to attract~|~
+atrair~|~3588~|~v~|~~|~to bring towards by the use of gravity~|~
+telefonar~|~3554~|~v~|~~|~to telephone~|~
+testando~|~3549~|~v~|~~|~gerund of testar~|~
+certificar~|~3546~|~v~|~~|~to certify~|~
+certificar~|~3546~|~v~|~~|~attest~|~
+conseguindo~|~3524~|~v~|~~|~gerund of conseguir~|~
+expor~|~3510~|~v~|~~|~to exhibit (to display at an exhibition)~|~
+expor~|~3510~|~v~|~~|~to expose (to make something public)~|~
+expor~|~3510~|~v~|~~|~to expose to the elements (outdoor weather)~|~
+expor~|~3510~|~v~|~~|~to expose (to uncover; to make visible)~|~
+expor~|~3510~|~v~|~~|~to subject (to cause to undergo a particular experience)~|~
+capturar~|~3480~|~v~|~~|~to arrest~|~
+capturar~|~3480~|~v~|~~|~apprehend~|~
+capturar~|~3480~|~v~|~~|~to capture~|~
+capturar~|~3480~|~v~|~~|~catch~|~
+capturar~|~3480~|~v~|~~|~to seize~|~
+operar~|~3480~|~v~|~~|~to operate~|~
+operar~|~3480~|~v~|~~|~function~|~
+inventar~|~3472~|~v~|~~|~to imagine~|~
+inventar~|~3472~|~v~|~~|~to invent~|~
+inventar~|~3472~|~v~|~~|~devise~|~
+demonstrar~|~3425~|~v~|~~|~to demonstrate (all senses)~|~
+demonstrar~|~3425~|~v~|~~|~to show~|~
+demonstrar~|~3425~|~v~|~~|~prove~|~
+prosseguir~|~3414~|~v~|~~|~to continue~|~
+dominar~|~3409~|~v~|~~|~to dominate~|~
+perseguir~|~3406~|~v~|~~|~to chase~|~
+perseguir~|~3406~|~v~|~~|~to pursue~|~
+perseguir~|~3406~|~v~|~~|~follow~|~
+desperdiçar~|~3396~|~v~|~~|~to waste~|~
+desperdiçar~|~3396~|~v~|~~|~squander~|~
+interferir~|~3393~|~v~|~~|~to interfere (to overlap another wave)~|~
+interferir~|~3393~|~v~|~~|~to interfere (to get involved or involve oneself, causing disturbance)~|~
+interferir~|~3393~|~v~|~~|~to prevent something from being done as well as it could be~|~
+atuar~|~3379~|~v~|~~|~to act~|~
+atuar~|~3379~|~v~|~~|~to influence~|~
+atuar~|~3379~|~v~|~~|~to operate~|~
+atuar~|~3379~|~v~|~~|~function~|~
+atrapalhar~|~3351~|~v~|~~|~to confuse~|~
+atrapalhar~|~3351~|~v~|~~|~to muddle~|~
+atrapalhar~|~3351~|~v~|~~|~to shuffle~|~
+agradar~|~3335~|~v~|~~|~to be nice to~|~
+agradar~|~3335~|~v~|~~|~to fuss over~|~
+agradar~|~3335~|~v~|~~|~to go down well~|~
+planejar~|~3305~|~v~|~~|~to plan; to design~|~
+planejar~|~3305~|~v~|~~|~to plan; to intend~|~
+cometendo~|~3301~|~v~|~~|~gerund of cometer~|~
+vigiar~|~3294~|~v~|~~|~to observe something carefully~|~
+vigiar~|~3294~|~v~|~~|~to watch (to act as a lookout)~|~
+vigiar~|~3294~|~v~|~~|~to watch (to attend or guard)~|~
+morder~|~3282~|~v~|~~|~to bite~|~
+morder~|~3282~|~v~|~~|~to nip~|~
+morder~|~3282~|~v~|~~|~to gnaw~|~
+exagerando~|~3249~|~v~|~~|~gerund of exagerar~|~
+protege~|~3238~|~v~|~~|~second-person singular imperative of proteger~|~
+protege~|~3238~|~v~|~~|~third-person singular indicative present of proteger~|~
+reduzir~|~3231~|~v~|~~|~to decrease~|~
+reduzir~|~3231~|~v~|~~|~lessen~|~
+reduzir~|~3231~|~v~|~~|~diminish~|~
+reduzir~|~3231~|~v~|~~|~to reduce~|~
+reduzir~|~3231~|~v~|~~|~cut~|~
+reduzir~|~3231~|~v~|~~|~shorten~|~
+cooperar~|~3231~|~v~|~~|~to cooperate (to work together)~|~
+sugerir~|~3198~|~v~|~~|~to suggest~|~
+destruindo~|~3194~|~v~|~~|~gerund of destruir~|~
+dai~|~3193~|~v~|~~|~second-person plural imperative of dar~|~
+desenhar~|~3175~|~v~|~~|~to draw~|~
+resgatar~|~3155~|~v~|~~|~to ransom~|~
+resgatar~|~3155~|~v~|~~|~to redeem~|~
+resgatar~|~3155~|~v~|~~|~to rescue~|~
+reclamando~|~3148~|~v~|~~|~gerund of reclamar~|~
+poupar~|~3145~|~v~|~~|~to economize~|~
+poupar~|~3145~|~v~|~~|~to save money~|~
+poupar~|~3145~|~v~|~~|~to save time~|~
+cortando~|~3125~|~v~|~~|~gerund of cortar~|~
+assustando~|~3117~|~v~|~~|~gerund of assustar~|~
+abaixar~|~3111~|~v~|~~|~to lower; to cause something to become shorter~|~
+abaixar~|~3111~|~v~|~~|~to lower; to cause something to move downwards~|~
+abaixar~|~3111~|~v~|~~|~to lower; to humble~|~
+abaixar~|~3111~|~v~|~~|~to lower; to reduce the degree~|~
+abaixar~|~3111~|~v~|~~|~intensity~|~
+abaixar~|~3111~|~v~|~~|~strength~|~
+abaixar~|~3111~|~v~|~~|~etc~|~
+cheirar~|~3073~|~v~|~~|~to smell (have the smell of)~|~
+cheirar~|~3073~|~v~|~~|~to smell (sense with nose)~|~
+contratado~|~3070~|~v~|~~|~past participle of contratar~|~
+desfazer~|~3070~|~v~|~~|~to undo~|~
+treinando~|~3042~|~v~|~~|~gerund of treinar~|~
+acusar~|~3029~|~v~|~~|~to accuse~|~
+irritar~|~3011~|~v~|~~|~to excite~|~
+irritar~|~3011~|~v~|~~|~to irritate~|~
+desenvolver~|~3011~|~v~|~~|~to develop~|~
+desenvolver~|~3011~|~v~|~~|~to evolve~|~
+desenvolver~|~3011~|~v~|~~|~to explicate~|~
+representar~|~3002~|~v~|~~|~to depict~|~
+representar~|~3002~|~v~|~~|~to represent~|~
+representar~|~3002~|~v~|~~|~to typify~|~
+provocar~|~3000~|~v~|~~|~to provoke (all senses)~|~
+combater~|~3000~|~v~|~~|~to fight~|~
+aguardando~|~2972~|~v~|~~|~gerund of aguardar~|~
+envergonhar~|~2963~|~v~|~~|~to shame~|~
+envergonhar~|~2963~|~v~|~~|~abash~|~
+legado~|~2958~|~v~|~~|~past participle of legar~|~
+torcer~|~2953~|~v~|~~|~to hope for someone’s or something’s success~|~
+torcer~|~2953~|~v~|~~|~to support a team~|~
+torcer~|~2953~|~v~|~~|~to hope for something to happen~|~
+torcer~|~2953~|~v~|~~|~to twist (to injure a body part by bending it in the wrong direction)~|~
+torcer~|~2953~|~v~|~~|~to twist (to turn the ends in opposite directions)~|~
+torcer~|~2953~|~v~|~~|~to wring (to squeeze or twist tightly so that liquid is forced out)~|~
+agarrar~|~2945~|~v~|~~|~to grab~|~
+agarrar~|~2945~|~v~|~~|~grasp~|~
+agarrar~|~2945~|~v~|~~|~hold~|~
+agarrar~|~2945~|~v~|~~|~cling~|~
+agarrar~|~2945~|~v~|~~|~clutch~|~
+questionar~|~2936~|~v~|~~|~to ask~|~
+sacrificar~|~2935~|~v~|~~|~to sacrifice (to intentionally give up a piece)~|~
+sacrificar~|~2935~|~v~|~~|~to sacrifice (to offer as a gift)~|~
+ofender~|~2912~|~v~|~~|~to displease~|~
+ofender~|~2912~|~v~|~~|~to offend~|~
+soar~|~2905~|~v~|~~|~make a sound~|~
+declarar~|~2899~|~v~|~~|~to declare~|~
+declarar~|~2899~|~v~|~~|~to state~|~
+chupar~|~2891~|~v~|~~|~to suck off (to give a blowjob)~|~
+publicar~|~2884~|~v~|~~|~to publish~|~
+traindo~|~2878~|~v~|~~|~gerund of trair~|~
+recuar~|~2854~|~v~|~~|~to indent~|~
+recuar~|~2854~|~v~|~~|~to recede~|~
+recuar~|~2854~|~v~|~~|~retreat~|~
+recuar~|~2854~|~v~|~~|~to recoil~|~
+recuar~|~2854~|~v~|~~|~flinch~|~
+implorar~|~2840~|~v~|~~|~to implore (to beg for)~|~
+enlouquecendo~|~2828~|~v~|~~|~gerund of enlouquecer~|~
+conter~|~2822~|~v~|~~|~to contain~|~
+conter~|~2822~|~v~|~~|~hold~|~
+conter~|~2822~|~v~|~~|~carry~|~
+conter~|~2822~|~v~|~~|~to include~|~
+guardando~|~2792~|~v~|~~|~gerund of guardar~|~
+misturar~|~2786~|~v~|~~|~to stir (agitate the content of a container by passing something through it)~|~
+misturar~|~2786~|~v~|~~|~to socialise (interact with others)~|~
+misturar~|~2786~|~v~|~~|~to mix (combine items from two or more sources normally kept separate)~|~
+misturar~|~2786~|~v~|~~|~to mix (stir two or more substances together)~|~
+expulsar~|~2786~|~v~|~~|~to send off (show someone a red card)~|~
+expulsar~|~2786~|~v~|~~|~to expel; to eject (to cast out)~|~
+expulsar~|~2786~|~v~|~~|~to expel (to remove from membership)~|~
+agüentar~|~2772~|~v~|~~|~alternative form of aguentar~|~
+aliviar~|~2765~|~v~|~~|~to lighten~|~
+aliviar~|~2765~|~v~|~~|~to relieve~|~
+aliviar~|~2765~|~v~|~~|~ease~|~
+aliviar~|~2765~|~v~|~~|~alleviate~|~
+surpreender~|~2764~|~v~|~~|~to astonish~|~
+surpreender~|~2764~|~v~|~~|~to surprise~|~
+comparar~|~2762~|~v~|~~|~to compare~|~
+comparar~|~2762~|~v~|~~|~to liken~|~
+amarrar~|~2755~|~v~|~~|~to tie~|~
+adiar~|~2750~|~v~|~~|~to postpone~|~
+adiar~|~2750~|~v~|~~|~delay~|~
+adiar~|~2750~|~v~|~~|~adjourn~|~
+adiar~|~2750~|~v~|~~|~defer~|~
+sustentar~|~2749~|~v~|~~|~to support~|~
+sustentar~|~2749~|~v~|~~|~underpin~|~
+sustentar~|~2749~|~v~|~~|~to sustain~|~
+aposentar~|~2739~|~v~|~~|~to house~|~
+aposentar~|~2739~|~v~|~~|~shelter~|~
+aposentar~|~2739~|~v~|~~|~lodge~|~
+aposentar~|~2739~|~v~|~~|~to retire (leave office)~|~
+adicionar~|~2731~|~v~|~~|~to add~|~
+adicionar~|~2731~|~v~|~~|~sum (numbers)~|~
+adicionar~|~2731~|~v~|~~|~to insert~|~
+agradecido~|~2716~|~v~|~~|~past participle of agradecer~|~
+contatar~|~2689~|~v~|~~|~alternative form of contactar~|~
+jurar~|~2681~|~v~|~~|~to swear (to take an oath)~|~
+agitado~|~2680~|~v~|~~|~past participle of agitar~|~
+preferir~|~2669~|~v~|~~|~to prefer~|~
+prever~|~2661~|~v~|~~|~to foresee~|~
+prever~|~2661~|~v~|~~|~to predict~|~
+cheirando~|~2658~|~v~|~~|~gerund of cheirar~|~
+gravando~|~2655~|~v~|~~|~gerund of gravar~|~
+sugar~|~2653~|~v~|~~|~to suck~|~
+prejudicar~|~2650~|~v~|~~|~to embarrass~|~
+prejudicar~|~2650~|~v~|~~|~to harm~|~
+prejudicar~|~2650~|~v~|~~|~damage~|~
+prejudicar~|~2650~|~v~|~~|~to prejudice~|~
+auxiliar~|~2647~|~v~|~~|~to aid~|~
+pousar~|~2643~|~v~|~~|~to land~|~
+pousar~|~2643~|~v~|~~|~alight~|~
+dobrar~|~2642~|~v~|~~|~to dub (replace a soundtrack with a synchronized translation)~|~
+apreciar~|~2637~|~v~|~~|~to appreciate (all senses)~|~
+apreciar~|~2637~|~v~|~~|~to enjoy~|~
+trancar~|~2636~|~v~|~~|~to lock~|~
+trancar~|~2636~|~v~|~~|~latch~|~
+liderar~|~2633~|~v~|~~|~to lead or head~|~
+sangrar~|~2629~|~v~|~~|~to bleed~|~
+transferir~|~2627~|~v~|~~|~to transfer~|~
+defendendo~|~2624~|~v~|~~|~gerund of defender~|~
+estacionar~|~2610~|~v~|~~|~to park (bring to a halt)~|~
+estacionar~|~2610~|~v~|~~|~to stand still for a long time~|~
+enlouquecer~|~2600~|~v~|~~|~to go mad~|~
+afetar~|~2598~|~v~|~~|~to affect (to influence or alter)~|~
+ajustar~|~2577~|~v~|~~|~to adapt~|~
+ajustar~|~2577~|~v~|~~|~to adjust~|~
+ajustar~|~2577~|~v~|~~|~to fit~|~
+entediado~|~2567~|~v~|~~|~past participle of entediar~|~
+definir~|~2544~|~v~|~~|~to define~|~
+anoitecer~|~2541~|~v~|~~|~to darken (as night approaches)~|~
+pisar~|~2521~|~v~|~~|~to tread; to step~|~
+render~|~2514~|~v~|~~|~to dominate or command~|~
+render~|~2514~|~v~|~~|~to render~|~
+render~|~2514~|~v~|~~|~to subject~|~
+render~|~2514~|~v~|~~|~to yield~|~
+desafiar~|~2509~|~v~|~~|~to challenge~|~
+guiar~|~2506~|~v~|~~|~to drive (a vehicle)~|~
+guiar~|~2506~|~v~|~~|~to guide (supervise one's education)~|~
+guiar~|~2506~|~v~|~~|~to lead; to guide; to direct~|~
+combinar~|~2488~|~v~|~~|~to combine~|~
+combinar~|~2488~|~v~|~~|~to set up~|~
+combinar~|~2488~|~v~|~~|~to arrange (a meeting)~|~
+fornecer~|~2485~|~v~|~~|~to supply~|~
+fornecer~|~2485~|~v~|~~|~provide~|~
+fornecer~|~2485~|~v~|~~|~furnish~|~
+esforçar~|~2483~|~v~|~~|~to strain~|~
+havido~|~2465~|~v~|~~|~past participle of haver~|~
+acelerar~|~2462~|~v~|~~|~to accelerate~|~
+reagir~|~2455~|~v~|~~|~to interact~|~
+reagir~|~2455~|~v~|~~|~to react~|~
+reagir~|~2455~|~v~|~~|~to respond~|~
+pulando~|~2450~|~v~|~~|~Present participle of pular~|~
+aquecer~|~2434~|~v~|~~|~to heat~|~
+aquecer~|~2434~|~v~|~~|~warm up as a preparation for a physical activity~|~
+aquecer~|~2434~|~v~|~~|~warm up (to make an audience enthusiastic)~|~
+investir~|~2433~|~v~|~~|~to charge (move forward quickly and forcefully, particularly in combat)~|~
+investir~|~2433~|~v~|~~|~to invest (ceremonially install someone in some office)~|~
+investir~|~2433~|~v~|~~|~to invest (commit money or effort)~|~
+regular~|~2432~|~v~|~~|~to regulate~|~
+regular~|~2432~|~v~|~~|~to set (a watch, clock)~|~
+regular~|~2432~|~v~|~~|~to tune (an engine)~|~
+romper~|~2415~|~v~|~~|~to break~|~
+acrescentar~|~2413~|~v~|~~|~to increase~|~
+alterar~|~2407~|~v~|~~|~to alter or change~|~
+afogar~|~2405~|~v~|~~|~to drown~|~
+afogar~|~2405~|~v~|~~|~to asphyxiate~|~
+piscar~|~2402~|~v~|~~|~to blink (to close and reopen both eyes quickly)~|~
+despertar~|~2402~|~v~|~~|~(of an alarm clock) to go off~|~
+despertar~|~2402~|~v~|~~|~awake (to excite or to stir up something latent)~|~
+despertar~|~2402~|~v~|~~|~to alarm (to put on the alert)~|~
+despertar~|~2402~|~v~|~~|~to awaken someone else~|~
+desviar~|~2402~|~v~|~~|~to deflect~|~
+desviar~|~2402~|~v~|~~|~to detour~|~
+desviar~|~2402~|~v~|~~|~to deviate~|~
+desviar~|~2402~|~v~|~~|~to divert~|~
+desviar~|~2402~|~v~|~~|~to swerve~|~
+esmagar~|~2398~|~v~|~~|~to crush (to overwhelm by pressure or weight)~|~
+conectar~|~2398~|~v~|~~|~to connect (to join two or more pieces)~|~
+pressionar~|~2397~|~v~|~~|~to click a button~|~
+pressionar~|~2397~|~v~|~~|~to press (to apply pressure)~|~
+pressionar~|~2397~|~v~|~~|~to press; to impel; to urge strongly~|~
+estourar~|~2388~|~v~|~~|~to become popular quickly~|~
+estourar~|~2388~|~v~|~~|~to overflow~|~
+estourar~|~2388~|~v~|~~|~to lose one's temper~|~
+estourar~|~2388~|~v~|~~|~(of a herd) to flee or run~|~
+estourar~|~2388~|~v~|~~|~to burst~|~
+estourar~|~2388~|~v~|~~|~to pop (to break from internal pressure)~|~
+estourar~|~2388~|~v~|~~|~to go over a limit; of a deadline~|~
+estourar~|~2388~|~v~|~~|~to be missed~|~
+estourar~|~2388~|~v~|~~|~(usually of wars) to begin suddenly and violently~|~
+acampar~|~2386~|~v~|~~|~to camp (go camping)~|~
+acampar~|~2386~|~v~|~~|~to encamp~|~
+plantar~|~2376~|~v~|~~|~to plant~|~
+consultar~|~2375~|~v~|~~|~to consult (ask advice)~|~
+pendurar~|~2372~|~v~|~~|~to give up or retire from a profession (followed by the name of a piece of clothing associated with the profession)~|~
+pendurar~|~2372~|~v~|~~|~to hang (cause (something) to be suspended)~|~
+satisfazer~|~2369~|~v~|~~|~to be satisfied~|~
+satisfazer~|~2369~|~v~|~~|~to give satisfaction~|~
+satisfazer~|~2369~|~v~|~~|~to satisfy~|~
+finge~|~2355~|~v~|~~|~second-person singular imperative of fingir~|~
+finge~|~2355~|~v~|~~|~third-person singular indicative present of fingir~|~
+doar~|~2350~|~v~|~~|~to donate~|~
+doar~|~2350~|~v~|~~|~to give~|~
+doar~|~2350~|~v~|~~|~to present~|~
+carregado~|~2349~|~v~|~~|~past participle of carregar~|~
+apontando~|~2348~|~v~|~~|~gerund of apontar~|~
+distrair~|~2344~|~v~|~~|~to amuse~|~
+distrair~|~2344~|~v~|~~|~to distract~|~
+honrar~|~2344~|~v~|~~|~to honor~|~
+repetindo~|~2330~|~v~|~~|~gerund of repetir~|~
+parando~|~2328~|~v~|~~|~gerund of parar~|~
+encerrar~|~2320~|~v~|~~|~to complete~|~
+encerrar~|~2320~|~v~|~~|~finish~|~
+encerrar~|~2320~|~v~|~~|~to contain~|~
+interrogar~|~2320~|~v~|~~|~to interrogate~|~
+demorando~|~2318~|~v~|~~|~gerund of demorar~|~
+vagão~|~2316~|~v~|~~|~obsolete spelling of vagam~|~
+interpretar~|~2314~|~v~|~~|~to interpret (to run a script)~|~
+interpretar~|~2314~|~v~|~~|~to interpret (to apprehend and represent by means of art)~|~
+interpretar~|~2314~|~v~|~~|~to interpret (to explain or tell the meaning of)~|~
+registrar~|~2310~|~v~|~~|~to register~|~
+registrar~|~2310~|~v~|~~|~to record~|~
+curtir~|~2303~|~v~|~~|~to enjoy; to like~|~
+curtir~|~2303~|~v~|~~|~to be able to suffer through something~|~
+curtir~|~2303~|~v~|~~|~to pickle (to store food in a solution)~|~
+curtir~|~2303~|~v~|~~|~to tan (to change an animal hide into leather)~|~
+ensaiar~|~2296~|~v~|~~|~to assay~|~
+ensaiar~|~2296~|~v~|~~|~to essay~|~
+ensaiar~|~2296~|~v~|~~|~test~|~
+ensaiar~|~2296~|~v~|~~|~to rehearse~|~
+detonar~|~2294~|~v~|~~|~to detonate~|~
+praticando~|~2293~|~v~|~~|~gerund of praticar~|~
+mergulhar~|~2282~|~v~|~~|~to dip (lower into a liquid)~|~
+mergulhar~|~2282~|~v~|~~|~to dive (descend sharply or steeply)~|~
+mergulhar~|~2282~|~v~|~~|~to dive (jump into water)~|~
+mergulhar~|~2282~|~v~|~~|~to immerse (involve oneself deeply)~|~
+mergulhar~|~2282~|~v~|~~|~to submerge (go down in water)~|~
+arrasar~|~2280~|~v~|~~|~to raze~|~
+arrasar~|~2280~|~v~|~~|~demolish~|~
+aposentado~|~2278~|~v~|~~|~past participle of aposentar~|~
+secar~|~2277~|~v~|~~|~to dry up (to deprive someone of something vital)~|~
+conferir~|~2271~|~v~|~~|~to check (if something is correct)~|~
+conferir~|~2271~|~v~|~~|~to confer~|~
+conferir~|~2271~|~v~|~~|~bestow~|~
+arrastar~|~2270~|~v~|~~|~to drag~|~
+arrastar~|~2270~|~v~|~~|~haul~|~
+arrastar~|~2270~|~v~|~~|~lug~|~
+arrastar~|~2270~|~v~|~~|~tug~|~
+depor~|~2267~|~v~|~~|~to depose (make a deposition)~|~
+descansando~|~2263~|~v~|~~|~gerund of descansar~|~
+enfrentando~|~2255~|~v~|~~|~gerund of enfrentar~|~
+transmitir~|~2253~|~v~|~~|~to convey~|~
+transmitir~|~2253~|~v~|~~|~to impart~|~
+transmitir~|~2253~|~v~|~~|~to transmit~|~
+flutuando~|~2234~|~v~|~~|~gerund of flutuar~|~
+esfregar~|~2234~|~v~|~~|~to clean by rubbing~|~
+esfregar~|~2234~|~v~|~~|~to rub (to move one object while maintaining contact with another object over some area)~|~
+arriscando~|~2230~|~v~|~~|~gerund of arriscar~|~
+enrolar~|~2227~|~v~|~~|~to curl or coil (up)~|~
+economizar~|~2223~|~v~|~~|~to economize~|~
+economizar~|~2223~|~v~|~~|~save~|~
+punir~|~2216~|~v~|~~|~to punish~|~
+escalar~|~2214~|~v~|~~|~to climb~|~
+escalar~|~2214~|~v~|~~|~mount~|~
+escalar~|~2214~|~v~|~~|~scale~|~
+interessar~|~2210~|~v~|~~|~to interest (to attract attention or concern)~|~
+gozar~|~2207~|~v~|~~|~to come (ejaculate)~|~
+gozar~|~2207~|~v~|~~|~to enjoy~|~
+armar~|~2195~|~v~|~~|~to arm (supply with weapons)~|~
+adiantar~|~2194~|~v~|~~|~to anticipate information~|~
+adiantar~|~2194~|~v~|~~|~to bring to the front~|~
+adiantar~|~2194~|~v~|~~|~bring forward~|~
+adiantar~|~2194~|~v~|~~|~to work~|~
+adiantar~|~2194~|~v~|~~|~function~|~
+adiantar~|~2194~|~v~|~~|~to have a point (referring to actions)~|~
+merecer~|~2194~|~v~|~~|~to merit; to deserve~|~
+aproveitando~|~2193~|~v~|~~|~gerund of aproveitar~|~
+insistir~|~2192~|~v~|~~|~to insist~|~
+transportar~|~2192~|~v~|~~|~to transport~|~
+transportar~|~2192~|~v~|~~|~carry~|~
+danar~|~2191~|~v~|~~|~to damn to Hell~|~
+danar~|~2191~|~v~|~~|~to damage (to cause damage)~|~
+ameaçar~|~2186~|~v~|~~|~(catenative) to portend~|~
+ameaçar~|~2186~|~v~|~~|~threaten~|~
+ameaçar~|~2186~|~v~|~~|~to endanger~|~
+ameaçar~|~2186~|~v~|~~|~menace~|~
+ameaçar~|~2186~|~v~|~~|~to threaten (to make a threat against someone; to use threats)~|~
+desmaiar~|~2179~|~v~|~~|~to faint (to lose consciousness)~|~
+piorando~|~2173~|~v~|~~|~gerund of piorar~|~
+assumindo~|~2169~|~v~|~~|~gerund of assumir~|~
+ocorrer~|~2162~|~v~|~~|~to occur~|~
+ocorrer~|~2162~|~v~|~~|~happen~|~
+ocupar~|~2159~|~v~|~~|~to occupy (all senses)~|~
+aplicar~|~2157~|~v~|~~|~to apply (to put to use for a purpose)~|~
+aparecendo~|~2153~|~v~|~~|~gerund of aparecer~|~
+comandar~|~2150~|~v~|~~|~to command~|~
+comandar~|~2150~|~v~|~~|~lead~|~
+comandar~|~2150~|~v~|~~|~head~|~
+comprometer~|~2149~|~v~|~~|~to commit~|~
+comprometer~|~2149~|~v~|~~|~engage~|~
+balançando~|~2144~|~v~|~~|~gerund of balançar~|~
+desfrutar~|~2110~|~v~|~~|~to appreciate~|~
+desfrutar~|~2110~|~v~|~~|~to enjoy~|~
+tolerar~|~2110~|~v~|~~|~to tolerate~|~
+tolerar~|~2110~|~v~|~~|~endure~|~
+comentar~|~2099~|~v~|~~|~to comment (make a comment)~|~
+rodando~|~2090~|~v~|~~|~gerund of rodar~|~
+surgir~|~2090~|~v~|~~|~to appear~|~
+surgir~|~2090~|~v~|~~|~to emerge~|~
+propor~|~2086~|~v~|~~|~to file a lawsuit~|~
+propor~|~2086~|~v~|~~|~to have as an objective or purpose~|~
+propor~|~2086~|~v~|~~|~to make oneself available or willing to do something~|~
+propor~|~2086~|~v~|~~|~to propose; to suggest~|~
+sobrando~|~2079~|~v~|~~|~gerund of sobrar~|~
+concluir~|~2078~|~v~|~~|~to complete~|~
+concluir~|~2078~|~v~|~~|~conclude~|~
+concluir~|~2078~|~v~|~~|~terminate~|~
+inventando~|~2066~|~v~|~~|~gerund of inventar~|~
+supor~|~2062~|~v~|~~|~to suppose~|~
+denunciar~|~2057~|~v~|~~|~to denounce~|~
+anotar~|~2054~|~v~|~~|~to jot (to write quickly)~|~
+divorciar~|~2045~|~v~|~~|~to divorce~|~
+medir~|~2041~|~v~|~~|~to measure~|~
+medir~|~2041~|~v~|~~|~gauge~|~
+faltar~|~2040~|~v~|~~|~to lack~|~
+faltar~|~2040~|~v~|~~|~miss~|~
+rodar~|~2023~|~v~|~~|~to rotate~|~
+rodar~|~2023~|~v~|~~|~revolve~|~
+rodar~|~2023~|~v~|~~|~turn~|~
+adotar~|~2021~|~v~|~~|~to adopt (to take by choice into relationship, as, child, heir, friend, citizen)~|~
+adotar~|~2021~|~v~|~~|~to apply an idea or concept~|~
+perturbar~|~2019~|~v~|~~|~to perturb~|~
+perturbar~|~2019~|~v~|~~|~to disturb~|~
+navegar~|~2016~|~v~|~~|~to surf~|~
+navegar~|~2016~|~v~|~~|~to navigate~|~
+navegar~|~2016~|~v~|~~|~to navigate~|~
+navegar~|~2016~|~v~|~~|~to sail~|~
+variar~|~2015~|~v~|~~|~to inflect (to vary the form of a word)~|~
+variar~|~2015~|~v~|~~|~to vary (to change with time or a similar parameter)~|~
+variar~|~2015~|~v~|~~|~to vary (to institute a change in)~|~
+preservar~|~2014~|~v~|~~|~to preserve~|~
+balançar~|~2013~|~v~|~~|~to balance~|~
+balançar~|~2013~|~v~|~~|~to swing; to rock~|~
+balançar~|~2013~|~v~|~~|~sway~|~
+representando~|~2011~|~v~|~~|~gerund of representar~|~
+governar~|~2010~|~v~|~~|~to govern~|~
+congelar~|~2008~|~v~|~~|~to freeze~|~
+assassinar~|~2004~|~v~|~~|~to assassinate~|~
+assassinar~|~2004~|~v~|~~|~to kill~|~
+assassinar~|~2004~|~v~|~~|~murder~|~
+decolar~|~2000~|~v~|~~|~to take off; to begin flight~|~
+manipular~|~1985~|~v~|~~|~to manipulate~|~
+lamentar~|~1980~|~v~|~~|~to lament~|~
+embarcar~|~1980~|~v~|~~|~To die~|~
+embarcar~|~1980~|~v~|~~|~to embark~|~
+embarcar~|~1980~|~v~|~~|~to ship~|~
+duvidar~|~1979~|~v~|~~|~to disbelieve~|~
+duvidar~|~1979~|~v~|~~|~to doubt~|~
+evacuar~|~1978~|~v~|~~|~to evacuate (to make empty)~|~
+evacuar~|~1978~|~v~|~~|~to evacuate; to withdraw~|~
+pesar~|~1975~|~v~|~~|~to cause heartburn or indigestion~|~
+pesar~|~1975~|~v~|~~|~to burden (cause worry or pressure)~|~
+pesar~|~1975~|~v~|~~|~to influence (to exert an influence upon)~|~
+pesar~|~1975~|~v~|~~|~to weigh (determine the weight of an object)~|~
+pesar~|~1975~|~v~|~~|~to weigh (have a certain weight)~|~
+bloquear~|~1975~|~v~|~~|~to block~|~
+avaliar~|~1975~|~v~|~~|~to evaluate~|~
+avaliar~|~1975~|~v~|~~|~assess~|~
+avaliar~|~1975~|~v~|~~|~appraise~|~
+facilitar~|~1968~|~v~|~~|~to facilitate~|~
+interrompendo~|~1956~|~v~|~~|~gerund of interromper~|~
+obrigar~|~1954~|~v~|~~|~to force~|~
+obrigar~|~1954~|~v~|~~|~to oblige~|~
+obrigar~|~1954~|~v~|~~|~compel~|~
+incluir~|~1953~|~v~|~~|~to include~|~
+festejar~|~1944~|~v~|~~|~to celebrate (all senses)~|~
+dependendo~|~1936~|~v~|~~|~gerund of depender~|~
+recuperando~|~1933~|~v~|~~|~gerund of recuperar~|~
+desperdiçando~|~1931~|~v~|~~|~gerund of desperdiçar~|~
+atrapalhando~|~1926~|~v~|~~|~gerund of atrapalhar~|~
+torturar~|~1917~|~v~|~~|~to cause angst~|~
+torturar~|~1917~|~v~|~~|~to torture (to intentionally inflict unnecessary pain or suffering on helpless victims)~|~
+regressar~|~1915~|~v~|~~|~to return~|~
+regressar~|~1915~|~v~|~~|~revert~|~
+regressar~|~1915~|~v~|~~|~regress~|~
+supondo~|~1909~|~v~|~~|~gerund of supor~|~
+adaptar~|~1904~|~v~|~~|~adapt (to make suitable)~|~
+suspeitar~|~1902~|~v~|~~|~to suspect~|~
+prevenir~|~1901~|~v~|~~|~to prevent~|~
+gerar~|~1897~|~v~|~~|~to generate~|~
+desistindo~|~1875~|~v~|~~|~gerund of desistir~|~
+cavando~|~1874~|~v~|~~|~gerund of cavar~|~
+entregando~|~1872~|~v~|~~|~gerund of entregar~|~
+depender~|~1857~|~v~|~~|~to depend (on)~|~
+renunciar~|~1855~|~v~|~~|~to renounce~|~
+promover~|~1851~|~v~|~~|~to promote (advertise, talk up)~|~
+promover~|~1851~|~v~|~~|~to promote~|~
+promover~|~1851~|~v~|~~|~lead to~|~
+promover~|~1851~|~v~|~~|~to promote (put to a higher position)~|~
+restaurar~|~1846~|~v~|~~|~to renovate~|~
+restaurar~|~1846~|~v~|~~|~to restore~|~
+expandir~|~1846~|~v~|~~|~to expand~|~
+juntando~|~1844~|~v~|~~|~gerund of juntar~|~
+invadindo~|~1839~|~v~|~~|~gerund of invadir~|~
+indicar~|~1827~|~v~|~~|~to advise~|~
+indicar~|~1827~|~v~|~~|~to display~|~
+indicar~|~1827~|~v~|~~|~to indicate~|~
+indicar~|~1827~|~v~|~~|~designate~|~
+arrebentar~|~1825~|~v~|~~|~to break~|~
+arrebentar~|~1825~|~v~|~~|~smash~|~
+arrebentar~|~1825~|~v~|~~|~to burst~|~
+encobrir~|~1819~|~v~|~~|~to hide~|~
+encobrir~|~1819~|~v~|~~|~cover up~|~
+encobrir~|~1819~|~v~|~~|~mask~|~
+esquentar~|~1807~|~v~|~~|~to warm~|~
+esquentar~|~1807~|~v~|~~|~heat (up)~|~
+aguardar~|~1802~|~v~|~~|~to await~|~
+aguardar~|~1802~|~v~|~~|~to expect~|~
+montando~|~1796~|~v~|~~|~gerund of montar~|~
+justificar~|~1793~|~v~|~~|~to justify~|~
+justificar~|~1793~|~v~|~~|~to warrant~|~
+possuir~|~1790~|~v~|~~|~to possess (to take control of someone's body or mind in a supernatural manner)~|~
+possuir~|~1790~|~v~|~~|~to control (exercise influence over)~|~
+possuir~|~1790~|~v~|~~|~to have as a quality or characteristic~|~
+possuir~|~1790~|~v~|~~|~to overwhelm (overpower emotionally)~|~
+possuir~|~1790~|~v~|~~|~to possess; to have; to own~|~
+admirar~|~1788~|~v~|~~|~to admire~|~
+afirmar~|~1782~|~v~|~~|~to confirm~|~
+afirmar~|~1782~|~v~|~~|~to make firm~|~
+afirmar~|~1782~|~v~|~~|~to state~|~
+afirmar~|~1782~|~v~|~~|~declare~|~
+tremer~|~1778~|~v~|~~|~to shake~|~
+ativado~|~1776~|~v~|~~|~past participle of ativar~|~
+molhar~|~1772~|~v~|~~|~to accidentally urinate on something~|~
+molhar~|~1772~|~v~|~~|~to wet (to make wet)~|~
+encaixar~|~1771~|~v~|~~|~to catch the football and hold it tightly~|~
+encaixar~|~1771~|~v~|~~|~to fit (to attach, especially when requiring exact positioning or sizing)~|~
+encaixar~|~1771~|~v~|~~|~to fit (to conform to in size and shape)~|~
+sujar~|~1770~|~v~|~~|~to dirty (to make dirty, filthy)~|~
+sujar~|~1770~|~v~|~~|~to smear (damage someone’s reputation)~|~
+curtindo~|~1764~|~v~|~~|~gerund of curtir~|~
+encostar~|~1745~|~v~|~~|~to stow~|~
+encostar~|~1745~|~v~|~~|~to support~|~
+refletir~|~1743~|~v~|~~|~to mirror~|~
+refletir~|~1743~|~v~|~~|~to ponder~|~
+refletir~|~1743~|~v~|~~|~meditate~|~
+refletir~|~1743~|~v~|~~|~to reflect~|~
+brindar~|~1736~|~v~|~~|~to toast (drink the health of)~|~
+enforcar~|~1735~|~v~|~~|~to hang~|~
+gastando~|~1718~|~v~|~~|~gerund of gastar~|~
+confundir~|~1713~|~v~|~~|~to baffle~|~
+confundir~|~1713~|~v~|~~|~to confound~|~
+confundir~|~1713~|~v~|~~|~to confuse~|~
+entrevistar~|~1709~|~v~|~~|~to interview (to obtain an interview from)~|~
+vazar~|~1706~|~v~|~~|~to leak~|~
+atendendo~|~1699~|~v~|~~|~gerund of atender~|~
+esfriar~|~1693~|~v~|~~|~to cool~|~
+esfriar~|~1693~|~v~|~~|~cool down~|~
+esfriar~|~1693~|~v~|~~|~chill~|~
+reverter~|~1691~|~v~|~~|~to revert (to turn to the contrary)~|~
+abortar~|~1689~|~v~|~~|~to abort~|~
+abortar~|~1689~|~v~|~~|~to miscarry~|~
+insinuando~|~1680~|~v~|~~|~gerund of insinuar~|~
+cuspir~|~1670~|~v~|~~|~to offend~|~
+cuspir~|~1670~|~v~|~~|~to spit (to expel saliva from the mouth)~|~
+adquirir~|~1669~|~v~|~~|~to acquire~|~
+adquirir~|~1669~|~v~|~~|~get~|~
+adquirir~|~1669~|~v~|~~|~obtain~|~
+adquirir~|~1669~|~v~|~~|~procure~|~
+adquirir~|~1669~|~v~|~~|~to purchase~|~
+adquirir~|~1669~|~v~|~~|~buy~|~
+orar~|~1668~|~v~|~~|~pray (to petition a higher being)~|~
+comemorando~|~1664~|~v~|~~|~gerund of comemorar~|~
+decepcionar~|~1660~|~v~|~~|~to disappoint; to let down~|~
+gozando~|~1656~|~v~|~~|~gerund of gozar~|~
+extrair~|~1641~|~v~|~~|~to extract~|~
+extrair~|~1641~|~v~|~~|~to take out~|~
+estragando~|~1641~|~v~|~~|~gerund of estragar~|~
+lamber~|~1637~|~v~|~~|~to lick~|~
+detectar~|~1634~|~v~|~~|~to detect~|~
+detectar~|~1634~|~v~|~~|~to reveal~|~
+concorrer~|~1634~|~v~|~~|~to compete~|~
+concorrer~|~1634~|~v~|~~|~to concur~|~
+concorrer~|~1634~|~v~|~~|~to tender~|~
+concorrer~|~1634~|~v~|~~|~apply~|~
+recorrer~|~1633~|~v~|~~|~rehash~|~
+recorrer~|~1633~|~v~|~~|~revisit~|~
+recorrer~|~1633~|~v~|~~|~go over~|~
+recorrer~|~1633~|~v~|~~|~rerun~|~
+recorrer~|~1633~|~v~|~~|~do over~|~
+recorrer~|~1633~|~v~|~~|~return~|~
+recorrer~|~1633~|~v~|~~|~copy~|~
+recorrer~|~1633~|~v~|~~|~double up~|~
+recorrer~|~1633~|~v~|~~|~repeat a route~|~
+recorrer~|~1633~|~v~|~~|~resort (to have recourse out of necessity or frustration)~|~
+violar~|~1628~|~v~|~~|~to rape~|~
+violar~|~1628~|~v~|~~|~to violate~|~
+apoiando~|~1617~|~v~|~~|~gerund of apoiar~|~
+impor~|~1615~|~v~|~~|~to impose~|~
+seduzir~|~1614~|~v~|~~|~to seduce (to win over or attract someone)~|~
+inventado~|~1613~|~v~|~~|~past participle of inventar~|~
+administrar~|~1605~|~v~|~~|~to administer (all senses)~|~
+trepar~|~1605~|~v~|~~|~To fuck~|~
+trepar~|~1605~|~v~|~~|~to climb~|~
+trepar~|~1605~|~v~|~~|~to mount~|~
+trepar~|~1605~|~v~|~~|~to tread on~|~
+aprovar~|~1604~|~v~|~~|~to approve~|~
+aprovar~|~1604~|~v~|~~|~to endorse~|~
+retomar~|~1601~|~v~|~~|~to resume (start something again that has been stopped or paused)~|~
+retomar~|~1601~|~v~|~~|~to retake something lost~|~
+dispensar~|~1594~|~v~|~~|~to dispense~|~
+agitar~|~1586~|~v~|~~|~to shake~|~
+agitar~|~1586~|~v~|~~|~agitate~|~
+agitar~|~1586~|~v~|~~|~to wave~|~
+derramar~|~1583~|~v~|~~|~to spill~|~
+percorrer~|~1583~|~v~|~~|~to roam~|~
+percorrer~|~1583~|~v~|~~|~wander~|~
+percorrer~|~1583~|~v~|~~|~to travel~|~
+circular~|~1579~|~v~|~~|~to circle~|~
+circular~|~1579~|~v~|~~|~to circulate~|~
+relatar~|~1576~|~v~|~~|~to narrate; to relate (to tell in a descriptive way)~|~
+relatar~|~1576~|~v~|~~|~to report (to recount an event or incident)~|~
+recordar~|~1575~|~v~|~~|~to remember~|~
+recordar~|~1575~|~v~|~~|~recall~|~
+recordar~|~1575~|~v~|~~|~recollect~|~
+recordar~|~1575~|~v~|~~|~to remind~|~
+insultar~|~1575~|~v~|~~|~to insult~|~
+celebrando~|~1568~|~v~|~~|~gerund of celebrar~|~
+intrometer~|~1562~|~v~|~~|~to intrude~|~
+intrometer~|~1562~|~v~|~~|~interfere~|~
+cumprimentar~|~1550~|~v~|~~|~to compliment~|~
+cumprimentar~|~1550~|~v~|~~|~to greet~|~
+cumprimentar~|~1550~|~v~|~~|~salute~|~
+cruzando~|~1550~|~v~|~~|~gerund of cruzar~|~
+envelhecer~|~1544~|~v~|~~|~to age (grow old)~|~
+coletar~|~1543~|~v~|~~|~to collect~|~
+coletar~|~1543~|~v~|~~|~gather~|~
+alertar~|~1543~|~v~|~~|~to alert~|~
+exigir~|~1539~|~v~|~~|~to ask~|~
+exigir~|~1539~|~v~|~~|~demand~|~
+exigir~|~1539~|~v~|~~|~to require~|~
+exigir~|~1539~|~v~|~~|~need~|~
+descobrindo~|~1535~|~v~|~~|~gerund of descobrir - discovering~|~
+pilar~|~1532~|~v~|~~|~to grind using a pestle~|~
+cumprindo~|~1532~|~v~|~~|~gerund of cumprir~|~
+abatido~|~1522~|~v~|~~|~past participle of abater~|~
+derreter~|~1522~|~v~|~~|~to liquefy~|~
+derreter~|~1522~|~v~|~~|~melt~|~
+derreter~|~1522~|~v~|~~|~thaw~|~
+bloqueando~|~1521~|~v~|~~|~gerund of bloquear~|~
+sabido~|~1521~|~v~|~~|~past participle of saber~|~
+aparecido~|~1518~|~v~|~~|~past participle of aparecer~|~
+cansar~|~1516~|~v~|~~|~to tire~|~
+cansar~|~1516~|~v~|~~|~weary~|~
+converter~|~1513~|~v~|~~|~to convert (all senses); to change~|~
+converter~|~1513~|~v~|~~|~to transform~|~
+designado~|~1512~|~v~|~~|~past participle of designar~|~
+iniciando~|~1512~|~v~|~~|~gerund of iniciar~|~
+fotografar~|~1503~|~v~|~~|~to photograph; take a picture~|~
+ajeitar~|~1502~|~v~|~~|~to adjust~|~
+condenar~|~1492~|~v~|~~|~To convict~|~
+condenar~|~1492~|~v~|~~|~to condemn~|~
+condenar~|~1492~|~v~|~~|~doom~|~
+condenar~|~1492~|~v~|~~|~to damn~|~
+condenar~|~1492~|~v~|~~|~denounce~|~
+citar~|~1490~|~v~|~~|~to cite~|~
+citar~|~1490~|~v~|~~|~quote (to refer to a statement that has been made by someone else)~|~
+citar~|~1490~|~v~|~~|~to summon~|~
+adorando~|~1482~|~v~|~~|~gerund of adorar~|~
+arruinando~|~1481~|~v~|~~|~gerund of arruinar~|~
+partilhar~|~1480~|~v~|~~|~to share (to divide and distribute)~|~
+partilhar~|~1480~|~v~|~~|~to share (to give, to donate)~|~
+escurecer~|~1472~|~v~|~~|~to dim~|~
+escurecer~|~1472~|~v~|~~|~darken~|~
+provocando~|~1472~|~v~|~~|~gerund of provocar~|~
+negociando~|~1471~|~v~|~~|~gerund of negociar~|~
+chatear~|~1467~|~v~|~~|~to peeve; synonyms: to upset~|~
+chatear~|~1467~|~v~|~~|~pester~|~
+chatear~|~1467~|~v~|~~|~annoy~|~
+chatear~|~1467~|~v~|~~|~bore~|~
+arrastando~|~1467~|~v~|~~|~gerund of arrastar~|~
+pregar~|~1467~|~v~|~~|~to nail (employ a nail or similar object as a fastener)~|~
+pregar~|~1467~|~v~|~~|~to nail (to drive a nail with a tool)~|~
+pregar~|~1467~|~v~|~~|~to preach (give a sermon)~|~
+pregar~|~1467~|~v~|~~|~to preach; to advocate (encourage support)~|~
+pregar~|~1467~|~v~|~~|~to stare~|~
+aprontar~|~1464~|~v~|~~|~to be up to something~|~
+aprontar~|~1464~|~v~|~~|~to do something mischievous~|~
+aprontar~|~1464~|~v~|~~|~to prepare for a trip~|~
+aprontar~|~1464~|~v~|~~|~to dress someone up (wear fancy dress)~|~
+aprontar~|~1464~|~v~|~~|~to finish doing something (especially writing a document, report, etc.)~|~
+aprontar~|~1464~|~v~|~~|~to prepare (to make ready for a specific future purpose)~|~
+aprontar~|~1464~|~v~|~~|~to prepare (to make something for eating or drinking)~|~
+revistar~|~1458~|~v~|~~|~search~|~
+revistar~|~1458~|~v~|~~|~seek~|~
+suar~|~1456~|~v~|~~|~to sweat~|~
+barbear~|~1446~|~v~|~~|~to shave~|~
+exibir~|~1445~|~v~|~~|~to exhibit~|~
+exibir~|~1445~|~v~|~~|~display~|~
+exibir~|~1445~|~v~|~~|~to expose~|~
+costurar~|~1442~|~v~|~~|~to sew; to stitch (use a needle to pass thread through pieces of fabric)~|~
+costurar~|~1442~|~v~|~~|~to weave (to make (a path or way) by winding in and out or from side to side)~|~
+distribuir~|~1441~|~v~|~~|~to distribute (to divide something into portions and dispense it)~|~
+esforçando~|~1441~|~v~|~~|~gerund of esforçar~|~
+imitar~|~1441~|~v~|~~|~to imitate~|~
+imitar~|~1441~|~v~|~~|~mimic~|~
+atuando~|~1440~|~v~|~~|~gerund of atuar~|~
+afastando~|~1436~|~v~|~~|~gerund of afastar~|~
+decifrar~|~1432~|~v~|~~|~to decipher~|~
+decifrar~|~1432~|~v~|~~|~decode~|~
+decifrar~|~1432~|~v~|~~|~unscramble~|~
+apertando~|~1431~|~v~|~~|~gerund of apertar~|~
+furar~|~1430~|~v~|~~|~to break in line~|~
+furar~|~1430~|~v~|~~|~break a strike~|~
+furar~|~1430~|~v~|~~|~to fall into a hole~|~
+furar~|~1430~|~v~|~~|~to pierce~|~
+furar~|~1430~|~v~|~~|~puncture~|~
+furar~|~1430~|~v~|~~|~make a hole in~|~
+enrolando~|~1411~|~v~|~~|~gerund of enrolar~|~
+diminuindo~|~1411~|~v~|~~|~gerund of diminuir~|~
+providenciar~|~1407~|~v~|~~|~to provide~|~
+discordar~|~1401~|~v~|~~|~to disagree~|~
+reportar~|~1399~|~v~|~~|~to report~|~
+esvaziar~|~1395~|~v~|~~|~to empty (to make empty)~|~
+revisar~|~1392~|~v~|~~|~to review (to look broadly over)~|~
+revisar~|~1392~|~v~|~~|~to revise (to review, alter and amend, especially of written material)~|~
+argumentar~|~1384~|~v~|~~|~to debate; to argue (to put forth arguments)~|~
+divulgar~|~1380~|~v~|~~|~to advertize~|~
+divulgar~|~1380~|~v~|~~|~to publicize~|~
+divulgar~|~1380~|~v~|~~|~to divulge~|~
+divulgar~|~1380~|~v~|~~|~to disclose~|~
+divulgar~|~1380~|~v~|~~|~to expose~|~
+divulgar~|~1380~|~v~|~~|~to spread~|~
+divulgar~|~1380~|~v~|~~|~disseminate~|~
+divulgar~|~1380~|~v~|~~|~popularize~|~
+refrescar~|~1379~|~v~|~~|~to freshen (to make fresh)~|~
+refrescar~|~1379~|~v~|~~|~to refresh (to renew or revitalise)~|~
+isolar~|~1379~|~v~|~~|~to isolate~|~
+isolar~|~1379~|~v~|~~|~insulate~|~
+isolar~|~1379~|~v~|~~|~to seclude~|~
+isolar~|~1379~|~v~|~~|~to segregate~|~
+circulando~|~1372~|~v~|~~|~gerund of circular~|~
+operando~|~1366~|~v~|~~|~gerund of operar~|~
+gabar~|~1363~|~v~|~~|~to brag~|~
+gabar~|~1363~|~v~|~~|~boast~|~
+gabar~|~1363~|~v~|~~|~to praise~|~
+afogando~|~1354~|~v~|~~|~gerund of afogar~|~
+descarregar~|~1353~|~v~|~~|~to discharge (release an electrical charge)~|~
+descarregar~|~1353~|~v~|~~|~to discharge (release a person, object from hospital, storage, etc.)~|~
+descarregar~|~1353~|~v~|~~|~to download (download programs, images, etc from websites or removable storage media)~|~
+descarregar~|~1353~|~v~|~~|~to unload (unload cargo, wares, etc from a vehicle)~|~
+criticar~|~1350~|~v~|~~|~criticize (to evaluate)~|~
+sacar~|~1340~|~v~|~~|~to understand~|~
+sacar~|~1340~|~v~|~~|~to serve~|~
+sacar~|~1340~|~v~|~~|~to draw (to pull out a gun from a holster)~|~
+sacar~|~1340~|~v~|~~|~to pull out; to extract~|~
+sacar~|~1340~|~v~|~~|~to withdraw (extract money from an account)~|~
+nomear~|~1338~|~v~|~~|~to elect (choose a candidate in an election)~|~
+nomear~|~1338~|~v~|~~|~to entitle (give a title to)~|~
+nomear~|~1338~|~v~|~~|~to name (give a name to)~|~
+nomear~|~1338~|~v~|~~|~to name (publicly implicate)~|~
+nomear~|~1338~|~v~|~~|~to nominate (name someone as a candidate for a particular role or position)~|~
+ensaiando~|~1337~|~v~|~~|~gerund of ensaiar~|~
+conceder~|~1331~|~v~|~~|~to grant~|~
+conceder~|~1331~|~v~|~~|~concede~|~
+conceder~|~1331~|~v~|~~|~allow~|~
+exagerar~|~1329~|~v~|~~|~to exaggerate~|~
+exagerar~|~1329~|~v~|~~|~to overstate~|~
+desapontar~|~1324~|~v~|~~|~disappoint; to let down~|~
+imprimir~|~1323~|~v~|~~|~to print~|~
+orgulhar~|~1322~|~v~|~~|~to make proud~|~
+intervir~|~1313~|~v~|~~|~to interfere~|~
+intervir~|~1313~|~v~|~~|~to interpose~|~
+intervir~|~1313~|~v~|~~|~to intervene~|~
+copiar~|~1312~|~v~|~~|~to copy; to produce something identical~|~
+distinguir~|~1306~|~v~|~~|~to differentiate~|~
+distinguir~|~1306~|~v~|~~|~to distinguish~|~
+distinguir~|~1306~|~v~|~~|~discern (tell apart)~|~
+competindo~|~1305~|~v~|~~|~gerund of competir~|~
+surfar~|~1296~|~v~|~~|~to surf (to browse the internet)~|~
+surfar~|~1296~|~v~|~~|~to surf (to ride a wave on a surfboard)~|~
+decorar~|~1294~|~v~|~~|~to decorate~|~
+decorar~|~1294~|~v~|~~|~adorn~|~
+decorar~|~1294~|~v~|~~|~ornament~|~
+decorar~|~1294~|~v~|~~|~to learn by heart~|~
+sois~|~1290~|~v~|~~|~(second-person plural indicative present of ser) you are~|~
+inscrever~|~1287~|~v~|~~|~to inscribe~|~
+inscrever~|~1287~|~v~|~~|~to register~|~
+confundindo~|~1286~|~v~|~~|~gerund of confundir~|~
+aborrecer~|~1285~|~v~|~~|~to annoy~|~
+aborrecer~|~1285~|~v~|~~|~bother~|~
+aborrecer~|~1285~|~v~|~~|~vex~|~
+calcular~|~1285~|~v~|~~|~calculate (to determine value)~|~
+descartar~|~1283~|~v~|~~|~to discard~|~
+acompanhando~|~1281~|~v~|~~|~gerund of acompanhar~|~
+permitindo~|~1281~|~v~|~~|~gerund of permitir~|~
+caber~|~1278~|~v~|~~|~to fit (to be of a size so as to cover the body leaving relatively little space between the clothing and the body)~|~
+esquiar~|~1267~|~v~|~~|~to ski~|~
+reconsiderar~|~1266~|~v~|~~|~to reconsider (to consider a decided matter again)~|~
+monitorar~|~1262~|~v~|~~|~to monitor (to watch over, guard)~|~
+arrasado~|~1260~|~v~|~~|~past participle of arrasar~|~
+ordenar~|~1259~|~v~|~~|~to ordain (admit into the ministry of the Christian church)~|~
+ordenar~|~1259~|~v~|~~|~to order (to issue a command)~|~
+ordenar~|~1259~|~v~|~~|~to sort; to order (to set in (any) order)~|~
+influenciar~|~1246~|~v~|~~|~to influence~|~
+erguer~|~1244~|~v~|~~|~to build or erect~|~
+soprar~|~1240~|~v~|~~|~to blow~|~
+soprar~|~1240~|~v~|~~|~to whisper~|~
+penetrar~|~1236~|~v~|~~|~to get into~|~
+penetrar~|~1236~|~v~|~~|~to get in~|~
+penetrar~|~1236~|~v~|~~|~to penetrate (manage to get through)~|~
+preocupando~|~1234~|~v~|~~|~gerund of preocupar~|~
+sussurrando~|~1229~|~v~|~~|~gerund of sussurrar~|~
+colaborar~|~1229~|~v~|~~|~to collaborate~|~
+comparecer~|~1228~|~v~|~~|~to attend~|~
+comparecer~|~1228~|~v~|~~|~appear~|~
+comparecer~|~1228~|~v~|~~|~turn up~|~
+absorver~|~1227~|~v~|~~|~absorb~|~
+desenvolvendo~|~1223~|~v~|~~|~gerund of desenvolver~|~
+calhar~|~1220~|~v~|~~|~to agree~|~
+calhar~|~1220~|~v~|~~|~to fit~|~
+calhar~|~1220~|~v~|~~|~to happen~|~
+recomendar~|~1218~|~v~|~~|~to advise~|~
+recomendar~|~1218~|~v~|~~|~to recommend~|~
+recomendar~|~1218~|~v~|~~|~commend~|~
+conduzindo~|~1216~|~v~|~~|~gerund of conduzir~|~
+vença~|~1215~|~v~|~~|~first-~|~
+vença~|~1215~|~v~|~~|~third-person singular subjunctive present of vencer~|~
+transmitindo~|~1213~|~v~|~~|~gerund of transmitir~|~
+iluminado~|~1212~|~v~|~~|~past participle of iluminar~|~
+abaixado~|~1211~|~v~|~~|~past participle of abaixar~|~
+iluminar~|~1211~|~v~|~~|~to enlighten~|~
+iluminar~|~1211~|~v~|~~|~to illuminate~|~
+contribuir~|~1208~|~v~|~~|~to contribute~|~
+contribuir~|~1208~|~v~|~~|~to subscribe~|~
+vasculhar~|~1202~|~v~|~~|~to scour (search an area thoroughly)~|~
+marchar~|~1201~|~v~|~~|~to march~|~
+marcando~|~1201~|~v~|~~|~gerund of marcar~|~
+reservar~|~1199~|~v~|~~|~to reserve (to book in advance)~|~
+reservar~|~1199~|~v~|~~|~to reserve (to keep in store for future or special use)~|~
+estender~|~1195~|~v~|~~|~to extend~|~
+estender~|~1195~|~v~|~~|~broaden~|~
+estender~|~1195~|~v~|~~|~widen~|~
+estender~|~1195~|~v~|~~|~to spread~|~
+rejeitar~|~1189~|~v~|~~|~to reject a transplanted organ~|~
+rejeitar~|~1189~|~v~|~~|~to despise (to regard with contempt or scorn)~|~
+rejeitar~|~1189~|~v~|~~|~to disapprove (to refuse to approve)~|~
+rejeitar~|~1189~|~v~|~~|~to reject (to refuse to accept)~|~
+fritar~|~1188~|~v~|~~|~to fry~|~
+afiado~|~1187~|~v~|~~|~past participle of afiar~|~
+espiar~|~1186~|~v~|~~|~to peek; to peep~|~
+espiar~|~1186~|~v~|~~|~to spy (to act as a spy)~|~
+incriminar~|~1180~|~v~|~~|~to incriminate (to accuse or bring criminal charges against)~|~
+pertencer~|~1175~|~v~|~~|~to belong~|~
+lançando~|~1172~|~v~|~~|~gerund of lançar~|~
+pirar~|~1162~|~v~|~~|~to go nuts; to become crazy~|~
+solucionar~|~1148~|~v~|~~|~to solve (to find an answer or solution)~|~
+vazando~|~1148~|~v~|~~|~gerund of vazar~|~
+improvisar~|~1146~|~v~|~~|~to improvise (to make something up or invent it as one goes on)~|~
+descontar~|~1144~|~v~|~~|~to discount~|~
+escovar~|~1136~|~v~|~~|~to brush~|~
+escovar~|~1136~|~v~|~~|~sweep~|~
+raspar~|~1135~|~v~|~~|~to graze (to touch lightly in passing)~|~
+raspar~|~1135~|~v~|~~|~to scrape off (to remove something by scraping)~|~
+raspar~|~1135~|~v~|~~|~to scrape (to draw a sharp object along a surface)~|~
+sufocando~|~1132~|~v~|~~|~gerund of sufocar~|~
+inspirar~|~1129~|~v~|~~|~to inhale~|~
+inspirar~|~1129~|~v~|~~|~to inspire~|~
+arrombar~|~1129~|~v~|~~|~to batter (to break down a door or other barrier)~|~
+arrombar~|~1129~|~v~|~~|~to enter (in a house, a room, etc.)~|~
+subornar~|~1124~|~v~|~~|~to bribe~|~
+disparando~|~1122~|~v~|~~|~gerund of disparar~|~
+suspender~|~1119~|~v~|~~|~to suspend (to halt something temporarily)~|~
+suspender~|~1119~|~v~|~~|~to suspend; to hang~|~
+protestar~|~1114~|~v~|~~|~to protest (to make a strong objection)~|~
+envenenar~|~1114~|~v~|~~|~to soup up (a car)~|~
+envenenar~|~1114~|~v~|~~|~to poison~|~
+varrer~|~1110~|~v~|~~|~to scan (to examine sequentially, part by part)~|~
+varrer~|~1110~|~v~|~~|~to devastate or expel something completely and quickly~|~
+varrer~|~1110~|~v~|~~|~to sweep (to search a place methodically)~|~
+varrer~|~1110~|~v~|~~|~to sweep (to clean (a floor, etc) using a broom)~|~
+sobrar~|~1110~|~v~|~~|~to remain~|~
+sobrar~|~1110~|~v~|~~|~be left~|~
+abusar~|~1094~|~v~|~~|~to abuse~|~
+abusar~|~1094~|~v~|~~|~to insult~|~
+experimentando~|~1093~|~v~|~~|~gerund of experimentar~|~
+redimir~|~1089~|~v~|~~|~to redeem~|~
+aplaudir~|~1089~|~v~|~~|~applaud (to express approval by clapping)~|~
+aplaudir~|~1089~|~v~|~~|~applaud (to praise, or express approval by words)~|~
+comportando~|~1088~|~v~|~~|~gerund of comportar~|~
+socar~|~1088~|~v~|~~|~to punch; to box (strike with the fists)~|~
+elevar~|~1088~|~v~|~~|~to put on a pedestal (to hold in very high esteem)~|~
+elevar~|~1088~|~v~|~~|~to increase (to make a value or quantity larger)~|~
+elevar~|~1088~|~v~|~~|~to raise; to lift (to bring or take upwards)~|~
+produzindo~|~1086~|~v~|~~|~gerund of produzir~|~
+explorando~|~1083~|~v~|~~|~gerund of explorar~|~
+pronunciar~|~1083~|~v~|~~|~to pronounce~|~
+captando~|~1082~|~v~|~~|~gerund of captar~|~
+trapacear~|~1082~|~v~|~~|~to cheat (to violate rules to gain advantage)~|~
+cultivar~|~1078~|~v~|~~|~to cultivate; to grow (plants, etc.)~|~
+chorão~|~1076~|~v~|~~|~obsolete form of choram~|~
+sabotar~|~1064~|~v~|~~|~to sabotage (to deliberately destroy something to prevent success)~|~
+formei~|~1060~|~v~|~~|~first-person singular preterite indicative form of formar~|~
+relacionar~|~1057~|~v~|~~|~to relate~|~
+batizado~|~1050~|~v~|~~|~past participle of batizar~|~
+assar~|~1050~|~v~|~~|~to bake~|~
+assar~|~1050~|~v~|~~|~to roast~|~
+presumir~|~1048~|~v~|~~|~to presume~|~
+presumir~|~1048~|~v~|~~|~assume~|~
+examinando~|~1039~|~v~|~~|~gerund of examinar~|~
+apelar~|~1035~|~v~|~~|~to appeal~|~
+piscando~|~1031~|~v~|~~|~gerund of piscar~|~
+reunindo~|~1030~|~v~|~~|~gerund of reunir~|~
+rastejar~|~1029~|~v~|~~|~to crawl~|~
+rastejar~|~1029~|~v~|~~|~to creep (move slowly with the abdomen close to the ground)~|~
+rastejar~|~1029~|~v~|~~|~to track (follow the tracks of)~|~
+adorado~|~1010~|~v~|~~|~past participle of adorar~|~
+pô~|~1009~|~v~|~~|~eye dialect of pôr~|~
+acionar~|~1009~|~v~|~~|~to action~|~
+acionar~|~1009~|~v~|~~|~to activate~|~
+acionar~|~1009~|~v~|~~|~to apply (brakes)~|~
+anular~|~1007~|~v~|~~|~to annul~|~
+anular~|~1007~|~v~|~~|~repeal~|~
+anular~|~1007~|~v~|~~|~revoke~|~
+anular~|~1007~|~v~|~~|~to cancel~|~
+desconfiado~|~1007~|~v~|~~|~past participle of desconfiar~|~
+travar~|~1005~|~v~|~~|~to arrest~|~
+travar~|~1005~|~v~|~~|~to brake~|~
+finalizar~|~1002~|~v~|~~|~to score after arriving near the goal~|~
+finalizar~|~1002~|~v~|~~|~to finalise (to finish or complete)~|~
+reduzido~|~1000~|~v~|~~|~past participle of reduzir~|~
+desativar~|~1000~|~v~|~~|~to deactivate~|~
+desativar~|~1000~|~v~|~~|~to disable~|~
+estrangular~|~1000~|~v~|~~|~to strangle~|~
+recriar~|~998~|~v~|~~|~to recreate~|~
+chantagear~|~997~|~v~|~~|~to blackmail (to extort by threatening with injury other than bodily harm)~|~
+flutuar~|~996~|~v~|~~|~to float~|~
+flutuar~|~996~|~v~|~~|~to fluctuate~|~
+consumir~|~990~|~v~|~~|~to consume~|~
+aturar~|~990~|~v~|~~|~to endure~|~
+aturar~|~990~|~v~|~~|~suffer~|~
+aturar~|~990~|~v~|~~|~tolerate~|~
+liderando~|~983~|~v~|~~|~gerund of liderar~|~
+selar~|~974~|~v~|~~|~to saddle~|~
+selar~|~974~|~v~|~~|~to seal; to stamp~|~
+comparando~|~971~|~v~|~~|~gerund of comparar~|~
+aguentando~|~970~|~v~|~~|~gerund of aguentar~|~
+exercitar~|~969~|~v~|~~|~to work out (perform physical exercise)~|~
+exercitar~|~969~|~v~|~~|~to exercise (to perform an activity designed to hone a skill)~|~
+infiltrar~|~968~|~v~|~~|~to infiltrate~|~
+deslizar~|~968~|~v~|~~|~to slip; to slide~|~
+sufocar~|~968~|~v~|~~|~to choke~|~
+sufocar~|~968~|~v~|~~|~stifle~|~
+sufocar~|~968~|~v~|~~|~to suffocate~|~
+fluir~|~967~|~v~|~~|~to flow~|~
+fluir~|~967~|~v~|~~|~run~|~
+fluir~|~967~|~v~|~~|~to pour~|~
+educar~|~962~|~v~|~~|~to educate~|~
+retirando~|~961~|~v~|~~|~gerund of retirar~|~
+acomodar~|~957~|~v~|~~|~to accommodate~|~
+acomodar~|~957~|~v~|~~|~to settle~|~
+acomodar~|~957~|~v~|~~|~resolve (a dispute)~|~
+confiando~|~957~|~v~|~~|~gerund of confiar~|~
+sacudir~|~954~|~v~|~~|~to flip~|~
+sacudir~|~954~|~v~|~~|~toss~|~
+sacudir~|~954~|~v~|~~|~to shake~|~
+sacudir~|~954~|~v~|~~|~jolt~|~
+sacudir~|~954~|~v~|~~|~jar~|~
+sacudir~|~954~|~v~|~~|~jog~|~

@@ -1,15 +1,14 @@
 package edu.wit.mobileapp.languagetravelapp;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import java.util.Objects;
 
 
 public class VerbConjugationFragment extends Fragment {
@@ -29,6 +28,7 @@ public class VerbConjugationFragment extends Fragment {
     private Boolean singular;
     private String question;
     private String answer;
+    private EditText editText;
 
 //    private OnFragmentInteractionListener mListener;
 
@@ -84,6 +84,23 @@ public class VerbConjugationFragment extends Fragment {
 
         TextView singularOrPluralTV = view.findViewById(R.id.sing_or_plur_to_conjugate);
         singularOrPluralTV.setText(singular ? "Singular" : "Plural");
+
+        editText = view.findViewById(R.id.user_verb_response);
+
+        view.findViewById(R.id.next_verb).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String input = editText.getText().toString();
+                ((VerbConjugationActivity) Objects.requireNonNull(getHost())).goToSolution(input);
+            }
+        });
+
+        view.findViewById(R.id.prev_verb).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ((VerbConjugationActivity) Objects.requireNonNull(getHost())).goToPrevious();
+            }
+        });
 
 
         return view;
