@@ -1,8 +1,10 @@
 package edu.wit.mobileapp.languagetravelapp;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
+import android.preference.PreferenceManager;
 import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -26,7 +28,14 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.lang.reflect.Array;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Stack;
 
 
@@ -41,6 +50,14 @@ public class CrosswordActivity extends AppCompatActivity {
     private MenuItem checkWordAlwaysItemView;
     private RootNode[] acrossRoots;
     private RootNode[] downRoots;
+    private VerbForm[] verbForms;
+    private boolean portugal;
+//    private char[] letters = new char[]{
+//            ' ', 'A', ' ', 'B', ' ',
+//            'C', 'D', 'E', 'F', 'G',
+//            ' ', 'H', 'I', 'J', ' ',
+//            'K', 'L', 'M', 'N', 'O',
+//            ' ', 'P', ' ', 'R', ' '};
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -78,6 +95,7 @@ public class CrosswordActivity extends AppCompatActivity {
 
             }
         } else {
+            fillCrossword();
 //            char[] letters = new char[crosswordGrid.length * crosswordGrid.length];
 //            for (int i = 0; i < crosswordGrid.length; i++) {
 //                for (int j = 0; j < crosswordGrid.length; j++) {
@@ -85,21 +103,21 @@ public class CrosswordActivity extends AppCompatActivity {
 //                }
 //            }
 
-            char[] letters = new char[]{
-                    ' ', 'A', ' ', 'B', ' ',
-                    'C', 'D', 'E', 'F', 'G',
-                    ' ', 'H', 'I', 'J', ' ',
-                    'K', 'L', 'M', 'N', 'O',
-                    ' ', 'P', ' ', 'R', ' '};
+//            char[] letters = new char[]{
+//                    ' ', 'A', ' ', 'B', ' ',
+//                    'C', 'D', 'E', 'F', 'G',
+//                    ' ', 'H', 'I', 'J', ' ',
+//                    'K', 'L', 'M', 'N', 'O',
+//                    ' ', 'P', ' ', 'R', ' '};
 
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction transaction = fm.beginTransaction();
-                crosswordFragment = new CrosswordFragment();
-                Bundle bundle = new Bundle();
-                bundle.putCharArray(CrosswordFragment.CROSSWORD_SOLUTION, letters);
-                crosswordFragment.setArguments(bundle);
-                transaction.replace(R.id.container, crosswordFragment);
-                transaction.commit();
+//            FragmentManager fm = getSupportFragmentManager();
+//            FragmentTransaction transaction = fm.beginTransaction();
+//            crosswordFragment = new CrosswordFragment();
+//            Bundle bundle = new Bundle();
+//            bundle.putCharArray(CrosswordFragment.CROSSWORD_SOLUTION, letters);
+//            crosswordFragment.setArguments(bundle);
+//            transaction.replace(R.id.container, crosswordFragment);
+//            transaction.commit();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -123,11 +141,11 @@ public class CrosswordActivity extends AppCompatActivity {
         navigationView.getMenu().getItem(5).setChecked(true);
 
         int[] crosswordFromDB = new int[]{
-            0, 0, 0, 1, 0, 0, 0, 0, 0,
-            0, 1, 0, 1, 0, 1, 0, 1, 0,
-            0, 0, 0, 0, 0, 0, 0, 0, 0,
-            0, 1, 0, 1, 0, 1, 1, 1, 0,
-            0, 1, 0, 0, 0
+                0, 0, 0, 1, 0, 0, 0, 0, 0,
+                0, 1, 0, 1, 0, 1, 0, 1, 0,
+                0, 0, 0, 0, 0, 0, 0, 0, 0,
+                0, 1, 0, 1, 0, 1, 1, 1, 0,
+                0, 1, 0, 0, 0
         };
 
         int crosswordDim = (int) Math.sqrt(crosswordFromDB.length * 2 - 1);
@@ -202,7 +220,6 @@ public class CrosswordActivity extends AppCompatActivity {
             rootNode.setIndex(WordOrientation.DOWN, rootNode.getIndex(WordOrientation.DOWN) + acrossRoots.length);
         }
         wordCount = acrossRoots.length + downRoots.length;
-        prioritizedWords = getPrioritizedWordsByLength(wordLengthUsed);
 
 //        char[] letters = new char[crosswordDim * crosswordDim];
 //        for (int i = 0; i < crosswordGrid.length; i++) {
@@ -211,13 +228,101 @@ public class CrosswordActivity extends AppCompatActivity {
 //            }
 //        }
 
-        if(savedInstanceState == null){
+
+        ArrayList<VerbForm> verbFormsArrayList = new ArrayList<>();
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (prefs.getBoolean("present", false)) {
+            verbFormsArrayList.add(VerbForm.PRES_IND);
+        }
+        if (prefs.getBoolean("preterite", false)) {
+            verbFormsArrayList.add(VerbForm.PRET_IND);
+        }
+        if (prefs.getBoolean("imperfect", false)) {
+            verbFormsArrayList.add(VerbForm.IMP_IND);
+        }
+        if (prefs.getBoolean("simple_pluperfect", false)) {
+            verbFormsArrayList.add(VerbForm.SIMP_PLUP_IND);
+        }
+        if (prefs.getBoolean("future", false)) {
+            verbFormsArrayList.add(VerbForm.FUT_IND);
+        }
+        if (prefs.getBoolean("conditional", false)) {
+            verbFormsArrayList.add(VerbForm.COND_IND);
+        }
+        if (prefs.getBoolean("present_perfect", false)) {
+            verbFormsArrayList.add(VerbForm.PRES_PERF);
+        }
+        if (prefs.getBoolean("pluperfect", false)) {
+            verbFormsArrayList.add(VerbForm.PLUP);
+        }
+        if (prefs.getBoolean("future_perfect", false)) {
+            verbFormsArrayList.add(VerbForm.FUT_PERF);
+        }
+        if (prefs.getBoolean("present_progressive", false)) {
+            verbFormsArrayList.add(VerbForm.PRES_PROG);
+        }
+        if (prefs.getBoolean("preterite_progressive", false)) {
+            verbFormsArrayList.add(VerbForm.PRET_PROG);
+        }
+        if (prefs.getBoolean("imperfect_progressive", false)) {
+            verbFormsArrayList.add(VerbForm.IMP_PROG);
+        }
+        if (prefs.getBoolean("simple_pluperfect_progressive", false)) {
+            verbFormsArrayList.add(VerbForm.SIMP_PLUP_PROG);
+        }
+        if (prefs.getBoolean("future_progressive", false)) {
+            verbFormsArrayList.add(VerbForm.FUT_PROG);
+        }
+        if (prefs.getBoolean("conditional_progressive", false)) {
+            verbFormsArrayList.add(VerbForm.COND_PROG);
+        }
+        if (prefs.getBoolean("present_perfect_progressive", false)) {
+            verbFormsArrayList.add(VerbForm.PRES_PERF_PROG);
+        }
+        if (prefs.getBoolean("pluperfect_progressive", false)) {
+            verbFormsArrayList.add(VerbForm.PLUP_PROG);
+        }
+        if (prefs.getBoolean("future_perfect_progressive", false)) {
+            verbFormsArrayList.add(VerbForm.FUT_PERF_PROG);
+        }
+        if (prefs.getBoolean("conditional_perfect_progressive", false)) {
+            verbFormsArrayList.add(VerbForm.COND_PERF_PROG);
+        }
+        if (prefs.getBoolean("present_subjunctive", false)) {
+            verbFormsArrayList.add(VerbForm.PRES_SUBJ);
+        }
+        if (prefs.getBoolean("present_perfect_subjunctive", false)) {
+            verbFormsArrayList.add(VerbForm.PRES_PERF_SUBJ);
+        }
+        if (prefs.getBoolean("imperfect_subjunctive", false)) {
+            verbFormsArrayList.add(VerbForm.IMP_SUBJ);
+        }
+        if (prefs.getBoolean("pluperfect_subjunctive", false)) {
+            verbFormsArrayList.add(VerbForm.PLUP_SUBJ);
+        }
+        if (prefs.getBoolean("future_subjunctive", false)) {
+            verbFormsArrayList.add(VerbForm.FUT_SUBJ);
+        }
+        if (prefs.getBoolean("future_perfect_subjunctive", false)) {
+            verbFormsArrayList.add(VerbForm.FUT_PERF_SUBJ);
+        }
+        portugal = Objects.requireNonNull(prefs.getString("country", "")).equals("portugal");
+
+        verbForms = new VerbForm[verbFormsArrayList.size()];
+        for (int i = 0; i < verbFormsArrayList.size(); i++) {
+            verbForms[i] = verbFormsArrayList.get(i);
+        }
+        Log.v("blahstuff", "" + verbForms.length);
+
+        if (savedInstanceState == null) {
             FragmentManager fm = getSupportFragmentManager();
             FragmentTransaction transaction = fm.beginTransaction();
             Fragment loadingFragment = new LoadingFragment();
             transaction.replace(R.id.container, loadingFragment);
             transaction.commit();
         }
+
+        prioritizedWords = getPrioritizedWordsByLength(wordLengthUsed);
 
     }
 
@@ -228,13 +333,13 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
 
-
     // tries to find the associated CellNode for the WhiteSquare. If it doesn't exist,
     // create a new one and return that instead. Also connects previous CellNode
     private CellNode getOrCreateCellNode(int i, int j, CellNode left, CellNode up) {
         CellNode cellNode = crosswordGrid[i][j];
         if (cellNode == null) {
             cellNode = new CellNode(left, up, null);
+            crosswordGrid[i][j] = cellNode;
         } else {
             cellNode.setPrev(left, up);
         }
@@ -247,9 +352,11 @@ public class CrosswordActivity extends AppCompatActivity {
         CellNode cellNode = crosswordGrid[i][j];
         if (cellNode == null) {
             cellNode = new RootNode(left, up, null, wordOrientation, index, nextNumber++);
+            crosswordGrid[i][j] = cellNode;
         } else {
             if (!(cellNode instanceof RootNode)) {
                 cellNode = new RootNode(cellNode, wordOrientation, index, nextNumber++);
+                crosswordGrid[i][j] = cellNode;
             } else {
                 ((RootNode) cellNode).setIndex(wordOrientation, index);
             }
@@ -259,19 +366,120 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
 
-
     private String[][] getPrioritizedWordsByLength(boolean[] wordLengthUsed) {
         String[][] prioritizedWords = new String[wordLengthUsed.length][];
+        ArrayList[] lists = new ArrayList[wordLengthUsed.length];
         for (int i = 0; i < wordLengthUsed.length; i++) {
             if (wordLengthUsed[i]) {
-                // prioritizedWords[i] = access db and get the words of length i + 1
+                lists[i] = new ArrayList<String>();
             }
         }
-        prioritizedWords = new String[][]{
-            null,
-            {"ab", "or", "br", "bz", "zr", "za", "az"},
-            {"bro", "arb", "bar", "zob", "bor", "rob", "zab"}
-        };
+        InputStream is = getResources().openRawResource(R.raw.words);
+        BufferedReader reader = new BufferedReader(
+                new InputStreamReader(is, Charset.forName("UTF-8"))
+        );
+        String line;
+        try {
+            ArrayList<String> verbsConjugated = new ArrayList<>();
+            while ((line = reader.readLine()) != null) {
+                String[] lineData = line.split("\\|");
+                String word = lineData[4].replaceAll(" ", "").replaceAll("-", "");
+                int wordLength = word.length();
+                int wordLengthMinusOne = wordLength - 1;
+                int maxWordLength = wordLengthUsed.length;
+                if (wordLength > 0 && wordLengthMinusOne < maxWordLength && wordLengthUsed[wordLengthMinusOne] && !lists[wordLengthMinusOne].contains(word)) {
+                    lists[wordLengthMinusOne].add(word);
+                }
+                if (lineData[2].equals("v")) {
+                    if (!verbsConjugated.contains(word)) {
+                        verbsConjugated.add(word);
+                        String[][] conjugatedVerbs = Conjugator.conjugate(lineData[4], verbForms, portugal);
+                        if (conjugatedVerbs != null) {
+                            for (String[] fullConjugation : conjugatedVerbs) {
+                                if (fullConjugation != null && fullConjugation.length == 6) {
+                                    conjugateLoop:
+                                    for (int i = 0; i < 6; i++) {
+                                        String conjugated = fullConjugation[i];
+                                        if (conjugated != null) {
+                                            int conjugatedLength = conjugated.length();
+                                            int conjugatedLengthMinusOne = conjugatedLength - 1;
+                                            if (conjugatedLength > 0) {
+                                                if (conjugatedLengthMinusOne < maxWordLength) {
+                                                    if (wordLengthUsed[conjugatedLengthMinusOne]) {
+                                                        lists[conjugatedLengthMinusOne].add(conjugated);
+                                                    }
+                                                    int conjugatedLengthPlusOne = conjugatedLength + 1;
+                                                    int conjugatedLengthPlusTwo = conjugatedLength + 2;
+                                                    if (conjugatedLengthPlusTwo < maxWordLength) {
+                                                        if (wordLengthUsed[conjugatedLengthPlusOne]) {
+                                                            switch (i) {
+                                                                case 0:
+                                                                    lists[conjugatedLengthPlusOne].add("eu" + conjugated);
+                                                                    Log.v("blahstuff", "eu " + conjugated + ": " + word);
+                                                                    continue conjugateLoop;
+                                                                case 1:
+                                                                    lists[conjugatedLengthPlusOne].add("tu" + conjugated);
+                                                                    continue conjugateLoop;
+                                                            }
+                                                        }
+                                                        int conjugatedLengthPlusThree = conjugatedLength + 3;
+                                                        if (conjugatedLengthPlusThree < maxWordLength) {
+                                                            if (wordLengthUsed[conjugatedLengthPlusTwo]) {
+                                                                switch (i) {
+                                                                    case 2:
+                                                                        lists[conjugatedLengthPlusTwo].add("ele" + conjugated);
+                                                                        lists[conjugatedLengthPlusTwo].add("ela" + conjugated);
+                                                                    case 3:
+                                                                        lists[conjugatedLengthPlusTwo].add("nós" + conjugated);
+                                                                        continue conjugateLoop;
+                                                                    case 4:
+                                                                        lists[conjugatedLengthPlusTwo].add("vós" + conjugated);
+                                                                }
+                                                            }
+                                                            int conjugatedLengthPlusFour = conjugatedLength + 4;
+                                                            if (conjugatedLengthPlusFour < maxWordLength) {
+                                                                if (wordLengthUsed[conjugatedLengthPlusThree]) {
+                                                                    switch (i) {
+                                                                        case 2:
+                                                                            lists[conjugatedLengthPlusThree].add("você" + conjugated);
+                                                                            continue conjugateLoop;
+                                                                        case 5:
+                                                                            lists[conjugatedLengthPlusThree].add("eles" + conjugated);
+                                                                            lists[conjugatedLengthPlusThree].add("elas" + conjugated);
+                                                                            continue conjugateLoop;
+                                                                    }
+                                                                }
+                                                                int conjugatedLengthPlusFive = conjugatedLength + 5;
+                                                                if (conjugatedLengthPlusFive < maxWordLength && wordLengthUsed[conjugatedLengthPlusFour]) {
+                                                                    lists[conjugatedLengthPlusFour].add("vocês" + conjugated);
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } catch (IOException e) {
+            Log.v("myapp", "error reading file");
+        }
+        for (int i = 0; i < lists.length; i++) {
+            if (wordLengthUsed[i]) {
+                prioritizedWords[i] = new String[lists[i].size()];
+                for (int j = 0; j < lists[i].size(); j++) {
+                    if (j == 0) {
+                        Log.v("myapp", "hey, " + (i + 1) + ": " + lists[i].get(j));
+                    }
+                    prioritizedWords[i][j] = (String) lists[i].get(j);
+                }
+            }
+        }
         return prioritizedWords;
     }
 
@@ -306,6 +514,30 @@ public class CrosswordActivity extends AppCompatActivity {
         for (RootNode root : downRoots) {
             root.finalizeSolution();
         }
+        convertNodesToCharArray();
+    }
+
+    private void convertNodesToCharArray() {
+        int gridSize = crosswordGrid.length;
+        char[] letters = new char[gridSize * gridSize];
+        for (int i = 0; i < gridSize; i++) {
+            for (int j = 0; j < gridSize; j++) {
+                if (crosswordGrid[i][j] == null) {
+                    letters[i * gridSize + j] = ' ';
+                } else {
+                    letters[i * gridSize + j] = crosswordGrid[i][j].getSolutionLetter();
+                    Log.v("myapp", "hii" + (int) crosswordGrid[i][j].getSolutionLetter());
+                }
+            }
+        }
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction transaction = fm.beginTransaction();
+        crosswordFragment = new CrosswordFragment();
+        Bundle bundle = new Bundle();
+        bundle.putCharArray(CrosswordFragment.CROSSWORD_SOLUTION, letters);
+        crosswordFragment.setArguments(bundle);
+        transaction.replace(R.id.container, crosswordFragment);
+        transaction.commit();
     }
 
     private String getNextWordFromPriorityList(int wordLength, String[] selectedWords) {
