@@ -7,25 +7,29 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link VerbConjugationAnswerFragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link VerbConjugationAnswerFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class VerbConjugationAnswerFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    public static final String VERB_TYPE = "verbType";
+    public static final String ENGLISH_VERB = "englishVerb";
+    public static final String PORTUGUESE_VERB = "portugueseVerb";
+    public static final String PERSON = "person";
+    public static final String SINGULAR = "singular";
+    public static final String QUESTION = "question";
+    public static final String ANSWER = "answer";
+    public static final String INPUT = "input";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    private String verbType;
+    private String englishVerb;
+    private String portugueseVerb;
+    private String person;
+    private Boolean singular;
+    private String question;
+    private String answer;
+    private String input;
 
 //    private OnFragmentInteractionListener mListener;
 
@@ -33,20 +37,19 @@ public class VerbConjugationAnswerFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment VerbConjugationAnswerFragment.
-     */
+
     // TODO: Rename and change types and number of parameters
-    public static VerbConjugationAnswerFragment newInstance(String param1, String param2) {
+    public static VerbConjugationAnswerFragment newInstance(String verbType, String englishVerb, String portugueseVerb, String person, boolean singular, String question, String answer, String input) {
         VerbConjugationAnswerFragment fragment = new VerbConjugationAnswerFragment();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putString(VERB_TYPE, verbType);
+        args.putString(ENGLISH_VERB, englishVerb);
+        args.putString(PORTUGUESE_VERB, portugueseVerb);
+        args.putString(PERSON, person);
+        args.putBoolean(SINGULAR, singular);
+        args.putString(QUESTION, question);
+        args.putString(ANSWER, answer);
+        args.putString(INPUT, input);
         fragment.setArguments(args);
         return fragment;
     }
@@ -55,8 +58,14 @@ public class VerbConjugationAnswerFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            verbType = getArguments().getString(VERB_TYPE);
+            englishVerb = getArguments().getString(ENGLISH_VERB);
+            portugueseVerb = getArguments().getString(PORTUGUESE_VERB);
+            person = getArguments().getString(PERSON);
+            singular = getArguments().getBoolean(SINGULAR);
+            question = getArguments().getString(QUESTION);
+            answer = getArguments().getString(ANSWER);
+            input = getArguments().getString(INPUT);
         }
     }
 
@@ -64,7 +73,38 @@ public class VerbConjugationAnswerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_verb_conjugation_answer, container, false);
+        View view = inflater.inflate(R.layout.fragment_verb_conjugation, container, false);
+
+        TextView questionTV = view.findViewById(R.id.verb_and_form_to_conjugate);
+        questionTV.setText(question);
+
+        TextView portugueseVerbTV = view.findViewById(R.id.verb_to_conjugate);
+        portugueseVerbTV.setText(portugueseVerb);
+
+        TextView verbTypeTV = view.findViewById(R.id.verb_form_to_conjugate);
+        verbTypeTV.setText(verbType);
+
+        TextView personTV = view.findViewById(R.id.person_to_conjugate);
+        personTV.setText(person);
+
+        TextView singularOrPluralTV = view.findViewById(R.id.sing_or_plur_to_conjugate);
+        singularOrPluralTV.setText(singular ? "Singular" : "Plural");
+
+        TextView answerTV = view.findViewById(R.id.verb_conjugation_solution);
+        answerTV.setText(answer);
+
+        TextView userMessageTV = view.findViewById(R.id.user_message);
+        if(input.toLowerCase().equals(answer.toLowerCase())){
+            userMessageTV.setText("You got it!");
+        }else{
+            userMessageTV.setText("The correct answer is: "+answer+"/n Your answer was: "+input);
+        }
+
+
+        return view;
+
+
+
     }
 
 //    // TODO: Rename method, update argument and hook method into UI event
