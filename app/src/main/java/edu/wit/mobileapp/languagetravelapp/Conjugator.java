@@ -6,50 +6,50 @@ public class Conjugator {
 
     public static String[][] conjugate(String infinitive, VerbForm[] verbForms, boolean portugal) {
         infinitive = infinitive.toLowerCase();
-        int infLen = infinitive.length();
+        int verbLength = infinitive.length();
         String[][] verbsToReturn = null;
-        if (!infinitive.contains(" ") && !infinitive.contains("-") && !infinitive.contains("+") && infLen > 1 && verbForms != null && verbForms.length > 0 && infinitive.charAt(infLen - 1) == 'r') {
-            String ending = infinitive.substring(infLen - 2, infLen);
-            String stem = infinitive.substring(0, infLen - 2);
+        if (!infinitive.contains(" ") && !infinitive.contains("-") && !infinitive.contains("+") && verbLength > 1 && verbForms != null && verbForms.length > 0 && infinitive.charAt(verbLength - 1) == 'r') {
+            String ending = infinitive.substring(verbLength - 2, verbLength);
+            String stem = infinitive.substring(0, verbLength - 2);
             String eAndIStem = stem;
             String aAndOStem = stem;
-            if (infLen > 2) {
-                switch (infinitive.substring(infLen - 3, infLen)) {
+            if (verbLength > 2) {
+                switch (infinitive.substring(verbLength - 3, verbLength)) {
                     case "car":
-                        eAndIStem = infinitive.substring(0, infLen - 3) + "qu";
+                        eAndIStem = infinitive.substring(0, verbLength - 3) + "qu";
                         break;
                     case "çar":
-                        eAndIStem = infinitive.substring(0, infLen - 3) + "c";
+                        eAndIStem = infinitive.substring(0, verbLength - 3) + "c";
                         break;
                     case "gar":
-                        eAndIStem = infinitive.substring(0, infLen - 3) + "gu";
+                        eAndIStem = infinitive.substring(0, verbLength - 3) + "gu";
                         break;
                     case "cer":
-                        aAndOStem = infinitive.substring(0, infLen - 3) + "ç";
+                        aAndOStem = infinitive.substring(0, verbLength - 3) + "ç";
                         break;
                     case "ger":
                     case "gir":
-                        aAndOStem = infinitive.substring(0, infLen - 3) + "j";
+                        aAndOStem = infinitive.substring(0, verbLength - 3) + "j";
                         break;
                 }
-                if (infLen > 3) {
-                    switch (infinitive.substring(infLen - 4, infLen)) {
+                if (verbLength > 3) {
+                    switch (infinitive.substring(verbLength - 4, verbLength)) {
                         case "guir":
                         case "guer":
-                            aAndOStem = infinitive.substring(0, infLen - 3);
+                            aAndOStem = infinitive.substring(0, verbLength - 3);
                             break;
                     }
 
                 }
             }
             Log.v("conjugationdebugging", infinitive + ", eAndIStem: " + eAndIStem + ", aAndOStem: " + aAndOStem);
-            if (ending.equals("er") && infLen > 2) {
-                if (infinitive.charAt(infLen - 3) == 'c') {
-                    eAndIStem = infinitive.substring(0, infLen - 3) + "qu";
-                } else if (infinitive.charAt(infLen - 3) == 'ç') {
-                    eAndIStem = infinitive.substring(0, infLen - 3) + "c";
-                } else if (infinitive.charAt(infLen - 3) == 'g') {
-                    eAndIStem = infinitive.substring(0, infLen - 3) + "gu";
+            if (ending.equals("er") && verbLength > 2) {
+                if (infinitive.charAt(verbLength - 3) == 'c') {
+                    eAndIStem = infinitive.substring(0, verbLength - 3) + "qu";
+                } else if (infinitive.charAt(verbLength - 3) == 'ç') {
+                    eAndIStem = infinitive.substring(0, verbLength - 3) + "c";
+                } else if (infinitive.charAt(verbLength - 3) == 'g') {
+                    eAndIStem = infinitive.substring(0, verbLength - 3) + "gu";
                 }
             }
             String specialStem = stem;
@@ -334,7 +334,7 @@ public class Conjugator {
                             if (participle != null) {
                                 verbsToReturn[i] = new String[]{"tiver " + participle, "tiveres " + participle, "tiver " + participle, "tivermos " + participle, "tiverdes " + participle, "tiveram " + participle};
                             }
-                        break;
+                            break;
                     }
                 }
             }
@@ -347,6 +347,67 @@ public class Conjugator {
             }
         }
         return verbsToReturn;
+    }
+
+    private static String getVerbType(String infinitive){
+        infinitive = infinitive.toLowerCase();
+
+        String[] irregularVerbs = {
+                "dar",
+                "dizer",
+                "estar",
+                "fazer",
+                "haver",
+                "ir",
+                "pôr",
+                "poder",
+                "querer",
+                "saber",
+                "ser",
+                "ter",
+                "trazer",
+                "ver",
+                "vir",
+                "crer",
+                "ler",
+                "medir",
+                "ouvir",
+                "pedir",
+                "perder",
+                "rir",
+                "valer",
+                "subir"
+        };
+
+        for(String verbs : irregularVerbs){
+            if(infinitive.equals(verbs)){
+                return "Irregular";
+            }
+        }
+        int verbLength = infinitive.length();
+        if(isValidVerb(infinitive) && verbLength>1){
+            String ending = infinitive.substring(verbLength - 2, verbLength);
+            switch (ending){
+                case "ar":
+                    return "ar";
+                case "er":
+                    return "er";
+                case "ir":
+                    return "ir";
+            }
+        }
+        return null;
+
+
+    }
+
+    private static boolean isValidVerb(String infinitive){
+        infinitive = infinitive.toLowerCase();
+        int verbLength = infinitive.length();
+        if (!infinitive.contains(" ") && !infinitive.contains("-") && !infinitive.contains("+") && verbLength > 1 && infinitive.charAt(verbLength - 1) == 'r'){
+            return true;
+        }
+        return false;
     }
 
     private static void checkForSpecialVerbs(String infinitive, VerbForm[] verbForms, String[][] verbsToReturn) {
@@ -905,11 +966,11 @@ public class Conjugator {
 
     public static String getGerund(String infinitive) {
         infinitive = infinitive.toLowerCase();
-        int infLen = infinitive.length();
-        if (!infinitive.contains(" ") && !infinitive.contains("-") && infLen > 1) {
-            String ending = infinitive.substring(infLen - 2, infLen);
+        int verbLength = infinitive.length();
+        if (!infinitive.contains(" ") && !infinitive.contains("-") && verbLength > 1) {
+            String ending = infinitive.substring(verbLength - 2, verbLength);
             if (ending.equals("ar") || ending.equals("ir") || ending.equals("er")) {
-                return infinitive.substring(0, infLen - 1) + "ndo";
+                return infinitive.substring(0, verbLength - 1) + "ndo";
             } else if (infinitive.toLowerCase().equals("pôr")) {
                 return "pondo";
             }
@@ -977,8 +1038,8 @@ public class Conjugator {
     }
 
     private static String getRegularParticiple(String infinitive) {
-        int infLen = infinitive.length();
-        if (!infinitive.contains(" ") && !infinitive.contains("-") && infLen > 1 &&
+        int verbLength = infinitive.length();
+        if (!infinitive.contains(" ") && !infinitive.contains("-") && verbLength > 1 &&
                 !infinitive.equals("abrir") &&
                 !infinitive.equals("escrever") &&
                 !infinitive.equals("ganhar") &&
@@ -988,11 +1049,11 @@ public class Conjugator {
                 !infinitive.equals("pôr") &&
                 !infinitive.equals("ver") &&
                 !infinitive.equals("dizer")) {
-            String ending = infinitive.substring(infLen - 2, infLen);
+            String ending = infinitive.substring(verbLength - 2, verbLength);
             if (ending.equals("ar")) {
-                return infinitive.substring(0, infLen - 1) + "do";
+                return infinitive.substring(0, verbLength - 1) + "do";
             } else if (ending.equals("ir") || ending.equals("er")) {
-                return infinitive.substring(0, infLen - 2) + "ido";
+                return infinitive.substring(0, verbLength - 2) + "ido";
             }
         }
         return null;

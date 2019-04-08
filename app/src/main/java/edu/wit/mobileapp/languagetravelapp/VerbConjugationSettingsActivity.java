@@ -14,10 +14,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.SeekBar;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 
@@ -131,6 +133,8 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
                 findViewById(R.id.personalInfinitiveCheckbox),
                 findViewById(R.id.gerundCheckbox),
         };
+
+
         SeekBar seekBar = findViewById(R.id.verbFormsSlider);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
@@ -258,6 +262,27 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
 
     public void continueToVerbPractice(View view) {
         Intent intent = new Intent(VerbConjugationSettingsActivity.this, VerbConjugationActivity.class);
+
+        ArrayList<String> checkedVerbforms = new ArrayList<String>();
+        for(int i=0; i<verbFormsCheckBoxes.length; i++){
+            if(verbFormsCheckBoxes[i].isChecked()){
+                checkedVerbforms.add(verbFormsCheckBoxes[i].getText().toString());
+            }
+        }
+        intent.putExtra("VERB_FORMS", checkedVerbforms);
+
+        ArrayList<Boolean> checkedVerbtypes = new ArrayList<Boolean>();
+        for(int i=0; i<verbTypesCheckBoxes.length; i++){
+            if(verbTypesCheckBoxes[i].isChecked()){
+                checkedVerbtypes.add(true);
+            }else {
+                checkedVerbtypes.add(false);
+            }
+        }
+        intent.putExtra("VERB_TYPES", checkedVerbtypes);
+
+        String checkedVerbset = ((RadioButton)findViewById(verbSetRadioGroup.getCheckedRadioButtonId())).getText().toString();
+        intent.putExtra("VERB_SET", checkedVerbset);
         startActivity(intent);
     }
 
