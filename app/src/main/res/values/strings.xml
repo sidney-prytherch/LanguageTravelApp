@@ -185,9 +185,9 @@
         <item>Brazil</item>
     </string-array>
     <string-array name="pref_countries_values">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
+        <item>Portugal</item>
+        <item>France</item>
+        <item>Brazil</item>
     </string-array>
 
     <string name="puzzle_menu_title">Puzzle</string>

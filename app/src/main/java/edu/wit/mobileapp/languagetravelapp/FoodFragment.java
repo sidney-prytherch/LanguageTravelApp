@@ -1,7 +1,9 @@
 package edu.wit.mobileapp.languagetravelapp;
 
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -25,7 +27,7 @@ import java.util.List;
 
 
 public class FoodFragment extends Fragment {
-    private static String TAG = "myApp";
+    private static String TAG = "myFood";
     private ListView listView;
     private TravelListItemAdapter adapter;
     private List<TravelListItem> list = new ArrayList<TravelListItem>();
@@ -51,9 +53,12 @@ public class FoodFragment extends Fragment {
         @Override
         protected String doInBackground(String... params) {
             String result = "";
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+            String Location = prefs.getString("country", "Portugal");
+            Log.v(TAG,Location);
             try {
                 String apiKey = "AIzaSyBk-wLeE9bFj6eaCbmZ0Q7krZrMtBu2rJA";
-                String searchQuery = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=resturant+in+Portugal&fields=formatted_address,name,rating,opening_hours&key="+apiKey;
+                String searchQuery = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=resturant+in+"+ Location + "&fields=formatted_address,name,rating,opening_hours&key="+apiKey;
                 URL url = new URL(searchQuery);
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 InputStream in = new BufferedInputStream(urlConnection.getInputStream());
