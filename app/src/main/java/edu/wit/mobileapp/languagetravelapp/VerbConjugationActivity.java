@@ -2,6 +2,9 @@ package edu.wit.mobileapp.languagetravelapp;
 
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -31,6 +34,24 @@ public class VerbConjugationActivity extends AppCompatActivity {
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
         navigationView.getMenu().getItem(4).setChecked(true);
+
+
+        if (savedInstanceState == null) {
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction transaction = fm.beginTransaction();
+            Fragment verbFragment = new VerbConjugationFragment();
+            Bundle bundle = new Bundle();
+            bundle.putString(VerbConjugationFragment.VERB_TYPE, "Preterite");
+            bundle.putString(VerbConjugationFragment.ENGLISH_VERB, "To Stay");
+            bundle.putString(VerbConjugationFragment.PORTUGUESE_VERB, "Ficar");
+            bundle.putString(VerbConjugationFragment.PERSON, "2nd");
+            bundle.putBoolean(VerbConjugationFragment.SINGULAR, false);
+            bundle.putString(VerbConjugationFragment.QUESTION, "I was");
+            bundle.putString(VerbConjugationFragment.ANSWER, "eu ficou");
+            verbFragment.setArguments(bundle);
+            transaction.replace(R.id.container, verbFragment);
+            transaction.commit();
+        }
     }
 
     @Override
