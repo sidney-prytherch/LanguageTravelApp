@@ -25,6 +25,8 @@
     <string name="quick_button">Setup Quick-Access Button</string>
     <string name="empty" translatable="false"></string>
     <string name="select_crossword_size">Select Crossword Grid Size</string>
+    <string name="the_correct_answer_is">The correct answer is: </string>
+    <string name="you_were_right">You were correct!</string>
 
     <!-- Verb Types -->
     <string name="recommended_verb_forms">Recommended Verb Forms</string>

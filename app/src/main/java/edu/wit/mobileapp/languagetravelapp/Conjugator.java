@@ -5,6 +5,9 @@ import android.util.Log;
 public class Conjugator {
 
     public static String[][] conjugate(String infinitive, VerbForm[] verbForms, boolean portugal) {
+        if (infinitive == null) {
+            return null;
+        }
         infinitive = infinitive.toLowerCase();
         int verbLength = infinitive.length();
         String[][] verbsToReturn = null;
@@ -90,7 +93,6 @@ public class Conjugator {
                         break;
                     case "erguer":
                         specialStem = "erg";
-
                 }
             }
             String participle = getParticiple(infinitive);
@@ -148,8 +150,10 @@ public class Conjugator {
                             switch (ending) {
                                 case "ar":
                                     verbsToReturn[i] = new String[]{specialStem + "o", aAndOStem + "as", aAndOStem + "a", aAndOStem + "amos", aAndOStem + "ais", aAndOStem + "am"};
+                                    break;
                                 case "er":
                                     verbsToReturn[i] = new String[]{specialStem + "o", eAndIStem + "es", eAndIStem + "e", eAndIStem + "emos", eAndIStem + "eis", eAndIStem + "em"};
+                                    break;
                                 case "ir":
                                     verbsToReturn[i] = new String[]{specialStem + "o", eAndIStem + "es", eAndIStem + "e", eAndIStem + "imos", eAndIStem + "is", eAndIStem + "em"};
                             }
@@ -157,31 +161,37 @@ public class Conjugator {
                         case PRET_IND:
                             switch (ending) {
                                 case "ar":
-                                    verbsToReturn[i] = new String[]{stem + "ei", aAndOStem + "aste", aAndOStem + "ou", aAndOStem + (portugal ? "ámos" : "amos"), aAndOStem + "astes", aAndOStem + "aram"};
+                                    verbsToReturn[i] = new String[]{eAndIStem + "ei", aAndOStem + "aste", aAndOStem + "ou", aAndOStem + (portugal ? "ámos" : "amos"), aAndOStem + "astes", aAndOStem + "aram"};
+                                    break;
                                 case "er":
-                                    verbsToReturn[i] = new String[]{stem + "i", eAndIStem + "este", eAndIStem + "eu", eAndIStem + "emos", eAndIStem + "estes", eAndIStem + "eram"};
+                                    verbsToReturn[i] = new String[]{eAndIStem + "i", eAndIStem + "este", eAndIStem + "eu", eAndIStem + "emos", eAndIStem + "estes", eAndIStem + "eram"};
+                                    break;
                                 case "ir":
-                                    verbsToReturn[i] = new String[]{stem + "i", eAndIStem + "iste", eAndIStem + "iu", eAndIStem + "imos", eAndIStem + "istes", eAndIStem + "iram"};
+                                    verbsToReturn[i] = new String[]{eAndIStem + "i", eAndIStem + "iste", eAndIStem + "iu", eAndIStem + "imos", eAndIStem + "istes", eAndIStem + "iram"};
                             }
                             break;
                         case IMP_IND:
                             switch (ending) {
                                 case "ar":
-                                    verbsToReturn[i] = new String[]{stem + "ava", aAndOStem + "avas", aAndOStem + "ava", aAndOStem + "ávamos", aAndOStem + "áveis", aAndOStem + "avam"};
+                                    verbsToReturn[i] = new String[]{aAndOStem + "ava", aAndOStem + "avas", aAndOStem + "ava", aAndOStem + "ávamos", aAndOStem + "áveis", aAndOStem + "avam"};
+                                    break;
                                 case "er":
-                                    verbsToReturn[i] = new String[]{stem + "ia", eAndIStem + "ias", eAndIStem + "ia", eAndIStem + "íamos", eAndIStem + "íeis", eAndIStem + "iam"};
+                                    verbsToReturn[i] = new String[]{eAndIStem + "ia", eAndIStem + "ias", eAndIStem + "ia", eAndIStem + "íamos", eAndIStem + "íeis", eAndIStem + "iam"};
+                                    break;
                                 case "ir":
-                                    verbsToReturn[i] = new String[]{stem + "ia", eAndIStem + "ias", eAndIStem + "ia", eAndIStem + "íamos", eAndIStem + "íeis", eAndIStem + "iam"};
+                                    verbsToReturn[i] = new String[]{eAndIStem + "ia", eAndIStem + "ias", eAndIStem + "ia", eAndIStem + "íamos", eAndIStem + "íeis", eAndIStem + "iam"};
                             }
                             break;
                         case SIMP_PLUP_IND:
                             switch (ending) {
                                 case "ar":
-                                    verbsToReturn[i] = new String[]{stem + "ara", aAndOStem + "aras", aAndOStem + "ara", aAndOStem + "áramos", aAndOStem + "áreis", aAndOStem + "aram"};
+                                    verbsToReturn[i] = new String[]{aAndOStem + "ara", aAndOStem + "aras", aAndOStem + "ara", aAndOStem + "áramos", aAndOStem + "áreis", aAndOStem + "aram"};
+                                    break;
                                 case "er":
-                                    verbsToReturn[i] = new String[]{stem + "era", eAndIStem + "eras", eAndIStem + "era", eAndIStem + "éramos", eAndIStem + "éreis", eAndIStem + "eram"};
+                                    verbsToReturn[i] = new String[]{eAndIStem + "era", eAndIStem + "eras", eAndIStem + "era", eAndIStem + "éramos", eAndIStem + "éreis", eAndIStem + "eram"};
+                                    break;
                                 case "ir":
-                                    verbsToReturn[i] = new String[]{stem + "ira", eAndIStem + "iras", eAndIStem + "ira", eAndIStem + "íramos", eAndIStem + "íreis", eAndIStem + "iram"};
+                                    verbsToReturn[i] = new String[]{eAndIStem + "ira", eAndIStem + "iras", eAndIStem + "ira", eAndIStem + "íramos", eAndIStem + "íreis", eAndIStem + "iram"};
                             }
                             break;
                         case FUT_IND:
@@ -289,8 +299,10 @@ public class Conjugator {
                                 switch (ending) {
                                     case "ar":
                                         verbsToReturn[i] = new String[]{subjRoot1 + "e", subjRoot1 + "es", subjRoot1 + "e", subjRoot1 + "emos", subjRoot1 + "eis", subjRoot1 + "em"};
+                                        break;
                                     case "er":
                                         verbsToReturn[i] = new String[]{subjRoot1 + "a", subjRoot1 + "as", subjRoot1 + "a", subjRoot1 + "amos", subjRoot1 + "ais", subjRoot1 + "am"};
+                                        break;
                                     case "ir":
                                         verbsToReturn[i] = new String[]{subjRoot1 + "a", subjRoot1 + "as", subjRoot1 + "a", subjRoot1 + "amos", subjRoot1 + "ais", subjRoot1 + "am"};
                                 }
@@ -306,8 +318,10 @@ public class Conjugator {
                                 switch (ending) {
                                     case "ar":
                                         verbsToReturn[i] = new String[]{subjRoot2 + "asse", subjRoot2 + "asses", subjRoot2 + "asse", subjRoot2 + "ássemos", subjRoot2 + "ásseis", subjRoot2 + "ássem"};
+                                        break;
                                     case "er":
                                         verbsToReturn[i] = new String[]{subjRoot2 + "esse", subjRoot2 + "esses", subjRoot2 + "esse", subjRoot2 + "éssemos", subjRoot2 + "ésseis", subjRoot2 + "essem"};
+                                        break;
                                     case "ir":
                                         verbsToReturn[i] = new String[]{subjRoot2 + "isse", subjRoot2 + "isses", subjRoot2 + "isse", subjRoot2 + "íssemos", subjRoot2 + "ísseis", subjRoot2 + "íssem"};
                                 }
@@ -323,8 +337,10 @@ public class Conjugator {
                                 switch (ending) {
                                     case "ar":
                                         verbsToReturn[i] = new String[]{subjRoot2 + "ar", subjRoot2 + "ares", subjRoot2 + "ar", subjRoot2 + "armos", subjRoot2 + "ardes", subjRoot2 + "arem"};
+                                        break;
                                     case "er":
                                         verbsToReturn[i] = new String[]{subjRoot2 + "er", subjRoot2 + "eres", subjRoot2 + "er", subjRoot2 + "ermos", subjRoot2 + "erdes", subjRoot2 + "erem"};
+                                        break;
                                     case "ir":
                                         verbsToReturn[i] = new String[]{subjRoot2 + "ir", subjRoot2 + "ires", subjRoot2 + "ir", subjRoot2 + "irmos", subjRoot2 + "irdes", subjRoot2 + "irem"};
                                 }
@@ -349,9 +365,11 @@ public class Conjugator {
         return verbsToReturn;
     }
 
-    private static String getVerbType(String infinitive){
+    public static VerbType getVerbType(String infinitive) {
+        if (infinitive == null) {
+            return null;
+        }
         infinitive = infinitive.toLowerCase();
-
         String[] irregularVerbs = {
                 "dar",
                 "dizer",
@@ -379,21 +397,21 @@ public class Conjugator {
                 "subir"
         };
 
-        for(String verbs : irregularVerbs){
-            if(infinitive.equals(verbs)){
-                return "Irregular";
+        for (String verbs : irregularVerbs) {
+            if (infinitive.equals(verbs)) {
+                return VerbType.IRREGULAR;
             }
         }
         int verbLength = infinitive.length();
-        if(isValidVerb(infinitive) && verbLength>1){
+        if (isValidVerb(infinitive) && verbLength > 1) {
             String ending = infinitive.substring(verbLength - 2, verbLength);
-            switch (ending){
+            switch (ending) {
                 case "ar":
-                    return "ar";
+                    return VerbType.AR;
                 case "er":
-                    return "er";
+                    return VerbType.ER;
                 case "ir":
-                    return "ir";
+                    return VerbType.IR;
             }
         }
         return null;
@@ -401,16 +419,22 @@ public class Conjugator {
 
     }
 
-    private static boolean isValidVerb(String infinitive){
+    public static boolean isValidVerb(String infinitive) {
+        if (infinitive == null) {
+            return false;
+        }
         infinitive = infinitive.toLowerCase();
         int verbLength = infinitive.length();
-        if (!infinitive.contains(" ") && !infinitive.contains("-") && !infinitive.contains("+") && verbLength > 1 && infinitive.charAt(verbLength - 1) == 'r'){
+        if (!infinitive.contains(" ") && !infinitive.contains("-") && !infinitive.contains("+") && verbLength > 1 && infinitive.charAt(verbLength - 1) == 'r') {
             return true;
         }
         return false;
     }
 
     private static void checkForSpecialVerbs(String infinitive, VerbForm[] verbForms, String[][] verbsToReturn) {
+        if (infinitive == null) {
+            return;
+        }
         switch (infinitive) {
             case "boiar":
                 for (int i = 0; i < verbForms.length; i++) {
@@ -965,6 +989,9 @@ public class Conjugator {
     }
 
     public static String getGerund(String infinitive) {
+        if (infinitive == null) {
+            return null;
+        }
         infinitive = infinitive.toLowerCase();
         int verbLength = infinitive.length();
         if (!infinitive.contains(" ") && !infinitive.contains("-") && verbLength > 1) {
@@ -979,6 +1006,9 @@ public class Conjugator {
     }
 
     public static String getParticiple(String infinitive) {
+        if (infinitive == null) {
+            return null;
+        }
         infinitive = infinitive.toLowerCase();
         String regParticiple = getRegularParticiple(infinitive);
         if (regParticiple == null) {
@@ -988,6 +1018,9 @@ public class Conjugator {
     }
 
     private static String getIrregularParticiple(String infinitive) {
+        if (infinitive == null) {
+            return null;
+        }
         infinitive = infinitive.toLowerCase();
         switch (infinitive) {
             case "abrir":
@@ -1038,6 +1071,9 @@ public class Conjugator {
     }
 
     private static String getRegularParticiple(String infinitive) {
+        if (infinitive == null) {
+            return null;
+        }
         int verbLength = infinitive.length();
         if (!infinitive.contains(" ") && !infinitive.contains("-") && verbLength > 1 &&
                 !infinitive.equals("abrir") &&
