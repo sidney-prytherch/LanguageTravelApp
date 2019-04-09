@@ -10,14 +10,17 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
 import android.widget.SeekBar;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 
@@ -54,24 +57,23 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
         navigationView.getMenu().getItem(4).setChecked(true);
 
         ((ViewGroup) findViewById(R.id.constraintLayout)).getLayoutTransition()
-            .enableTransitionType(LayoutTransition.CHANGING);
-
+                .enableTransitionType(LayoutTransition.CHANGING);
 
 
         buttons = new Button[]{
-            findViewById(R.id.verbTypesTabButton),
-            findViewById(R.id.verbFormsTabButton),
-            findViewById(R.id.verbSetTabButton)
+                findViewById(R.id.verbTypesTabButton),
+                findViewById(R.id.verbFormsTabButton),
+                findViewById(R.id.verbSetTabButton)
         };
 
         selectedButtonId = buttons[0].getId();
 
-        verbTypesCheckBoxes = new CheckBox[] {
-            findViewById(R.id.regular_ar_checkbox),
-            findViewById(R.id.regular_er_checkbox),
-            findViewById(R.id.regular_ir_checkbox),
-            findViewById(R.id.irregular_checkbox),
-            findViewById(R.id.reflexive_checkbox),
+        verbTypesCheckBoxes = new CheckBox[]{
+                findViewById(R.id.regular_ar_checkbox),
+                findViewById(R.id.regular_er_checkbox),
+                findViewById(R.id.regular_ir_checkbox),
+                findViewById(R.id.irregular_checkbox),
+                findViewById(R.id.reflexive_checkbox),
         };
 
         setChecked(verbTypesCheckBoxes, new int[]{0, 1, 2, 3});
@@ -79,21 +81,12 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onRestart() {
-        super.onRestart();
-        navigationView.getMenu().getItem(4).setChecked(true);
-    }
-
-    public void onButtonClickSpecial(View view) {
-        onButtonClick(buttons[0]);
-        continueToVerbPractice(view);
-    }
-
-    public void onButtonClick(View view) {
+    protected void onResume() {
+        super.onResume();
         findViewById(R.id.verbFormsScrollView).setVisibility(View.VISIBLE);
         findViewById(R.id.verbSetScrollView).setVisibility(View.VISIBLE);
 
-        scrollViews = new ScrollView[] {
+        scrollViews = new ScrollView[]{
                 findViewById(R.id.verbTypesScrollView),
                 findViewById(R.id.verbFormsScrollView),
                 findViewById(R.id.verbSetScrollView),
@@ -140,6 +133,8 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
                 findViewById(R.id.personalInfinitiveCheckbox),
                 findViewById(R.id.gerundCheckbox),
         };
+
+
         SeekBar seekBar = findViewById(R.id.verbFormsSlider);
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
@@ -181,6 +176,20 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
                 continueToVerbPractice(v);
             }
         });
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        navigationView.getMenu().getItem(4).setChecked(true);
+    }
+
+    public void onButtonClickSpecial(View view) {
+        onButtonClick(buttons[0]);
+        continueToVerbPractice(view);
+    }
+
+    public void onButtonClick(View view) {
         focusOnScrollView(view.getId());
     }
 
@@ -222,7 +231,7 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
             selectedButtonId = buttonId;
             for (int i = 0; i < scrollViewLayoutParams.length; i++) {
                 if (buttons[i].getId() == buttonId) {
-                    scrollViews[i].scrollTo(0,0);
+                    scrollViews[i].scrollTo(0, 0);
                     scrollViewLayoutParams[i].matchConstraintPercentHeight = FULL_HEIGHT_PERCENT;
                     buttons[i].setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_dropdown_arrow_down, 0, 0, 0);
                 } else {
@@ -240,7 +249,7 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
         int currentIndex = 0;
         for (int i = 0; i < allCheckboxes.length; i++) {
             if (currentIndex < checkboxesToCheck.length &&
-                i == checkboxesToCheck[currentIndex]) {
+                    i == checkboxesToCheck[currentIndex]) {
                 if (!allCheckboxes[i].isChecked()) {
                     allCheckboxes[i].setChecked(true);
                 }
@@ -253,6 +262,35 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
 
     public void continueToVerbPractice(View view) {
         Intent intent = new Intent(VerbConjugationSettingsActivity.this, VerbConjugationActivity.class);
+
+        ArrayList<String> checkedVerbForms = new ArrayList<>();
+        for (CheckBox verbFormsCheckBox : verbFormsCheckBoxes) {
+            if (verbFormsCheckBox.isChecked()) {
+                checkedVerbForms.add(verbFormsCheckBox.getText().toString());
+            }
+        }
+        intent.putExtra("VERB_FORMS", checkedVerbForms);
+
+        ArrayList<String> checkedVerbTypes = new ArrayList<>();
+        for (CheckBox verbTypesCheckBox : verbTypesCheckBoxes) {
+            if (verbTypesCheckBox.isChecked()) {
+                checkedVerbTypes.add(verbTypesCheckBox.getText().toString());
+            }
+        }
+        intent.putExtra("VERB_TYPES", checkedVerbTypes);
+
+        String checkedVerbset = ((RadioButton) findViewById(verbSetRadioGroup.getCheckedRadioButtonId())).getText().toString();
+        int verbCount = 10000;
+        if (checkedVerbset.equals(getString(R.string.ten_most_common))) {
+            verbCount = 10;
+        } else if (checkedVerbset.equals(getString(R.string.twenty_most_common))) {
+            verbCount = 20;
+        } else if (checkedVerbset.equals(getString(R.string.fifty_most_common))) {
+            verbCount = 50;
+        } else if (checkedVerbset.equals(getString(R.string.hundred_most_common))) {
+            verbCount = 100;
+        }
+        intent.putExtra("VERB_SET", verbCount);
         startActivity(intent);
     }
 

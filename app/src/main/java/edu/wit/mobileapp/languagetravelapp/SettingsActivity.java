@@ -92,6 +92,18 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
                         .getString(preference.getKey(), ""));
     }
 
+    private static void bindBooleanPreferenceSummaryToValue(Preference preference) {
+        // Set the listener to watch for value changes.
+        preference.setOnPreferenceChangeListener(sBindPreferenceSummaryToValueListener);
+
+        // Trigger the listener immediately with the preference's
+        // current value.
+        sBindPreferenceSummaryToValueListener.onPreferenceChange(preference,
+                PreferenceManager
+                        .getDefaultSharedPreferences(preference.getContext())
+                        .getBoolean(preference.getKey(), false));
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -266,6 +278,32 @@ public class SettingsActivity extends AppCompatPreferenceActivity {
             // guidelines.
             bindPreferenceSummaryToValue(findPreference("crossword_size"));
             bindPreferenceSummaryToValue(findPreference("wordsearch_size"));
+
+//            bindBooleanPreferenceSummaryToValue(findPreference("present"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("preterite"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("imperfect"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("simple_pluperfect"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("future"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("conditional"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("present_perfect"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("pluperfect"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("future_perfect"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("present_progressive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("preterite_progressive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("imperfect_progressive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("simple_pluperfect_progressive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("future_progressive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("conditional_progressive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("present_perfect_progressive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("pluperfect_progressive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("future_perfect_progressive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("conditional_perfect_progressive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("present_subjunctive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("present_perfect_subjunctive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("imperfect_subjunctive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("pluperfect_subjunctive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("future_subjunctive"));
+//            bindBooleanPreferenceSummaryToValue(findPreference("future_perfect_subjunctive"));
 
         }
 

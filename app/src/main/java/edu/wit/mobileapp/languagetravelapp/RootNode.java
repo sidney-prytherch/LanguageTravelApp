@@ -1,5 +1,7 @@
 package edu.wit.mobileapp.languagetravelapp;
 
+import android.util.Log;
+
 public class RootNode extends CellNode {
     private String solutionAcrossWord = null;
     private String solutionDownWord = null;
@@ -104,6 +106,8 @@ public class RootNode extends CellNode {
 
     public void finalizeSolution() {
         CellNode node = this;
+        Log.v("printwords", ""+this.solutionAcrossWord);
+        Log.v("printwords", ""+this.solutionDownWord);
         for (int i = 0; i < this.solutionAcrossWordLength; i++) {
             node.setSolutionLetter(solutionAcrossWord.charAt(i));
             node = node.getNext(WordOrientation.ACROSS);
@@ -113,5 +117,6 @@ public class RootNode extends CellNode {
             node.setSolutionLetter(solutionDownWord.charAt(i));
             node = node.getNext(WordOrientation.DOWN);
         }
+        Log.v("printwords", "" + this.getSolutionLetter());
     }
 }
