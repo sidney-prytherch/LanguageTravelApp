@@ -321,53 +321,53 @@
                 android:text="@string/future_perfect_subjunctive" />
         </TableRow>
 
-        <TableRow android:layout_height="wrap_content">
+        <!--<TableRow android:layout_height="wrap_content">-->
 
-            <TextView
-                android:layout_margin="5dp"
-                android:layout_span="2"
-                android:text="@string/other_options"
-                android:textColor="@color/colorDefaultBlack"
-                android:textSize="18sp" />
-        </TableRow>
+            <!--<TextView-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:layout_span="2"-->
+                <!--android:text="@string/other_options"-->
+                <!--android:textColor="@color/colorDefaultBlack"-->
+                <!--android:textSize="18sp" />-->
+        <!--</TableRow>-->
 
-        <TableRow android:layout_height="wrap_content">
+        <!--<TableRow android:layout_height="wrap_content">-->
 
-            <CheckBox
-                android:id="@+id/pastPartCheckbox"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-
-
-                android:text="@string/past_participle" />
-
-            <CheckBox
-                android:id="@+id/commandsCheckbox"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+            <!--<CheckBox-->
+                <!--android:id="@+id/pastPartCheckbox"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
 
 
-                android:text="@string/commands" />
-        </TableRow>
+                <!--android:text="@string/past_participle" />-->
 
-        <TableRow android:layout_height="wrap_content">
-
-            <CheckBox
-                android:id="@+id/personalInfinitiveCheckbox"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+            <!--<CheckBox-->
+                <!--android:id="@+id/commandsCheckbox"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
 
 
-                android:text="@string/personal_infinitive" />
+                <!--android:text="@string/commands" />-->
+        <!--</TableRow>-->
 
-            <CheckBox
-                android:id="@+id/gerundCheckbox"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+        <!--<TableRow android:layout_height="wrap_content">-->
+
+            <!--<CheckBox-->
+                <!--android:id="@+id/personalInfinitiveCheckbox"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
 
 
-                android:text="@string/gerunds" />
-        </TableRow>
+                <!--android:text="@string/personal_infinitive" />-->
+
+            <!--<CheckBox-->
+                <!--android:id="@+id/gerundCheckbox"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+
+
+                <!--android:text="@string/gerunds" />-->
+        <!--</TableRow>-->
 
     </TableLayout>
 </ScrollView>

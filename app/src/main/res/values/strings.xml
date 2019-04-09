@@ -232,10 +232,11 @@
         <item>15</item>
     </string-array>
 
+    <string name="tu_enabled_summary">Enable 2nd person singular (tu) form in conjugations</string>
+    <string name="tu_enabled_title">Enable "tu" form</string>
 
     <string name="pref_header_learn_and_review">Learn and Review</string>
     <string name="pref_header_verb_conjugations">Verb Conjugations</string>
-
 
     <string name="indicative_tense_summary">This indicative tense will appear in crosswords</string>
     <string name="perfect_tense_summary">This perfect/compound tense will appear in crosswords</string>

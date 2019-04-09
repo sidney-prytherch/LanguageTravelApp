@@ -307,6 +307,7 @@ public class VerbConjugationActivity extends AppCompatActivity {
 
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
             String country = prefs.getString("country", "Brazil");
+            boolean tuEnabled = prefs.getBoolean("tu_enabled", false);
 
             finalVerbForms = new String[24];
             finalEnglishVerbs = new String[24];
@@ -323,7 +324,15 @@ public class VerbConjugationActivity extends AppCompatActivity {
                 if (conjugatedVerbs != null) {
                     int randomVerbFormIndex = (int) (Math.random() * verbForms.length);
                     if (verbForms[randomVerbFormIndex] != null && verbForms.length > 0 && conjugatedVerbs[randomVerbFormIndex] != null && conjugatedVerbs[randomVerbFormIndex].length == 6) {
-                        int randomVerbIndex = (int) (Math.random() * 6);
+                        int randomVerbIndex;
+                        if (tuEnabled) {
+                            randomVerbIndex = (int) (Math.random() * 6);
+                        } else {
+                            randomVerbIndex = (int) (Math.random() * 5);
+                            if (randomVerbIndex >= 1) {
+                                randomVerbIndex++;
+                            }
+                        }
                         switch (randomVerbIndex) {
                             case 0:
                                 finalPersons[i] = "Eu";

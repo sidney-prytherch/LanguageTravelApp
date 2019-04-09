@@ -1,4 +1,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="tu_enabled"
+        android:title="@string/tu_enabled_title"
+        android:summary="@string/tu_enabled_summary"/>
 
 </PreferenceScreen>

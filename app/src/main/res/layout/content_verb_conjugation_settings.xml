@@ -77,14 +77,12 @@
 
                 android:text="@string/irregular" />
 
-            <CheckBox
-                android:id="@+id/reflexive_checkbox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-
-
-                android:text="@string/reflexive" />
+            <!--<CheckBox-->
+                <!--android:id="@+id/reflexive_checkbox"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:text="@string/reflexive" />-->
         </LinearLayout>
 
     </ScrollView>
