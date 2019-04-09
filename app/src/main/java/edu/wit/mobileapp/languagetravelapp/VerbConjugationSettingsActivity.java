@@ -35,7 +35,7 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
     private CheckBox[] verbFormsCheckBoxes;
     private CheckBox[] verbTypesCheckBoxes;
     private RadioGroup verbSetRadioGroup;
-    private RadioGroup fullOrIndividualRadioGroup;
+//    private RadioGroup fullOrIndividualRadioGroup;
     private NavigationView navigationView;
 
     @Override
@@ -73,7 +73,7 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
                 findViewById(R.id.regular_er_checkbox),
                 findViewById(R.id.regular_ir_checkbox),
                 findViewById(R.id.irregular_checkbox),
-                findViewById(R.id.reflexive_checkbox),
+//                findViewById(R.id.reflexive_checkbox),
         };
 
         setChecked(verbTypesCheckBoxes, new int[]{0, 1, 2, 3});
@@ -128,10 +128,10 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
                 findViewById(R.id.plupSubjCheckbox),
                 findViewById(R.id.futuPerfSubjCheckbox),
 
-                findViewById(R.id.pastPartCheckbox),
-                findViewById(R.id.commandsCheckbox),
-                findViewById(R.id.personalInfinitiveCheckbox),
-                findViewById(R.id.gerundCheckbox),
+//                findViewById(R.id.pastPartCheckbox),
+//                findViewById(R.id.commandsCheckbox),
+//                findViewById(R.id.personalInfinitiveCheckbox),
+//                findViewById(R.id.gerundCheckbox),
         };
 
 
@@ -157,10 +157,11 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
         updateCheckBoxes(seekBar);
 
         verbSetRadioGroup = findViewById(R.id.verbSetRadioGroup);
-        verbSetRadioGroup.check(R.id.strugglesRadioButton);
-
-        fullOrIndividualRadioGroup = findViewById(R.id.fullOrIndividual);
-        fullOrIndividualRadioGroup.check(R.id.individualConjugation);
+        verbSetRadioGroup.check(R.id.common10RadioButton);
+//        verbSetRadioGroup.check(R.id.strugglesRadioButton);
+//
+//        fullOrIndividualRadioGroup = findViewById(R.id.fullOrIndividual);
+//        fullOrIndividualRadioGroup.check(R.id.individualConjugation);
 
         for (Button button : buttons) {
             button.setOnClickListener(new View.OnClickListener() {
@@ -212,16 +213,16 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
                 setChecked(verbFormsCheckBoxes, new int[]{0, 1, 2, 10, 25, 28});
                 break;
             case 2:
-                setChecked(verbFormsCheckBoxes, new int[]{0, 1, 2, 10, 25, 28});
+                setChecked(verbFormsCheckBoxes, new int[]{0, 1, 2, 4, 6, 7, 10, 25});
                 break;
             case 3:
-                setChecked(verbFormsCheckBoxes, new int[]{0, 1, 2, 10, 25, 28});
+                setChecked(verbFormsCheckBoxes, new int[]{0, 1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 25});
                 break;
             case 4:
-                setChecked(verbFormsCheckBoxes, new int[]{0, 1, 2, 10, 25, 28});
+                setChecked(verbFormsCheckBoxes, new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12, 13, 20, 21, 25});
                 break;
             case 5:
-                setChecked(verbFormsCheckBoxes, new int[]{0, 1, 2, 3, 4, 5, 10, 25, 28});
+                setChecked(verbFormsCheckBoxes, new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 20, 21, 25});
                 break;
         }
     }
