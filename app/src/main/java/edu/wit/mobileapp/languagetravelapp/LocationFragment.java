@@ -1,7 +1,9 @@
 package edu.wit.mobileapp.languagetravelapp;
 
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -54,9 +56,12 @@ public class LocationFragment extends Fragment {
         @Override
         protected String doInBackground(String... params) {
             String result = "";
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+            String Location = prefs.getString("country", "Portugal");
+
             try {
                 String apiKey = "AIzaSyBk-wLeE9bFj6eaCbmZ0Q7krZrMtBu2rJA";
-                String searchQuery = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=tourist+attactions+in+Portugal&fields=formatted_address,name,rating,opening_hours&key="+apiKey;
+                String searchQuery = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=tourist+attactions+in+"+ Location + "&fields=formatted_address,name,rating,opening_hours&key="+apiKey;
                 URL url = new URL(searchQuery);
                 HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
                 InputStream in = new BufferedInputStream(urlConnection.getInputStream());
@@ -88,20 +93,6 @@ public class LocationFragment extends Fragment {
                 for(int i = 0; i < values.length(); i++){
                     TravelListItem item1 = new TravelListItem();
                     JSONObject names = values.getJSONObject(i);
-
-//                    String src = "https://www.google.com/search?hl=en&tbm=isch&source=hp&biw=1536&bih=722&ei=yk-lXPTOCaSu5wL6_IvYCg&q=Escultura+de+Fernando+Pessoa";
-//                    try {
-//                        URL url = new URL(src);
-//                        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-//                        connection.setDoInput(true);
-//                        connection.connect();
-//                        InputStream input = connection.getInputStream();
-//                        Bitmap myBitmap = BitmapFactory.decodeStream(input);
-//                        item1.image = myBitmap;
-//                    } catch (IOException e) {
-//                        // Log exception
-//                        Log.v(TAG,"ughoh");
-//                    }
 
                     String val1 = names.getString("name");
                     String val2 = names.getString("formatted_address");
