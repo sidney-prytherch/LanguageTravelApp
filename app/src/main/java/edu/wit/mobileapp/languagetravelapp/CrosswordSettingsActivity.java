@@ -82,6 +82,29 @@ public class CrosswordSettingsActivity extends AppCompatActivity {
     protected void onRestart() {
         super.onRestart();
         navigationView.getMenu().getItem(4).setChecked(true);
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        if (prefs != null) {
+            switch (Objects.requireNonNull(prefs.getString("crossword_size", "9x9"))) {
+                case "5":
+                    sizeRadioGroup.check(R.id.size5x5);
+                    break;
+                case "7":
+                    sizeRadioGroup.check(R.id.size7x7);
+                    break;
+                case "11":
+                    sizeRadioGroup.check(R.id.size11x11);
+                    break;
+                case "13":
+                    sizeRadioGroup.check(R.id.size13x13);
+                    break;
+                case "15":
+                    sizeRadioGroup.check(R.id.size15x15);
+                    break;
+                default:
+                    sizeRadioGroup.check(R.id.size9x9);
+                    break;
+            }
+        }
     }
 
     @Override
