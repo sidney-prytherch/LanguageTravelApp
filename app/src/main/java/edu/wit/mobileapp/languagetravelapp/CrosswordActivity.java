@@ -1,11 +1,7 @@
 package edu.wit.mobileapp.languagetravelapp;
 
-import android.content.Context;
 import android.content.SharedPreferences;
-import android.inputmethodservice.Keyboard;
-import android.inputmethodservice.KeyboardView;
 import android.preference.PreferenceManager;
-import android.support.constraint.ConstraintLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -16,32 +12,24 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.DisplayMetrics;
 import android.util.Log;
-import android.util.TypedValue;
-import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.ImageButton;
-import android.widget.LinearLayout;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.Random;
 import java.util.Stack;
 
 
 public class CrosswordActivity extends AppCompatActivity {
 
-    private String[][] prioritizedWords;
+    private String[][][] prioritizedWords;
     private int wordCount;
     private int nextNumber;
     private CellNode[][] crosswordGrid;
@@ -52,6 +40,7 @@ public class CrosswordActivity extends AppCompatActivity {
     private RootNode[] downRoots;
     private VerbForm[] verbForms;
     private boolean portugal;
+    private boolean tuEnabled;
 //    private char[] letters = new char[]{
 //            ' ', 'A', ' ', 'B', ' ',
 //            'C', 'D', 'E', 'F', 'G',
@@ -138,15 +127,100 @@ public class CrosswordActivity extends AppCompatActivity {
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
-        navigationView.getMenu().getItem(5).setChecked(true);
+        navigationView.getMenu().getItem(4).setChecked(true);
 
-        int[] crosswordFromDB = new int[]{
-                0, 0, 0, 1, 0, 0, 0, 0, 0,
-                0, 1, 0, 1, 0, 1, 0, 1, 0,
-                0, 0, 0, 0, 0, 0, 0, 0, 0,
-                0, 1, 0, 1, 0, 1, 1, 1, 0,
-                0, 1, 0, 0, 0
-        };
+        int size = getIntent().getIntExtra("SIZE", 9);
+
+
+        int[][] potentialCrosswords;
+
+        switch (size) {
+            case 5:
+                potentialCrosswords = new int[][]{
+                        new int[]{0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0},
+                        new int[]{0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0},
+                        new int[]{0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0},
+                        new int[]{1, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0},
+                        new int[]{0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0}
+                };
+                break;
+            case 7:
+                potentialCrosswords = new int[][]{
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1},
+                        new int[]{1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1},
+                        new int[]{0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1}
+                };
+                break;
+            case 11:
+                potentialCrosswords = new int[][]{
+                        new int[]{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1},
+                        new int[]{0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1},
+                        new int[]{0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1},
+                        new int[]{0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1}
+                };
+                break;
+            case 13:
+                potentialCrosswords = new int[][]{
+                        new int[]{0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0},
+                        new int[]{0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0},
+                        new int[]{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0},
+                        new int[]{0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0},
+                        new int[]{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0},
+                        new int[]{0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0},
+                        new int[]{0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0}
+                };
+                break;
+            case 15:
+                potentialCrosswords = new int[][]{
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1},
+                        new int[]{1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1},
+                        new int[]{0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 0, 1}
+                };
+                break;
+            case 9:
+            default:
+                potentialCrosswords = new int[][]{
+                        new int[]{0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0},
+                        new int[]{1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 1, 0},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0},
+                        new int[]{0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0},
+                        new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0},
+                        new int[]{0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0},
+                        new int[]{0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0}
+                };
+                break;
+        }
+
+        int[] crosswordFromDB = potentialCrosswords[(int) (Math.random() * potentialCrosswords.length)];
+
 
         int crosswordDim = (int) Math.sqrt(crosswordFromDB.length * 2 - 1);
 
@@ -220,13 +294,6 @@ public class CrosswordActivity extends AppCompatActivity {
             rootNode.setIndex(WordOrientation.DOWN, rootNode.getIndex(WordOrientation.DOWN) + acrossRoots.length);
         }
         wordCount = acrossRoots.length + downRoots.length;
-
-//        char[] letters = new char[crosswordDim * crosswordDim];
-//        for (int i = 0; i < crosswordGrid.length; i++) {
-//            for (int j = 0; j < crosswordGrid.length; j++) {
-//                letters[i * crosswordDim + j] = crosswordGrid[i][j].getSolutionLetter();
-//            }
-//        }
 
 
         ArrayList<VerbForm> verbFormsArrayList = new ArrayList<>();
@@ -307,6 +374,7 @@ public class CrosswordActivity extends AppCompatActivity {
             verbFormsArrayList.add(VerbForm.FUT_PERF_SUBJ);
         }
         portugal = Objects.requireNonNull(prefs.getString("country", "")).equals("portugal");
+        tuEnabled = prefs.getBoolean("tu_enabled", false);
 
         verbForms = new VerbForm[verbFormsArrayList.size()];
         for (int i = 0; i < verbFormsArrayList.size(); i++) {
@@ -329,9 +397,14 @@ public class CrosswordActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        navigationView.getMenu().getItem(5).setChecked(true);
+        navigationView.getMenu().getItem(4).setChecked(true);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+//        fillCrossword();
+    }
 
     // tries to find the associated CellNode for the WhiteSquare. If it doesn't exist,
     // create a new one and return that instead. Also connects previous CellNode
@@ -366,12 +439,14 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
 
-    private String[][] getPrioritizedWordsByLength(boolean[] wordLengthUsed) {
-        String[][] prioritizedWords = new String[wordLengthUsed.length][];
+    private String[][][] getPrioritizedWordsByLength(boolean[] wordLengthUsed) {
+        String[][][] prioritizedWords = new String[2][wordLengthUsed.length][];
         ArrayList[] lists = new ArrayList[wordLengthUsed.length];
+        ArrayList[] hintLists = new ArrayList[wordLengthUsed.length];
         for (int i = 0; i < wordLengthUsed.length; i++) {
             if (wordLengthUsed[i]) {
                 lists[i] = new ArrayList<String>();
+                hintLists[i] = new ArrayList<String>();
             }
         }
         InputStream is = getResources().openRawResource(R.raw.words);
@@ -383,22 +458,36 @@ public class CrosswordActivity extends AppCompatActivity {
             ArrayList<String> verbsConjugated = new ArrayList<>();
             while ((line = reader.readLine()) != null) {
                 String[] lineData = line.split("\\|");
-                String word = lineData[4].replaceAll(" ", "").replaceAll("-", "");
+                String word = lineData[4].replaceAll(" ", "").replaceAll("-", "").replaceAll("\\?", "").replaceAll("!", "");
+                String hint = lineData[0] + " (" + lineData[3] + ")";
                 int wordLength = word.length();
                 int wordLengthMinusOne = wordLength - 1;
                 int maxWordLength = wordLengthUsed.length;
-                if (wordLength > 0 && wordLengthMinusOne < maxWordLength && wordLengthUsed[wordLengthMinusOne] && !lists[wordLengthMinusOne].contains(word)) {
+                if (wordLength > 0 && wordLengthMinusOne < maxWordLength && wordLengthUsed[wordLengthMinusOne] &&
+                        !lists[wordLengthMinusOne].contains(word)) {
                     lists[wordLengthMinusOne].add(word);
+                    String finalHint = hint.substring(0, 1).toUpperCase() + hint.substring(1);
+                    hintLists[wordLengthMinusOne].add(finalHint);
                 }
                 if (lineData[2].equals("v")) {
                     if (!verbsConjugated.contains(word)) {
                         verbsConjugated.add(word);
                         String[][] conjugatedVerbs = Conjugator.conjugate(lineData[4], verbForms, portugal);
                         if (conjugatedVerbs != null) {
-                            for (String[] fullConjugation : conjugatedVerbs) {
+                            for (int a = 0; a < conjugatedVerbs.length; a++) {
+                                String[] fullConjugation = conjugatedVerbs[a];
+                                String conjugatedForm = Conjugator.getVerbFormString(verbForms[a], getResources()).toLowerCase();
                                 if (fullConjugation != null && fullConjugation.length == 6) {
                                     conjugateLoop:
                                     for (int i = 0; i < 6; i++) {
+                                        if (i == 1 && !tuEnabled) {
+                                            continue;
+                                        }
+                                        String subject = Conjugator.getSubject(i, portugal);
+                                        String verbHintWithoutintro = " form, " + conjugatedForm + " tense of the verb " + hint;
+                                        String verbHintWithIntro = subject + verbHintWithoutintro;
+                                        String verbHintWithSubject = verbHintWithIntro + " (with subject)";
+                                        String verbHintWithSubjectWithoutIntro = verbHintWithoutintro + " (with subject)";
                                         String conjugated = fullConjugation[i];
                                         if (conjugated != null) {
                                             int conjugatedLength = conjugated.length();
@@ -407,6 +496,7 @@ public class CrosswordActivity extends AppCompatActivity {
                                                 if (conjugatedLengthMinusOne < maxWordLength) {
                                                     if (wordLengthUsed[conjugatedLengthMinusOne]) {
                                                         lists[conjugatedLengthMinusOne].add(conjugated);
+                                                        hintLists[conjugatedLengthMinusOne].add(verbHintWithIntro);
                                                     }
                                                     int conjugatedLengthPlusOne = conjugatedLength + 1;
                                                     int conjugatedLengthPlusTwo = conjugatedLength + 2;
@@ -416,9 +506,11 @@ public class CrosswordActivity extends AppCompatActivity {
                                                                 case 0:
                                                                     lists[conjugatedLengthPlusOne].add("eu" + conjugated);
                                                                     Log.v("blahstuff", "eu " + conjugated + ": " + word);
+                                                                    hintLists[conjugatedLengthPlusOne].add(verbHintWithSubject);
                                                                     continue conjugateLoop;
                                                                 case 1:
                                                                     lists[conjugatedLengthPlusOne].add("tu" + conjugated);
+                                                                    hintLists[conjugatedLengthPlusOne].add(verbHintWithSubject);
                                                                     continue conjugateLoop;
                                                             }
                                                         }
@@ -428,12 +520,16 @@ public class CrosswordActivity extends AppCompatActivity {
                                                                 switch (i) {
                                                                     case 2:
                                                                         lists[conjugatedLengthPlusTwo].add("ele" + conjugated);
+                                                                        hintLists[conjugatedLengthPlusTwo].add("Ele" + verbHintWithSubjectWithoutIntro);
                                                                         lists[conjugatedLengthPlusTwo].add("ela" + conjugated);
+                                                                        hintLists[conjugatedLengthPlusTwo].add("Ela" + verbHintWithSubjectWithoutIntro);
                                                                     case 3:
                                                                         lists[conjugatedLengthPlusTwo].add("nós" + conjugated);
+                                                                        hintLists[conjugatedLengthPlusTwo].add(verbHintWithSubject);
                                                                         continue conjugateLoop;
                                                                     case 4:
                                                                         lists[conjugatedLengthPlusTwo].add("vós" + conjugated);
+                                                                        hintLists[conjugatedLengthPlusTwo].add(verbHintWithSubject);
                                                                 }
                                                             }
                                                             int conjugatedLengthPlusFour = conjugatedLength + 4;
@@ -442,16 +538,20 @@ public class CrosswordActivity extends AppCompatActivity {
                                                                     switch (i) {
                                                                         case 2:
                                                                             lists[conjugatedLengthPlusThree].add("você" + conjugated);
+                                                                            hintLists[conjugatedLengthPlusThree].add(verbHintWithSubject);
                                                                             continue conjugateLoop;
                                                                         case 5:
                                                                             lists[conjugatedLengthPlusThree].add("eles" + conjugated);
+                                                                            hintLists[conjugatedLengthPlusThree].add("Eles" + verbHintWithSubjectWithoutIntro);
                                                                             lists[conjugatedLengthPlusThree].add("elas" + conjugated);
+                                                                            hintLists[conjugatedLengthPlusThree].add("Elas" + verbHintWithSubjectWithoutIntro);
                                                                             continue conjugateLoop;
                                                                     }
                                                                 }
                                                                 int conjugatedLengthPlusFive = conjugatedLength + 5;
                                                                 if (conjugatedLengthPlusFive < maxWordLength && wordLengthUsed[conjugatedLengthPlusFour]) {
                                                                     lists[conjugatedLengthPlusFour].add("vocês" + conjugated);
+                                                                    hintLists[conjugatedLengthPlusFour].add(verbHintWithSubject);
                                                                 }
                                                             }
                                                         }
@@ -471,12 +571,33 @@ public class CrosswordActivity extends AppCompatActivity {
         }
         for (int i = 0; i < lists.length; i++) {
             if (wordLengthUsed[i]) {
-                prioritizedWords[i] = new String[lists[i].size()];
+                prioritizedWords[0][i] = new String[lists[i].size()];
+                prioritizedWords[1][i] = new String[hintLists[i].size()];
                 for (int j = 0; j < lists[i].size(); j++) {
-                    if (j == 0) {
-                        Log.v("myapp", "hey, " + (i + 1) + ": " + lists[i].get(j));
-                    }
-                    prioritizedWords[i][j] = (String) lists[i].get(j);
+                    prioritizedWords[0][i][j] = (String) lists[i].get(j);
+                    prioritizedWords[1][i][j] = (String) hintLists[i].get(j);
+                }
+
+                int[] indices = new int[prioritizedWords[0][i].length];
+                for (int j = 0; j < indices.length; j++) {
+                    indices[j] = j;
+                }
+                Random rgen = new Random();
+                for (int j = 0; j < indices.length; j++) {
+                    int randomPosition = rgen.nextInt(indices.length);
+                    int temp = indices[j];
+                    indices[j] = indices[randomPosition];
+                    indices[randomPosition] = temp;
+                }
+
+                for (int j = 0; j < indices.length; j++) {
+                    String temp = prioritizedWords[0][i][j];
+                    prioritizedWords[0][i][j] = prioritizedWords[0][i][indices[j]];
+                    prioritizedWords[0][i][indices[j]] = temp;
+
+                    temp = prioritizedWords[1][i][j];
+                    prioritizedWords[1][i][j] = prioritizedWords[1][i][indices[j]];
+                    prioritizedWords[1][i][indices[j]] = temp;
                 }
             }
         }
@@ -489,21 +610,94 @@ public class CrosswordActivity extends AppCompatActivity {
         String[] selectedWords = new String[wordCount];
         int[] filledInCounts = new int[wordCount];
         Stack<RootNode> selectedNodes = new Stack<>();
-
+        WordOrientation[] wordOrientations2 = new WordOrientation[wordCount];
+        for (int i = 0; i < wordCount; i++) {
+            wordOrientations2[i] = getRootNode(i).wordOrientation;
+        }
         Tuple nextToBeSelected = getNextToBeSelected(nodeHasWord, partiallyCompleteWords);
         WordOrientation wordOrientation = nextToBeSelected.wordOrientation;
         RootNode nodeToBeSelected = nextToBeSelected.rootNode;
         int nodeToBeSelectedIndex;
 
-        while (nodeToBeSelected != null) {
+            while (nodeToBeSelected != null) {
             nodeToBeSelectedIndex = nodeToBeSelected.getIndex(wordOrientation);
-            if (filledInCounts[nodeToBeSelected.getIndex(wordOrientation)] == 0) {
-                String word = getNextWordFromPriorityList(nodeToBeSelected.getWordLength(wordOrientation), selectedWords);
-                nodeToBeSelected.setWordSolution(wordOrientation, word, word);
+            if (true) {
+                String[] wordAndHint = getNextWordFromPriorityList(nodeToBeSelected.getWordLength(wordOrientation), selectedWords);
+                String word = wordAndHint[0];
+                String hint = wordAndHint[1];
+                nodeToBeSelected.setWordSolution(wordOrientation, word, hint);
                 selectedWords[nodeToBeSelectedIndex] = word;
                 nodeHasWord[nodeToBeSelectedIndex] = true;
                 selectedNodes.push(nodeToBeSelected);
+//                for (int i = 0; i < wordCount; i++) {
+//                    Tuple rootNodeData = getRootNode(i);
+//                    RootNode rootNode = rootNodeData.rootNode;
+//                    WordOrientation rootNodeWordOrientation = rootNodeData.wordOrientation;
+//                    int filledInCount = rootNode.getFilledInCount();
+//                    filledInCounts[i] = filledInCount;
+//                    if (filledInCount > 0 && rootNode.getWordLength(rootNodeWordOrientation) > filledInCount) {
+//                        partiallyCompleteWords[i] = rootNode;
+//                    }
+//                }
+//                for (int i = 1; i < wordCount; i++) {
+//                    int currentIndex = i;
+//                    int previousIndex = i - 1;
+//                    while (previousIndex > -1 && partiallyCompleteWords[currentIndex] != null &&
+//                            (partiallyCompleteWords[previousIndex] == null ||
+//                                    (partiallyCompleteWords[previousIndex].getFilledInCount() > partiallyCompleteWords[currentIndex].getFilledInCount()))) {
+//                        RootNode temp = partiallyCompleteWords[currentIndex];
+//                        partiallyCompleteWords[currentIndex] = partiallyCompleteWords[previousIndex];
+//                        partiallyCompleteWords[previousIndex] = temp;
+//                        previousIndex--;
+//                        currentIndex--;
+//                    }
             }
+
+//            else {
+//                String partialWord = nodeToBeSelected.getPatternString(wordOrientation);
+//                String[] wordAndHint = getNextWordFromPriorityList(nodeToBeSelected.getWordLength(wordOrientation), selectedWords);
+//                Log.v("myapp", "\"" + partialWord + "\"");
+//                String word = wordAndHint[0];
+//                String hint = wordAndHint[1];
+//                nodeToBeSelected.setWordSolution(wordOrientation, word, hint);
+//                nodeToBeSelected.finalizeSolution(wordOrientation);
+//                selectedWords[nodeToBeSelectedIndex] = word;
+//                nodeHasWord[nodeToBeSelectedIndex] = true;
+//                selectedNodes.push(nodeToBeSelected);
+//                for (int i = 0; i < wordCount; i++) {
+//                    Tuple rootNodeData = getRootNode(i);
+//                    RootNode rootNode = rootNodeData.rootNode;
+//                    WordOrientation rootNodeWordOrientation = rootNodeData.wordOrientation;
+//                    int filledInCount = rootNode.getFilledInCount(rootNodeWordOrientation);
+//                    filledInCounts[i] = filledInCount;
+//                    if (filledInCount > 0 && rootNode.getWordLength(rootNodeWordOrientation) > filledInCount) {
+//                        partiallyCompleteWords[i] = rootNode;
+//                    }
+//                }
+//                WordOrientation[] wordOrientations = new WordOrientation[wordCount];
+//                for (int i = 0; i < wordCount; i++) {
+//                    wordOrientations[i] = getRootNode(i).wordOrientation;
+//                }
+//                for (int i = 1; i < wordCount; i++) {
+//                    int currentIndex = i;
+//                    int previousIndex = i - 1;
+//                    while (previousIndex > -1 && partiallyCompleteWords[currentIndex] != null &&
+//                            (partiallyCompleteWords[previousIndex] == null ||
+//                                    (partiallyCompleteWords[previousIndex].getFilledInCount(wordOrientations[previousIndex]) > partiallyCompleteWords[currentIndex].getFilledInCount(wordOrientations[currentIndex])))) {
+//                        RootNode temp = partiallyCompleteWords[currentIndex];
+//                        partiallyCompleteWords[currentIndex] = partiallyCompleteWords[previousIndex];
+//                        partiallyCompleteWords[previousIndex] = temp;
+//
+//                        WordOrientation temp2 = wordOrientations[currentIndex];
+//                        wordOrientations[currentIndex] = wordOrientations[previousIndex];
+//                        wordOrientations[previousIndex] = temp2;
+//
+//                        previousIndex--;
+//                        currentIndex--;
+//                    }
+//                }
+//            }
+
             nextToBeSelected = getNextToBeSelected(nodeHasWord, partiallyCompleteWords);
             wordOrientation = nextToBeSelected.wordOrientation;
             nodeToBeSelected = nextToBeSelected.rootNode;
@@ -514,10 +708,10 @@ public class CrosswordActivity extends AppCompatActivity {
         for (RootNode root : downRoots) {
             root.finalizeSolution();
         }
-        convertNodesToCharArray();
+        switchToCrosswordFragment();
     }
 
-    private void convertNodesToCharArray() {
+    private void switchToCrosswordFragment() {
         int gridSize = crosswordGrid.length;
         char[] letters = new char[gridSize * gridSize];
         for (int i = 0; i < gridSize; i++) {
@@ -530,20 +724,78 @@ public class CrosswordActivity extends AppCompatActivity {
                 }
             }
         }
+        String[] acrossHints = new String[acrossRoots.length];
+        String[] downHints = new String[downRoots.length];
+        for (int i = 0; i < acrossRoots.length; i++) {
+            acrossHints[i] = acrossRoots[i].getHint(WordOrientation.ACROSS);
+        }
+        for (int i = 0; i < downRoots.length; i++) {
+            downHints[i] = downRoots[i].getHint(WordOrientation.DOWN);
+        }
+
+
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
         crosswordFragment = new CrosswordFragment();
         Bundle bundle = new Bundle();
         bundle.putCharArray(CrosswordFragment.CROSSWORD_SOLUTION, letters);
+        bundle.putStringArray(CrosswordFragment.ACROSS_HINTS, acrossHints);
+        bundle.putStringArray(CrosswordFragment.DOWN_HINTS, downHints);
         crosswordFragment.setArguments(bundle);
         transaction.replace(R.id.container, crosswordFragment);
         transaction.commit();
     }
 
-    private String getNextWordFromPriorityList(int wordLength, String[] selectedWords) {
+    private String[] getNextWordFromPriorityList(int wordLength, String[] selectedWords) {
         // work down word list to find the first string that priorityList that isn't in the
         // selectedWords
-        return prioritizedWords[wordLength - 1][0];
+        int selectedIndex = 0;
+        wordLoop:
+        for (int i = 0; i < prioritizedWords[0][wordLength - 1].length; i++) {
+            for (String selectedWord : selectedWords) {
+                if (selectedWord != null && prioritizedWords[0][wordLength - 1][i].toLowerCase().equals(selectedWord.toLowerCase())) {
+                    continue wordLoop;
+                }
+            }
+            selectedIndex = i;
+            break;
+        }
+        return new String[]{prioritizedWords[0][wordLength - 1][selectedIndex], prioritizedWords[1][wordLength - 1][selectedIndex]};
+    }
+
+    private String[] getNextWordFromPriorityList(int wordLength, String[] selectedWords, String pattern) {
+//        int[] matchData = new int[prioritizedWords[0][wordLength - 1].length];
+        int currentBestPatternMatch = -1;
+        int currentBestWordIndex = 0;
+        wordLoop:
+        for (int i = 0; i < prioritizedWords[0][wordLength - 1].length; i++) {
+            for (String selectedWord : selectedWords) {
+                if (prioritizedWords[0][wordLength - 1][i].equals(selectedWord)) {
+//                    matchData[i] = 0;
+                    continue wordLoop;
+                }
+                int patternMatch = matchesPattern(prioritizedWords[0][wordLength - 1][i], pattern, wordLength);
+//                matchData[i] = patternMatch;
+                if (patternMatch > currentBestPatternMatch) {
+                    currentBestPatternMatch = patternMatch;
+                    if (patternMatch == wordLength) {
+                        currentBestWordIndex = i;
+                    }
+                }
+            }
+        }
+        Log.v("currenttest", "" + currentBestWordIndex + " - " + prioritizedWords[0][wordLength - 1].length);
+        return new String[]{prioritizedWords[0][wordLength - 1][currentBestWordIndex], prioritizedWords[1][wordLength - 1][currentBestWordIndex]};
+    }
+
+    private int matchesPattern(String word, String pattern, int wordLength) {
+        int count = 0;
+        for (int i = 0; i < wordLength; i++) {
+            if (pattern.charAt(i) == ' ' || pattern.charAt(i) == word.charAt(i)) {
+                count++;
+            }
+        }
+        return count;
     }
 
     private Tuple getRootNode(int index) {
@@ -564,7 +816,7 @@ public class CrosswordActivity extends AppCompatActivity {
     private Tuple getNextToBeSelected(boolean[] nodeHasWord, RootNode[] partiallyCompleteWords) {
         // get next partiallyCompleteWord
         if (partiallyCompleteWords[0] != null) {
-            return new Tuple(acrossRoots.length > 0 ? WordOrientation.ACROSS : WordOrientation.DOWN, partiallyCompleteWords[0]);
+            return new Tuple(WordOrientation.ACROSS, partiallyCompleteWords[0]);
         }
         // find next incomplete word
         int next = 0;
@@ -583,7 +835,7 @@ public class CrosswordActivity extends AppCompatActivity {
         CellNode currentCellNode = cellNode.getRoot(wordOrientation);
         while (currentCellNode != null) {
             String text = currentCellNode.getSquare().getText().toString();
-            if (text == null || text == "" || isCharacterAccent(text.charAt(0))) {
+            if (text.equals("") || isCharacterAccent(text.charAt(0))) {
                 return false;
             }
             currentCellNode = currentCellNode.getNext(wordOrientation);
@@ -605,6 +857,15 @@ public class CrosswordActivity extends AppCompatActivity {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
+        }
+    }
+
+    private class ConflictTuple {
+        public String word;
+        public int matches;
+        public ConflictTuple(String word, int matches) {
+            this.word = word;
+            this.matches = matches;
         }
     }
 

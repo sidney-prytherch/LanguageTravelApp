@@ -25,6 +25,8 @@ import java.util.ArrayList;
 public class CrosswordFragment extends Fragment {
 
     public static final String CROSSWORD_SOLUTION = "crosswordSolution";
+    public static final String ACROSS_HINTS = "acrossHints";
+    public static final String DOWN_HINTS = "downHints";
 
     private LinearLayout crosswordGrid;
     private float crosswordNumberTextSize;
@@ -38,6 +40,8 @@ public class CrosswordFragment extends Fragment {
     private WordOrientation wordOrientation;
     private RootNode[] acrossRoots;
     private RootNode[] downRoots;
+    private String[] acrossHints;
+    private String[] downHints;
     private int wordCount;
     private boolean checkWordAlways = false;
 
@@ -45,10 +49,12 @@ public class CrosswordFragment extends Fragment {
     public CrosswordFragment() {
     }
 
-    public static CrosswordFragment newInstance(char[] crosswordSolution) {
+    public static CrosswordFragment newInstance(char[] crosswordSolution, String[] acrossHints, String[] downHints) {
         CrosswordFragment fragment = new CrosswordFragment();
         Bundle args = new Bundle();
         args.putCharArray(CROSSWORD_SOLUTION, crosswordSolution);
+        args.putStringArray(ACROSS_HINTS, acrossHints);
+        args.putStringArray(DOWN_HINTS, downHints);
         return fragment;
     }
 
@@ -57,6 +63,8 @@ public class CrosswordFragment extends Fragment {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
             crosswordSolution = getArguments().getCharArray(CROSSWORD_SOLUTION);
+            acrossHints = getArguments().getStringArray(ACROSS_HINTS);
+            downHints = getArguments().getStringArray(DOWN_HINTS);
         }
     }
 
@@ -202,7 +210,8 @@ public class CrosswordFragment extends Fragment {
             rootNode.setIndex(WordOrientation.DOWN, rootNode.getIndex(WordOrientation.DOWN) + acrossRoots.length);
         }
 
-        for (RootNode rootNode: acrossRoots) {
+        for (int i = 0; i < acrossRoots.length; i++) {
+            RootNode rootNode = acrossRoots[i];
             String solution = "";
             CellNode current = rootNode;
             while (current != null) {
@@ -210,11 +219,12 @@ public class CrosswordFragment extends Fragment {
                 current = current.getNext(WordOrientation.ACROSS);
             }
             Log.v("myapp", solution);
-            rootNode.setWordSolution(WordOrientation.ACROSS, solution, "blah");
+            rootNode.setWordSolution(WordOrientation.ACROSS, solution, acrossHints[i]);
             Log.v("myapp", rootNode.getSolutionWord(WordOrientation.ACROSS));
         }
 
-        for (RootNode rootNode: downRoots) {
+        for (int i = 0; i < downRoots.length; i++) {
+            RootNode rootNode = downRoots[i];
             String solution = "";
             CellNode current = rootNode;
             while (current != null) {
@@ -223,7 +233,7 @@ public class CrosswordFragment extends Fragment {
                 current = current.getNext(WordOrientation.DOWN);
             }
             Log.v("myapp", solution);
-            rootNode.setWordSolution(WordOrientation.DOWN, solution, "blah");
+            rootNode.setWordSolution(WordOrientation.DOWN, solution, downHints[i]);
             Log.v("myapp", rootNode.getSolutionWord(WordOrientation.DOWN));
         }
 

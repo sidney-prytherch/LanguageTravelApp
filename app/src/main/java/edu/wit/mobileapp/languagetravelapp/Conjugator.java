@@ -1,8 +1,87 @@
 package edu.wit.mobileapp.languagetravelapp;
 
+import android.content.res.Resources;
 import android.util.Log;
 
 public class Conjugator {
+
+    public static String getVerbFormString(VerbForm verbForm, Resources resources) {
+        switch (verbForm) {
+            case PRES_IND:
+                return resources.getString(R.string.present);
+            case PRET_IND:
+                return resources.getString(R.string.preterite);
+            case IMP_IND:
+                return resources.getString(R.string.imperfect);
+            case SIMP_PLUP_IND:
+                return resources.getString(R.string.simple_pluperfect);
+            case FUT_IND:
+                return resources.getString(R.string.future);
+            case COND_IND:
+                return resources.getString(R.string.conditional);
+            case PRES_PERF:
+                return resources.getString(R.string.present_perfect);
+            case PLUP:
+                return resources.getString(R.string.pluperfect);
+            case FUT_PERF:
+                return resources.getString(R.string.future_perfect);
+            case COND_PERF:
+                return resources.getString(R.string.conditional_perfect);
+            case PRES_PROG:
+                return resources.getString(R.string.present_progressive);
+            case PRET_PROG:
+                return resources.getString(R.string.preterite_progressive);
+            case IMP_PROG:
+                return resources.getString(R.string.imperfect_progressive);
+            case SIMP_PLUP_PROG:
+                return resources.getString(R.string.simple_pluperfect_progressive);
+            case FUT_PROG:
+                return resources.getString(R.string.future_progressive);
+            case COND_PROG:
+                return resources.getString(R.string.conditional_progressive);
+            case PRES_PERF_PROG:
+                return resources.getString(R.string.present_perfect_progressive);
+            case PLUP_PROG:
+                return resources.getString(R.string.pluperfect_progressive);
+            case FUT_PERF_PROG:
+                return resources.getString(R.string.future_perfect_progressive);
+            case COND_PERF_PROG:
+                return resources.getString(R.string.conditional_perfect_progressive);
+            case PRES_SUBJ:
+                return resources.getString(R.string.present_subjunctive);
+            case PRES_PERF_SUBJ:
+                return resources.getString(R.string.present_perfect_subjunctive);
+            case IMP_SUBJ:
+                return resources.getString(R.string.imperfect_subjunctive);
+            case PLUP_SUBJ:
+                return resources.getString(R.string.pluperfect_subjunctive);
+            case FUT_SUBJ:
+                return resources.getString(R.string.future_subjunctive);
+            case FUT_PERF_SUBJ:
+                return resources.getString(R.string.future_perfect_subjunctive);
+        }
+        return null;
+    }
+
+    public static String getSubject(int index, boolean portugal) {
+        switch (index) {
+            case 0:
+                return "Eu";
+            case 1:
+                return "Tu";
+            case 2:
+                int randomYou = (int) (Math.random() * 3);
+                return randomYou == 0 ? "Você" : randomYou == 1 ? "Ele" : "Ela";
+
+            case 3:
+                return "Nós";
+            case 4:
+                return (portugal && (int) (Math.random()) == 0) ? "Vós" : "Vocês";
+            case 5:
+                return (int) (Math.random() * 2) == 0 ? "Elas" : "Eles";
+        }
+        return null;
+    }
 
     public static String[][] conjugate(String infinitive, VerbForm[] verbForms, boolean portugal) {
         if (infinitive == null) {
