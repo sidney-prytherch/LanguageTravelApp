@@ -16,11 +16,13 @@ import java.util.ArrayList;
 
 public class TipsFragment extends Fragment {
     private static String TAG = "myTips";
+    private View view;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.travel_fragment_tips, container, false);
         // Inflate the layout for this fragment
+        this.view = view;
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(view.getContext(),
                 android.R.layout.simple_list_item_1);
 
@@ -38,6 +40,24 @@ public class TipsFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(view.getContext(),
+                android.R.layout.simple_list_item_1);
+
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        String Location = prefs.getString("country", "Portugal");
+        ArrayList<String> tips;
+        tips = getData(Location);
+        for(int i = 0; i<tips.size(); i++){
+            adapter.add(tips.get(i));
+        }
+        ListView listView = (ListView)view.findViewById(R.id.ListViewTips);
+        listView.setAdapter(adapter);
+    }
+
     public ArrayList<String> getData(String Location){
         ArrayList<String> data = new ArrayList<String>();
         switch (Location) {
@@ -47,7 +67,7 @@ public class TipsFragment extends Fragment {
             case "France":
                 data = setFrance();
                 break;
-            case "Brazi":
+            case "Brazil":
                 data = setBrazil();
                 break;
             default:
