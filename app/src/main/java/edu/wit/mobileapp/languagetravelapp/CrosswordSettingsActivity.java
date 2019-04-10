@@ -23,6 +23,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -31,6 +32,7 @@ import java.util.Objects;
 public class CrosswordSettingsActivity extends AppCompatActivity {
 
     private NavigationView navigationView;
+    private RadioGroup sizeRadioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +50,9 @@ public class CrosswordSettingsActivity extends AppCompatActivity {
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
-        navigationView.getMenu().getItem(5).setChecked(true);
+        navigationView.getMenu().getItem(4).setChecked(true);
 
-        RadioGroup sizeRadioGroup = findViewById(R.id.crossword_size);
+        sizeRadioGroup = findViewById(R.id.crossword_size);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (prefs != null) {
             switch (Objects.requireNonNull(prefs.getString("crossword_size", "9x9"))) {
@@ -79,7 +81,7 @@ public class CrosswordSettingsActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        navigationView.getMenu().getItem(5).setChecked(true);
+        navigationView.getMenu().getItem(4).setChecked(true);
     }
 
     @Override
@@ -98,18 +100,24 @@ public class CrosswordSettingsActivity extends AppCompatActivity {
 
     public void loadCrossword() {
         Intent intent = new Intent(CrosswordSettingsActivity.this, CrosswordActivity.class);
+        int size = 9;
+        String selected = ((RadioButton) findViewById(sizeRadioGroup.getCheckedRadioButtonId())).getText().toString();
+        if (selected.length() > 0) {
+            size = Integer.parseInt(selected.split("x")[0]);
+        }
+        intent.putExtra("SIZE", size);
         startActivity(intent);
     }
 
-    private static class AsyncCrossword extends AsyncTask<Integer, Integer, Integer> {
-        @Override
-        protected Integer doInBackground(Integer... integers) {
-            return null;
-        }
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-    }
+//    private static class AsyncCrossword extends AsyncTask<Integer, Integer, Integer> {
+//        @Override
+//        protected Integer doInBackground(Integer... integers) {
+//            return null;
+//        }
+//
+//        @Override
+//        protected void onPreExecute() {
+//            super.onPreExecute();
+//        }
+//    }
 }

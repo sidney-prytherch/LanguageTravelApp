@@ -15,36 +15,34 @@
 
         <ImageButton
             android:id="@+id/next_verb"
-            android:layout_width="0dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:background="@drawable/box_simple"
             android:contentDescription="@string/go_to_next_verb"
             android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/user_verb_response"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/verb_and_form_to_conjugate"
+            app:layout_constraintTop_toTopOf="@+id/user_verb_response"
             app:srcCompat="@drawable/ic_right_arrow" />
 
         <ImageButton
             android:id="@+id/prev_verb"
-            android:layout_width="0dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:background="@drawable/box_simple"
             android:contentDescription="@string/go_to_prev_verb"
             android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@+id/user_verb_response"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/verb_and_form_to_conjugate"
+            app:layout_constraintTop_toTopOf="@+id/user_verb_response"
             app:srcCompat="@drawable/ic_left_arrow" />
 
         <EditText
             android:id="@+id/user_verb_response"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_margin="8dp"
             android:background="@drawable/box_simple"
             android:ems="10"

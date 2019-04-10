@@ -11,7 +11,7 @@ public class CellNode {
     private CellNode right = null;
     private RootNode acrossRoot = null;
     private RootNode downRoot = null;
-    private char solutionLetter;
+    private char solutionLetter = ' ';
     private char currentLetter = ' ';
     private PuzzleWhiteSquare square;
     private Background background = Background.NONE;

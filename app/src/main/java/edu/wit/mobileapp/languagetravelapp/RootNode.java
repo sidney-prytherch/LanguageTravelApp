@@ -12,6 +12,8 @@ public class RootNode extends CellNode {
     private int acrossIndex;
     private int downIndex;
     private int number;
+    private int filledInCountAcross = 0;
+    private int filledInCountDown = 0;
 
     public int getNumber() {
         return number;
@@ -104,10 +106,44 @@ public class RootNode extends CellNode {
         }
     }
 
+    public void finalizeSolution(WordOrientation wordOrientation) {
+        if (wordOrientation == WordOrientation.ACROSS) {
+            CellNode node = this;
+            while (node != null) {
+                for (int i = 0; i < this.solutionAcrossWordLength; i++) {
+                    if (node.getSolutionLetter() == ' ') {
+                        node.setSolutionLetter(solutionAcrossWord.charAt(i));
+                        node.getRoot(WordOrientation.ACROSS).increaseFilledInCount(WordOrientation.ACROSS);
+                        RootNode downRoot = node.getRoot(WordOrientation.DOWN);
+                        if (downRoot != null) {
+                            downRoot.increaseFilledInCount(WordOrientation.DOWN);
+                        }
+                    }
+                    node = node.getNext(WordOrientation.ACROSS);
+                }
+            }
+        } else {
+            CellNode node = this;
+            while (node != null) {
+                for (int i = 0; i < this.solutionDownWordLength; i++) {
+                    if (node.getSolutionLetter() == ' ') {
+                        node.setSolutionLetter(solutionDownWord.charAt(i));
+                        node.getRoot(WordOrientation.DOWN).increaseFilledInCount(WordOrientation.DOWN);
+                        RootNode acrossRoot = node.getRoot(WordOrientation.ACROSS);
+                        if (acrossRoot != null) {
+                            acrossRoot.increaseFilledInCount(WordOrientation.ACROSS);
+                        }
+                    }
+                    node = node.getNext(WordOrientation.DOWN);
+                }
+            }
+        }
+    }
+
     public void finalizeSolution() {
         CellNode node = this;
-        Log.v("printwords", ""+this.solutionAcrossWord);
-        Log.v("printwords", ""+this.solutionDownWord);
+        Log.v("printwords", "" + this.solutionAcrossWord);
+        Log.v("printwords", "" + this.solutionDownWord);
         for (int i = 0; i < this.solutionAcrossWordLength; i++) {
             node.setSolutionLetter(solutionAcrossWord.charAt(i));
             node = node.getNext(WordOrientation.ACROSS);
@@ -118,5 +154,41 @@ public class RootNode extends CellNode {
             node = node.getNext(WordOrientation.DOWN);
         }
         Log.v("printwords", "" + this.getSolutionLetter());
+    }
+
+    public String getPatternString(WordOrientation wordOrientation) {
+        CellNode node = this;
+        double random = Math.random();
+        char[] patternCharArray = new char[this.getWordLength(wordOrientation)];
+        if (this.getWordLength(wordOrientation) == 0) {
+            return "";
+        }
+        int i = 0;
+        while (node != null) {
+            Log.v("currenttest2", "" + random + " - " + node.getSolutionLetter());
+            patternCharArray[i] = node.getSolutionLetter();
+            i++;
+            node = node.getNext(wordOrientation);
+        }
+        String pattern = String.copyValueOf(patternCharArray);
+        Log.v("currenttest2", "" + random + " - " + pattern);
+        return pattern;
+    }
+
+    private void increaseFilledInCount(WordOrientation wordOrientation) {
+        if (wordOrientation == WordOrientation.DOWN) {
+            this.filledInCountDown++;
+        } else {
+            this.filledInCountAcross++;
+        }
+
+    }
+
+    public int getFilledInCount(WordOrientation wordOrientation) {
+        if (wordOrientation == WordOrientation.DOWN) {
+            return this.filledInCountDown;
+        } else {
+            return this.filledInCountAcross;
+        }
     }
 }

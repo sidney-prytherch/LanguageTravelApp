@@ -9,14 +9,14 @@
         android:positiveButtonText="@null"
         android:title="@string/pref_title_crossword_size"/>
 
-    <ListPreference
-        android:defaultValue="9"
-        android:entries="@array/pref_title_wordsearch_size_titles"
-        android:entryValues="@array/pref_title_wordsearch_size_values"
-        android:key="wordsearch_size"
-        android:negativeButtonText="@null"
-        android:positiveButtonText="@null"
-        android:title="@string/pref_title_wordsearch_size"/>
+    <!--<ListPreference-->
+        <!--android:defaultValue="9"-->
+        <!--android:entries="@array/pref_title_wordsearch_size_titles"-->
+        <!--android:entryValues="@array/pref_title_wordsearch_size_values"-->
+        <!--android:key="wordsearch_size"-->
+        <!--android:negativeButtonText="@null"-->
+        <!--android:positiveButtonText="@null"-->
+        <!--android:title="@string/pref_title_wordsearch_size"/>-->
 
 
     <SwitchPreference

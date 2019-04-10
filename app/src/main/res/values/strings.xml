@@ -27,6 +27,7 @@
     <string name="select_crossword_size">Select Crossword Grid Size</string>
     <string name="the_correct_answer_is">The correct answer is: </string>
     <string name="you_were_right">You were correct!</string>
+    <string name="hint_button">Click to start!</string>
 
     <!-- Verb Types -->
     <string name="recommended_verb_forms">Recommended Verb Forms</string>
@@ -131,16 +132,16 @@
 
     <string name="pref_quick_access_button">Quick-Access Button</string>
     <string-array name="pref_quick_access_button_list_titles">
-        <item>Learn and Review</item>
+        <!--<item>Learn and Review</item>-->
         <item>Verb Conjugation</item>
         <item>Crossword</item>
-        <item>Wordsearch</item>
+        <!--<item>Wordsearch</item>-->
     </string-array>
     <string-array name="pref_quick_access_button_list_values">
-        <item>learn</item>
+        <!--<item>learn</item>-->
         <item>verb</item>
         <item>crossword</item>
-        <item>wordsearch</item>
+        <!--<item>wordsearch</item>-->
     </string-array>
 
     <!-- Example settings for Data & Sync -->
@@ -192,9 +193,9 @@
         <item>Brazil</item>
     </string-array>
 
-    <string name="puzzle_menu_title">Puzzle</string>
+    <string name="puzzle_menu_title">Crossword</string>
 
-    <string name="pref_header_puzzle">Puzzle</string>
+    <string name="pref_header_puzzle">Crossword</string>
     <string name="pref_title_crossword_size">Default crossword grid size</string>
     <string-array name="pref_title_crossword_size_titles">
         <item>5x5</item>
@@ -213,24 +214,24 @@
         <item>15</item>
     </string-array>
 
-    <string name="pref_header_wordsearch">Wordsearch</string>
-    <string name="pref_title_wordsearch_size">Default wordsearch grid size</string>
-    <string-array name="pref_title_wordsearch_size_titles">
-        <item>5x5</item>
-        <item>7x7</item>
-        <item>9x9</item>
-        <item>11x11</item>
-        <item>13x13</item>
-        <item>15x15</item>
-    </string-array>
-    <string-array name="pref_title_wordsearch_size_values">
-        <item>5</item>
-        <item>7</item>
-        <item>9</item>
-        <item>11</item>
-        <item>13</item>
-        <item>15</item>
-    </string-array>
+    <!--<string name="pref_header_wordsearch">Wordsearch</string>-->
+    <!--<string name="pref_title_wordsearch_size">Default wordsearch grid size</string>-->
+    <!--<string-array name="pref_title_wordsearch_size_titles">-->
+        <!--<item>5x5</item>-->
+        <!--<item>7x7</item>-->
+        <!--<item>9x9</item>-->
+        <!--<item>11x11</item>-->
+        <!--<item>13x13</item>-->
+        <!--<item>15x15</item>-->
+    <!--</string-array>-->
+    <!--<string-array name="pref_title_wordsearch_size_values">-->
+        <!--<item>5</item>-->
+        <!--<item>7</item>-->
+        <!--<item>9</item>-->
+        <!--<item>11</item>-->
+        <!--<item>13</item>-->
+        <!--<item>15</item>-->
+    <!--</string-array>-->
 
     <string name="tu_enabled_summary">Enable 2nd person singular (tu) form in conjugations</string>
     <string name="tu_enabled_title">Enable "tu" form</string>

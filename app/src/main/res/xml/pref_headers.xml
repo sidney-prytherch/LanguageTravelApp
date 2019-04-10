@@ -18,11 +18,6 @@
         android:title="@string/pref_header_verb_conjugations" />
 
     <header
-        android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$LearnAndReviewPreferenceFragment"
-        android:icon="@drawable/ic_learn_and_review"
-        android:title="@string/pref_header_learn_and_review" />
-
-    <header
         android:fragment="edu.wit.mobileapp.languagetravelapp.SettingsActivity$PuzzlePreferenceFragment"
         android:icon="@drawable/ic_crossword"
         android:title="@string/pref_header_puzzle" />

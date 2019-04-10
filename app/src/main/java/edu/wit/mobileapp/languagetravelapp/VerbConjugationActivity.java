@@ -55,7 +55,7 @@ public class VerbConjugationActivity extends AppCompatActivity {
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
-        navigationView.getMenu().getItem(4).setChecked(true);
+        navigationView.getMenu().getItem(3).setChecked(true);
 
         ArrayList<String> verbFormStrings = getIntent().getStringArrayListExtra("VERB_FORMS");
         ArrayList<String> verbTypeStrings = getIntent().getStringArrayListExtra("VERB_TYPES");
@@ -333,107 +333,9 @@ public class VerbConjugationActivity extends AppCompatActivity {
                                 randomVerbIndex++;
                             }
                         }
-                        switch (randomVerbIndex) {
-                            case 0:
-                                finalPersons[i] = "Eu";
-                                break;
-                            case 1:
-                                finalPersons[i] = "Tu";
-                                break;
-                            case 2:
-                                int randomYou = (int) (Math.random() * 3);
-                                finalPersons[i] = randomYou == 0 ? "Você" : randomYou == 1 ? "Ele" : "Ela";
-                                break;
-                            case 3:
-                                finalPersons[i] = "Nós";
-                                break;
-                            case 4:
-                                finalPersons[i] = (portugal && (int) (Math.random()) == 0) ? "Vós" : "Vocês";
-                                break;
-                            case 5:
-                                finalPersons[i] = (int) (Math.random() * 2) == 0 ? "Elas" : "Eles";
-                        }
+                        finalPersons[i] = Conjugator.getSubject(randomVerbIndex, portugal);
                         finalAnswers[i] = conjugatedVerbs[randomVerbFormIndex][randomVerbIndex];
-                        switch (verbForms[randomVerbFormIndex]) {
-                            case PRES_IND:
-                                finalVerbForms[i] = getString(R.string.present);
-                                break;
-                            case PRET_IND:
-                                finalVerbForms[i] = getString(R.string.preterite);
-                                break;
-                            case IMP_IND:
-                                finalVerbForms[i] = getString(R.string.imperfect);
-                                break;
-                            case SIMP_PLUP_IND:
-                                finalVerbForms[i] = getString(R.string.simple_pluperfect);
-                                break;
-                            case FUT_IND:
-                                finalVerbForms[i] = getString(R.string.future);
-                                break;
-                            case COND_IND:
-                                finalVerbForms[i] = getString(R.string.conditional);
-                                break;
-                            case PRES_PERF:
-                                finalVerbForms[i] = getString(R.string.present_perfect);
-                                break;
-                            case PLUP:
-                                finalVerbForms[i] = getString(R.string.pluperfect);
-                                break;
-                            case FUT_PERF:
-                                finalVerbForms[i] = getString(R.string.future_perfect);
-                                break;
-                            case COND_PERF:
-                                finalVerbForms[i] = getString(R.string.conditional_perfect);
-                                break;
-                            case PRES_PROG:
-                                finalVerbForms[i] = getString(R.string.present_progressive);
-                                break;
-                            case PRET_PROG:
-                                finalVerbForms[i] = getString(R.string.preterite_progressive);
-                                break;
-                            case IMP_PROG:
-                                finalVerbForms[i] = getString(R.string.imperfect_progressive);
-                                break;
-                            case SIMP_PLUP_PROG:
-                                finalVerbForms[i] = getString(R.string.simple_pluperfect_progressive);
-                                break;
-                            case FUT_PROG:
-                                finalVerbForms[i] = getString(R.string.future_progressive);
-                                break;
-                            case COND_PROG:
-                                finalVerbForms[i] = getString(R.string.conditional_progressive);
-                                break;
-                            case PRES_PERF_PROG:
-                                finalVerbForms[i] = getString(R.string.present_perfect_progressive);
-                                break;
-                            case PLUP_PROG:
-                                finalVerbForms[i] = getString(R.string.pluperfect_progressive);
-                                break;
-                            case FUT_PERF_PROG:
-                                finalVerbForms[i] = getString(R.string.future_perfect_progressive);
-                                break;
-                            case COND_PERF_PROG:
-                                finalVerbForms[i] = getString(R.string.conditional_perfect_progressive);
-                                break;
-                            case PRES_SUBJ:
-                                finalVerbForms[i] = getString(R.string.present_subjunctive);
-                                break;
-                            case PRES_PERF_SUBJ:
-                                finalVerbForms[i] = getString(R.string.present_perfect_subjunctive);
-                                break;
-                            case IMP_SUBJ:
-                                finalVerbForms[i] = getString(R.string.imperfect_subjunctive);
-                                break;
-                            case PLUP_SUBJ:
-                                finalVerbForms[i] = getString(R.string.pluperfect_subjunctive);
-                                break;
-                            case FUT_SUBJ:
-                                finalVerbForms[i] = getString(R.string.future_subjunctive);
-                                break;
-                            case FUT_PERF_SUBJ:
-                                finalVerbForms[i] = getString(R.string.future_perfect_subjunctive);
-                                break;
-                        }
+                        finalVerbForms[i] = Conjugator.getVerbFormString(verbForms[randomVerbFormIndex], getResources());
                     }
                 }
             }
@@ -489,7 +391,7 @@ public class VerbConjugationActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        navigationView.getMenu().getItem(4).setChecked(true);
+        navigationView.getMenu().getItem(3).setChecked(true);
     }
 
     @Override
