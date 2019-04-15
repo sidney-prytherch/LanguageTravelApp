@@ -50,7 +50,7 @@ public class CrosswordSettingsActivity extends AppCompatActivity {
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
-        navigationView.getMenu().getItem(4).setChecked(true);
+        navigationView.getMenu().getItem(5).setChecked(true);
 
         sizeRadioGroup = findViewById(R.id.crossword_size);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -81,7 +81,7 @@ public class CrosswordSettingsActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        navigationView.getMenu().getItem(4).setChecked(true);
+        navigationView.getMenu().getItem(5).setChecked(true);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         if (prefs != null) {
             switch (Objects.requireNonNull(prefs.getString("crossword_size", "9x9"))) {

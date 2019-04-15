@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FlashcardActivity"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/drawer_app_bar_flashcard">
+    tools:context=".TestActivity"
+    tools:showIn="@layout/drawer_app_bar_test">
 
     <FrameLayout
         android:id="@+id/container"

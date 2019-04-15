@@ -55,8 +55,11 @@ public class HomeActivity extends AppCompatActivity {
                 case "crossword":
                     quickAccessButton.setText(R.string.crossword_button);
                     break;
-                case "wordsearch":
-                    quickAccessButton.setText(R.string.wordsearch_button);
+//                case "wordsearch":
+//                    quickAccessButton.setText(R.string.wordsearch_button);
+//                    break;
+                case "test":
+                    quickAccessButton.setText(R.string.test_button);
                     break;
                 default:
                     quickAccessButton.setText(R.string.quick_button);
@@ -114,6 +117,10 @@ public class HomeActivity extends AppCompatActivity {
         Intent intent = new Intent(HomeActivity.this, SettingsActivity.class);
         startActivity(intent);
     }
+    public void loadTest() {
+        Intent intent = new Intent(HomeActivity.this, TestActivity.class);
+        startActivity(intent);
+    }
 
     public void goToUserSelectedScreen(View view) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
@@ -131,8 +138,11 @@ public class HomeActivity extends AppCompatActivity {
             case "crossword":
                 loadCrossword();
                 break;
-            case "wordsearch":
-                loadWordsearch();
+//            case "wordsearch":
+//                loadWordsearch();
+//                break;
+            case "test":
+                loadTest();
                 break;
             default:
                 loadSettings();

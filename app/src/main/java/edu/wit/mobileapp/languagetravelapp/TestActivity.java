@@ -1,5 +1,6 @@
 package edu.wit.mobileapp.languagetravelapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
@@ -16,7 +17,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
-import android.content.Context;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -24,11 +24,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Random;
 
-public class FlashcardActivity extends AppCompatActivity {
+public class TestActivity extends AppCompatActivity {
 
 
     private NavigationView navigationView;
@@ -39,7 +37,7 @@ public class FlashcardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flashcard);
+        setContentView(R.layout.activity_test);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -145,6 +143,21 @@ public class FlashcardActivity extends AppCompatActivity {
         goToNext();
     }
 
+    public void goToSolution(String input) {
+        closeKeyboard();
+        FragmentManager fm = getSupportFragmentManager();
+        FragmentTransaction transaction = fm.beginTransaction();
+        Fragment testFragment = new TestAnswerFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString(TestAnswerFragment.PORT_WORD, finalPortugueseWords[index]);
+        bundle.putString(TestAnswerFragment.ENG_WORD, finalEnglishWords[index]);
+        bundle.putString(TestAnswerFragment.ENG_DEF, finalEnglishDefinitions[index]);
+        bundle.putString(TestAnswerFragment.INPUT, input);
+        testFragment.setArguments(bundle);
+        transaction.replace(R.id.container, testFragment);
+        transaction.commit();
+    }
+
     public void goToPrevious() {
         int oldIndex = index;
         do {
@@ -156,18 +169,17 @@ public class FlashcardActivity extends AppCompatActivity {
         closeKeyboard();
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
-        Fragment flashcardFragment = new FlashcardFragment();
+        Fragment testFragment = new TestQuestionFragment();
         Bundle bundle = new Bundle();
-        bundle.putString(FlashcardFragment.PORT_WORD, finalPortugueseWords[index]);
-        bundle.putString(FlashcardFragment.ENG_WORD, finalEnglishWords[index]);
-        bundle.putString(FlashcardFragment.ENG_DEF, finalEnglishDefinitions[index]);
-        flashcardFragment.setArguments(bundle);
-        transaction.replace(R.id.container, flashcardFragment);
+        bundle.putString(TestQuestionFragment.ENG_WORD, finalEnglishWords[index]);
+        bundle.putString(TestQuestionFragment.ENG_DEF, finalEnglishDefinitions[index]);
+        testFragment.setArguments(bundle);
+        transaction.replace(R.id.container, testFragment);
         transaction.commit();
     }
 
     private void returnToLanguageHome() {
-        Intent intent = new Intent(FlashcardActivity.this, LanguageHomeActivity.class);
+        Intent intent = new Intent(TestActivity.this, LanguageHomeActivity.class);
         startActivity(intent);
     }
 
@@ -182,13 +194,12 @@ public class FlashcardActivity extends AppCompatActivity {
         closeKeyboard();
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
-        Fragment flashcardFragment = new FlashcardFragment();
+        Fragment testFragment = new TestQuestionFragment();
         Bundle bundle = new Bundle();
-        bundle.putString(FlashcardFragment.PORT_WORD, finalPortugueseWords[index]);
-        bundle.putString(FlashcardFragment.ENG_WORD, finalEnglishWords[index]);
-        bundle.putString(FlashcardFragment.ENG_DEF, finalEnglishDefinitions[index]);
-        flashcardFragment.setArguments(bundle);
-        transaction.replace(R.id.container, flashcardFragment);
+        bundle.putString(TestQuestionFragment.ENG_WORD, finalEnglishWords[index]);
+        bundle.putString(TestQuestionFragment.ENG_DEF, finalEnglishDefinitions[index]);
+        testFragment.setArguments(bundle);
+        transaction.replace(R.id.container, testFragment);
         transaction.commit();
     }
 

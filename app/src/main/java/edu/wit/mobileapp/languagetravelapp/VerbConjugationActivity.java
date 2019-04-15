@@ -55,7 +55,7 @@ public class VerbConjugationActivity extends AppCompatActivity {
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
-        navigationView.getMenu().getItem(3).setChecked(true);
+        navigationView.getMenu().getItem(4).setChecked(true);
 
         ArrayList<String> verbFormStrings = getIntent().getStringArrayListExtra("VERB_FORMS");
         ArrayList<String> verbTypeStrings = getIntent().getStringArrayListExtra("VERB_TYPES");
@@ -391,7 +391,7 @@ public class VerbConjugationActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        navigationView.getMenu().getItem(3).setChecked(true);
+        navigationView.getMenu().getItem(4).setChecked(true);
     }
 
     @Override

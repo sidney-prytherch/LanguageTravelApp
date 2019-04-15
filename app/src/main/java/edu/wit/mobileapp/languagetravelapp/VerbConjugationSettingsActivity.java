@@ -54,7 +54,7 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
-        navigationView.getMenu().getItem(3).setChecked(true);
+        navigationView.getMenu().getItem(4).setChecked(true);
 
         ((ViewGroup) findViewById(R.id.constraintLayout)).getLayoutTransition()
                 .enableTransitionType(LayoutTransition.CHANGING);
@@ -182,7 +182,7 @@ public class VerbConjugationSettingsActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        navigationView.getMenu().getItem(3).setChecked(true);
+        navigationView.getMenu().getItem(4).setChecked(true);
     }
 
     public void onButtonClickSpecial(View view) {

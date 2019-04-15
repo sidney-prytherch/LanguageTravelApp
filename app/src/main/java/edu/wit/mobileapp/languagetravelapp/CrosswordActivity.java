@@ -2,6 +2,7 @@ package edu.wit.mobileapp.languagetravelapp;
 
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.provider.DocumentsContract;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -127,7 +128,7 @@ public class CrosswordActivity extends AppCompatActivity {
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
-        navigationView.getMenu().getItem(4).setChecked(true);
+        navigationView.getMenu().getItem(5).setChecked(true);
 
         int size = getIntent().getIntExtra("SIZE", 9);
 
@@ -397,7 +398,7 @@ public class CrosswordActivity extends AppCompatActivity {
     @Override
     protected void onRestart() {
         super.onRestart();
-        navigationView.getMenu().getItem(4).setChecked(true);
+        navigationView.getMenu().getItem(5).setChecked(true);
     }
 
     @Override
@@ -605,8 +606,11 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
     private void fillCrossword() {
+//        printCrossword();
         boolean[] nodeHasWord = new boolean[wordCount];
-        RootNode[] partiallyCompleteWords = new RootNode[wordCount];
+//        RootNode[] partiallyCompleteWords = new RootNode[wordCount];
+        ArrayList<RootNode> partiallyCompleteWords;
+        ArrayList<WordOrientation> partiallyCompleteWordsOrientations;
         String[] selectedWords = new String[wordCount];
         int[] filledInCounts = new int[wordCount];
         Stack<RootNode> selectedNodes = new Stack<>();
@@ -614,91 +618,40 @@ public class CrosswordActivity extends AppCompatActivity {
         for (int i = 0; i < wordCount; i++) {
             wordOrientations2[i] = getRootNode(i).wordOrientation;
         }
-        Tuple nextToBeSelected = getNextToBeSelected(nodeHasWord, partiallyCompleteWords);
+        Tuple nextToBeSelected = getNextToBeSelected(nodeHasWord, null, null);
         WordOrientation wordOrientation = nextToBeSelected.wordOrientation;
         RootNode nodeToBeSelected = nextToBeSelected.rootNode;
         int nodeToBeSelectedIndex;
 
-            while (nodeToBeSelected != null) {
+        while (nodeToBeSelected != null) {
+            partiallyCompleteWords = new ArrayList<>(wordCount);
+            partiallyCompleteWordsOrientations = new ArrayList<>(wordCount);
             nodeToBeSelectedIndex = nodeToBeSelected.getIndex(wordOrientation);
-            if (true) {
-                String[] wordAndHint = getNextWordFromPriorityList(nodeToBeSelected.getWordLength(wordOrientation), selectedWords);
-                String word = wordAndHint[0];
-                String hint = wordAndHint[1];
-                nodeToBeSelected.setWordSolution(wordOrientation, word, hint);
-                selectedWords[nodeToBeSelectedIndex] = word;
-                nodeHasWord[nodeToBeSelectedIndex] = true;
-                selectedNodes.push(nodeToBeSelected);
-//                for (int i = 0; i < wordCount; i++) {
-//                    Tuple rootNodeData = getRootNode(i);
-//                    RootNode rootNode = rootNodeData.rootNode;
-//                    WordOrientation rootNodeWordOrientation = rootNodeData.wordOrientation;
-//                    int filledInCount = rootNode.getFilledInCount();
-//                    filledInCounts[i] = filledInCount;
-//                    if (filledInCount > 0 && rootNode.getWordLength(rootNodeWordOrientation) > filledInCount) {
-//                        partiallyCompleteWords[i] = rootNode;
-//                    }
-//                }
-//                for (int i = 1; i < wordCount; i++) {
-//                    int currentIndex = i;
-//                    int previousIndex = i - 1;
-//                    while (previousIndex > -1 && partiallyCompleteWords[currentIndex] != null &&
-//                            (partiallyCompleteWords[previousIndex] == null ||
-//                                    (partiallyCompleteWords[previousIndex].getFilledInCount() > partiallyCompleteWords[currentIndex].getFilledInCount()))) {
-//                        RootNode temp = partiallyCompleteWords[currentIndex];
-//                        partiallyCompleteWords[currentIndex] = partiallyCompleteWords[previousIndex];
-//                        partiallyCompleteWords[previousIndex] = temp;
-//                        previousIndex--;
-//                        currentIndex--;
-//                    }
+            String partialWord = nodeToBeSelected.getPatternString(wordOrientation);
+//            Log.v("crosswordprinting", "pattern: " + partialWord);
+            String[] wordAndHint = getNextWordFromPriorityList(nodeToBeSelected.getWordLength(wordOrientation), selectedWords, partialWord);
+            String word = wordAndHint[0];
+            String hint = wordAndHint[1];
+            nodeToBeSelected.setWordSolution(wordOrientation, word, hint);
+            nodeToBeSelected.finalizeSolution(wordOrientation);
+            selectedWords[nodeToBeSelectedIndex] = word;
+            nodeHasWord[nodeToBeSelectedIndex] = true;
+            selectedNodes.push(nodeToBeSelected);
+//            printCrossword();
+            for (int i = 0; i < wordCount; i++) {
+                Tuple rootNodeData = getRootNode(i);
+                RootNode rootNode = rootNodeData.rootNode;
+                WordOrientation rootNodeWordOrientation = rootNodeData.wordOrientation;
+                int filledInCount = rootNode.getFilledInCount(rootNodeWordOrientation);
+                filledInCounts[i] = filledInCount;
+                if (filledInCount > 0 && rootNode.getWordLength(rootNodeWordOrientation) > filledInCount) {
+                    partiallyCompleteWords.add(rootNode);
+                    partiallyCompleteWordsOrientations.add(rootNodeWordOrientation);
+                }
             }
 
-//            else {
-//                String partialWord = nodeToBeSelected.getPatternString(wordOrientation);
-//                String[] wordAndHint = getNextWordFromPriorityList(nodeToBeSelected.getWordLength(wordOrientation), selectedWords);
-//                Log.v("myapp", "\"" + partialWord + "\"");
-//                String word = wordAndHint[0];
-//                String hint = wordAndHint[1];
-//                nodeToBeSelected.setWordSolution(wordOrientation, word, hint);
-//                nodeToBeSelected.finalizeSolution(wordOrientation);
-//                selectedWords[nodeToBeSelectedIndex] = word;
-//                nodeHasWord[nodeToBeSelectedIndex] = true;
-//                selectedNodes.push(nodeToBeSelected);
-//                for (int i = 0; i < wordCount; i++) {
-//                    Tuple rootNodeData = getRootNode(i);
-//                    RootNode rootNode = rootNodeData.rootNode;
-//                    WordOrientation rootNodeWordOrientation = rootNodeData.wordOrientation;
-//                    int filledInCount = rootNode.getFilledInCount(rootNodeWordOrientation);
-//                    filledInCounts[i] = filledInCount;
-//                    if (filledInCount > 0 && rootNode.getWordLength(rootNodeWordOrientation) > filledInCount) {
-//                        partiallyCompleteWords[i] = rootNode;
-//                    }
-//                }
-//                WordOrientation[] wordOrientations = new WordOrientation[wordCount];
-//                for (int i = 0; i < wordCount; i++) {
-//                    wordOrientations[i] = getRootNode(i).wordOrientation;
-//                }
-//                for (int i = 1; i < wordCount; i++) {
-//                    int currentIndex = i;
-//                    int previousIndex = i - 1;
-//                    while (previousIndex > -1 && partiallyCompleteWords[currentIndex] != null &&
-//                            (partiallyCompleteWords[previousIndex] == null ||
-//                                    (partiallyCompleteWords[previousIndex].getFilledInCount(wordOrientations[previousIndex]) > partiallyCompleteWords[currentIndex].getFilledInCount(wordOrientations[currentIndex])))) {
-//                        RootNode temp = partiallyCompleteWords[currentIndex];
-//                        partiallyCompleteWords[currentIndex] = partiallyCompleteWords[previousIndex];
-//                        partiallyCompleteWords[previousIndex] = temp;
-//
-//                        WordOrientation temp2 = wordOrientations[currentIndex];
-//                        wordOrientations[currentIndex] = wordOrientations[previousIndex];
-//                        wordOrientations[previousIndex] = temp2;
-//
-//                        previousIndex--;
-//                        currentIndex--;
-//                    }
-//                }
-//            }
 
-            nextToBeSelected = getNextToBeSelected(nodeHasWord, partiallyCompleteWords);
+            nextToBeSelected = getNextToBeSelected(nodeHasWord, partiallyCompleteWords, partiallyCompleteWordsOrientations);
             wordOrientation = nextToBeSelected.wordOrientation;
             nodeToBeSelected = nextToBeSelected.rootNode;
         }
@@ -710,6 +663,22 @@ public class CrosswordActivity extends AppCompatActivity {
         }
         switchToCrosswordFragment();
     }
+
+//    private void printCrossword() {
+//        int gridSize = crosswordGrid.length;
+//        String str = "a\n|";
+//        for (int i = 0; i < gridSize; i++) {
+//            for (int j = 0; j < gridSize; j++) {
+//                if (crosswordGrid[i][j] == null) {
+//                    str += "██ ";
+//                } else {
+//                    str += " " + crosswordGrid[i][j].getSolutionLetter() + " ";
+//                }
+//            }
+//            str += "|\n|";
+//        }
+//        Log.v("crosswordprinting", str.substring(0, str.length() - 1));
+//    }
 
     private void switchToCrosswordFragment() {
         int gridSize = crosswordGrid.length;
@@ -724,6 +693,7 @@ public class CrosswordActivity extends AppCompatActivity {
                 }
             }
         }
+//        printCrossword();
         String[] acrossHints = new String[acrossRoots.length];
         String[] downHints = new String[downRoots.length];
         for (int i = 0; i < acrossRoots.length; i++) {
@@ -764,32 +734,35 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
     private String[] getNextWordFromPriorityList(int wordLength, String[] selectedWords, String pattern) {
-//        int[] matchData = new int[prioritizedWords[0][wordLength - 1].length];
         int currentBestPatternMatch = -1;
         int currentBestWordIndex = 0;
+        for (String selectedWord : selectedWords) {
+            if (selectedWord != null) {
+                Log.v("crosswordprinting", "a: " + selectedWord);
+            }
+        }
+
         wordLoop:
         for (int i = 0; i < prioritizedWords[0][wordLength - 1].length; i++) {
             for (String selectedWord : selectedWords) {
                 if (prioritizedWords[0][wordLength - 1][i].equals(selectedWord)) {
-//                    matchData[i] = 0;
                     continue wordLoop;
                 }
                 int patternMatch = matchesPattern(prioritizedWords[0][wordLength - 1][i], pattern, wordLength);
-//                matchData[i] = patternMatch;
                 if (patternMatch > currentBestPatternMatch) {
                     currentBestPatternMatch = patternMatch;
-                    if (patternMatch == wordLength) {
-                        currentBestWordIndex = i;
-                    }
+                    currentBestWordIndex = i;
                 }
             }
         }
-        Log.v("currenttest", "" + currentBestWordIndex + " - " + prioritizedWords[0][wordLength - 1].length);
+        Log.v("crosswordprinting", "" + currentBestWordIndex + " - " + prioritizedWords[0][wordLength - 1].length);
         return new String[]{prioritizedWords[0][wordLength - 1][currentBestWordIndex], prioritizedWords[1][wordLength - 1][currentBestWordIndex]};
     }
 
     private int matchesPattern(String word, String pattern, int wordLength) {
         int count = 0;
+        word = word.toUpperCase();
+        pattern = pattern.toUpperCase();
         for (int i = 0; i < wordLength; i++) {
             if (pattern.charAt(i) == ' ' || pattern.charAt(i) == word.charAt(i)) {
                 count++;
@@ -813,10 +786,46 @@ public class CrosswordActivity extends AppCompatActivity {
 
     // given the partiallyCompleteWords ordered by priority and ordered boolean array of complete words
     // return next word that should be selected
-    private Tuple getNextToBeSelected(boolean[] nodeHasWord, RootNode[] partiallyCompleteWords) {
+    private Tuple getNextToBeSelected(boolean[] nodeHasWord, ArrayList<RootNode> partiallyCompleteWords, ArrayList<WordOrientation> partiallyCompleteWordsOrientations) {
+//        for (int i = 1; i < wordCount; i++) {
+//            int currentIndex = i;
+//            int previousIndex = i - 1;
+//            WordOrientation currentWO = getRootNode(currentIndex).wordOrientation;
+//            WordOrientation previousWO = getRootNode(previousIndex).wordOrientation;
+//            while (previousIndex > -1 && partiallyCompleteWords[currentIndex] != null &&
+//                    (partiallyCompleteWords[previousIndex] == null ||
+//                            (partiallyCompleteWords[previousIndex].getFilledInCount(previousWO) > partiallyCompleteWords[currentIndex].getFilledInCount(currentWO)))) {
+//                RootNode temp = partiallyCompleteWords[currentIndex];
+//                partiallyCompleteWords[currentIndex] = partiallyCompleteWords[previousIndex];
+//                partiallyCompleteWords[previousIndex] = temp;
+//                previousIndex--;
+//                currentIndex--;
+//                currentWO = currentIndex > -1 ? getRootNode(currentIndex).wordOrientation : null;
+//                previousWO = previousIndex > -1 ? getRootNode(previousIndex).wordOrientation : null;
+//            }
+//        }
+//        String str = "";
+//        for (int i = 0; i < wordCount; i++) {
+//            if (partiallyCompleteWords[i] == null) {
+//                str += "0, ";
+//                continue;
+//            }
+//            str += partiallyCompleteWords[i].getFilledInCount(getRootNode(i).wordOrientation) + ", ";
+//        }
+//        Log.v("crosswordprinting", str);
+
         // get next partiallyCompleteWord
-        if (partiallyCompleteWords[0] != null) {
-            return new Tuple(WordOrientation.ACROSS, partiallyCompleteWords[0]);
+        if (partiallyCompleteWords != null && partiallyCompleteWords.size() > 0) {
+            int index = 0;
+            int length = partiallyCompleteWords.get(index).getFilledInCount(partiallyCompleteWordsOrientations.get(index));
+            for (int i = 1; i < partiallyCompleteWords.size(); i++) {
+                int currentLength = partiallyCompleteWords.get(i).getFilledInCount(partiallyCompleteWordsOrientations.get(i));
+                if (currentLength > length) {
+                    index = i;
+                    length = currentLength;
+                }
+            }
+            return new Tuple(partiallyCompleteWordsOrientations.get(index), partiallyCompleteWords.get(index));
         }
         // find next incomplete word
         int next = 0;
@@ -863,6 +872,7 @@ public class CrosswordActivity extends AppCompatActivity {
     private class ConflictTuple {
         public String word;
         public int matches;
+
         public ConflictTuple(String word, int matches) {
             this.word = word;
             this.matches = matches;

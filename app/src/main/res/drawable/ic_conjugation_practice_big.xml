@@ -1,12 +1,25 @@
-<vector android:height="400dp" android:viewportHeight="426.57217"
-    android:viewportWidth="426.57217" android:width="400dp" xmlns:android="http://schemas.android.com/apk/res/android">
+<vector android:height="400dp" android:viewportHeight="313.9685"
+    android:viewportWidth="312.64304" android:width="400dp" xmlns:android="http://schemas.android.com/apk/res/android">
     <group>
+        <clip-path android:pathData="m0,0l312.643,0l0,313.969l-312.643,0l0,-313.969z M 0,0"/>
+        <path android:fillAlpha="0.0" android:fillColor="#000000"
+            android:fillType="evenOdd"
+            android:pathData="m0 0l312.64304 0l0 313.9685l-312.64304 0z"
+            android:strokeColor="#00000000" android:strokeLineCap="square"/>
+        <path android:fillAlpha="0.0" android:fillColor="#000000"
+            android:fillType="evenOdd"
+            android:pathData="m18.921259 19.175854l276.12598 0l0 276.9449l-276.12598 0z"
+            android:strokeColor="#00000000" android:strokeLineCap="square"/>
         <path android:fillColor="#00000000" android:fillType="evenOdd"
-            android:pathData="m75.2231 74.81365l276.12598 0l0 276.9449l-276.12598 0z"
+            android:pathData="m18.921259 19.175854l276.12598 0l0 276.9449l-276.12598 0z"
             android:strokeColor="#000000" android:strokeLineCap="butt"
             android:strokeLineJoin="round" android:strokeWidth="24.0"/>
+        <path android:fillAlpha="0.0" android:fillColor="#000000"
+            android:fillType="evenOdd"
+            android:pathData="m65.54173 62.7895l94.36893 189.71024l88.511246 -189.71024"
+            android:strokeColor="#00000000" android:strokeLineCap="square"/>
         <path android:fillColor="#00000000" android:fillType="evenOdd"
-            android:pathData="m121.84357 118.4273l94.36893 189.71024l88.51126 -189.71024"
+            android:pathData="m65.54173 62.7895l94.36893 189.71024l88.511246 -189.71024"
             android:strokeColor="#000000" android:strokeLineCap="butt"
             android:strokeLineJoin="round" android:strokeWidth="24.0"/>
     </group>

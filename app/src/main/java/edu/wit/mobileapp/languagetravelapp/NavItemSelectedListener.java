@@ -39,15 +39,15 @@ public class NavItemSelectedListener implements NavigationView.OnNavigationItemS
         } else if (id == R.id.nav_settings && !(activityContext instanceof SettingsActivity)) {
             Intent newAct = new Intent(context, SettingsActivity.class);
             activityContext.startActivity(newAct);
-//        } else if (id == R.id.nav_learn_and_review && !(activityContext instanceof LearnNewVocabSettingsActivity)) {
-//            Intent newAct = new Intent(context, LearnNewVocabSettingsActivity.class);
-//            activityContext.startActivity(newAct);
+        } else if (id == R.id.nav_learn_and_review && !(activityContext instanceof FlashcardActivity)) {
+            Intent newAct = new Intent(context, FlashcardActivity.class);
+            activityContext.startActivity(newAct);
         } else if (id == R.id.nav_crossword && !(activityContext instanceof CrosswordSettingsActivity)) {
             Intent intent = new Intent(activityContext, CrosswordSettingsActivity.class);
             activityContext.startActivity(intent);
-//        } else if (id == R.id.nav_wordsearch && !(activityContext instanceof WordsearchActivity)) {
-//            Intent newAct = new Intent(context, WordsearchActivity.class);
-//            activityContext.startActivity(newAct);
+        } else if (id == R.id.nav_test && !(activityContext instanceof TestActivity)) {
+            Intent newAct = new Intent(context, TestActivity.class);
+            activityContext.startActivity(newAct);
         } else if (id == R.id.nav_conjugation_practice && !(activityContext instanceof VerbConjugationSettingsActivity)) {
             Intent newAct = new Intent(context, VerbConjugationSettingsActivity.class);
             activityContext.startActivity(newAct);

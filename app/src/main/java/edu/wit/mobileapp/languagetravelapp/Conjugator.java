@@ -125,15 +125,15 @@ public class Conjugator {
                 }
             }
             Log.v("conjugationdebugging", infinitive + ", eAndIStem: " + eAndIStem + ", aAndOStem: " + aAndOStem);
-            if (ending.equals("er") && verbLength > 2) {
-                if (infinitive.charAt(verbLength - 3) == 'c') {
-                    eAndIStem = infinitive.substring(0, verbLength - 3) + "qu";
-                } else if (infinitive.charAt(verbLength - 3) == 'ç') {
-                    eAndIStem = infinitive.substring(0, verbLength - 3) + "c";
-                } else if (infinitive.charAt(verbLength - 3) == 'g') {
-                    eAndIStem = infinitive.substring(0, verbLength - 3) + "gu";
-                }
-            }
+//            if (ending.equals("er") && verbLength > 2) {
+//                if (infinitive.charAt(verbLength - 3) == 'c') {
+//                    eAndIStem = infinitive.substring(0, verbLength - 3) + "qu";
+//                } else if (infinitive.charAt(verbLength - 3) == 'ç') {
+//                    eAndIStem = infinitive.substring(0, verbLength - 3) + "c";
+//                } else if (infinitive.charAt(verbLength - 3) == 'g') {
+//                    eAndIStem = infinitive.substring(0, verbLength - 3) + "gu";
+//                }
+//            }
             String specialStem = stem;
             if (ending.equals("ir")) {
                 switch (infinitive) {

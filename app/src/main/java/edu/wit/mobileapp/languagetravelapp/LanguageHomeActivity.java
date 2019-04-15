@@ -87,15 +87,21 @@ public class LanguageHomeActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void goToTest(View view) {
+        Intent intent = new Intent(LanguageHomeActivity.this, TestActivity.class);
+        startActivity(intent);
+    }
+
+
     public void goToCrossword(View view) {
         Intent intent = new Intent(LanguageHomeActivity.this, CrosswordSettingsActivity.class);
         startActivity(intent);
     }
 
-    public void goToWordSearch(View view) {
-        Intent intent = new Intent(LanguageHomeActivity.this, WordsearchActivity.class);
-        startActivity(intent);
-    }
+//    public void goToWordSearch(View view) {
+//        Intent intent = new Intent(LanguageHomeActivity.this, WordsearchActivity.class);
+//        startActivity(intent);
+//    }
 
 
 }

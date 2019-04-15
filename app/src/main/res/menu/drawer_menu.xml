@@ -16,10 +16,10 @@
             android:id="@+id/nav_language"
             android:icon="@drawable/ic_language"
             android:title="@string/language_button" />
-        <!--<item-->
-            <!--android:id="@+id/nav_learn_and_review"-->
-            <!--android:icon="@drawable/ic_learn_and_review"-->
-            <!--android:title="@string/learn_and_review_button" />-->
+        <item
+            android:id="@+id/nav_learn_and_review"
+            android:icon="@drawable/ic_learn_and_review"
+            android:title="@string/learn_and_review_button" />
         <item
             android:id="@+id/nav_conjugation_practice"
             android:icon="@drawable/ic_conjugation_practice"
@@ -28,10 +28,10 @@
             android:id="@+id/nav_crossword"
             android:icon="@drawable/ic_crossword"
             android:title="@string/crossword_button" />
-        <!--<item-->
-            <!--android:id="@+id/nav_wordsearch"-->
-            <!--android:icon="@drawable/ic_wordsearch"-->
-            <!--android:title="@string/wordsearch_button" />-->
+        <item
+            android:id="@+id/nav_test"
+            android:icon="@drawable/ic_test"
+            android:title="@string/test_button" />
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings"
