@@ -509,7 +509,7 @@ public class CrosswordActivity extends AppCompatActivity {
                 ArrayList<String> verbsConjugated = new ArrayList<>();
                 while ((line = reader.readLine()) != null) {
                     String[] lineData = line.split("\\|");
-                    String word = lineData[4].replaceAll(" ", "").replaceAll("-", "").replaceAll("\\?", "").replaceAll("!", "");
+                    String word = lineData[4].replaceAll(" ", "").replaceAll("-", "").replaceAll("\\?", "").replaceAll("!", "").replaceAll("\\.", "");
                     String hint = lineData[0] + " (" + lineData[3] + ")";
                     int wordLength = word.length();
                     int wordLengthMinusOne = wordLength - 1;
@@ -531,7 +531,7 @@ public class CrosswordActivity extends AppCompatActivity {
                                     if (fullConjugation != null && fullConjugation.length == 6) {
                                         conjugateLoop:
                                         for (int i = 0; i < 6; i++) {
-                                            if (i == 1 && !data.tuEnabled) {
+                                            if (i == 1 && !data.tuEnabled || (i == 4 && !data.portugal)) {
                                                 continue;
                                             }
                                             String subject = Conjugator.getSubject(i, data.portugal);
@@ -579,8 +579,9 @@ public class CrosswordActivity extends AppCompatActivity {
                                                                             hintLists[conjugatedLengthPlusTwo].add(verbHintWithSubject);
                                                                             continue conjugateLoop;
                                                                         case 4:
-                                                                            lists[conjugatedLengthPlusTwo].add("vós" + conjugated);
-                                                                            hintLists[conjugatedLengthPlusTwo].add(verbHintWithSubject);
+                                                                                lists[conjugatedLengthPlusTwo].add("vós" + conjugated);
+                                                                                hintLists[conjugatedLengthPlusTwo].add(verbHintWithSubject);
+
                                                                     }
                                                                 }
                                                                 int conjugatedLengthPlusFour = conjugatedLength + 4;
@@ -601,8 +602,10 @@ public class CrosswordActivity extends AppCompatActivity {
                                                                     }
                                                                     int conjugatedLengthPlusFive = conjugatedLength + 5;
                                                                     if (conjugatedLengthPlusFive < maxWordLength && wordLengthUsed[conjugatedLengthPlusFour]) {
-                                                                        lists[conjugatedLengthPlusFour].add("vocês" + conjugated);
-                                                                        hintLists[conjugatedLengthPlusFour].add(verbHintWithSubject);
+                                                                        if (i == 5) {
+                                                                            lists[conjugatedLengthPlusFour].add("vocês" + conjugated);
+                                                                            hintLists[conjugatedLengthPlusFour].add(verbHintWithSubject);
+                                                                        }
                                                                     }
                                                                 }
                                                             }

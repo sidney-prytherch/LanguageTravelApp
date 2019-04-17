@@ -76,9 +76,10 @@ public class Conjugator {
             case 3:
                 return "Nós";
             case 4:
-                return (portugal && (int) (Math.random()) == 0) ? "Vós" : "Vocês";
+                return "Vós";
             case 5:
-                return (int) (Math.random() * 2) == 0 ? "Elas" : "Eles";
+                int random = (int) (Math.random() * 3);
+                return random == 0 ? "Vocês" : random == 1 ? "Eles" : "Elas";
         }
         return null;
     }

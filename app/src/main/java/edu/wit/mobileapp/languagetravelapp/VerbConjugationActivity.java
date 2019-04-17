@@ -326,11 +326,28 @@ public class VerbConjugationActivity extends AppCompatActivity {
                     if (verbForms[randomVerbFormIndex] != null && verbForms.length > 0 && conjugatedVerbs[randomVerbFormIndex] != null && conjugatedVerbs[randomVerbFormIndex].length == 6) {
                         int randomVerbIndex;
                         if (tuEnabled) {
-                            randomVerbIndex = (int) (Math.random() * 6);
+                            if (portugal) {
+                                randomVerbIndex = (int) (Math.random() * 6);
+                            } else {
+                                randomVerbIndex = (int) (Math.random() * 5);
+                                if (randomVerbIndex >= 4) {
+                                    randomVerbIndex++;
+                                }
+                            }
                         } else {
-                            randomVerbIndex = (int) (Math.random() * 5);
-                            if (randomVerbIndex >= 1) {
-                                randomVerbIndex++;
+                            if (portugal) {
+                                randomVerbIndex = (int) (Math.random() * 5);
+                                if (randomVerbIndex >= 1) {
+                                    randomVerbIndex++;
+                                }
+                            } else {
+                                randomVerbIndex = (int) (Math.random() * 4);
+                                if (randomVerbIndex >= 1) {
+                                    randomVerbIndex++;
+                                }
+                                if (randomVerbIndex >= 4) {
+                                    randomVerbIndex++;
+                                }
                             }
                         }
                         finalPersons[i] = Conjugator.getSubject(randomVerbIndex, portugal);
