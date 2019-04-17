@@ -381,7 +381,6 @@ public class CrosswordActivity extends AppCompatActivity {
         for (int i = 0; i < verbFormsArrayList.size(); i++) {
             verbForms[i] = verbFormsArrayList.get(i);
         }
-        Log.v("blahstuff", "" + verbForms.length);
 
         if (savedInstanceState == null) {
             FragmentManager fm = getSupportFragmentManager();

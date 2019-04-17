@@ -52,7 +52,7 @@ public class FlashcardActivity extends AppCompatActivity {
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavItemSelectedListener(drawer, getApplicationContext(), this));
-        navigationView.getMenu().getItem(6).setChecked(true);
+        navigationView.getMenu().getItem(3).setChecked(true);
 
 
         InputStream is = getResources().openRawResource(R.raw.words);

@@ -582,55 +582,71 @@ public class CrosswordFragment extends Fragment {
     };
 
     public void showLetter() {
-        showLetter(selected);
+        if (selected != null) {
+            showLetter(selected);
+        }
     }
 
     private void showLetter(CellNode cellNode) {
-        cellNode.getSquare().setText(Character.toString(cellNode.getSolutionLetter()));
-        cellNode.setCurrentLetter(cellNode.getSolutionLetter());
-        if (checkWordAlways && isWordComplete(cellNode, WordOrientation.ACROSS)) {
-            checkWord(cellNode, WordOrientation.ACROSS);
-        }
-        if (checkWordAlways && isWordComplete(cellNode, WordOrientation.DOWN)) {
-            checkWord(cellNode, WordOrientation.DOWN);
+        if (cellNode != null) {
+            cellNode.getSquare().setText(Character.toString(cellNode.getSolutionLetter()));
+            cellNode.setCurrentLetter(cellNode.getSolutionLetter());
+            if (checkWordAlways && isWordComplete(cellNode, WordOrientation.ACROSS)) {
+                checkWord(cellNode, WordOrientation.ACROSS);
+            }
+            if (checkWordAlways && isWordComplete(cellNode, WordOrientation.DOWN)) {
+                checkWord(cellNode, WordOrientation.DOWN);
+            }
         }
     }
 
     public void checkLetter() {
-        checkLetter(selected);
+        if (selected != null) {
+            checkLetter(selected);
+        }
     }
 
     private void checkLetter(CellNode cellNode) {
-        if (cellNode.getCurrentLetter() == cellNode.getSolutionLetter()) {
-            cellNode.unsetBackground(getResources());
-            cellNode.setBackground(Background.CORRECT, getResources());
-        } else {
-            cellNode.unsetBackground(getResources());
-            cellNode.setBackground(Background.INCORRECT, getResources());
+        if (cellNode != null) {
+            if (cellNode.getCurrentLetter() == cellNode.getSolutionLetter()) {
+                cellNode.unsetBackground(getResources());
+                cellNode.setBackground(Background.CORRECT, getResources());
+            } else {
+                cellNode.unsetBackground(getResources());
+                cellNode.setBackground(Background.INCORRECT, getResources());
+            }
         }
     }
 
     public void showLettersForWord() {
-        showLettersForWord(selected, wordOrientation);
+        if (selected != null) {
+            showLettersForWord(selected, wordOrientation);
+        }
     }
 
     private void showLettersForWord(CellNode cellNode, WordOrientation wordOrientation) {
-        CellNode currentCellNode = cellNode.getRoot(wordOrientation);
-        while (currentCellNode != null) {
-            showLetter(currentCellNode);
-            currentCellNode = currentCellNode.getNext(wordOrientation);
+        if (cellNode != null) {
+            CellNode currentCellNode = cellNode.getRoot(wordOrientation);
+            while (currentCellNode != null) {
+                showLetter(currentCellNode);
+                currentCellNode = currentCellNode.getNext(wordOrientation);
+            }
         }
     }
 
     public void checkWord() {
-        checkWord(selected, wordOrientation);
+        if (selected != null) {
+            checkWord(selected, wordOrientation);
+        }
     }
 
     private void checkWord(CellNode cellNode, WordOrientation wordOrientation) {
-        CellNode currentCellNode = cellNode.getRoot(wordOrientation);
-        while (currentCellNode != null) {
-            checkLetter(currentCellNode);
-            currentCellNode = currentCellNode.getNext(wordOrientation);
+        if (cellNode != null) {
+            CellNode currentCellNode = cellNode.getRoot(wordOrientation);
+            while (currentCellNode != null) {
+                checkLetter(currentCellNode);
+                currentCellNode = currentCellNode.getNext(wordOrientation);
+            }
         }
     }
 
