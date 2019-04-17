@@ -131,16 +131,4 @@ public class CrosswordSettingsActivity extends AppCompatActivity {
         intent.putExtra("SIZE", size);
         startActivity(intent);
     }
-
-//    private static class AsyncCrossword extends AsyncTask<Integer, Integer, Integer> {
-//        @Override
-//        protected Integer doInBackground(Integer... integers) {
-//            return null;
-//        }
-//
-//        @Override
-//        protected void onPreExecute() {
-//            super.onPreExecute();
-//        }
-//    }
 }

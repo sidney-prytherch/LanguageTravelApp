@@ -1,6 +1,7 @@
 package edu.wit.mobileapp.languagetravelapp;
 
 import android.content.SharedPreferences;
+import android.os.AsyncTask;
 import android.preference.PreferenceManager;
 import android.provider.DocumentsContract;
 import android.support.design.widget.NavigationView;
@@ -85,7 +86,7 @@ public class CrosswordActivity extends AppCompatActivity {
 
             }
         } else {
-            fillCrossword();
+//            fillCrossword();
 //            char[] letters = new char[crosswordGrid.length * crosswordGrid.length];
 //            for (int i = 0; i < crosswordGrid.length; i++) {
 //                for (int j = 0; j < crosswordGrid.length; j++) {
@@ -382,15 +383,17 @@ public class CrosswordActivity extends AppCompatActivity {
             verbForms[i] = verbFormsArrayList.get(i);
         }
 
-        if (savedInstanceState == null) {
-            FragmentManager fm = getSupportFragmentManager();
-            FragmentTransaction transaction = fm.beginTransaction();
-            Fragment loadingFragment = new LoadingFragment();
-            transaction.replace(R.id.container, loadingFragment);
-            transaction.commit();
-        }
+//        if (savedInstanceState == null) {
+////            FragmentManager fm = getSupportFragmentManager();
+////            FragmentTransaction transaction = fm.beginTransaction();
+////            Fragment loadingFragment = new LoadingFragment();
+////            transaction.replace(R.id.container, loadingFragment);
+////            transaction.commit();
+////        }
 
         prioritizedWords = getPrioritizedWordsByLength(wordLengthUsed);
+
+        fillCrossword();
 
     }
 
@@ -828,14 +831,10 @@ public class CrosswordActivity extends AppCompatActivity {
         }
         // find next incomplete word
         int next = 0;
-        Log.v("myapp", "" + nodeHasWord[0]);
         while (next < nodeHasWord.length && nodeHasWord[next]) {
-            Log.v("myapp", "hi" + next);
             next++;
         }
-        Log.v("myapp", "hey there!");
         getRootNode(next);
-        Log.v("myapp", "ayy!");
         return getRootNode(next);
     }
 
@@ -865,16 +864,6 @@ public class CrosswordActivity extends AppCompatActivity {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
-        }
-    }
-
-    private class ConflictTuple {
-        public String word;
-        public int matches;
-
-        public ConflictTuple(String word, int matches) {
-            this.word = word;
-            this.matches = matches;
         }
     }
 
