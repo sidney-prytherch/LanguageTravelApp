@@ -1,6 +1,7 @@
 package edu.wit.mobileapp.languagetravelapp;
 
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.AsyncTask;
 import android.preference.PreferenceManager;
 import android.provider.DocumentsContract;
@@ -27,12 +28,15 @@ import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Random;
 import java.util.Stack;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 
 public class CrosswordActivity extends AppCompatActivity {
 
-    private String[][][] prioritizedWords;
-    private int wordCount;
+
+    private CrosswordTask task;
     private int nextNumber;
     private CellNode[][] crosswordGrid;
     private NavigationView navigationView;
@@ -40,10 +44,7 @@ public class CrosswordActivity extends AppCompatActivity {
     private MenuItem checkWordAlwaysItemView;
     private RootNode[] acrossRoots;
     private RootNode[] downRoots;
-    private VerbForm[] verbForms;
-    private boolean portugal;
-    private boolean tuEnabled;
-//    private char[] letters = new char[]{
+    //    private char[] letters = new char[]{
 //            ' ', 'A', ' ', 'B', ' ',
 //            'C', 'D', 'E', 'F', 'G',
 //            ' ', 'H', 'I', 'J', ' ',
@@ -111,6 +112,15 @@ public class CrosswordActivity extends AppCompatActivity {
 //            transaction.commit();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if (task != null) {
+            task.cancel(false);
+        }
+
     }
 
     @Override
@@ -295,7 +305,7 @@ public class CrosswordActivity extends AppCompatActivity {
         for (RootNode rootNode : downRoots) {
             rootNode.setIndex(WordOrientation.DOWN, rootNode.getIndex(WordOrientation.DOWN) + acrossRoots.length);
         }
-        wordCount = acrossRoots.length + downRoots.length;
+        int wordCount = acrossRoots.length + downRoots.length;
 
 
         ArrayList<VerbForm> verbFormsArrayList = new ArrayList<>();
@@ -375,26 +385,378 @@ public class CrosswordActivity extends AppCompatActivity {
         if (prefs.getBoolean("future_perfect_subjunctive", false)) {
             verbFormsArrayList.add(VerbForm.FUT_PERF_SUBJ);
         }
-        portugal = Objects.requireNonNull(prefs.getString("country", "")).equals("portugal");
-        tuEnabled = prefs.getBoolean("tu_enabled", false);
+        boolean portugal = Objects.requireNonNull(prefs.getString("country", "")).equals("portugal");
+        boolean tuEnabled = prefs.getBoolean("tu_enabled", false);
 
-        verbForms = new VerbForm[verbFormsArrayList.size()];
+        VerbForm[] verbForms = new VerbForm[verbFormsArrayList.size()];
         for (int i = 0; i < verbFormsArrayList.size(); i++) {
             verbForms[i] = verbFormsArrayList.get(i);
         }
 
-//        if (savedInstanceState == null) {
-////            FragmentManager fm = getSupportFragmentManager();
-////            FragmentTransaction transaction = fm.beginTransaction();
-////            Fragment loadingFragment = new LoadingFragment();
-////            transaction.replace(R.id.container, loadingFragment);
-////            transaction.commit();
-////        }
+        if (savedInstanceState == null) {
+            FragmentManager fm = getSupportFragmentManager();
+            FragmentTransaction transaction = fm.beginTransaction();
+            Fragment loadingFragment = new LoadingFragment();
+            transaction.replace(R.id.container, loadingFragment);
+            transaction.commit();
+        }
 
-        prioritizedWords = getPrioritizedWordsByLength(wordLengthUsed);
+//        prioritizedWords = getPrioritizedWordsByLength(wordLengthUsed);
 
-        fillCrossword();
+//        fillCrossword();
+        CrosswordTask crosswordTask = new CrosswordTask();
+        crosswordTask.execute(new AsyncData(wordCount, acrossRoots, downRoots, wordLengthUsed, getResources(), verbForms, portugal, tuEnabled));
 
+
+    }
+
+    private class CrosswordTask extends AsyncTask<AsyncData, Void, Boolean> {
+
+        AsyncData data;
+        String[][][] prioritizedWords;
+
+        @Override
+        protected void onCancelled() {
+            super.onCancelled();
+            this.data = null;
+            this.prioritizedWords = null;
+        }
+
+        @Override
+        protected Boolean doInBackground(AsyncData... asyncData) {
+            data = asyncData[0];
+            prioritizedWords = getPrioritizedWordsByLength(data.wordLengthUsed);
+            boolean[] nodeHasWord = new boolean[data.wordCount];
+            ArrayList<RootNode> partiallyCompleteWords;
+            ArrayList<WordOrientation> partiallyCompleteWordsOrientations;
+            String[] selectedWords = new String[data.wordCount];
+            int[] filledInCounts = new int[data.wordCount];
+            Stack<RootNode> selectedNodes = new Stack<>();
+            WordOrientation[] wordOrientations2 = new WordOrientation[data.wordCount];
+            for (int i = 0; i < data.wordCount; i++) {
+                wordOrientations2[i] = getRootNode(i).wordOrientation;
+            }
+            Tuple nextToBeSelected = getNextToBeSelected(nodeHasWord, null, null);
+            WordOrientation wordOrientation = nextToBeSelected.wordOrientation;
+            RootNode nodeToBeSelected = nextToBeSelected.rootNode;
+            int nodeToBeSelectedIndex;
+
+            while (nodeToBeSelected != null) {
+                partiallyCompleteWords = new ArrayList<>(data.wordCount);
+                partiallyCompleteWordsOrientations = new ArrayList<>(data.wordCount);
+                nodeToBeSelectedIndex = nodeToBeSelected.getIndex(wordOrientation);
+                String partialWord = nodeToBeSelected.getPatternString(wordOrientation);
+//            Log.v("crosswordprinting", "pattern: " + partialWord);
+                String[] wordAndHint = getNextWordFromPriorityList(nodeToBeSelected.getWordLength(wordOrientation), selectedWords, partialWord);
+                String word = wordAndHint[0];
+                String hint = wordAndHint[1];
+                nodeToBeSelected.setWordSolution(wordOrientation, word, hint);
+                nodeToBeSelected.finalizeSolution(wordOrientation);
+                selectedWords[nodeToBeSelectedIndex] = word;
+                nodeHasWord[nodeToBeSelectedIndex] = true;
+                selectedNodes.push(nodeToBeSelected);
+//            printCrossword();
+                for (int i = 0; i < data.wordCount; i++) {
+                    Tuple rootNodeData = getRootNode(i);
+                    RootNode rootNode = rootNodeData.rootNode;
+                    WordOrientation rootNodeWordOrientation = rootNodeData.wordOrientation;
+                    int filledInCount = rootNode.getFilledInCount(rootNodeWordOrientation);
+                    filledInCounts[i] = filledInCount;
+                    if (filledInCount > 0 && rootNode.getWordLength(rootNodeWordOrientation) > filledInCount) {
+                        partiallyCompleteWords.add(rootNode);
+                        partiallyCompleteWordsOrientations.add(rootNodeWordOrientation);
+                    }
+                }
+
+
+                nextToBeSelected = getNextToBeSelected(nodeHasWord, partiallyCompleteWords, partiallyCompleteWordsOrientations);
+                wordOrientation = nextToBeSelected.wordOrientation;
+                nodeToBeSelected = nextToBeSelected.rootNode;
+            }
+            for (RootNode root : data.acrossRoots) {
+                root.finalizeSolution();
+            }
+            for (RootNode root : data.downRoots) {
+                root.finalizeSolution();
+            }
+
+
+            return true;
+        }
+
+        @Override
+        protected void onPostExecute(Boolean aBoolean) {
+            super.onPostExecute(aBoolean);
+            switchToCrosswordFragment();
+        }
+
+        private String[][][] getPrioritizedWordsByLength(boolean[] wordLengthUsed) {
+            String[][][] prioritizedWords = new String[2][wordLengthUsed.length][];
+            ArrayList[] lists = new ArrayList[wordLengthUsed.length];
+            ArrayList[] hintLists = new ArrayList[wordLengthUsed.length];
+            for (int i = 0; i < wordLengthUsed.length; i++) {
+                if (wordLengthUsed[i]) {
+                    lists[i] = new ArrayList<String>();
+                    hintLists[i] = new ArrayList<String>();
+                }
+            }
+            InputStream is = data.resources.openRawResource(R.raw.words);
+            BufferedReader reader = new BufferedReader(
+                    new InputStreamReader(is, Charset.forName("UTF-8"))
+            );
+            String line;
+            try {
+                ArrayList<String> verbsConjugated = new ArrayList<>();
+                while ((line = reader.readLine()) != null) {
+                    String[] lineData = line.split("\\|");
+                    String word = lineData[4].replaceAll(" ", "").replaceAll("-", "").replaceAll("\\?", "").replaceAll("!", "");
+                    String hint = lineData[0] + " (" + lineData[3] + ")";
+                    int wordLength = word.length();
+                    int wordLengthMinusOne = wordLength - 1;
+                    int maxWordLength = wordLengthUsed.length;
+                    if (wordLength > 0 && wordLengthMinusOne < maxWordLength && wordLengthUsed[wordLengthMinusOne] &&
+                            !lists[wordLengthMinusOne].contains(word)) {
+                        lists[wordLengthMinusOne].add(word);
+                        String finalHint = hint.substring(0, 1).toUpperCase() + hint.substring(1);
+                        hintLists[wordLengthMinusOne].add(finalHint);
+                    }
+                    if (lineData[2].equals("v")) {
+                        if (!verbsConjugated.contains(word)) {
+                            verbsConjugated.add(word);
+                            String[][] conjugatedVerbs = Conjugator.conjugate(lineData[4], data.verbForms, data.portugal);
+                            if (conjugatedVerbs != null) {
+                                for (int a = 0; a < conjugatedVerbs.length; a++) {
+                                    String[] fullConjugation = conjugatedVerbs[a];
+                                    String conjugatedForm = Conjugator.getVerbFormString(data.verbForms[a], data.resources).toLowerCase();
+                                    if (fullConjugation != null && fullConjugation.length == 6) {
+                                        conjugateLoop:
+                                        for (int i = 0; i < 6; i++) {
+                                            if (i == 1 && !data.tuEnabled) {
+                                                continue;
+                                            }
+                                            String subject = Conjugator.getSubject(i, data.portugal);
+                                            String verbHintWithoutintro = " form, " + conjugatedForm + " tense of the verb " + hint;
+                                            String verbHintWithIntro = subject + verbHintWithoutintro;
+                                            String verbHintWithSubject = verbHintWithIntro + " (with subject)";
+                                            String verbHintWithSubjectWithoutIntro = verbHintWithoutintro + " (with subject)";
+                                            String conjugated = fullConjugation[i];
+                                            if (conjugated != null) {
+                                                int conjugatedLength = conjugated.length();
+                                                int conjugatedLengthMinusOne = conjugatedLength - 1;
+                                                if (conjugatedLength > 0) {
+                                                    if (conjugatedLengthMinusOne < maxWordLength) {
+                                                        if (wordLengthUsed[conjugatedLengthMinusOne]) {
+                                                            lists[conjugatedLengthMinusOne].add(conjugated);
+                                                            hintLists[conjugatedLengthMinusOne].add(verbHintWithIntro);
+                                                        }
+                                                        int conjugatedLengthPlusOne = conjugatedLength + 1;
+                                                        int conjugatedLengthPlusTwo = conjugatedLength + 2;
+                                                        if (conjugatedLengthPlusTwo < maxWordLength) {
+                                                            if (wordLengthUsed[conjugatedLengthPlusOne]) {
+                                                                switch (i) {
+                                                                    case 0:
+                                                                        lists[conjugatedLengthPlusOne].add("eu" + conjugated);
+                                                                        Log.v("blahstuff", "eu " + conjugated + ": " + word);
+                                                                        hintLists[conjugatedLengthPlusOne].add(verbHintWithSubject);
+                                                                        continue conjugateLoop;
+                                                                    case 1:
+                                                                        lists[conjugatedLengthPlusOne].add("tu" + conjugated);
+                                                                        hintLists[conjugatedLengthPlusOne].add(verbHintWithSubject);
+                                                                        continue conjugateLoop;
+                                                                }
+                                                            }
+                                                            int conjugatedLengthPlusThree = conjugatedLength + 3;
+                                                            if (conjugatedLengthPlusThree < maxWordLength) {
+                                                                if (wordLengthUsed[conjugatedLengthPlusTwo]) {
+                                                                    switch (i) {
+                                                                        case 2:
+                                                                            lists[conjugatedLengthPlusTwo].add("ele" + conjugated);
+                                                                            hintLists[conjugatedLengthPlusTwo].add("Ele" + verbHintWithSubjectWithoutIntro);
+                                                                            lists[conjugatedLengthPlusTwo].add("ela" + conjugated);
+                                                                            hintLists[conjugatedLengthPlusTwo].add("Ela" + verbHintWithSubjectWithoutIntro);
+                                                                        case 3:
+                                                                            lists[conjugatedLengthPlusTwo].add("nós" + conjugated);
+                                                                            hintLists[conjugatedLengthPlusTwo].add(verbHintWithSubject);
+                                                                            continue conjugateLoop;
+                                                                        case 4:
+                                                                            lists[conjugatedLengthPlusTwo].add("vós" + conjugated);
+                                                                            hintLists[conjugatedLengthPlusTwo].add(verbHintWithSubject);
+                                                                    }
+                                                                }
+                                                                int conjugatedLengthPlusFour = conjugatedLength + 4;
+                                                                if (conjugatedLengthPlusFour < maxWordLength) {
+                                                                    if (wordLengthUsed[conjugatedLengthPlusThree]) {
+                                                                        switch (i) {
+                                                                            case 2:
+                                                                                lists[conjugatedLengthPlusThree].add("você" + conjugated);
+                                                                                hintLists[conjugatedLengthPlusThree].add(verbHintWithSubject);
+                                                                                continue conjugateLoop;
+                                                                            case 5:
+                                                                                lists[conjugatedLengthPlusThree].add("eles" + conjugated);
+                                                                                hintLists[conjugatedLengthPlusThree].add("Eles" + verbHintWithSubjectWithoutIntro);
+                                                                                lists[conjugatedLengthPlusThree].add("elas" + conjugated);
+                                                                                hintLists[conjugatedLengthPlusThree].add("Elas" + verbHintWithSubjectWithoutIntro);
+                                                                                continue conjugateLoop;
+                                                                        }
+                                                                    }
+                                                                    int conjugatedLengthPlusFive = conjugatedLength + 5;
+                                                                    if (conjugatedLengthPlusFive < maxWordLength && wordLengthUsed[conjugatedLengthPlusFour]) {
+                                                                        lists[conjugatedLengthPlusFour].add("vocês" + conjugated);
+                                                                        hintLists[conjugatedLengthPlusFour].add(verbHintWithSubject);
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            } catch (IOException e) {
+                Log.v("myapp", "error reading file");
+            }
+            for (int i = 0; i < lists.length; i++) {
+                if (wordLengthUsed[i]) {
+                    prioritizedWords[0][i] = new String[lists[i].size()];
+                    prioritizedWords[1][i] = new String[hintLists[i].size()];
+                    for (int j = 0; j < lists[i].size(); j++) {
+                        prioritizedWords[0][i][j] = (String) lists[i].get(j);
+                        prioritizedWords[1][i][j] = (String) hintLists[i].get(j);
+                    }
+
+                    int[] indices = new int[prioritizedWords[0][i].length];
+                    for (int j = 0; j < indices.length; j++) {
+                        indices[j] = j;
+                    }
+                    Random rgen = new Random();
+                    for (int j = 0; j < indices.length; j++) {
+                        int randomPosition = rgen.nextInt(indices.length);
+                        int temp = indices[j];
+                        indices[j] = indices[randomPosition];
+                        indices[randomPosition] = temp;
+                    }
+
+                    for (int j = 0; j < indices.length; j++) {
+                        String temp = prioritizedWords[0][i][j];
+                        prioritizedWords[0][i][j] = prioritizedWords[0][i][indices[j]];
+                        prioritizedWords[0][i][indices[j]] = temp;
+
+                        temp = prioritizedWords[1][i][j];
+                        prioritizedWords[1][i][j] = prioritizedWords[1][i][indices[j]];
+                        prioritizedWords[1][i][indices[j]] = temp;
+                    }
+                }
+            }
+            return prioritizedWords;
+        }
+
+        private Tuple getRootNode(int index) {
+            // if all are selected
+            if (index >= data.wordCount) {
+                return new Tuple(null, null);
+            }
+            // if all across are selected, return next down
+            if (index >= data.acrossRoots.length) {
+                return new Tuple(WordOrientation.DOWN, data.downRoots[index - data.acrossRoots.length]);
+            }
+            // otherwise, return next across
+            return new Tuple(WordOrientation.ACROSS, data.acrossRoots[index]);
+        }
+
+        // given the partiallyCompleteWords ordered by priority and ordered boolean array of complete words
+        // return next word that should be selected
+        private Tuple getNextToBeSelected(boolean[] nodeHasWord, ArrayList<RootNode> partiallyCompleteWords, ArrayList<WordOrientation> partiallyCompleteWordsOrientations) {
+//        for (int i = 1; i < wordCount; i++) {
+//            int currentIndex = i;
+//            int previousIndex = i - 1;
+//            WordOrientation currentWO = getRootNode(currentIndex).wordOrientation;
+//            WordOrientation previousWO = getRootNode(previousIndex).wordOrientation;
+//            while (previousIndex > -1 && partiallyCompleteWords[currentIndex] != null &&
+//                    (partiallyCompleteWords[previousIndex] == null ||
+//                            (partiallyCompleteWords[previousIndex].getFilledInCount(previousWO) > partiallyCompleteWords[currentIndex].getFilledInCount(currentWO)))) {
+//                RootNode temp = partiallyCompleteWords[currentIndex];
+//                partiallyCompleteWords[currentIndex] = partiallyCompleteWords[previousIndex];
+//                partiallyCompleteWords[previousIndex] = temp;
+//                previousIndex--;
+//                currentIndex--;
+//                currentWO = currentIndex > -1 ? getRootNode(currentIndex).wordOrientation : null;
+//                previousWO = previousIndex > -1 ? getRootNode(previousIndex).wordOrientation : null;
+//            }
+//        }
+//        String str = "";
+//        for (int i = 0; i < wordCount; i++) {
+//            if (partiallyCompleteWords[i] == null) {
+//                str += "0, ";
+//                continue;
+//            }
+//            str += partiallyCompleteWords[i].getFilledInCount(getRootNode(i).wordOrientation) + ", ";
+//        }
+//        Log.v("crosswordprinting", str);
+
+            // get next partiallyCompleteWord
+            if (partiallyCompleteWords != null && partiallyCompleteWords.size() > 0) {
+                int index = 0;
+                int length = partiallyCompleteWords.get(index).getFilledInCount(partiallyCompleteWordsOrientations.get(index));
+                for (int i = 1; i < partiallyCompleteWords.size(); i++) {
+                    int currentLength = partiallyCompleteWords.get(i).getFilledInCount(partiallyCompleteWordsOrientations.get(i));
+                    if (currentLength > length) {
+                        index = i;
+                        length = currentLength;
+                    }
+                }
+                return new Tuple(partiallyCompleteWordsOrientations.get(index), partiallyCompleteWords.get(index));
+            }
+            // find next incomplete word
+            int next = 0;
+            while (next < nodeHasWord.length && nodeHasWord[next]) {
+                next++;
+            }
+            getRootNode(next);
+            return getRootNode(next);
+        }
+
+        private String[] getNextWordFromPriorityList(int wordLength, String[] selectedWords, String pattern) {
+            int currentBestPatternMatch = -1;
+            int currentBestWordIndex = 0;
+            for (String selectedWord : selectedWords) {
+                if (selectedWord != null) {
+                    Log.v("crosswordprinting", "a: " + selectedWord);
+                }
+            }
+
+            wordLoop:
+            for (int i = 0; i < prioritizedWords[0][wordLength - 1].length; i++) {
+                for (String selectedWord : selectedWords) {
+                    if (prioritizedWords[0][wordLength - 1][i].equals(selectedWord)) {
+                        continue wordLoop;
+                    }
+                    int patternMatch = matchesPattern(prioritizedWords[0][wordLength - 1][i], pattern, wordLength);
+                    if (patternMatch > currentBestPatternMatch) {
+                        currentBestPatternMatch = patternMatch;
+                        currentBestWordIndex = i;
+                    }
+                }
+            }
+            Log.v("crosswordprinting", "" + currentBestWordIndex + " - " + prioritizedWords[0][wordLength - 1].length);
+            return new String[]{prioritizedWords[0][wordLength - 1][currentBestWordIndex], prioritizedWords[1][wordLength - 1][currentBestWordIndex]};
+        }
+
+        private int matchesPattern(String word, String pattern, int wordLength) {
+            int count = 0;
+            word = word.toUpperCase();
+            pattern = pattern.toUpperCase();
+            for (int i = 0; i < wordLength; i++) {
+                if (pattern.charAt(i) == ' ' || pattern.charAt(i) == word.charAt(i)) {
+                    count++;
+                }
+            }
+            return count;
+        }
     }
 
     @Override
@@ -442,228 +804,28 @@ public class CrosswordActivity extends AppCompatActivity {
     }
 
 
-    private String[][][] getPrioritizedWordsByLength(boolean[] wordLengthUsed) {
-        String[][][] prioritizedWords = new String[2][wordLengthUsed.length][];
-        ArrayList[] lists = new ArrayList[wordLengthUsed.length];
-        ArrayList[] hintLists = new ArrayList[wordLengthUsed.length];
-        for (int i = 0; i < wordLengthUsed.length; i++) {
-            if (wordLengthUsed[i]) {
-                lists[i] = new ArrayList<String>();
-                hintLists[i] = new ArrayList<String>();
-            }
-        }
-        InputStream is = getResources().openRawResource(R.raw.words);
-        BufferedReader reader = new BufferedReader(
-                new InputStreamReader(is, Charset.forName("UTF-8"))
-        );
-        String line;
-        try {
-            ArrayList<String> verbsConjugated = new ArrayList<>();
-            while ((line = reader.readLine()) != null) {
-                String[] lineData = line.split("\\|");
-                String word = lineData[4].replaceAll(" ", "").replaceAll("-", "").replaceAll("\\?", "").replaceAll("!", "");
-                String hint = lineData[0] + " (" + lineData[3] + ")";
-                int wordLength = word.length();
-                int wordLengthMinusOne = wordLength - 1;
-                int maxWordLength = wordLengthUsed.length;
-                if (wordLength > 0 && wordLengthMinusOne < maxWordLength && wordLengthUsed[wordLengthMinusOne] &&
-                        !lists[wordLengthMinusOne].contains(word)) {
-                    lists[wordLengthMinusOne].add(word);
-                    String finalHint = hint.substring(0, 1).toUpperCase() + hint.substring(1);
-                    hintLists[wordLengthMinusOne].add(finalHint);
-                }
-                if (lineData[2].equals("v")) {
-                    if (!verbsConjugated.contains(word)) {
-                        verbsConjugated.add(word);
-                        String[][] conjugatedVerbs = Conjugator.conjugate(lineData[4], verbForms, portugal);
-                        if (conjugatedVerbs != null) {
-                            for (int a = 0; a < conjugatedVerbs.length; a++) {
-                                String[] fullConjugation = conjugatedVerbs[a];
-                                String conjugatedForm = Conjugator.getVerbFormString(verbForms[a], getResources()).toLowerCase();
-                                if (fullConjugation != null && fullConjugation.length == 6) {
-                                    conjugateLoop:
-                                    for (int i = 0; i < 6; i++) {
-                                        if (i == 1 && !tuEnabled) {
-                                            continue;
-                                        }
-                                        String subject = Conjugator.getSubject(i, portugal);
-                                        String verbHintWithoutintro = " form, " + conjugatedForm + " tense of the verb " + hint;
-                                        String verbHintWithIntro = subject + verbHintWithoutintro;
-                                        String verbHintWithSubject = verbHintWithIntro + " (with subject)";
-                                        String verbHintWithSubjectWithoutIntro = verbHintWithoutintro + " (with subject)";
-                                        String conjugated = fullConjugation[i];
-                                        if (conjugated != null) {
-                                            int conjugatedLength = conjugated.length();
-                                            int conjugatedLengthMinusOne = conjugatedLength - 1;
-                                            if (conjugatedLength > 0) {
-                                                if (conjugatedLengthMinusOne < maxWordLength) {
-                                                    if (wordLengthUsed[conjugatedLengthMinusOne]) {
-                                                        lists[conjugatedLengthMinusOne].add(conjugated);
-                                                        hintLists[conjugatedLengthMinusOne].add(verbHintWithIntro);
-                                                    }
-                                                    int conjugatedLengthPlusOne = conjugatedLength + 1;
-                                                    int conjugatedLengthPlusTwo = conjugatedLength + 2;
-                                                    if (conjugatedLengthPlusTwo < maxWordLength) {
-                                                        if (wordLengthUsed[conjugatedLengthPlusOne]) {
-                                                            switch (i) {
-                                                                case 0:
-                                                                    lists[conjugatedLengthPlusOne].add("eu" + conjugated);
-                                                                    Log.v("blahstuff", "eu " + conjugated + ": " + word);
-                                                                    hintLists[conjugatedLengthPlusOne].add(verbHintWithSubject);
-                                                                    continue conjugateLoop;
-                                                                case 1:
-                                                                    lists[conjugatedLengthPlusOne].add("tu" + conjugated);
-                                                                    hintLists[conjugatedLengthPlusOne].add(verbHintWithSubject);
-                                                                    continue conjugateLoop;
-                                                            }
-                                                        }
-                                                        int conjugatedLengthPlusThree = conjugatedLength + 3;
-                                                        if (conjugatedLengthPlusThree < maxWordLength) {
-                                                            if (wordLengthUsed[conjugatedLengthPlusTwo]) {
-                                                                switch (i) {
-                                                                    case 2:
-                                                                        lists[conjugatedLengthPlusTwo].add("ele" + conjugated);
-                                                                        hintLists[conjugatedLengthPlusTwo].add("Ele" + verbHintWithSubjectWithoutIntro);
-                                                                        lists[conjugatedLengthPlusTwo].add("ela" + conjugated);
-                                                                        hintLists[conjugatedLengthPlusTwo].add("Ela" + verbHintWithSubjectWithoutIntro);
-                                                                    case 3:
-                                                                        lists[conjugatedLengthPlusTwo].add("nós" + conjugated);
-                                                                        hintLists[conjugatedLengthPlusTwo].add(verbHintWithSubject);
-                                                                        continue conjugateLoop;
-                                                                    case 4:
-                                                                        lists[conjugatedLengthPlusTwo].add("vós" + conjugated);
-                                                                        hintLists[conjugatedLengthPlusTwo].add(verbHintWithSubject);
-                                                                }
-                                                            }
-                                                            int conjugatedLengthPlusFour = conjugatedLength + 4;
-                                                            if (conjugatedLengthPlusFour < maxWordLength) {
-                                                                if (wordLengthUsed[conjugatedLengthPlusThree]) {
-                                                                    switch (i) {
-                                                                        case 2:
-                                                                            lists[conjugatedLengthPlusThree].add("você" + conjugated);
-                                                                            hintLists[conjugatedLengthPlusThree].add(verbHintWithSubject);
-                                                                            continue conjugateLoop;
-                                                                        case 5:
-                                                                            lists[conjugatedLengthPlusThree].add("eles" + conjugated);
-                                                                            hintLists[conjugatedLengthPlusThree].add("Eles" + verbHintWithSubjectWithoutIntro);
-                                                                            lists[conjugatedLengthPlusThree].add("elas" + conjugated);
-                                                                            hintLists[conjugatedLengthPlusThree].add("Elas" + verbHintWithSubjectWithoutIntro);
-                                                                            continue conjugateLoop;
-                                                                    }
-                                                                }
-                                                                int conjugatedLengthPlusFive = conjugatedLength + 5;
-                                                                if (conjugatedLengthPlusFive < maxWordLength && wordLengthUsed[conjugatedLengthPlusFour]) {
-                                                                    lists[conjugatedLengthPlusFour].add("vocês" + conjugated);
-                                                                    hintLists[conjugatedLengthPlusFour].add(verbHintWithSubject);
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        } catch (IOException e) {
-            Log.v("myapp", "error reading file");
-        }
-        for (int i = 0; i < lists.length; i++) {
-            if (wordLengthUsed[i]) {
-                prioritizedWords[0][i] = new String[lists[i].size()];
-                prioritizedWords[1][i] = new String[hintLists[i].size()];
-                for (int j = 0; j < lists[i].size(); j++) {
-                    prioritizedWords[0][i][j] = (String) lists[i].get(j);
-                    prioritizedWords[1][i][j] = (String) hintLists[i].get(j);
-                }
+    private class AsyncData {
+        int wordCount;
+        RootNode[] acrossRoots;
+        RootNode[] downRoots;
+        boolean[] wordLengthUsed;
+        Resources resources;
+        VerbForm[] verbForms;
+        boolean portugal;
+        boolean tuEnabled;
 
-                int[] indices = new int[prioritizedWords[0][i].length];
-                for (int j = 0; j < indices.length; j++) {
-                    indices[j] = j;
-                }
-                Random rgen = new Random();
-                for (int j = 0; j < indices.length; j++) {
-                    int randomPosition = rgen.nextInt(indices.length);
-                    int temp = indices[j];
-                    indices[j] = indices[randomPosition];
-                    indices[randomPosition] = temp;
-                }
-
-                for (int j = 0; j < indices.length; j++) {
-                    String temp = prioritizedWords[0][i][j];
-                    prioritizedWords[0][i][j] = prioritizedWords[0][i][indices[j]];
-                    prioritizedWords[0][i][indices[j]] = temp;
-
-                    temp = prioritizedWords[1][i][j];
-                    prioritizedWords[1][i][j] = prioritizedWords[1][i][indices[j]];
-                    prioritizedWords[1][i][indices[j]] = temp;
-                }
-            }
+        public AsyncData(int wordCount, RootNode[] acrossRoots, RootNode[] downRoots, boolean[] wordLengthUsed,
+                         Resources resources, VerbForm[] verbForms, boolean portugal, boolean tuEnabled) {
+            this.wordCount = wordCount;
+            this.acrossRoots = acrossRoots;
+            this.downRoots = downRoots;
+            this.wordLengthUsed = wordLengthUsed;
+            this.resources = resources;
+            this.verbForms = verbForms;
+            this.portugal = portugal;
+            this.tuEnabled = tuEnabled;
         }
-        return prioritizedWords;
-    }
 
-    private void fillCrossword() {
-//        printCrossword();
-        boolean[] nodeHasWord = new boolean[wordCount];
-//        RootNode[] partiallyCompleteWords = new RootNode[wordCount];
-        ArrayList<RootNode> partiallyCompleteWords;
-        ArrayList<WordOrientation> partiallyCompleteWordsOrientations;
-        String[] selectedWords = new String[wordCount];
-        int[] filledInCounts = new int[wordCount];
-        Stack<RootNode> selectedNodes = new Stack<>();
-        WordOrientation[] wordOrientations2 = new WordOrientation[wordCount];
-        for (int i = 0; i < wordCount; i++) {
-            wordOrientations2[i] = getRootNode(i).wordOrientation;
-        }
-        Tuple nextToBeSelected = getNextToBeSelected(nodeHasWord, null, null);
-        WordOrientation wordOrientation = nextToBeSelected.wordOrientation;
-        RootNode nodeToBeSelected = nextToBeSelected.rootNode;
-        int nodeToBeSelectedIndex;
-
-        while (nodeToBeSelected != null) {
-            partiallyCompleteWords = new ArrayList<>(wordCount);
-            partiallyCompleteWordsOrientations = new ArrayList<>(wordCount);
-            nodeToBeSelectedIndex = nodeToBeSelected.getIndex(wordOrientation);
-            String partialWord = nodeToBeSelected.getPatternString(wordOrientation);
-//            Log.v("crosswordprinting", "pattern: " + partialWord);
-            String[] wordAndHint = getNextWordFromPriorityList(nodeToBeSelected.getWordLength(wordOrientation), selectedWords, partialWord);
-            String word = wordAndHint[0];
-            String hint = wordAndHint[1];
-            nodeToBeSelected.setWordSolution(wordOrientation, word, hint);
-            nodeToBeSelected.finalizeSolution(wordOrientation);
-            selectedWords[nodeToBeSelectedIndex] = word;
-            nodeHasWord[nodeToBeSelectedIndex] = true;
-            selectedNodes.push(nodeToBeSelected);
-//            printCrossword();
-            for (int i = 0; i < wordCount; i++) {
-                Tuple rootNodeData = getRootNode(i);
-                RootNode rootNode = rootNodeData.rootNode;
-                WordOrientation rootNodeWordOrientation = rootNodeData.wordOrientation;
-                int filledInCount = rootNode.getFilledInCount(rootNodeWordOrientation);
-                filledInCounts[i] = filledInCount;
-                if (filledInCount > 0 && rootNode.getWordLength(rootNodeWordOrientation) > filledInCount) {
-                    partiallyCompleteWords.add(rootNode);
-                    partiallyCompleteWordsOrientations.add(rootNodeWordOrientation);
-                }
-            }
-
-
-            nextToBeSelected = getNextToBeSelected(nodeHasWord, partiallyCompleteWords, partiallyCompleteWordsOrientations);
-            wordOrientation = nextToBeSelected.wordOrientation;
-            nodeToBeSelected = nextToBeSelected.rootNode;
-        }
-        for (RootNode root : acrossRoots) {
-            root.finalizeSolution();
-        }
-        for (RootNode root : downRoots) {
-            root.finalizeSolution();
-        }
-        switchToCrosswordFragment();
     }
 
 //    private void printCrossword() {
@@ -716,126 +878,6 @@ public class CrosswordActivity extends AppCompatActivity {
         crosswordFragment.setArguments(bundle);
         transaction.replace(R.id.container, crosswordFragment);
         transaction.commit();
-    }
-
-    private String[] getNextWordFromPriorityList(int wordLength, String[] selectedWords) {
-        // work down word list to find the first string that priorityList that isn't in the
-        // selectedWords
-        int selectedIndex = 0;
-        wordLoop:
-        for (int i = 0; i < prioritizedWords[0][wordLength - 1].length; i++) {
-            for (String selectedWord : selectedWords) {
-                if (selectedWord != null && prioritizedWords[0][wordLength - 1][i].toLowerCase().equals(selectedWord.toLowerCase())) {
-                    continue wordLoop;
-                }
-            }
-            selectedIndex = i;
-            break;
-        }
-        return new String[]{prioritizedWords[0][wordLength - 1][selectedIndex], prioritizedWords[1][wordLength - 1][selectedIndex]};
-    }
-
-    private String[] getNextWordFromPriorityList(int wordLength, String[] selectedWords, String pattern) {
-        int currentBestPatternMatch = -1;
-        int currentBestWordIndex = 0;
-        for (String selectedWord : selectedWords) {
-            if (selectedWord != null) {
-                Log.v("crosswordprinting", "a: " + selectedWord);
-            }
-        }
-
-        wordLoop:
-        for (int i = 0; i < prioritizedWords[0][wordLength - 1].length; i++) {
-            for (String selectedWord : selectedWords) {
-                if (prioritizedWords[0][wordLength - 1][i].equals(selectedWord)) {
-                    continue wordLoop;
-                }
-                int patternMatch = matchesPattern(prioritizedWords[0][wordLength - 1][i], pattern, wordLength);
-                if (patternMatch > currentBestPatternMatch) {
-                    currentBestPatternMatch = patternMatch;
-                    currentBestWordIndex = i;
-                }
-            }
-        }
-        Log.v("crosswordprinting", "" + currentBestWordIndex + " - " + prioritizedWords[0][wordLength - 1].length);
-        return new String[]{prioritizedWords[0][wordLength - 1][currentBestWordIndex], prioritizedWords[1][wordLength - 1][currentBestWordIndex]};
-    }
-
-    private int matchesPattern(String word, String pattern, int wordLength) {
-        int count = 0;
-        word = word.toUpperCase();
-        pattern = pattern.toUpperCase();
-        for (int i = 0; i < wordLength; i++) {
-            if (pattern.charAt(i) == ' ' || pattern.charAt(i) == word.charAt(i)) {
-                count++;
-            }
-        }
-        return count;
-    }
-
-    private Tuple getRootNode(int index) {
-        // if all are selected
-        if (index >= wordCount) {
-            return new Tuple(null, null);
-        }
-        // if all across are selected, return next down
-        if (index >= acrossRoots.length) {
-            return new Tuple(WordOrientation.DOWN, downRoots[index - acrossRoots.length]);
-        }
-        // otherwise, return next across
-        return new Tuple(WordOrientation.ACROSS, acrossRoots[index]);
-    }
-
-    // given the partiallyCompleteWords ordered by priority and ordered boolean array of complete words
-    // return next word that should be selected
-    private Tuple getNextToBeSelected(boolean[] nodeHasWord, ArrayList<RootNode> partiallyCompleteWords, ArrayList<WordOrientation> partiallyCompleteWordsOrientations) {
-//        for (int i = 1; i < wordCount; i++) {
-//            int currentIndex = i;
-//            int previousIndex = i - 1;
-//            WordOrientation currentWO = getRootNode(currentIndex).wordOrientation;
-//            WordOrientation previousWO = getRootNode(previousIndex).wordOrientation;
-//            while (previousIndex > -1 && partiallyCompleteWords[currentIndex] != null &&
-//                    (partiallyCompleteWords[previousIndex] == null ||
-//                            (partiallyCompleteWords[previousIndex].getFilledInCount(previousWO) > partiallyCompleteWords[currentIndex].getFilledInCount(currentWO)))) {
-//                RootNode temp = partiallyCompleteWords[currentIndex];
-//                partiallyCompleteWords[currentIndex] = partiallyCompleteWords[previousIndex];
-//                partiallyCompleteWords[previousIndex] = temp;
-//                previousIndex--;
-//                currentIndex--;
-//                currentWO = currentIndex > -1 ? getRootNode(currentIndex).wordOrientation : null;
-//                previousWO = previousIndex > -1 ? getRootNode(previousIndex).wordOrientation : null;
-//            }
-//        }
-//        String str = "";
-//        for (int i = 0; i < wordCount; i++) {
-//            if (partiallyCompleteWords[i] == null) {
-//                str += "0, ";
-//                continue;
-//            }
-//            str += partiallyCompleteWords[i].getFilledInCount(getRootNode(i).wordOrientation) + ", ";
-//        }
-//        Log.v("crosswordprinting", str);
-
-        // get next partiallyCompleteWord
-        if (partiallyCompleteWords != null && partiallyCompleteWords.size() > 0) {
-            int index = 0;
-            int length = partiallyCompleteWords.get(index).getFilledInCount(partiallyCompleteWordsOrientations.get(index));
-            for (int i = 1; i < partiallyCompleteWords.size(); i++) {
-                int currentLength = partiallyCompleteWords.get(i).getFilledInCount(partiallyCompleteWordsOrientations.get(i));
-                if (currentLength > length) {
-                    index = i;
-                    length = currentLength;
-                }
-            }
-            return new Tuple(partiallyCompleteWordsOrientations.get(index), partiallyCompleteWords.get(index));
-        }
-        // find next incomplete word
-        int next = 0;
-        while (next < nodeHasWord.length && nodeHasWord[next]) {
-            next++;
-        }
-        getRootNode(next);
-        return getRootNode(next);
     }
 
     private boolean isWordComplete(CellNode cellNode, WordOrientation wordOrientation) {

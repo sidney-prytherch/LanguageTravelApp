@@ -9,26 +9,41 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
         <activity android:name=".TestActivity" />
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" />
-        <activity android:name=".CrosswordSettingsActivity" />
+        <activity
+            android:name=".CrosswordSettingsActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".LearnNewVocabSettingsActivity" />
         <activity android:name=".ReviewSettingsActivity" />
-        <activity android:name=".FlashcardActivity" />
+        <activity
+            android:name=".FlashcardActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".VocabTestSettingsActivity" />
         <activity android:name=".VocabTestActivity" />
-        <activity android:name=".LanguageHomeActivity" />
-        <activity android:name=".VerbConjugationActivity" />
-        <activity android:name=".VerbConjugationSettingsActivity" />
-        <activity android:name=".WordsearchActivity" />
+        <activity
+            android:name=".LanguageHomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerbConjugationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerbConjugationSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WordsearchActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".TravelActivity" />
-        <activity android:name=".CrosswordActivity" />
-        <activity android:name=".HomeActivity">
+        <activity
+            android:name=".CrosswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
